@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Testing latency &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../../index.html"/>
+        <link rel="up" title="Extras" href="index.html"/>
+        <link rel="prev" title="Distributed training with nGraph" href="distributed_training.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <br/><img src="../../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="index.html">Extras</a> &raquo;</li>
+      
+    <li>Testing latency</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../_sources/project/extras/testing_latency.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="testing-latency">
+<span id="id1"></span><h1>Testing latency<a class="headerlink" href="#testing-latency" title="Permalink to this headline">¶</a></h1>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This tutorial was tested using previous versions. While it is
+not currently or officially supported in the latest nGraph Compiler
+stack 0.29, some configuration options may still work.</p>
+</div>
+<p>Many open-source DL frameworks provide a layer where experts in data science
+can make use of optimizations contributed by machine learning engineers. Having
+a common API benefits both: it simplifies deployment and makes it easier for ML
+engineers working on advanced deep learning hardware to bring highly-optimized
+performance to a wide range of models, especially in inference.</p>
+<p>One DL framework with advancing efforts on graph optimizations is Apache
+MXNet*, where <a class="reference external" href="https://cwiki.apache.org/confluence/display/MXNET/MXNet+nGraph+integration+using+subgraph+backend+interface">Intel has contributed efforts showing</a> how to work with our
+nGraph Compiler stack as an <a class="reference external" href="https://github.com/apache/incubator-mxnet/pull/12502">experimental backend</a>. Our approach provides
+<strong>more opportunities</strong> to start working with different kinds of graph
+optimizations <strong>than would be available to the MXNet framework alone</strong>, for
+reasons outlined in our <a class="reference external" href="http://ngraph.nervanasys.com/docs/latest/project/introduction.html">introduction</a> documentation.  Note that the
+MXNet bridge requires trained models only; it does not support distributed
+training.</p>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../../_images/ngraph-mxnet-models.png"><img alt="Up to 45X faster" src="../../_images/ngraph-mxnet-models.png" style="width: 533px;" /></a>
+<p class="caption"><span class="caption-text">Up to 45X faster compilation with nGraph backend</span></p>
+</div>
+<div class="section" id="tutorial-testing-inference-latency-of-resnet-50-v2-with-mxnet">
+<h2>Tutorial: Testing inference latency of ResNet-50-V2 with MXNet<a class="headerlink" href="#tutorial-testing-inference-latency-of-resnet-50-v2-with-mxnet" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial supports compiling MXNet with nGraph’s CPU backend.</p>
+<p>Begin by cloning MXNet from GitHub:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone --recursive https://github.com/apache/incubator-mxnet</span>
+</pre></div>
+</div>
+<p>To compile run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd incubator-mxnet</span>
+<span class="go">make -j USE_NGRAPH=1</span>
+</pre></div>
+</div>
+<p>MXNet’s build system will automatically download, configure, and build the
+nGraph library, then link it into <code class="docutils literal notranslate"><span class="pre">libmxnet.so</span></code>. Once this is complete, we
+recommend building a python3 virtual environment for testing, and then
+install MXNet to the virtual environment:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 -m venv .venv</span>
+<span class="go">. .venv/bin/activate</span>
+<span class="go">cd python</span>
+<span class="go">pip install -e .</span>
+<span class="go">cd ../</span>
+</pre></div>
+</div>
+<p>Now we’re ready to use nGraph to run any model on a CPU backend. Building MXNet
+with nGraph automatically enabled nGraph on your model scripts, and you
+shouldn’t need to do anything special. If you run into trouble, you can disable
+nGraph by setting</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">MXNET_SUBGRAPH_BACKEND=</span>
+</pre></div>
+</div>
+<p>If you do see trouble, please report it and we’ll address it as soon as possible.</p>
+</div>
+<div class="section" id="running-resnet-50-v2-inference">
+<h2>Running ResNet-50-V2 Inference<a class="headerlink" href="#running-resnet-50-v2-inference" title="Permalink to this headline">¶</a></h2>
+<p>To show a working example, we’ll demonstrate how MXNet may be used to run
+ResNet-50 Inference. For ease, we’ll consider the standard MXNet ResNet-50-V2
+model from the <a class="reference external" href="https://github.com/apache/incubator-mxnet/blob/master/python/mxnet/gluon/model_zoo/vision/resnet.py#L499">gluon model zoo</a>, and we’ll test with <code class="docutils literal notranslate"><span class="pre">batch_size=1</span></code>.
+Note that the nGraph-MXNet bridge supports static graphs only (dynamic graphs
+are in the works); so for this example, we begin by converting the gluon model
+into a static graph. Also note that any model with a saved checkpoint can be
+considered a “static graph” in nGraph. For this example, we’ll presume that the
+model is pre-trained.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mxnet</span> <span class="kn">as</span> <span class="nn">mx</span>
+
+<span class="c1"># Convert gluon model to a static model</span>
+<span class="kn">from</span> <span class="nn">mxnet.gluon.model_zoo</span> <span class="kn">import</span> <span class="n">vision</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">batch_shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">)</span>
+
+<span class="n">input_data</span> <span class="o">=</span> <span class="n">mx</span><span class="o">.</span><span class="n">nd</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">batch_shape</span><span class="p">)</span>
+
+<span class="n">resnet_gluon</span> <span class="o">=</span> <span class="n">vision</span><span class="o">.</span><span class="n">resnet50_v2</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">resnet_gluon</span><span class="o">.</span><span class="n">hybridize</span><span class="p">()</span>
+<span class="n">resnet_gluon</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+<span class="n">resnet_gluon</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s1">&#39;resnet50_v2&#39;</span><span class="p">)</span>
+<span class="n">resnet_sym</span><span class="p">,</span> <span class="n">arg_params</span><span class="p">,</span> <span class="n">aux_params</span> <span class="o">=</span> <span class="n">mx</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">load_checkpoint</span><span class="p">(</span><span class="s1">&#39;resnet50_v2&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+</pre></div>
+</div>
+<p>To load the model into nGraph, we simply bind the symbol into an Executor.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">resnet_sym</span><span class="o">.</span><span class="n">simple_bind</span><span class="p">(</span><span class="n">ctx</span><span class="o">=</span><span class="n">mx</span><span class="o">.</span><span class="n">cpu</span><span class="p">(),</span> <span class="n">data</span><span class="o">=</span><span class="n">batch_shape</span><span class="p">,</span> <span class="n">grad_req</span><span class="o">=</span><span class="s1">&#39;null&#39;</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">copy_params_from</span><span class="p">(</span><span class="n">arg_params</span><span class="p">,</span> <span class="n">aux_params</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>At binding, the MXNet Subgraph API finds nGraph, determines how to partition
+the graph, and in the case of Resnet, sends the entire graph to nGraph for
+compilation. This produces a single call to an <a class="reference external" href="https://github.com/dmlc/nnvm">NNVM</a> <code class="docutils literal notranslate"><span class="pre">NGraphSubgraphOp</span></code> embedded
+with the compiled model. At this point, we can test the model’s performance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dry_run</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">num_batches</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dry_run</span> <span class="o">+</span> <span class="n">num_batches</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">dry_run</span><span class="p">:</span>
+       <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+   <span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">input_data</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+   <span class="k">for</span> <span class="n">output</span> <span class="ow">in</span> <span class="n">outputs</span><span class="p">:</span>
+       <span class="n">output</span><span class="o">.</span><span class="n">wait_to_read</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Average Latency = &quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span><span class="o">/</span><span class="n">num_batches</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">,</span> <span class="s2">&quot;ms&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="distributed_training.html" class="btn btn-neutral" title="Distributed training with nGraph" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

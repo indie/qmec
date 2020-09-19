@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>List of Core ops &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../index.html"/>
+        <link rel="next" title="Abs" href="abs.html"/>
+        <link rel="prev" title="Using GraphRewrite to fuse ops" href="../core/fusion/graph-rewrite.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <br/><img src="../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">nGraph Core Ops</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#more-about-core-ops">More about Core Ops</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>List of Core <code class="docutils literal notranslate"><span class="pre">ops</span></code></li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../_sources/ops/index.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <blockquote>
+<div></div></blockquote>
+<div class="section" id="list-of-core-ops">
+<h1>List of Core <code class="docutils literal notranslate"><span class="pre">ops</span></code><a class="headerlink" href="#list-of-core-ops" title="Permalink to this headline">¶</a></h1>
+<p>Some operations are experimental.</p>
+<p><a class="reference internal" href="#more-about"><span class="std std-ref">More about Core Ops</span></a></p>
+<table class="hlist"><tr><td><ul class="simple">
+<li><a class="reference internal" href="abs.html"><span class="doc">Abs</span></a></li>
+<li><a class="reference internal" href="acos.html"><span class="doc">Acos</span></a></li>
+<li><a class="reference internal" href="add.html"><span class="doc">Add</span></a></li>
+<li><a class="reference internal" href="all.html"><span class="doc">All</span></a></li>
+<li><a class="reference internal" href="allreduce.html"><span class="doc">AllReduce</span></a></li>
+<li><a class="reference internal" href="and.html"><span class="doc">And</span></a></li>
+<li><a class="reference internal" href="any.html"><span class="doc">Any</span></a></li>
+<li><a class="reference internal" href="asin.html"><span class="doc">Asin</span></a></li>
+<li><a class="reference internal" href="atan.html"><span class="doc">Atan</span></a></li>
+<li><a class="reference internal" href="avg_pool.html"><span class="doc">AvgPool</span></a></li>
+<li><a class="reference internal" href="avg_pool_backprop.html"><span class="doc">AvgPoolBackprop</span></a></li>
+<li><a class="reference internal" href="batch_norm_inference.html"><span class="doc">BatchNormInference</span></a></li>
+<li><a class="reference internal" href="batch_norm_training.html"><span class="doc">BatchNormTraining</span></a></li>
+<li><a class="reference internal" href="batch_norm_training_backprop.html"><span class="doc">BatchNormTrainingBackprop</span></a></li>
+<li><a class="reference internal" href="broadcast.html"><span class="doc">Broadcast</span></a></li>
+<li><a class="reference internal" href="broadcast_distributed.html"><span class="doc">BroadcastDistributed</span></a></li>
+<li><a class="reference internal" href="ceiling.html"><span class="doc">Ceiling</span></a></li>
+<li><a class="reference internal" href="concat.html"><span class="doc">Concat</span></a></li>
+<li><a class="reference internal" href="constant.html"><span class="doc">Constant</span></a></li>
+<li><a class="reference internal" href="convert.html"><span class="doc">Convert</span></a></li>
+<li><a class="reference internal" href="convolution.html"><span class="doc">Convolution</span></a></li>
+<li><a class="reference internal" href="cos.html"><span class="doc">Cos</span></a></li>
+<li><a class="reference internal" href="cosh.html"><span class="doc">Cosh</span></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="dequantize.html"><span class="doc">Dequantize</span></a></li>
+<li><a class="reference internal" href="divide.html"><span class="doc">Divide</span></a></li>
+<li><a class="reference internal" href="dot.html"><span class="doc">Dot</span></a></li>
+<li><a class="reference internal" href="drop_out.html"><span class="doc">DropOut</span></a></li>
+<li><a class="reference internal" href="equal.html"><span class="doc">Equal</span></a></li>
+<li><a class="reference internal" href="exp.html"><span class="doc">Exp</span></a></li>
+<li><a class="reference internal" href="floor.html"><span class="doc">Floor</span></a></li>
+<li><a class="reference internal" href="get_output_element.html"><span class="doc">GetOutputElement</span></a></li>
+<li><a class="reference internal" href="greater_eq.html"><span class="doc">GreaterEq</span></a></li>
+<li><a class="reference internal" href="greater.html"><span class="doc">Greater</span></a></li>
+<li><a class="reference internal" href="less_eq.html"><span class="doc">LessEq</span></a></li>
+<li><a class="reference internal" href="less.html"><span class="doc">Less</span></a></li>
+<li><a class="reference internal" href="log.html"><span class="doc">Log</span></a></li>
+<li><a class="reference internal" href="max.html"><span class="doc">Max</span></a></li>
+<li><a class="reference internal" href="maximum.html"><span class="doc">Maximum</span></a></li>
+<li><a class="reference internal" href="max_pool.html"><span class="doc">MaxPool</span></a></li>
+<li><a class="reference internal" href="min.html"><span class="doc">Min</span></a></li>
+<li><a class="reference internal" href="minimum.html"><span class="doc">Minimum</span></a></li>
+<li><a class="reference internal" href="multiply.html"><span class="doc">Multiply</span></a></li>
+<li><a class="reference internal" href="negative.html"><span class="doc">Negative</span></a></li>
+<li><a class="reference internal" href="not_equal.html"><span class="doc">NotEqual</span></a></li>
+<li><a class="reference internal" href="not.html"><span class="doc">Not</span></a></li>
+<li><a class="reference internal" href="one_hot.html"><span class="doc">OneHot</span></a></li>
+</ul>
+</td><td><ul class="simple">
+<li><a class="reference internal" href="or.html"><span class="doc">Or</span></a></li>
+<li><a class="reference internal" href="pad.html"><span class="doc">Pad</span></a></li>
+<li><a class="reference internal" href="parameter.html"><span class="doc">Parameter</span></a></li>
+<li><a class="reference internal" href="power.html"><span class="doc">Power</span></a></li>
+<li><a class="reference internal" href="product.html"><span class="doc">Product</span></a></li>
+<li><a class="reference internal" href="quantize.html"><span class="doc">Quantize</span></a></li>
+<li><a class="reference internal" href="random_uniform.html"><span class="doc">RandomUniform</span></a></li>
+<li><a class="reference internal" href="relu.html"><span class="doc">Relu</span></a></li>
+<li><a class="reference internal" href="result.html"><span class="doc">Result</span></a></li>
+<li><a class="reference internal" href="shape_of.html"><span class="doc">ShapeOf</span></a></li>
+<li><a class="reference internal" href="sigmoid.html"><span class="doc">Sigmoid</span></a></li>
+<li><a class="reference internal" href="sign.html"><span class="doc">Sign</span></a></li>
+<li><a class="reference internal" href="sin.html"><span class="doc">Sin</span></a></li>
+<li><a class="reference internal" href="sinh.html"><span class="doc">Sinh</span></a></li>
+<li><a class="reference internal" href="slice.html"><span class="doc">Slice</span></a></li>
+<li><a class="reference internal" href="softmax.html"><span class="doc">Softmax</span></a></li>
+<li><a class="reference internal" href="sqrt.html"><span class="doc">Sqrt</span></a></li>
+<li><a class="reference internal" href="subtract.html"><span class="doc">Subtract</span></a></li>
+<li><a class="reference internal" href="tan.html"><span class="doc">Tan</span></a></li>
+<li><a class="reference internal" href="tanh.html"><span class="doc">Tanh</span></a></li>
+<li><a class="reference internal" href="transpose.html"><span class="doc">Transpose</span></a></li>
+<li><a class="reference internal" href="xor.html"><span class="doc">Xor</span></a></li>
+</ul>
+</td></tr></table>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="more-about-core-ops">
+<span id="more-about"></span><h2>More about Core Ops<a class="headerlink" href="#more-about-core-ops" title="Permalink to this headline">¶</a></h2>
+<p>An <code class="docutils literal notranslate"><span class="pre">Op</span></code>’s primary role is to function as a node in a directed acyclic
+computation graph.</p>
+<p><em>Core ops</em> are ops that are available and generally useful to all framework
+bridges and that can be compiled by all transformers. A framework bridge may
+define framework-specific ops to simplify graph construction, provided that the
+bridge can enable every transformer to replace all such ops with equivalent
+clusters or subgraphs composed of core ops. In a similar manner, transformers
+may define transformer-specific ops to represent kernels or other intermediate
+operations.</p>
+<p>The  input and output ports of ops are any of the functions which work with
+<code class="docutils literal notranslate"><span class="pre">Output&lt;Node&gt;/Input&lt;Node&gt;</span></code>. Previous functions that worked at the level
+of ops are deprecated, like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Node</span><span class="p">::</span><span class="n">get_element_type</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>as it does not take any input. This function has been replaced with new
+functions like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Node</span><span class="p">::</span><span class="n">get_output_element_type</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where there is no ambiguity.</p>
+<p>If a framework supports extending the set of ops it offers, a bridge may even
+expose transformer-specific ops to the framework user.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Our design philosophy is that the graph is not a script for
+running kernels; rather, our compilation will match <code class="docutils literal notranslate"><span class="pre">ops</span></code> to appropriate
+kernels for the backend(s) in use. Thus, we expect that adding of new Core
+ops should be infrequent and that most functionality instead gets added with
+new functions that build sub-graphs from existing core ops.</p>
+</div>
+<p>It is easiest to define a new op by adapting an existing op. Some of the tasks
+that must be performed are:</p>
+<ul class="simple">
+<li>Op constructor:<ul>
+<li>Checking type-consistency of arguments</li>
+<li>Specifying the result type for a call</li>
+</ul>
+</li>
+<li>Serializer/Deserializer</li>
+<li>Transformer handlers:<ul>
+<li>Interpreter (reference) implementation of behavior. The
+implementation should favor clarity over efficiency.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="abs.html" class="btn btn-neutral float-right" title="Abs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../core/fusion/graph-rewrite.html" class="btn btn-neutral" title="Using GraphRewrite to fuse ops" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

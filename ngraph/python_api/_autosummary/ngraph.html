@@ -1,0 +1,2371 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ngraph package &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../../index.html"/>
+        <link rel="up" title="nGraph Python APIs" href="../structure.html"/>
+        <link rel="next" title="ngraph.exceptions" href="ngraph.exceptions.html"/>
+        <link rel="prev" title="nGraph Python APIs" href="../structure.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <br/><img src="../../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../core/constructing-graphs/index.html">Constructing Graphs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../core/constructing-graphs/execute.html">Execute a computation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../core/constructing-graphs/operator.html">Build a graph with operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../core/constructing-graphs/update.html">Make a stateful computation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../core/constructing-graphs/derive-for-training.html">Derive a trainable model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../core/constructing-graphs/distribute-train.html">Distribute training across multiple nGraph backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../core/constructing-graphs/import.html">Import a model</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Using the Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="../../core/constructing-graphs/index.html">Constructing Graphs</a> &raquo;</li>
+      
+        <li><a href="../index.html">Python API</a> &raquo;</li>
+      
+        <li><a href="../structure.html">nGraph Python APIs</a> &raquo;</li>
+      
+    <li>ngraph package</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../_sources/python_api/_autosummary/ngraph.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-ngraph">
+<span id="ngraph-package"></span><h1>ngraph package<a class="headerlink" href="#module-ngraph" title="Permalink to this headline">¶</a></h1>
+<p>ngraph module namespace, exposing factory functions for all ops and other classes.</p>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ngraph.exceptions">
+<span id="ngraph-exceptions-module"></span><h2>ngraph.exceptions module<a class="headerlink" href="#module-ngraph.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>ngraph exceptions hierarchy. All exceptions are descendants of NgraphError.</p>
+<dl class="exception">
+<dt id="ngraph.exceptions.NgraphError">
+<em class="property">exception </em><code class="descclassname">ngraph.exceptions.</code><code class="descname">NgraphError</code><a class="reference internal" href="../../_modules/ngraph/exceptions.html#NgraphError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.exceptions.NgraphError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Base class for Ngraph exceptions.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="ngraph.exceptions.NgraphTypeError">
+<em class="property">exception </em><code class="descclassname">ngraph.exceptions.</code><code class="descname">NgraphTypeError</code><a class="reference internal" href="../../_modules/ngraph/exceptions.html#NgraphTypeError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.exceptions.NgraphTypeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ngraph.exceptions.NgraphError" title="ngraph.exceptions.NgraphError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ngraph.exceptions.NgraphError</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></p>
+<p>Type mismatch error.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="ngraph.exceptions.UserInputError">
+<em class="property">exception </em><code class="descclassname">ngraph.exceptions.</code><code class="descname">UserInputError</code><a class="reference internal" href="../../_modules/ngraph/exceptions.html#UserInputError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.exceptions.UserInputError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#ngraph.exceptions.NgraphError" title="ngraph.exceptions.NgraphError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ngraph.exceptions.NgraphError</span></code></a></p>
+<p>User provided unexpected input.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-ngraph.ops">
+<span id="ngraph-ops-module"></span><h2>ngraph.ops module<a class="headerlink" href="#module-ngraph.ops" title="Permalink to this headline">¶</a></h2>
+<p>Factory functions for all ngraph ops.</p>
+<dl class="function">
+<dt id="ngraph.ops.absolute">
+<code class="descclassname">ngraph.ops.</code><code class="descname">absolute</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#absolute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.absolute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies f(x) = abs(x) to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with Abs operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.acos">
+<code class="descclassname">ngraph.ops.</code><code class="descname">acos</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#acos"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.acos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply inverse cosine function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with arccos operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.add">
+<code class="descclassname">ngraph.ops.</code><code class="descname">add</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies f(x) = A+B to the input nodes element-wise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.argmax">
+<code class="descclassname">ngraph.ops.</code><code class="descname">argmax</code><span class="sig-paren">(</span><em>data</em>, <em>axis=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#argmax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.argmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a node which performs ArgMax index reduction operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – Input data.</li>
+<li><strong>axis</strong> – Reduction Axis.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node which performs ArgMax</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.argmin">
+<code class="descclassname">ngraph.ops.</code><code class="descname">argmin</code><span class="sig-paren">(</span><em>data</em>, <em>axis=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#argmin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.argmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a node which performs ArgMin index reduction operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – Input data.</li>
+<li><strong>axis</strong> – Reduction Axis.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node which performs ArgMin</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.asin">
+<code class="descclassname">ngraph.ops.</code><code class="descname">asin</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#asin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.asin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply inverse sine function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with arcsin operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.atan">
+<code class="descclassname">ngraph.ops.</code><code class="descname">atan</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#atan"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.atan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply inverse tangent function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with arctan operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.avg_pool">
+<code class="descclassname">ngraph.ops.</code><code class="descname">avg_pool</code><span class="sig-paren">(</span><em>data_batch</em>, <em>window_shape</em>, <em>window_strides=None</em>, <em>padding_below=None</em>, <em>padding_above=None</em>, <em>include_padding=False</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#avg_pool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.avg_pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return average pooling node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data_batch</strong> – The input node providing data.</li>
+<li><strong>window_shape</strong> – The pooling window shape.</li>
+<li><strong>window_strides</strong> – The window movement strides.</li>
+<li><strong>padding_below</strong> – The input data optional padding below filled with zeros.</li>
+<li><strong>padding_above</strong> – The input data optional padding below filled with zeros.</li>
+<li><strong>include_padding</strong> – Whether or not to include zero padding in average computations.</li>
+<li><strong>name</strong> – Optional name for the new output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with AvgPool operation applied on its data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.batch_norm">
+<code class="descclassname">ngraph.ops.</code><code class="descname">batch_norm</code><span class="sig-paren">(</span><em>eps</em>, <em>gamma</em>, <em>beta</em>, <em>data</em>, <em>mean=None</em>, <em>variance=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#batch_norm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.batch_norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return batch normalization node.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.broadcast">
+<code class="descclassname">ngraph.ops.</code><code class="descname">broadcast</code><span class="sig-paren">(</span><em>node</em>, <em>new_shape</em>, <em>broadcast_axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#broadcast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.broadcast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a node which broadcasts the input node’s values along specified axes to a desired shape.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The node with input tensor data.</li>
+<li><strong>new_shape</strong> – The new shape we want to broadcast tensor to.</li>
+<li><strong>broadcast_axes</strong> – The axis positions (0-based) in the result that are being broadcast.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with broadcast shape.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.broadcast_to">
+<code class="descclassname">ngraph.ops.</code><code class="descname">broadcast_to</code><span class="sig-paren">(</span><em>node</em>, <em>new_shape</em>, <em>axis=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#broadcast_to"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.broadcast_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a node which broadcasts the input node’s values to a desired shape.</p>
+<p><cite>broadcast_to</cite> will attempt to automatically determine which axes need broadcasting.</p>
+<p>The optional <cite>axis</cite> parameter specifies the starting axis position (0-based) in the output
+shape from which the current shape of the tensor matches the desired new shape.</p>
+<p>e.g. current_shape: [4, 5], new_shape: [2, 3, 4, 5, 6], axis: 2</p>
+<p>By using the <cite>axis</cite> parameter you can control which output axis to broadcast along.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">input_node</span> <span class="o">=</span> <span class="n">ng</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">current_shape</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_shape</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ng</span><span class="o">.</span><span class="n">broadcast_to</span><span class="p">(</span><span class="n">input_node</span><span class="p">,</span> <span class="n">new_shape</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">array([[1, 2, 3],</span>
+<span class="go">       [1, 2, 3],</span>
+<span class="go">       [1, 2, 3]])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ng</span><span class="o">.</span><span class="n">broadcast_to</span><span class="p">(</span><span class="n">input_node</span><span class="p">,</span> <span class="n">new_shape</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">array([[1, 1, 1],</span>
+<span class="go">       [2, 2, 2],</span>
+<span class="go">       [3, 3, 3]])</span>
+</pre></div>
+</div>
+<p>If the <cite>axis</cite> parameter is not specified, <cite>broadcast_to</cite> will attempt to match shapes,
+assuming the current shape matches the rightmost positions of the desired new shape.
+This behaviour is similar to NumPy’s broadcasting.</p>
+<p>i.e. default <cite>axis = len(new_shape) - len(current_shape)</cite></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The node with input tensor data.</li>
+<li><strong>new_shape</strong> – The new shape we want to broadcast tensor to.</li>
+<li><strong>axis</strong> – The axis along which we perform broadcasting.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with broadcast shape.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.ceiling">
+<code class="descclassname">ngraph.ops.</code><code class="descname">ceiling</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#ceiling"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.ceiling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies ceiling to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The node providing data to ceiling operation.</li>
+<li><strong>name</strong> – Optional name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise ceiling.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.clamp">
+<code class="descclassname">ngraph.ops.</code><code class="descname">clamp</code><span class="sig-paren">(</span><em>data</em>, <em>min_value</em>, <em>max_value</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#clamp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.clamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform clamp element-wise on data from input node.</p>
+<p>Performs a clipping operation on an input value between a pair of boundary values.</p>
+<p>For each element in <code class="code docutils literal notranslate"><span class="pre">data</span></code>, if the element’s value is lower than <code class="code docutils literal notranslate"><span class="pre">min_value</span></code>,
+it will be replaced with <code class="code docutils literal notranslate"><span class="pre">min_value</span></code>. If the value is higher than <code class="code docutils literal notranslate"><span class="pre">max_value</span></code>,
+it will be replaced by <code class="code docutils literal notranslate"><span class="pre">max_value</span></code>.
+Intermediate values of <code class="code docutils literal notranslate"><span class="pre">data</span></code> are returned without change.</p>
+<p>Clamp uses the following logic:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">data</span> <span class="o">&lt;</span> <span class="n">min_value</span><span class="p">:</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">min_value</span>
+<span class="k">elif</span> <span class="n">data</span> <span class="o">&gt;</span> <span class="n">max_value</span><span class="p">:</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">max_value</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – Input tensor. One of: input node, array or scalar.</li>
+<li><strong>min_value</strong> – The lower bound of the &lt;min_value;max_value&gt; range. Scalar value.</li>
+<li><strong>max_value</strong> – The upper bound of the &lt;min_value;max_value&gt; range. Scalar value.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a clamp operation on its input data element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.concat">
+<code class="descclassname">ngraph.ops.</code><code class="descname">concat</code><span class="sig-paren">(</span><em>nodes</em>, <em>axis</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#concat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.concat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Concatenate input nodes into single new node along specified axis.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nodes</strong> – The nodes we want concatenate into single new node.</li>
+<li><strong>axis</strong> – The axis along which we want to concatenate input nodes.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Return new node that is a concatenation of input nodes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.constant">
+<code class="descclassname">ngraph.ops.</code><code class="descname">constant</code><span class="sig-paren">(</span><em>value</em>, <em>dtype=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#constant"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.constant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Constant node from provided value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> – One of: array of values or scalar to initialize node with.</li>
+<li><strong>dtype</strong> – The data type of provided data.</li>
+<li><strong>name</strong> – Optional name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The Constant node initialized with provided data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.convert">
+<code class="descclassname">ngraph.ops.</code><code class="descname">convert</code><span class="sig-paren">(</span><em>node</em>, <em>new_type</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#convert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.convert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which casts input node values to specified type.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.convolution">
+<code class="descclassname">ngraph.ops.</code><code class="descname">convolution</code><span class="sig-paren">(</span><em>data_batch</em>, <em>filter_weights</em>, <em>filter_strides=None</em>, <em>filter_dilation_strides=None</em>, <em>padding_below=None</em>, <em>padding_above=None</em>, <em>data_dilation_strides=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#convolution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.convolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node performing batched convolution operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data_batch</strong> – The node providing data batch tensor.</li>
+<li><strong>filter_weights</strong> – The node providing filters tensor.</li>
+<li><strong>filter_strides</strong> – The kernel window movement strides.</li>
+<li><strong>filter_dilation_strides</strong> – The filters dilation strides.</li>
+<li><strong>padding_below</strong> – The number of zero padding elements to add on each axis below 0
+coordinate.</li>
+<li><strong>padding_above</strong> – The number of zero padding elements to add on each axis above max
+coordinate.</li>
+<li><strong>data_dilation_strides</strong> – The data batch dilation strides.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node performing batched convolution operation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.convolution_backprop_data">
+<code class="descclassname">ngraph.ops.</code><code class="descname">convolution_backprop_data</code><span class="sig-paren">(</span><em>data_batch_shape</em>, <em>filters</em>, <em>output_delta</em>, <em>window_movement_strides_forward=None</em>, <em>window_dilation_strides_forward=None</em>, <em>padding_below_forward=None</em>, <em>padding_above_forward=None</em>, <em>data_dilation_strides_forward=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#convolution_backprop_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.convolution_backprop_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node performing a batched-convolution data batch-backprop operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data_batch_shape</strong> – The shape of the data batch from forward-prop.</li>
+<li><strong>filters</strong> – The node producing the filters from forward-prop.</li>
+<li><strong>output_delta</strong> – The node producing output delta.</li>
+<li><strong>window_movement_strides_forward</strong> – The window movement strides from forward-prop.</li>
+<li><strong>window_dilation_strides_forward</strong> – The window dilation strides from forward-prop.</li>
+<li><strong>padding_below_forward</strong> – The padding-below sizes from forward-prop.</li>
+<li><strong>padding_above_forward</strong> – The padding-above sizes from forward-prop.</li>
+<li><strong>data_dilation_strides_forward</strong> – The data dilation strides from forward-prop.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.cos">
+<code class="descclassname">ngraph.ops.</code><code class="descname">cos</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#cos"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.cos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply cosine function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with cos operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.cosh">
+<code class="descclassname">ngraph.ops.</code><code class="descname">cosh</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#cosh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.cosh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply hyperbolic cosine function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with cosh operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.depth_to_space">
+<code class="descclassname">ngraph.ops.</code><code class="descname">depth_to_space</code><span class="sig-paren">(</span><em>node</em>, <em>mode</em>, <em>block_size</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#depth_to_space"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.depth_to_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rearranges input tensor from depth into blocks of spatial data.</p>
+<p>Values from the height and width dimensions are moved to the depth dimension.</p>
+<p>Input tensor has shape [N,C,H,W], where N is the batch axis, C is the channel or depth,
+H is the height and W is the width.</p>
+<p>Output node produces a tensor with shape:</p>
+<p>[N, C * <code class="code docutils literal notranslate"><span class="pre">block_size</span></code> * <code class="code docutils literal notranslate"><span class="pre">block_size</span></code>, H / <code class="code docutils literal notranslate"><span class="pre">block_size</span></code>, W / <code class="code docutils literal notranslate"><span class="pre">block_size</span></code>]</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The node with input tensor data.</li>
+<li><strong>mode</strong> – <p>Specifies how the input depth dimension is split to block coordinates</p>
+<p>blocks_first: The input is divided to [block_size, …, block_size, new_depth]
+depth_first: The input is divided to [new_depth, block_size, …, block_size]</p>
+</li>
+<li><strong>block_size</strong> – The size of the spatial block of values describing
+how the tensor’s data is to be rearranged.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing an DepthToSpace operation on its input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.dequantize">
+<code class="descclassname">ngraph.ops.</code><code class="descname">dequantize</code><span class="sig-paren">(</span><em>data</em>, <em>scale</em>, <em>zero_point</em>, <em>element_type</em>, <em>axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#dequantize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.dequantize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform dequantize operation on data from input node.</p>
+<p>Computes dequantize on the input tensor:</p>
+<div class="math notranslate nohighlight">
+\[output = (input - zero\_point) * scale\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>scale</strong> – Scale used for mapping.</li>
+<li><strong>zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>element_type</strong> – Output element type.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a dequantize operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.divide">
+<code class="descclassname">ngraph.ops.</code><code class="descname">divide</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#divide"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.divide" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies f(x) = A/B to the input nodes element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The node providing dividend data.</li>
+<li><strong>right_node</strong> – The node providing divisor data.</li>
+<li><strong>name</strong> – Optional name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise division.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.dot">
+<code class="descclassname">ngraph.ops.</code><code class="descname">dot</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>reduction_axes_count=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#dot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which performs generalized dot product of two input nodes.</p>
+<p>This operation is capable of performing scalar-tensor, matrix-vector product and matrix
+multiplication.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The node providing left hand side data.</li>
+<li><strong>right_node</strong> – The node providing right hand side data.</li>
+<li><strong>reduction_axes_count</strong> – The number of axes to reduce during dot-product.</li>
+<li><strong>name</strong> – The optional name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing dot-product on input two nodes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.elu">
+<code class="descclassname">ngraph.ops.</code><code class="descname">elu</code><span class="sig-paren">(</span><em>data</em>, <em>alpha</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#elu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.elu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Exponential Linear Unit operation element-wise on data from input node.</p>
+<p>Computes exponential linear: alpha * (exp(data) - 1) if &lt; 0, data otherwise.</p>
+<p>For more information refer to:
+<a class="reference external" href="http://arxiv.org/abs/1511.07289">Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – Input tensor. One of: input node, array or scalar.</li>
+<li><strong>alpha</strong> – Scalar multiplier for negative values.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing an ELU operation on its input data element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.equal">
+<code class="descclassname">ngraph.ops.</code><code class="descname">equal</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#equal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which checks if input nodes are equal element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node for equal operation.</li>
+<li><strong>right_node</strong> – The second input node for equal operation.</li>
+<li><strong>name</strong> – The optional name for output new node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise equality check.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.exp">
+<code class="descclassname">ngraph.ops.</code><code class="descname">exp</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#exp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.exp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies exp to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The node providing data for operation.</li>
+<li><strong>name</strong> – The optional name for new output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing natural exponential operation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.fake_quantize">
+<code class="descclassname">ngraph.ops.</code><code class="descname">fake_quantize</code><span class="sig-paren">(</span><em>data</em>, <em>input_low</em>, <em>input_high</em>, <em>output_low</em>, <em>output_high</em>, <em>levels</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#fake_quantize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.fake_quantize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform an element-wise linear quantization on input data.</p>
+<p>Input floating point values are quantized into a discrete set of floating point values.</p>
+<p>Fake quantize uses the following logic:</p>
+<div class="math notranslate nohighlight">
+\[output =
+\dfrac{round( \dfrac{data - input\_low}{(input\_high - input\_low)\cdot (levels-1)})}
+{(levels-1)\cdot (output\_high - output\_low)} + output\_low\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>input_low</strong> – The node with the minimum for input values.</li>
+<li><strong>input_high</strong> – The node with the maximum for input values.</li>
+<li><strong>output_low</strong> – The node with the minimum quantized value.</li>
+<li><strong>output_high</strong> – The node with the maximum quantized value.</li>
+<li><strong>levels</strong> – The number of quantization levels. Integer value.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with quantized value.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.floor">
+<code class="descclassname">ngraph.ops.</code><code class="descname">floor</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#floor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.floor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies floor to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The input node providing data.</li>
+<li><strong>name</strong> – The optional name for new output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise floor operation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.gelu">
+<code class="descclassname">ngraph.ops.</code><code class="descname">gelu</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#gelu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.gelu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Gaussian Error Linear Unit operation element-wise on data from input node.</p>
+<p>Computes GELU function:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = 0.5\cdot x\cdot(1 + erf( \dfrac{x}{\sqrt{2}})\]</div>
+<p>For more information refer to:
+<a class="reference external" href="https://arxiv.org/pdf/1606.08415.pdf">Gaussian Error Linear Unit (GELU)</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – Input tensor. One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a GELU operation on its input data element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.gemm">
+<code class="descclassname">ngraph.ops.</code><code class="descname">gemm</code><span class="sig-paren">(</span><em>A</em>, <em>B</em>, <em>C</em>, <em>alpha</em>, <em>beta</em>, <em>transA</em>, <em>transB</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#gemm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.gemm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform General matrix-matrix multiplication on input tensors A, B and C.</p>
+<p>Computes:</p>
+<div class="math notranslate nohighlight">
+\[Y = alpha\cdot A'\cdot B' +  beta\cdot C\]</div>
+<p><code class="code docutils literal notranslate"><span class="pre">A'</span></code> is the transpose of matrix <code class="code docutils literal notranslate"><span class="pre">A</span></code> with shape (M, K),
+if <code class="code docutils literal notranslate"><span class="pre">transA</span></code> is <code class="code docutils literal notranslate"><span class="pre">True</span></code>, otherwise <code class="code docutils literal notranslate"><span class="pre">A</span></code> with shape (K, N).</p>
+<p><code class="code docutils literal notranslate"><span class="pre">B'</span></code> is the transpose of matrix <code class="code docutils literal notranslate"><span class="pre">B</span></code> with shape (K, N),
+if <code class="code docutils literal notranslate"><span class="pre">transB</span></code> is <code class="code docutils literal notranslate"><span class="pre">True</span></code>, otherwise <code class="code docutils literal notranslate"><span class="pre">B</span></code> with shape (N, K).</p>
+<p><code class="code docutils literal notranslate"><span class="pre">C</span></code>: Matrix broadcastable to shape (M, N).</p>
+<p><code class="code docutils literal notranslate"><span class="pre">Y</span></code>: Matrix with shape (M, N).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>A</strong> – The node with input tensor A.</li>
+<li><strong>B</strong> – The node with input tensor B.</li>
+<li><strong>C</strong> – The node with input tensor C.</li>
+<li><strong>alpha</strong> – Scalar multiplier for the product of input tensors A * B.</li>
+<li><strong>beta</strong> – Scalar multiplier for input tensor C.</li>
+<li><strong>transA</strong> – Whether A should be transposed. Boolean value.</li>
+<li><strong>transB</strong> – Whether B should be transposed. Boolean value.</li>
+<li><strong>name</strong> – Optional name for the output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Return node with tensor of shape (M, N).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.get_output_element">
+<code class="descclassname">ngraph.ops.</code><code class="descname">get_output_element</code><span class="sig-paren">(</span><em>data</em>, <em>index</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#get_output_element"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.get_output_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the n-th element of the input tuple.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.greater">
+<code class="descclassname">ngraph.ops.</code><code class="descname">greater</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#greater"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.greater" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which checks if left input node is greater than the right node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node providing data.</li>
+<li><strong>right_node</strong> – The second input node providing data.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise check whether left_node is greater than right_node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.greater_eq">
+<code class="descclassname">ngraph.ops.</code><code class="descname">greater_eq</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#greater_eq"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.greater_eq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which checks if left node is greater or equal to the right node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node providing data.</li>
+<li><strong>right_node</strong> – The second input node providing data.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise check whether left_node is greater than or equal
+right_node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.grn">
+<code class="descclassname">ngraph.ops.</code><code class="descname">grn</code><span class="sig-paren">(</span><em>data</em>, <em>bias</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#grn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.grn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Global Response Normalization with L2 norm (across channels only).</p>
+<p>Computes GRN operation on channels for input tensor:</p>
+<div class="math notranslate nohighlight">
+\[output_i = \dfrac{input_i}{\sqrt{\sum_{i}^{C} input_i}}\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>bias</strong> – The bias added to the variance. Scalar value.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a GRN operation on tensor’s channels.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.group_convolution">
+<code class="descclassname">ngraph.ops.</code><code class="descname">group_convolution</code><span class="sig-paren">(</span><em>data_batch</em>, <em>filters</em>, <em>window_movement_strides</em>, <em>window_dilation_strides</em>, <em>padding_below</em>, <em>padding_above</em>, <em>data_dilation_strides</em>, <em>groups</em>, <em>pad_type='EXPLICIT'</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#group_convolution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.group_convolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Group Convolution operation on data from input node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node producing input data.</li>
+<li><strong>filters</strong> – The node producing filters data.</li>
+<li><strong>window_movement_strides</strong> – The strides along each feature axis.</li>
+<li><strong>window_dilation_strides</strong> – The dilations along each feature axis.</li>
+<li><strong>padding_below</strong> – The padding added below each feature axis.</li>
+<li><strong>padding_above</strong> – The padding added above each feature axis.</li>
+<li><strong>groups</strong> – The number of groups the input channels and output channels
+are divided into.</li>
+<li><strong>pad_type</strong> – <p>Name describes how to perform padding.
+EXPLICITI: Pad dimensions are explicity specified</p>
+<dl class="docutils">
+<dt>SAME_LOWER: Pad dimensions computed to match input shape</dt>
+<dd>Ceil(num_dims/2) at the beginning and
+Floor(num_dims/2) at the end</dd>
+<dt>SAME_UPPER: Pad dimensions computed to match input shape</dt>
+<dd>Floor(num_dims/2) at the beginning and
+Ceil(num_dims/2) at the end</dd>
+</dl>
+<p>VALID: No padding</p>
+</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Data_dilation_strides:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">The dilations along data.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a Group Convolution operation on tensor from input node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.hard_sigmoid">
+<code class="descclassname">ngraph.ops.</code><code class="descname">hard_sigmoid</code><span class="sig-paren">(</span><em>data</em>, <em>alpha</em>, <em>beta</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#hard_sigmoid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.hard_sigmoid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Hard Sigmoid operation element-wise on data from input node.</p>
+<p>Hard Sigmoid uses the following logic:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">data</span> <span class="o">+</span> <span class="n">beta</span><span class="p">))</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>alpha</strong> – Alpha parameter. Scalar value.</li>
+<li><strong>beta</strong> – Beta parameter. Scalar value.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a Hard Sigmoid element-wise on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.less">
+<code class="descclassname">ngraph.ops.</code><code class="descname">less</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#less"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.less" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which checks if left input node is less than the right node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node providing data.</li>
+<li><strong>right_node</strong> – The second input node providing data.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise check whether left_node is less than the right_node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.less_eq">
+<code class="descclassname">ngraph.ops.</code><code class="descname">less_eq</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#less_eq"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.less_eq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which checks if left input node is less or equal the right node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node providing data.</li>
+<li><strong>right_node</strong> – The second input node providing data.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise check whether left_node is less than or equal the
+right_node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.log">
+<code class="descclassname">ngraph.ops.</code><code class="descname">log</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies natural logarithm to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The input node providing data for operation.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing log operation element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.logical_and">
+<code class="descclassname">ngraph.ops.</code><code class="descname">logical_and</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#logical_and"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.logical_and" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which perform logical and operation on input nodes element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node providing data.</li>
+<li><strong>right_node</strong> – The second input node providing data.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing logical and operation on input nodes corresponding elements.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.logical_not">
+<code class="descclassname">ngraph.ops.</code><code class="descname">logical_not</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#logical_not"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.logical_not" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies logical negation to the input node elementwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.logical_or">
+<code class="descclassname">ngraph.ops.</code><code class="descname">logical_or</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#logical_or"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.logical_or" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which performs logical or operation on input nodes element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node providing data.</li>
+<li><strong>right_node</strong> – The second input node providing data.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing logical or operation on input nodes corresponding elements.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.lrn">
+<code class="descclassname">ngraph.ops.</code><code class="descname">lrn</code><span class="sig-paren">(</span><em>data</em>, <em>alpha=1</em>, <em>beta=0.5</em>, <em>bias=1</em>, <em>size=5</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#lrn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.lrn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a node which performs element-wise Local Response Normalization (LRN) operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – Input data.</li>
+<li><strong>alpha</strong> – A scale factor (usually positive).</li>
+<li><strong>beta</strong> – An exponent.</li>
+<li><strong>bias</strong> – An offset (usually positive) to avoid dividing by 0.</li>
+<li><strong>size</strong> – Width of the 1-D normalization window.</li>
+<li><strong>name</strong> – An optional name of the output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node which performs LRN.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.max">
+<code class="descclassname">ngraph.ops.</code><code class="descname">max</code><span class="sig-paren">(</span><em>node</em>, <em>reduction_axes=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#max"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.max" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max-reduction operation on input tensor, eliminating the specified reduction axes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> – The tensor we want to max-reduce.</li>
+<li><strong>reduction_axes</strong> – The axes to eliminate through max operation.</li>
+<li><strong>name</strong> – Optional name for output node.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.max_pool">
+<code class="descclassname">ngraph.ops.</code><code class="descname">max_pool</code><span class="sig-paren">(</span><em>x</em>, <em>window_shape</em>, <em>strides=None</em>, <em>padding_above=None</em>, <em>padding_below=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#max_pool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.max_pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return max pooling node.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.maximum">
+<code class="descclassname">ngraph.ops.</code><code class="descname">maximum</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#maximum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.maximum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies the maximum operation to input nodes elementwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.min">
+<code class="descclassname">ngraph.ops.</code><code class="descname">min</code><span class="sig-paren">(</span><em>node</em>, <em>reduction_axes=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#min"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.min" title="Permalink to this definition">¶</a></dt>
+<dd><p>Min-reduction operation on input tensor, eliminating the specified reduction axes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> – The tensor we want to min-reduce.</li>
+<li><strong>reduction_axes</strong> – The axes to eliminate through min operation.</li>
+<li><strong>name</strong> – Optional name for output node.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.minimum">
+<code class="descclassname">ngraph.ops.</code><code class="descname">minimum</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#minimum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.minimum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies the minimum operation to input nodes elementwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.multiply">
+<code class="descclassname">ngraph.ops.</code><code class="descname">multiply</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#multiply"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.multiply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies f(x) = A*B to the input nodes elementwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.mvn">
+<code class="descclassname">ngraph.ops.</code><code class="descname">mvn</code><span class="sig-paren">(</span><em>data</em>, <em>axes</em>, <em>normalize_variance</em>, <em>eps</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#mvn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.mvn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Mean Variance Normalization operation on data from input node.</p>
+<p>Computes MVN on the input tensor <code class="code docutils literal notranslate"><span class="pre">data</span></code> (called <cite>X</cite>) using formula:</p>
+<div class="math notranslate nohighlight">
+\[Y = \dfrac{X-EX}{\sqrt{E(X-EX)^2}}\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>axes</strong> – A list of axes, along which to reduce. Array of integers.</li>
+<li><strong>normalize_variance</strong> – Flag that denotes if mean values are shared across channels.
+Boolen value.</li>
+<li><strong>eps</strong> – The number added to the variance to avoid division by zero
+when normalizing the value. Scalar value.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a MVN operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.negative">
+<code class="descclassname">ngraph.ops.</code><code class="descname">negative</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#negative"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.negative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies f(x) = -x to the input node elementwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.not_equal">
+<code class="descclassname">ngraph.ops.</code><code class="descname">not_equal</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#not_equal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.not_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which checks if input nodes are unequal element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The first input node for not-equal operation.</li>
+<li><strong>right_node</strong> – The second input node for not-equal operation.</li>
+<li><strong>name</strong> – The optional name for output new node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node performing element-wise inequality check.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.one_hot">
+<code class="descclassname">ngraph.ops.</code><code class="descname">one_hot</code><span class="sig-paren">(</span><em>node</em>, <em>shape</em>, <em>one_hot_axis</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#one_hot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.one_hot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create node performing one-hot encoding on input data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The input node providing data for operation.</li>
+<li><strong>shape</strong> – The output node shape including the new one-hot axis.</li>
+<li><strong>one_hot_axis</strong> – The index within the output shape of the new one-hot axis.</li>
+<li><strong>name</strong> – The optional name for new output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node performing one-hot operation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.pad">
+<code class="descclassname">ngraph.ops.</code><code class="descname">pad</code><span class="sig-paren">(</span><em>data_batch</em>, <em>value</em>, <em>padding_below=None</em>, <em>padding_above=None</em>, <em>padding_in=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#pad"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.pad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return padding node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data_batch</strong> – The input node providing data.</li>
+<li><strong>value</strong> – The node producing the scalar value to be inserted for padding.</li>
+<li><strong>padding_below</strong> – The padding-below widths.</li>
+<li><strong>padding_above</strong> – The padding-above widths.</li>
+<li><strong>padding_in</strong> – The interior-padding widths.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Return node that represents a padding of input nodes data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.parameter">
+<code class="descclassname">ngraph.ops.</code><code class="descname">parameter</code><span class="sig-paren">(</span><em>shape</em>, <em>dtype=&lt;class 'numpy.float32'&gt;</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#parameter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.parameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an ngraph Parameter object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.power">
+<code class="descclassname">ngraph.ops.</code><code class="descname">power</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#power"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.power" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which perform element-wise exponentiation operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The node providing the base of operation.</li>
+<li><strong>right_node</strong> – The node providing the exponent of operation.</li>
+<li><strong>name</strong> – The optional name for the new output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing element-wise exponentiation operation on input nodes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.prelu">
+<code class="descclassname">ngraph.ops.</code><code class="descname">prelu</code><span class="sig-paren">(</span><em>data</em>, <em>slope</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#prelu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.prelu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Parametrized Relu operation element-wise on data from input node.</p>
+<p>PRelu uses the following logic:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">data</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span> <span class="o">*</span> <span class="n">slope</span>
+<span class="k">elif</span> <span class="n">data</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>slope</strong> – The node with the multipliers for negative values.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a PRelu operation on tensor’s channels.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.prod">
+<code class="descclassname">ngraph.ops.</code><code class="descname">prod</code><span class="sig-paren">(</span><em>node</em>, <em>reduction_axes=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#prod"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.prod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Product-reduction operation on input tensor, eliminating the specified reduction axes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The tensor we want to product-reduce.</li>
+<li><strong>reduction_axes</strong> – The axes to eliminate through product operation.</li>
+<li><strong>name</strong> – Optional name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing product-reduction operation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.quantize">
+<code class="descclassname">ngraph.ops.</code><code class="descname">quantize</code><span class="sig-paren">(</span><em>data</em>, <em>scale</em>, <em>zero_point</em>, <em>new_type</em>, <em>axes</em>, <em>round_mode</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#quantize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.quantize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform quantize operation on data from input node.</p>
+<p>Computes quantize on the input tensor:</p>
+<div class="math notranslate nohighlight">
+\[output = ROUND((input / scale) + zero\_point)\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>scale</strong> – Scale used for mapping.</li>
+<li><strong>zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>new_type</strong> – Output element type.</li>
+<li><strong>round_mode</strong> – <p>Number describes how to perform ROUND function.</p>
+<p>ROUND_NEAREST_TOWARD_INFINITY: Round to nearest integer. In case of two
+equidistant integers round away from zero e.g. 2.5 -&gt; 3,  -3.5 -&gt; -4</p>
+<p>ROUND_NEAREST_TOWARD_ZERO: Round to nearest integer. In case of two equidistant
+integers round toward zero e.g. 2.5 -&gt; 2,  -3.5 -&gt; -3</p>
+<p>ROUND_NEAREST_UPWARD: Round to nearest integer. In case of two equidistant
+integers round up e.g. 2.5 -&gt; 2,  -3.5 -&gt; -3</p>
+<p>ROUND_NEAREST_DOWNWARD: Round to nearest integer. In case of two equidistant
+integers round down e.g. 2.5 -&gt; 2,  -3.5 -&gt; -4</p>
+<p>ROUND_NEAREST_TOWARD_EVEN: Round to nearest integer. In case of two equidistant
+integers round down e.g. 2.5 -&gt; 2,  -3.5 -&gt; -4</p>
+<p>ROUND_TOWARD_INFINITY: Round to nearest integer away from zero.</p>
+<p>ROUND_TOWARD_ZERO: Round to nearest integer toward zero.</p>
+<p>ROUND_UP: Round to nearest integer toward infinity (ceiling).</p>
+<p>ROUND_DOWN: Round to nearest integer toward negative infinity (floor).</p>
+</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a quantize operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.quantized_convolution">
+<code class="descclassname">ngraph.ops.</code><code class="descname">quantized_convolution</code><span class="sig-paren">(</span><em>data</em>, <em>filters</em>, <em>window_movement_strides</em>, <em>window_dilation_strides</em>, <em>padding_below</em>, <em>padding_above</em>, <em>data_dilation_strides</em>, <em>input_scale</em>, <em>input_zero_point</em>, <em>filter_scale</em>, <em>filter_zero_point</em>, <em>output_scale</em>, <em>output_zero_point</em>, <em>output_type</em>, <em>input_axes</em>, <em>filter_axes</em>, <em>output_axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#quantized_convolution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.quantized_convolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform quantized convolution operation on data from input node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node producing the input data batch tensor.</li>
+<li><strong>filters</strong> – The node producing the filters tensor.</li>
+<li><strong>window_movement_strides</strong> – The window movement strides.</li>
+<li><strong>window_dilation_strides</strong> – he window dilation strides.</li>
+<li><strong>padding_below</strong> – The padding-below sizes.</li>
+<li><strong>padding_above</strong> – The padding-above sizes.</li>
+<li><strong>data_dilation_strides</strong> – The data dilation strides.</li>
+<li><strong>input_scale</strong> – Scale to transform the input.</li>
+<li><strong>input_zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>filter_scale</strong> – Scale to transform the filters.</li>
+<li><strong>filter_zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>output_scale</strong> – Scale to transform the output.</li>
+<li><strong>output_zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>output_type</strong> – Output element type.</li>
+<li><strong>input_axes</strong> – Input axes set for channel wise quantization.</li>
+<li><strong>filter_axes</strong> – Filter axes set for channel wise quantization.</li>
+<li><strong>output_type</strong> – Output axes set for channel wise quantization.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a quantized convolution operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.quantized_dot">
+<code class="descclassname">ngraph.ops.</code><code class="descname">quantized_dot</code><span class="sig-paren">(</span><em>input0</em>, <em>input1</em>, <em>reduction_axes_count</em>, <em>input0_scale</em>, <em>input0_zero_point</em>, <em>input1_scale</em>, <em>input1_zero_point</em>, <em>output_scale</em>, <em>output_zero_point</em>, <em>output_type</em>, <em>input0_axes</em>, <em>input1_axes</em>, <em>output_axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#quantized_dot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.quantized_dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform quantized dot operation on data from input node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input0</strong> – The node producing the input data batch tensor.</li>
+<li><strong>input1</strong> – The node producing the filters tensor.</li>
+<li><strong>reduction_axes_count</strong> – Number of reduction axes.</li>
+<li><strong>input0_scale</strong> – Scale to transform the input.</li>
+<li><strong>input0_zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>input1_scale</strong> – Scale to transform the filters.</li>
+<li><strong>input1_zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>output_scale</strong> – Scale to transform the output.</li>
+<li><strong>output_zero_point</strong> – Zero point used for mapping.</li>
+<li><strong>output_type</strong> – Output element type.</li>
+<li><strong>input0_axes</strong> – Input0 axes set for channel wise quantization</li>
+<li><strong>input1_axes</strong> – Input1 axes set for channel wise quantization</li>
+<li><strong>output_axes</strong> – Output axes set for channel wise quantization</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a quantized dot operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.relu">
+<code class="descclassname">ngraph.ops.</code><code class="descname">relu</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#relu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.relu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform rectified linear unit operation on input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – The optional ouptut node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing relu operation on its input element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.replace_slice">
+<code class="descclassname">ngraph.ops.</code><code class="descname">replace_slice</code><span class="sig-paren">(</span><em>dest_node</em>, <em>src_node</em>, <em>lower_bounds</em>, <em>upper_bounds</em>, <em>strides=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#replace_slice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.replace_slice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of <cite>dest_node</cite> with the specified slice overwritten by the <cite>src_node</cite> data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dest_node</strong> – The node providing data to be overwritten by the specified slice.</li>
+<li><strong>src_node</strong> – The node providing data for overwriting.</li>
+<li><strong>lower_bounds</strong> – The (inclusive) lower-bound coordinates for the replaced slice.</li>
+<li><strong>upper_bounds</strong> – The (exclusive) upper-bound coordinates for the replaced slice.</li>
+<li><strong>strides</strong> – The strides for the replaced slice.</li>
+<li><strong>name</strong> – The optional name for the output new node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node with copy of <cite>dest_node</cite> with the specified slice overwritten
+by the <cite>src_node</cite>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.reshape">
+<code class="descclassname">ngraph.ops.</code><code class="descname">reshape</code><span class="sig-paren">(</span><em>node</em>, <em>output_shape</em>, <em>input_order=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#reshape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.reshape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return reshaped node according to provided parameters.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> – The tensor we want to reshape.</li>
+<li><strong>input_order</strong> – The order in which to iterate over input axes of input tensor.</li>
+<li><strong>output_shape</strong> – The new shape for input tensor.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.reverse">
+<code class="descclassname">ngraph.ops.</code><code class="descname">reverse</code><span class="sig-paren">(</span><em>node</em>, <em>reversed_axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#reverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform axis-reverse operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The input node on which operation will be carried out.</li>
+<li><strong>reversed_axes</strong> – The list of indices of axes to be reversed.</li>
+<li><strong>name</strong> – The optional name of the output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node with reversed axes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.rnn_cell">
+<code class="descclassname">ngraph.ops.</code><code class="descname">rnn_cell</code><span class="sig-paren">(</span><em>X</em>, <em>H_t</em>, <em>W</em>, <em>R</em>, <em>B</em>, <em>hidden_size</em>, <em>activations</em>, <em>activation_alpha</em>, <em>activation_beta</em>, <em>clip</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#rnn_cell"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.rnn_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform RNNCell operation on tensor from input node.</p>
+<p>It follows notation and equations defined as in ONNX standard:
+<a class="reference external" href="https://github.com/onnx/onnx/blob/master/docs/Operators.md#RNN">https://github.com/onnx/onnx/blob/master/docs/Operators.md#RNN</a></p>
+<p>Note this class represents only single <em>cell</em> and not whole RNN <em>layer</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>X</strong> – The input tensor with shape: [batch_size, input_size].</li>
+<li><strong>H_t</strong> – The hidden state tensor at current time step with shape:
+[batch_size, hidden_size].</li>
+<li><strong>W</strong> – The weight tensor with shape: [hidden_size, input_size].</li>
+<li><strong>R</strong> – The recurrence weight tensor with shape: [hidden_size,
+hidden_size].</li>
+<li><strong>B</strong> – The bias tensor for input gate with shape: [2*hidden_size].</li>
+<li><strong>hidden_size</strong> – The number of hidden units for recurrent cell.</li>
+<li><strong>activations</strong> – The vector of activation functions used inside recurrent cell.</li>
+<li><strong>activation_alpha</strong> – The vector of alpha parameters for activation functions in
+order respective to activation list.</li>
+<li><strong>activation_beta</strong> – The vector of beta parameters for activation functions in order
+respective to activation list.</li>
+<li><strong>clip</strong> – The value defining clipping range [-clip, clip] on input of
+activation functions.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a RNNCell operation on tensor from input node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.scale_shift">
+<code class="descclassname">ngraph.ops.</code><code class="descname">scale_shift</code><span class="sig-paren">(</span><em>data</em>, <em>scale</em>, <em>shift</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#scale_shift"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.scale_shift" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform ScaleShift transformation on input node.</p>
+<p>Computes ScaleShift:</p>
+<div class="math notranslate nohighlight">
+\[Y = scale\cdot data + shift\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>scale</strong> – The node with data tensor that scale input data.</li>
+<li><strong>shift</strong> – The node with data tensor that shift input data.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a ScaleShift operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.select">
+<code class="descclassname">ngraph.ops.</code><code class="descname">select</code><span class="sig-paren">(</span><em>selection_node</em>, <em>input_node1</em>, <em>input_node2</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#select"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.select" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform an element-wise selection operation on input tensors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>selection_node</strong> – The node providing selection values of <cite>bool</cite> type.</li>
+<li><strong>input_node1</strong> – The node providing data to be selected if respective <cite>selection_node</cite>
+item value is <cite>True</cite>.</li>
+<li><strong>input_node2</strong> – The node providing data to be selected if respective <cite>selection_node</cite>
+item value is <cite>False</cite>.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node with values selected according to provided arguments.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.shuffle_channels">
+<code class="descclassname">ngraph.ops.</code><code class="descname">shuffle_channels</code><span class="sig-paren">(</span><em>data</em>, <em>axis</em>, <em>groups</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#shuffle_channels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.shuffle_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform permutation on data in the channel dimension of the input tensor.</p>
+<p>The operation is the equivalent with the following transformation of the input tensor
+<code class="code docutils literal notranslate"><span class="pre">data</span></code> of shape [N, C, H, W]:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">data_reshaped</span></code> = reshape(<code class="code docutils literal notranslate"><span class="pre">data</span></code>, [N, group, C / group, H * W])</p>
+<p><code class="code docutils literal notranslate"><span class="pre">data_trnasposed</span></code> = transpose(<code class="code docutils literal notranslate"><span class="pre">data_reshaped</span></code>, [0, 2, 1, 3])</p>
+<p><code class="code docutils literal notranslate"><span class="pre">output</span></code> = reshape(<code class="code docutils literal notranslate"><span class="pre">data_trnasposed</span></code>, [N, C, H, W])</p>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Inputs</span><span class="p">:</span> <span class="n">tensor</span> <span class="n">of</span> <span class="n">shape</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="p">[[[[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">1.</span><span class="p">],</span> <span class="p">[</span> <span class="mf">2.</span><span class="p">,</span>  <span class="mf">3.</span><span class="p">]],</span>
+                 <span class="p">[[</span> <span class="mf">4.</span><span class="p">,</span>  <span class="mf">5.</span><span class="p">],</span> <span class="p">[</span> <span class="mf">6.</span><span class="p">,</span>  <span class="mf">7.</span><span class="p">]],</span>
+                 <span class="p">[[</span> <span class="mf">8.</span><span class="p">,</span>  <span class="mf">9.</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">11.</span><span class="p">]],</span>
+                 <span class="p">[[</span><span class="mf">12.</span><span class="p">,</span> <span class="mf">13.</span><span class="p">],</span> <span class="p">[</span><span class="mf">14.</span><span class="p">,</span> <span class="mf">15.</span><span class="p">]],</span>
+                 <span class="p">[[</span><span class="mf">16.</span><span class="p">,</span> <span class="mf">17.</span><span class="p">],</span> <span class="p">[</span><span class="mf">18.</span><span class="p">,</span> <span class="mf">19.</span><span class="p">]],</span>
+                 <span class="p">[[</span><span class="mf">20.</span><span class="p">,</span> <span class="mf">21.</span><span class="p">],</span> <span class="p">[</span><span class="mf">22.</span><span class="p">,</span> <span class="mf">23.</span><span class="p">]]]]</span>
+
+        <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">groups</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="n">Output</span><span class="p">:</span> <span class="n">tensor</span> <span class="n">of</span> <span class="n">shape</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[[[[</span> <span class="mf">0.</span><span class="p">,</span>  <span class="mf">1.</span><span class="p">],</span> <span class="p">[</span> <span class="mf">2.</span><span class="p">,</span>  <span class="mf">3.</span><span class="p">]],</span>
+                   <span class="p">[[</span> <span class="mf">8.</span><span class="p">,</span>  <span class="mf">9.</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">11.</span><span class="p">]],</span>
+                   <span class="p">[[</span><span class="mf">16.</span><span class="p">,</span> <span class="mf">17.</span><span class="p">],</span> <span class="p">[</span><span class="mf">18.</span><span class="p">,</span> <span class="mf">19.</span><span class="p">]],</span>
+                   <span class="p">[[</span> <span class="mf">4.</span><span class="p">,</span>  <span class="mf">5.</span><span class="p">],</span> <span class="p">[</span> <span class="mf">6.</span><span class="p">,</span>  <span class="mf">7.</span><span class="p">]],</span>
+                   <span class="p">[[</span><span class="mf">12.</span><span class="p">,</span> <span class="mf">13.</span><span class="p">],</span> <span class="p">[</span><span class="mf">14.</span><span class="p">,</span> <span class="mf">15.</span><span class="p">]],</span>
+                   <span class="p">[[</span><span class="mf">20.</span><span class="p">,</span> <span class="mf">21.</span><span class="p">],</span> <span class="p">[</span><span class="mf">22.</span><span class="p">,</span> <span class="mf">23.</span><span class="p">]]]]</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> – The node with input tensor.</li>
+<li><strong>axis</strong> – Channel dimension index in the data tensor.
+A negative value means that the index should be calculated
+from the back of the input data shape.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>:param group:The channel dimension specified by the axis parameter</dt>
+<dd>should be split into this number of groups.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> – Optional output node name.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The new node performing a permutation on data in the channel dimension
+of the input tensor.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.sign">
+<code class="descclassname">ngraph.ops.</code><code class="descname">sign</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#sign"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.sign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform element-wise sign operation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – The optional new name for ouptut node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The node with mapped elements of the input tensor to -1 (if it is negative),
+0 (if it is zero), or 1 (if it is positive).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.sin">
+<code class="descclassname">ngraph.ops.</code><code class="descname">sin</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#sin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.sin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply sine function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with sin operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.sinh">
+<code class="descclassname">ngraph.ops.</code><code class="descname">sinh</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#sinh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.sinh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply hyperbolic sine function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with sin operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.slice">
+<code class="descclassname">ngraph.ops.</code><code class="descname">slice</code><span class="sig-paren">(</span><em>node</em>, <em>lower_bounds</em>, <em>upper_bounds</em>, <em>strides=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#slice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.slice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take a slice of an input tensor, (sub-tensor) that resides within a bounding box.</p>
+<p>Optionally this function may be provided with stride along each axis.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The tensor we want to slice.</li>
+<li><strong>lower_bounds</strong> – The (inclusive) lower-bound coordinates for the tensor slice.</li>
+<li><strong>upper_bounds</strong> – The (exclusive) upper-bound coordinates for the tensor slice.</li>
+<li><strong>strides</strong> – The strides for the tensor slice.</li>
+<li><strong>name</strong> – Optional name for the output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Return node that represents a slice of input nodes data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.softmax">
+<code class="descclassname">ngraph.ops.</code><code class="descname">softmax</code><span class="sig-paren">(</span><em>node</em>, <em>axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#softmax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.softmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply softmax operation on each element of input tensor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The tensor providing input data.</li>
+<li><strong>axes</strong> – The list of axes indices which are used to calculate divider of
+the softmax function.</li>
+<li><strong>name</strong> – The optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node with softmax operation applied on each element.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.space_to_depth">
+<code class="descclassname">ngraph.ops.</code><code class="descname">space_to_depth</code><span class="sig-paren">(</span><em>data</em>, <em>mode</em>, <em>block_size</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#space_to_depth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.space_to_depth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform SpaceToDepth operation on the input tensor.</p>
+<p>SpaceToDepth rearranges blocks of spatial data into depth.
+The operator returns a copy of the input tensor where values from the height
+and width dimensions are moved to the depth dimension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>mode</strong> – <p>Specifies how the output depth dimension is gathered from block coordinates.</p>
+<p>blocks_first: The output depth is gathered from [block_size, …, block_size, C]
+depth_first: The output depth is gathered from [C, block_size, …, block_size]</p>
+</li>
+<li><strong>block_size</strong> – The size of the block of values to be moved. Scalar value.</li>
+<li><strong>name</strong> – Optional output node name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a SpaceToDepth operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.sqrt">
+<code class="descclassname">ngraph.ops.</code><code class="descname">sqrt</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#sqrt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.sqrt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies square root to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node with sqrt operation applied element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.squared_difference">
+<code class="descclassname">ngraph.ops.</code><code class="descname">squared_difference</code><span class="sig-paren">(</span><em>x1</em>, <em>x2</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#squared_difference"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.squared_difference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform an element-wise squared difference between two tensors.</p>
+<div class="math notranslate nohighlight">
+\[y[i] = (x_1[i] - x_2[i])^2\]</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x1</strong> – The node with first input tensor.</li>
+<li><strong>x2</strong> – The node with second input tensor.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a squared difference between two tensors.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.squeeze">
+<code class="descclassname">ngraph.ops.</code><code class="descname">squeeze</code><span class="sig-paren">(</span><em>data</em>, <em>axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#squeeze"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.squeeze" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform squeeze operation on input tensor.</p>
+<p>Remove single-dimensional entries from the shape of a tensor.
+Takes a parameter <code class="code docutils literal notranslate"><span class="pre">axes</span></code> with a list of axes to squeeze.
+If <code class="code docutils literal notranslate"><span class="pre">axes</span></code> is not provided, all the single dimensions will be removed from the shape.
+If an <code class="code docutils literal notranslate"><span class="pre">axis</span></code> is selected with shape entry not equal to one, an error is raised.</p>
+<p>For example:</p>
+<blockquote>
+<div><p>Inputs: tensor with shape [1, 2, 1, 3, 1, 1], axes=[2, 4]</p>
+<p>Result: tensor with shape [1, 2, 3, 1]</p>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>axes</strong> – List of non-negative integers, indicate the dimensions to squeeze.
+One of: input node or array.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing a squeeze operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.subtract">
+<code class="descclassname">ngraph.ops.</code><code class="descname">subtract</code><span class="sig-paren">(</span><em>left_node</em>, <em>right_node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#subtract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.subtract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies f(x) = A-B to the input nodes element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>left_node</strong> – The node providing data for left hand side of operator.</li>
+<li><strong>right_node</strong> – The node providing data for right hand side of operator.</li>
+<li><strong>name</strong> – The optional name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new output node performing subtraction operation on both tensors element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.sum">
+<code class="descclassname">ngraph.ops.</code><code class="descname">sum</code><span class="sig-paren">(</span><em>node</em>, <em>reduction_axes=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#sum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform element-wise sums of the input tensor, eliminating the specified reduction axes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – The node providing data for operation.</li>
+<li><strong>reduction_axes</strong> – The axes to eliminate through summation.</li>
+<li><strong>name</strong> – The optional new name for ouptut node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing summation along <cite>reduction_axes</cite> element-wise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.tan">
+<code class="descclassname">ngraph.ops.</code><code class="descname">tan</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#tan"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.tan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply tangent function on the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with tan operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.tanh">
+<code class="descclassname">ngraph.ops.</code><code class="descname">tanh</code><span class="sig-paren">(</span><em>node</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#tanh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.tanh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return node which applies hyperbolic tangent to the input node element-wise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – One of: input node, array or scalar.</li>
+<li><strong>name</strong> – Optional new name for output node.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">New node with tanh operation applied on it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.topk">
+<code class="descclassname">ngraph.ops.</code><code class="descname">topk</code><span class="sig-paren">(</span><em>data</em>, <em>k</em>, <em>kaxis=-1</em>, <em>cmax=True</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#topk"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.topk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a node which performs TopK.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – Input data.</li>
+<li><strong>kaxis</strong> – TopK Axis.</li>
+<li><strong>k</strong> – <ol class="upperalpha" start="11">
+<li></li>
+</ol>
+</li>
+<li><strong>cmax</strong> – Compute TopK largest (True) or smallest (False)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node which performs TopK (both indices and values)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.ops.unsqueeze">
+<code class="descclassname">ngraph.ops.</code><code class="descname">unsqueeze</code><span class="sig-paren">(</span><em>data</em>, <em>axes</em>, <em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/ops.html#unsqueeze"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.ops.unsqueeze" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform unsqueeze operation on input tensor.</p>
+<p>Insert single-dimensional entries to the shape of a tensor. Takes one required argument axes,
+a list of dimensions that will be inserted.
+Dimension indices in axes are as seen in the output tensor.</p>
+<dl class="docutils">
+<dt>For example: Inputs: tensor with shape [3, 4, 5], axes=[0, 4]</dt>
+<dd>Result: tensor with shape [1, 3, 4, 5, 1]</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – The node with data tensor.</li>
+<li><strong>axes</strong> – List of non-negative integers, indicate the dimensions to be inserted.
+One of: input node or array.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The new node performing an unsqueeze operation on input tensor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-ngraph.runtime">
+<span id="ngraph-runtime-module"></span><h2>ngraph.runtime module<a class="headerlink" href="#module-ngraph.runtime" title="Permalink to this headline">¶</a></h2>
+<p>Provide a layer of abstraction for the ngraph++ runtime environment.</p>
+<dl class="class">
+<dt id="ngraph.runtime.Computation">
+<em class="property">class </em><code class="descclassname">ngraph.runtime.</code><code class="descname">Computation</code><span class="sig-paren">(</span><em>runtime</em>, <em>ng_function</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/runtime.html#Computation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.runtime.Computation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ngraph callable computation object.</p>
+<dl class="method">
+<dt id="ngraph.runtime.Computation.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>indent=0</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/runtime.html#Computation.serialize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.runtime.Computation.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serialize function (compute graph) to a JSON string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>indent</strong> – set indent of serialized output</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">serialized model</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ngraph.runtime.Runtime">
+<em class="property">class </em><code class="descclassname">ngraph.runtime.</code><code class="descname">Runtime</code><span class="sig-paren">(</span><em>backend_name</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/runtime.html#Runtime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.runtime.Runtime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents the ngraph++ runtime environment.</p>
+<dl class="method">
+<dt id="ngraph.runtime.Runtime.computation">
+<code class="descname">computation</code><span class="sig-paren">(</span><em>node_or_function</em>, <em>*inputs</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/runtime.html#Runtime.computation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.runtime.Runtime.computation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a callable Computation object.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="ngraph.runtime.runtime">
+<code class="descclassname">ngraph.runtime.</code><code class="descname">runtime</code><span class="sig-paren">(</span><em>backend_name='CPU'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/ngraph/runtime.html#runtime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ngraph.runtime.runtime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Runtime object (helper factory).</p>
+<p>Use signature to parameterize runtime as needed.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ngraph.exceptions.html" class="btn btn-neutral float-right" title="ngraph.exceptions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../structure.html" class="btn btn-neutral" title="nGraph Python APIs" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

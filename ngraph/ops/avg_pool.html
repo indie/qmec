@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AvgPool &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../index.html"/>
+        <link rel="up" title="List of Core ops" href="index.html"/>
+        <link rel="next" title="AvgPoolBackprop" href="avg_pool_backprop.html"/>
+        <link rel="prev" title="Atan" href="atan.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <br/><img src="../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="index.html">List of Core <code class="docutils literal notranslate"><span class="pre">ops</span></code></a> &raquo;</li>
+      
+    <li>AvgPool</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../_sources/ops/avg_pool.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="avgpool">
+<h1>AvgPool<a class="headerlink" href="#avgpool" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">AvgPool</span>  <span class="c1">// Average Pooling operation</span>
+</pre></div>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Average pooling windows its input and produces an average for each window.</p>
+<div class="section" id="inputs">
+<h3>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="19%" />
+<col width="38%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Element Type</th>
+<th class="head">Shape</th>
+<th class="head">Notes</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">data</span></code></td>
+<td>Any</td>
+<td><span class="math notranslate nohighlight">\((N,C,d_1,\ldots,d_n)\)</span></td>
+<td><span class="math notranslate nohighlight">\(n&gt;0, d_i&gt;0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="23%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Notes</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">w</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Shape[n]</span></code></td>
+<td>Window shape. <span class="math notranslate nohighlight">\(w_i\le d_i\)</span></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">s</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Strides[n]</span></code></td>
+<td>Window strides.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">p</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Shape[n]</span></code></td>
+<td>Padding below.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">q</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Shape[n]</span></code></td>
+<td>Padding above.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">i</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Boolean</span></code></td>
+<td>Include padding in average.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="34%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Element Type</th>
+<th class="head">Shape</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">output</span></code></td>
+<td>Any</td>
+<td><span class="math notranslate nohighlight">\((N,C,d'_1,\ldots,d'_n)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Average pooling takes as its input, a batch tensor <cite>data</cite> of shape
+<span class="math notranslate nohighlight">\((N,C,d_1,\ldots,d_n)\)</span>, where  where <span class="math notranslate nohighlight">\(N\)</span> is the batch
+size, and <span class="math notranslate nohighlight">\(C &gt; 0\)</span> is the
+number of channels (sometimes called features). The dimensions
+<span class="math notranslate nohighlight">\((d_1,\ldots,d_n)\)</span> correspond to the shape of an
+<span class="math notranslate nohighlight">\(n\)</span>-dimensional data item in a batch. For example, where
+<span class="math notranslate nohighlight">\(n=2\)</span>, the data may represent a two-dimensional image. It also
+takes four attributes:</p>
+<ol class="arabic simple">
+<li><em>window shape</em>,</li>
+<li><em>window movement strides</em>, (optional)</li>
+<li><em>padding below</em>, (optional)</li>
+<li><em>padding above</em>, (optional)</li>
+<li><em>include padding in average</em></li>
+</ol>
+<p>The shape of <cite>output</cite> is <span class="math notranslate nohighlight">\((N,C,d'_1,\ldots,d'_n)\)</span>, where
+<span class="math notranslate nohighlight">\(d'_n = \lceil \frac{p_i + d_i + q_i - w_i + 1}{s_i} \rceil\)</span>.</p>
+<p><strong>Informal definition:</strong>
+If <span class="math notranslate nohighlight">\(\textit{i}\)</span> is <span class="math notranslate nohighlight">\(\textit{true}\)</span>, then averages are computed as though the
+padding region contained regular elements of value zero.
+If <span class="math notranslate nohighlight">\(\textit{i}\)</span> is <span class="math notranslate nohighlight">\(\textit{false}\)</span>, then averages are computed using only the non-padding
+tensor elements that are present in each window.</p>
+<p><em>Example:</em> Consider two instances of this operator with the following attributes:
+<span class="math notranslate nohighlight">\(\textit{w} = (2,2)\)</span>,
+<span class="math notranslate nohighlight">\(\textit{s} = (1,1)\)</span>,
+<span class="math notranslate nohighlight">\(\textit{p} = (1,1)\)</span>,
+and (in one instance) <span class="math notranslate nohighlight">\(\textit{i} = false\)</span> or (in the other instance) <span class="math notranslate nohighlight">\(\textit{i} = true\)</span>.</p>
+<p>Consider how those two operator instances would handle this input tensor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}T_\textit{in} = \begin{bmatrix}
+   1     &amp;  3     &amp;  5     &amp; \ldots \\
+   7     &amp; 11     &amp; 13     &amp; \ldots \\
+  17     &amp; 19     &amp; 23     &amp; \ldots \\
+  \vdots &amp; \vdots &amp; \vdots &amp; \ddots
+\end{bmatrix}\end{split}\]</div>
+<p>Applying the padding indicated by the value of <span class="math notranslate nohighlight">\(\textit{p}\)</span>, we have the padded image of <span class="math notranslate nohighlight">\(T_\textit{in}\)</span>
+as follows:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}T_\textit{in,padded} = \begin{bmatrix}
+ (0) &amp; (0)     &amp; (0)    &amp; (0)      &amp; \ldots \\
+ (0) &amp;   1     &amp;   3    &amp;   5      &amp; \ldots \\
+ (0) &amp;   7     &amp;  11    &amp;  13      &amp; \ldots \\
+ (0) &amp;  17     &amp;  19    &amp;  23      &amp; \ldots \\
+ (0) &amp;  \vdots &amp; \vdots &amp;  \vdots  &amp; \ddots
+\end{bmatrix}\end{split}\]</div>
+<p>Now consider how the two variations of this example’s <em>AvgPool</em> operator will compute the “average” value
+of the top-left window, which contains exactly the elements:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+ (0) &amp; (0)   \\
+ (0) &amp;   1
+\end{bmatrix}\end{split}\]</div>
+<p>If <span class="math notranslate nohighlight">\(\textit{i} = false\)</span>, then the operator simply ignores the padding elements.  It therefore computes the
+average of the single-element set <span class="math notranslate nohighlight">\(\{ 1 \}\)</span>, yielding <span class="math notranslate nohighlight">\(1.0\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(\textit{i} = true\)</span>, then the operator computes the average of the set <span class="math notranslate nohighlight">\(\{ 0, 0, 0, 1\}\)</span>,
+yielding <cite>0.25</cite>.</p>
+<p><em>Note:</em> This operator is ill-defined when <em>both</em> of the following conditions hold:
+(1) <span class="math notranslate nohighlight">\(\textit{i} = false\)</span>, and (2) the operator’s other attribute values indicate
+that at least one window will contain only padding elements.</p>
+<p><strong>Formal definition:</strong>
+<em>In the absence of padding</em>, given an input data batch tensor
+<span class="math notranslate nohighlight">\(T_\textit{in}\)</span>, the output tensor is defined by the equation</p>
+<div class="math notranslate nohighlight">
+\[T_\textit{out}[a,c,i_1,\ldots,i_n] =
+\frac{\sum_{j_1 = s_1 i_1, \ldots, j_n = s_n i_n}^{j_1 = s_1 i_1 + w_1 - 1, \ldots, j_n = s_n i_n + w_n - 1}
+T_\textit{in}[a,c,j_1,\ldots,j_n]}{\prod_{i=1}^n{w_n}}\]</div>
+<p><em>In the presence of padding</em>, we do not always want to divide by a
+reciprocal equal to the number of elements in the window, since some
+of the output points are determined by a window that is partly hanging
+beyond the edge of the tensor. In this case we can define the output</p>
+<p>In this case we can define the output
+via a few intermediate steps.</p>
+<p>First define the <em>sum tensor</em> <span class="math notranslate nohighlight">\(T_\textit{sum}\)</span>, with shape
+<span class="math notranslate nohighlight">\((N,C,d'_1,\ldots,d'_n)\)</span>, as follows.</p>
+<div class="math notranslate nohighlight">
+\[T_\textit{sum}[a,c,i_1,\ldots,i_n] =
+\frac{\sum_{j_1 = s_1 i_1, \ldots, j_n = s_n i_n}^{j_1 = s_1 i_1 + w_1 - 1, \ldots, j_n = s_n i_n + w_n - 1}
+\textit{val}[a,c,j_1,\ldots,j_n]}{\prod_{i=1}^n{w_n}}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\textit{val}[a,c,j_1,\ldots,j_n] =
+\begin{cases}
+T_\textit{in}[a,c,j_1,\ldots,j_n]&amp;\text{if for all } k, p_k \le j_k &lt; p_k + d_k\\
+0&amp;\text{otherwise}.
+\end{cases}\end{split}\]</div>
+<p>Second, define the <em>divisor tensor</em> <span class="math notranslate nohighlight">\(T_\textit{div}\)</span>, with shape <span class="math notranslate nohighlight">\((N,C,d'_1,\ldots,d'_n)\)</span>, as follows.</p>
+<div class="math notranslate nohighlight">
+\[T_\textit{div}[a,c,i_1,\ldots,i_n] =
+\frac{\sum_{j_1 = s_1 i_1, \ldots, j_n = s_n i_n}^{j_1 = s_1 i_1 + w_1 - 1, \ldots, j_n = s_n i_n + w_n - 1}
+\textit{val}[a,c,j_1,\ldots,j_n]}{\prod_{i=1}^n{w_n}}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\textit{val}[a,c,j_1,\ldots,j_n] =
+\begin{cases}
+1&amp;\text{if for all }k, p_k \le j_k &lt; p_k + d_k\\
+0&amp;\text{otherwise}.
+\end{cases}\end{split}\]</div>
+<p>Finally, define <span class="math notranslate nohighlight">\(T_\textit{out}\)</span> as the result of elementwise
+dividing <span class="math notranslate nohighlight">\(T_\textit{sum}\)</span> by <span class="math notranslate nohighlight">\(T_\textit{div}\)</span>.  Note that
+at positions where <span class="math notranslate nohighlight">\(T_\textit{div}\)</span> is zero, values may be
+infinity or nan.  (This corresponds to a condition where the pooling
+window is completely out of bounds, encompassing no valid values.)</p>
+</div>
+</div>
+<div class="section" id="backprop">
+<h2>Backprop<a class="headerlink" href="#backprop" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="c-interface">
+<h2>C++ Interface<a class="headerlink" href="#c-interface" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N6ngraph2op2v07AvgPoolE">
+<span id="_CPPv3N6ngraph2op2v07AvgPoolE"></span><span id="_CPPv2N6ngraph2op2v07AvgPoolE"></span><span id="ngraph::op::v0::AvgPool"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool"></span><em class="property">class </em><code class="descname">AvgPool</code> : <em class="property">public</em> ngraph::op::Op<a class="headerlink" href="#_CPPv4N6ngraph2op2v07AvgPoolE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Batched average pooling operation, with optional padding and window stride. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v07AvgPool13get_type_infoEv">
+<span id="_CPPv3NK6ngraph2op2v07AvgPool13get_type_infoEv"></span><span id="_CPPv2NK6ngraph2op2v07AvgPool13get_type_infoEv"></span><span id="ngraph::op::v0::AvgPool::get_type_infoC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_ab75cc9ab37b54b774c6aab9ed16f8bd6_1ab75cc9ab37b54b774c6aab9ed16f8bd6"></span><em class="property">const</em> NodeTypeInfo &amp;<code class="descname">get_type_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v07AvgPool13get_type_infoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the NodeTypeInfo for the node’s class. During transition to type_info, returns a dummy type_info for Node if the class has not been updated yet. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v07AvgPool7AvgPoolEv">
+<span id="_CPPv3N6ngraph2op2v07AvgPool7AvgPoolEv"></span><span id="_CPPv2N6ngraph2op2v07AvgPool7AvgPoolEv"></span><span id="ngraph::op::v0::AvgPool::AvgPool"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_1a2472a35278fbcfbe4ab6d9a9965626bc"></span><code class="descname">AvgPool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v07AvgPool7AvgPoolEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a batched average pooling operation. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadTypeb">
+<span id="_CPPv3N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadTypeb"></span><span id="_CPPv2N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadTypeb"></span><span id="op::v0::AvgPool::AvgPool__Output:Node:CR.ShapeCR.StridesCR.ShapeCR.ShapeCR.b.PadTypeCR.b"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_ac40801eff2c591d94ecb83bfc7f2971a_1ac40801eff2c591d94ecb83bfc7f2971a"></span><code class="descname">AvgPool</code><span class="sig-paren">(</span><em class="property">const</em> Output&lt;Node&gt; &amp;<em>arg</em>, <em class="property">const</em> Shape &amp;<em>window_shape</em>, <em class="property">const</em> Strides &amp;<em>window_movement_strides</em>, <em class="property">const</em> Shape &amp;<em>padding_below</em>, <em class="property">const</em> Shape &amp;<em>padding_above</em>, bool <em>include_padding_in_avg_computation</em>, <em class="property">const</em> PadType &amp;<em>pad_type</em>, bool <em>ceil_mode</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadTypeb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a batched average pooling operation. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">arg</span></code>: The output producing the input data batch tensor.<code class="docutils literal notranslate"><span class="pre">[d1,</span> <span class="pre">dn]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_shape</span></code>: The window shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_movement_strides</span></code>: The window movement strides.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">padding_below</span></code>: The below-padding shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">padding_above</span></code>: The above-padding shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">include_padding_in_avg_computation</span></code>: If true then averages include padding elements, each treated as the number zero. If false, padding elements are entirely ignored when computing averages.</li>
+<li><code class="docutils literal notranslate"><span class="pre">pad_type</span></code>: Padding type to use for additional padded dimensions</li>
+<li><code class="docutils literal notranslate"><span class="pre">ceil_mode</span></code>: Whether to use ceiling while computing output shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadType">
+<span id="_CPPv3N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadType"></span><span id="_CPPv2N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadType"></span><span id="op::v0::AvgPool::AvgPool__Output:Node:CR.ShapeCR.StridesCR.ShapeCR.ShapeCR.b.PadTypeCR"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a7b42a2016a8a2376acbda3e781e96161_1a7b42a2016a8a2376acbda3e781e96161"></span><code class="descname">AvgPool</code><span class="sig-paren">(</span><em class="property">const</em> Output&lt;Node&gt; &amp;<em>arg</em>, <em class="property">const</em> Shape &amp;<em>window_shape</em>, <em class="property">const</em> Strides &amp;<em>window_movement_strides</em>, <em class="property">const</em> Shape &amp;<em>padding_below</em>, <em class="property">const</em> Shape &amp;<em>padding_above</em>, bool <em>include_padding_in_avg_computation</em>, <em class="property">const</em> PadType &amp;<em>pad_type</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5ShapebRK7PadType" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a batched average pooling operation. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">arg</span></code>: The output producing the input data batch tensor.<code class="docutils literal notranslate"><span class="pre">[d1,</span> <span class="pre">dn]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_shape</span></code>: The window shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_movement_strides</span></code>: The window movement strides.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">padding_below</span></code>: The below-padding shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">padding_above</span></code>: The above-padding shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">include_padding_in_avg_computation</span></code>: If true then averages include padding elements, each treated as the number zero. If false, padding elements are entirely ignored when computing averages.</li>
+<li><code class="docutils literal notranslate"><span class="pre">pad_type</span></code>: Padding type to use for additional padded dimensions </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5Shapeb">
+<span id="_CPPv3N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5Shapeb"></span><span id="_CPPv2N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5Shapeb"></span><span id="op::v0::AvgPool::AvgPool__Output:Node:CR.ShapeCR.StridesCR.ShapeCR.ShapeCR.b"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a7fde025ddb434a14c797725e8e25bfe3_1a7fde025ddb434a14c797725e8e25bfe3"></span><code class="descname">AvgPool</code><span class="sig-paren">(</span><em class="property">const</em> Output&lt;Node&gt; &amp;<em>arg</em>, <em class="property">const</em> Shape &amp;<em>window_shape</em>, <em class="property">const</em> Strides &amp;<em>window_movement_strides</em>, <em class="property">const</em> Shape &amp;<em>padding_below</em>, <em class="property">const</em> Shape &amp;<em>padding_above</em>, bool <em>include_padding_in_avg_computation</em> = false<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7StridesRK5ShapeRK5Shapeb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a batched average pooling operation. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">arg</span></code>: The output producing the input data batch tensor.<code class="docutils literal notranslate"><span class="pre">[d1,</span> <span class="pre">dn]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_shape</span></code>: The window shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_movement_strides</span></code>: The window movement strides.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">padding_below</span></code>: The below-padding shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">padding_above</span></code>: The above-padding shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">include_padding_in_avg_computation</span></code>: If true then averages include padding elements, each treated as the number zero. If false, padding elements are entirely ignored when computing averages. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7Strides">
+<span id="_CPPv3N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7Strides"></span><span id="_CPPv2N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7Strides"></span><span id="op::v0::AvgPool::AvgPool__Output:Node:CR.ShapeCR.StridesCR"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a991aa0dce314f62ea3ffaf5f401f4743_1a991aa0dce314f62ea3ffaf5f401f4743"></span><code class="descname">AvgPool</code><span class="sig-paren">(</span><em class="property">const</em> Output&lt;Node&gt; &amp;<em>arg</em>, <em class="property">const</em> Shape &amp;<em>window_shape</em>, <em class="property">const</em> Strides &amp;<em>window_movement_strides</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5ShapeRK7Strides" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a batched, unpadded average pooling operation (i.e., all padding shapes are set to 0). </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">arg</span></code>: The output producing the input data batch tensor.<code class="docutils literal notranslate"><span class="pre">[d1,</span> <span class="pre">...,</span> <span class="pre">dn]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_shape</span></code>: The window shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_movement_strides</span></code>: The window movement strides.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5Shape">
+<span id="_CPPv3N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5Shape"></span><span id="_CPPv2N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5Shape"></span><span id="op::v0::AvgPool::AvgPool__Output:Node:CR.ShapeCR"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a71aa3737b31edd2c7715de6058ffc2b8_1a71aa3737b31edd2c7715de6058ffc2b8"></span><code class="descname">AvgPool</code><span class="sig-paren">(</span><em class="property">const</em> Output&lt;Node&gt; &amp;<em>arg</em>, <em class="property">const</em> Shape &amp;<em>window_shape</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N2op2v07AvgPool7AvgPoolERK6OutputI4NodeERK5Shape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs an unstrided batched convolution operation (i.e., all window movement strides are 1 and all padding shapes are set to 0). </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">arg</span></code>: The output producing the input data batch tensor.<code class="docutils literal notranslate"><span class="pre">[d1,</span> <span class="pre">...,</span> <span class="pre">dn]</span></code> </li>
+<li><code class="docutils literal notranslate"><span class="pre">window_shape</span></code>: The window shape.<code class="docutils literal notranslate"><span class="pre">[n]</span></code> </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N2op2v07AvgPool24validate_and_infer_typesEv">
+<span id="_CPPv3N2op2v07AvgPool24validate_and_infer_typesEv"></span><span id="_CPPv2N2op2v07AvgPool24validate_and_infer_typesEv"></span><span id="op::v0::AvgPool::validate_and_infer_types"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_1a93263bea52b18ee9aead21867469c3b4"></span>void <code class="descname">validate_and_infer_types</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N2op2v07AvgPool24validate_and_infer_typesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Throws if the node is invalid. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK2op2v07AvgPool16get_window_shapeEv">
+<span id="_CPPv3NK2op2v07AvgPool16get_window_shapeEv"></span><span id="_CPPv2NK2op2v07AvgPool16get_window_shapeEv"></span><span id="op::v0::AvgPool::get_window_shapeC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a48b75f427447413a3af962f0c459d230_1a48b75f427447413a3af962f0c459d230"></span><em class="property">const</em> Shape &amp;<code class="descname">get_window_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK2op2v07AvgPool16get_window_shapeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The window shape. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK2op2v07AvgPool27get_window_movement_stridesEv">
+<span id="_CPPv3NK2op2v07AvgPool27get_window_movement_stridesEv"></span><span id="_CPPv2NK2op2v07AvgPool27get_window_movement_stridesEv"></span><span id="op::v0::AvgPool::get_window_movement_stridesC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_ab1c5fedd35a1cb0e585cd6dd75cc763f_1ab1c5fedd35a1cb0e585cd6dd75cc763f"></span><em class="property">const</em> Strides &amp;<code class="descname">get_window_movement_strides</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK2op2v07AvgPool27get_window_movement_stridesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The window movement strides. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK2op2v07AvgPool17get_padding_belowEv">
+<span id="_CPPv3NK2op2v07AvgPool17get_padding_belowEv"></span><span id="_CPPv2NK2op2v07AvgPool17get_padding_belowEv"></span><span id="op::v0::AvgPool::get_padding_belowC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a7083339b4f0398b737a5904fd4e84970_1a7083339b4f0398b737a5904fd4e84970"></span><em class="property">const</em> Shape &amp;<code class="descname">get_padding_below</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK2op2v07AvgPool17get_padding_belowEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The below-padding shape. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK2op2v07AvgPool17get_padding_aboveEv">
+<span id="_CPPv3NK2op2v07AvgPool17get_padding_aboveEv"></span><span id="_CPPv2NK2op2v07AvgPool17get_padding_aboveEv"></span><span id="op::v0::AvgPool::get_padding_aboveC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a8a560ea82091059a62e67dee88f8ef8b_1a8a560ea82091059a62e67dee88f8ef8b"></span><em class="property">const</em> Shape &amp;<code class="descname">get_padding_above</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK2op2v07AvgPool17get_padding_aboveEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The above-padding shape. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK2op2v07AvgPool12get_pad_typeEv">
+<span id="_CPPv3NK2op2v07AvgPool12get_pad_typeEv"></span><span id="_CPPv2NK2op2v07AvgPool12get_pad_typeEv"></span><span id="op::v0::AvgPool::get_pad_typeC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_a309c8ffd768c5e96db29a06671e979b5_1a309c8ffd768c5e96db29a06671e979b5"></span><em class="property">const</em> op::PadType &amp;<code class="descname">get_pad_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK2op2v07AvgPool12get_pad_typeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The pad type for pooling. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK2op2v07AvgPool17get_default_valueEv">
+<span id="_CPPv3NK2op2v07AvgPool17get_default_valueEv"></span><span id="_CPPv2NK2op2v07AvgPool17get_default_valueEv"></span><span id="op::v0::AvgPool::get_default_valueC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1AvgPool_aed2a2b3cbcfdbc6b32b049450a0c2075_1aed2a2b3cbcfdbc6b32b049450a0c2075"></span>shared_ptr&lt;Node&gt; <code class="descname">get_default_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK2op2v07AvgPool17get_default_valueEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The default value for <a class="reference internal" href="#classngraph_1_1op_1_1v0_1_1AvgPool"><span class="std std-ref">AvgPool</span></a>. </dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="avg_pool_backprop.html" class="btn btn-neutral float-right" title="AvgPoolBackprop" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="atan.html" class="btn btn-neutral" title="Atan" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

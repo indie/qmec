@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Derive a trainable model &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../../index.html"/>
+        <link rel="up" title="Constructing Graphs" href="index.html"/>
+        <link rel="next" title="Distribute training across multiple nGraph backends" href="distribute-train.html"/>
+        <link rel="prev" title="Make a stateful computation" href="update.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <br/><img src="../../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Constructing Graphs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="execute.html">Execute a computation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operator.html">Build a graph with operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update.html">Make a stateful computation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Derive a trainable model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="distribute-train.html">Distribute training across multiple nGraph backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="import.html">Import a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../python_api/index.html">Using the Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="index.html">Constructing Graphs</a> &raquo;</li>
+      
+    <li>Derive a trainable model</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../_sources/core/constructing-graphs/derive-for-training.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="derive-a-trainable-model">
+<h1>Derive a trainable model<a class="headerlink" href="#derive-a-trainable-model" title="Permalink to this headline">¶</a></h1>
+<p>Documentation in this section describes one of the possible ways to turn a
+<abbr title="Deep Learning">DL</abbr> model for inference into one that can be used
+for training.</p>
+<p>Additionally, and to provide a more complete walk-through that <em>also</em> trains the
+model, our example includes the use of a simple data loader for uncompressed
+MNIST data.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#model-overview"><span class="std std-ref">Model overview</span></a></li>
+<li><a class="reference internal" href="#code-structure"><span class="std std-ref">Code structure</span></a><ul>
+<li><a class="reference internal" href="#inference"><span class="std std-ref">Inference</span></a></li>
+<li><a class="reference internal" href="#loss"><span class="std std-ref">Loss</span></a></li>
+<li><a class="reference internal" href="#backprop"><span class="std std-ref">Backprop</span></a></li>
+<li><a class="reference internal" href="#update"><span class="std std-ref">Update</span></a></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="automating-graph-construction">
+<span id="id1"></span><h2>Automating graph construction<a class="headerlink" href="#automating-graph-construction" title="Permalink to this headline">¶</a></h2>
+<p>In a <abbr title="ML">Machine Learning</abbr> ecosystem, it makes sense to use automation
+and abstraction where possible. nGraph was designed to automatically use
+the “ops” of tensors provided by a framework when constructing graphs. However,
+nGraph’s graph-construction API operates at a fundamentally lower level than a
+typical framework’s API, and writing a model directly in nGraph would be somewhat
+akin to programming in assembly language: not impossible, but not the easiest
+thing for humans to do.</p>
+<p>To make the task easier for developers who need to customize the “automatic”,
+construction of graphs, we’ve provided some demonstration code for how this
+could be done. We know, for example, that a trainable model can be derived from
+any graph that has been constructed with weight-based updates.</p>
+<p>The following example named <code class="docutils literal notranslate"><span class="pre">mnist_mlp.cpp</span></code> represents a hand-designed
+inference model being converted to a model that can be trained with nGraph.</p>
+</div>
+<div class="section" id="model-overview">
+<span id="id2"></span><h2>Model overview<a class="headerlink" href="#model-overview" title="Permalink to this headline">¶</a></h2>
+<p>Due to the lower-level nature of the graph-construction API, the example we’ve
+selected to document here is a relatively simple model: a fully-connected
+topology with one hidden layer followed by <code class="docutils literal notranslate"><span class="pre">Softmax</span></code>.</p>
+<p>Remember that in nGraph, the graph is stateless; values for the weights must
+be provided as parameters along with the normal inputs. Starting with the graph
+for inference, we will use it to create a graph for training. The training
+function will return tensors for the updated weights.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This example illustrates how to convert an inference model into one
+that can be trained. Depending on the framework, bridge code may do something
+similar, or the framework might do this operation itself. Here we do the
+conversion with nGraph because the computation for training a model is
+significantly larger than for inference, and doing the conversion manually
+is tedious and error-prone.</p>
+</div>
+</div>
+<div class="section" id="code-structure">
+<span id="id3"></span><h2>Code structure<a class="headerlink" href="#code-structure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="inference">
+<span id="id4"></span><h3>Inference<a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h3>
+<p>We begin by building the graph, starting with the input parameter
+<code class="docutils literal notranslate"><span class="pre">X</span></code>. We also define a fully-connected layer, including parameters for
+weights and bias:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="k">auto</span> <span class="n">X</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">input_size</span><span class="p">});</span>
+
+    <span class="c1">// Layer 0</span>
+    <span class="k">auto</span> <span class="n">W0</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span>
+                                              <span class="n">Shape</span><span class="p">{</span><span class="n">input_size</span><span class="p">,</span> <span class="n">l0_size</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">b0</span> <span class="o">=</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">l0_size</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">l0_dot</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Dot</span><span class="o">&gt;</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">b0_broadcast</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Broadcast</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">b0</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">l0_size</span><span class="p">},</span> <span class="n">AxisSet</span><span class="p">{</span><span class="mi">0</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">l0</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Relu</span><span class="o">&gt;</span><span class="p">(</span><span class="n">l0_dot</span> <span class="o">+</span> <span class="n">b0_broadcast</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Repeat the process for the next layer,</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="k">auto</span> <span class="n">W1</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span>
+                                              <span class="n">Shape</span><span class="p">{</span><span class="n">l0_size</span><span class="p">,</span> <span class="n">l1_size</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">b1</span> <span class="o">=</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">l1_size</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">l1_dot</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Dot</span><span class="o">&gt;</span><span class="p">(</span><span class="n">l0</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">b1_broadcast</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Broadcast</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">b1</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">l1_size</span><span class="p">},</span> <span class="n">AxisSet</span><span class="p">{</span><span class="mi">0</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">l1</span> <span class="o">=</span> <span class="n">l1_dot</span> <span class="o">+</span> <span class="n">b1_broadcast</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>and normalize everything with a <code class="docutils literal notranslate"><span class="pre">softmax</span></code>.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="c1">// Softmax</span>
+    <span class="k">auto</span> <span class="n">softmax</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Softmax</span><span class="o">&gt;</span><span class="p">(</span><span class="n">l1</span><span class="p">,</span> <span class="n">AxisSet</span><span class="p">{</span><span class="mi">1</span><span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="loss">
+<span id="id5"></span><h3>Loss<a class="headerlink" href="#loss" title="Permalink to this headline">¶</a></h3>
+<p>We use cross-entropy to compute the loss. nGraph does not currenty have a core
+op for cross-entropy, so we implement it directly, adding clipping to prevent
+underflow.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="k">auto</span> <span class="n">Y</span> <span class="o">=</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">batch_size</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">labels</span> <span class="o">=</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">OneHot</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">},</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">softmax_clip_value</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Constant</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{},</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">{</span><span class="n">log_min</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">softmax_clip_broadcast</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Broadcast</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">softmax_clip_value</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">},</span> <span class="n">AxisSet</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">});</span>
+    <span class="k">auto</span> <span class="n">softmax_clip</span> <span class="o">=</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Maximum</span><span class="o">&gt;</span><span class="p">(</span><span class="n">softmax</span><span class="p">,</span> <span class="n">softmax_clip_broadcast</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">softmax_log</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Log</span><span class="o">&gt;</span><span class="p">(</span><span class="n">softmax_clip</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">prod</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Multiply</span><span class="o">&gt;</span><span class="p">(</span><span class="n">softmax_log</span><span class="p">,</span> <span class="n">labels</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">N</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{});</span>
+    <span class="k">auto</span> <span class="n">loss</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Divide</span><span class="o">&gt;</span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Sum</span><span class="o">&gt;</span><span class="p">(</span><span class="n">prod</span><span class="p">,</span> <span class="n">AxisSet</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">}),</span> <span class="n">N</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="backprop">
+<span id="id6"></span><h3>Backprop<a class="headerlink" href="#backprop" title="Permalink to this headline">¶</a></h3>
+<p>We want to reduce the loss by adjusting the weights. We compute the adjustments
+using the reverse-mode autodiff algorithm, commonly referred to as “backprop”
+because of the way it is implemented in interpreted frameworks. In nGraph, we
+augment the loss computation with computations for the weight adjustments. This
+allows the calculations for the adjustments to be further optimized.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="c1">// Each of W0, b0, W1, and b1</span>
+    <span class="k">auto</span> <span class="n">learning_rate</span> <span class="o">=</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{});</span>
+    <span class="k">auto</span> <span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="n">loss</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>For any node <code class="docutils literal notranslate"><span class="pre">N</span></code>, if the update for <code class="docutils literal notranslate"><span class="pre">loss</span></code> is <code class="docutils literal notranslate"><span class="pre">delta</span></code>, the
+update computation for <code class="docutils literal notranslate"><span class="pre">N</span></code> will be given by the node</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="n">update</span> <span class="o">=</span> <span class="n">loss</span><span class="o">-&gt;</span><span class="n">backprop_node</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">delta</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="k">auto</span> <span class="n">W1_next</span> <span class="o">=</span> <span class="n">W1</span> <span class="o">+</span> <span class="n">adjoints</span><span class="p">.</span><span class="n">backprop_output</span><span class="p">(</span><span class="n">W1</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">b1_next</span> <span class="o">=</span> <span class="n">b1</span> <span class="o">+</span> <span class="n">adjoints</span><span class="p">.</span><span class="n">backprop_output</span><span class="p">(</span><span class="n">b1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The different update nodes will share intermediate computations. So to
+get the updated values for the weights as computed with the specified
+<a class="reference internal" href="../../backends/index.html"><span class="doc">backend</span></a>:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="k">auto</span> <span class="n">t_W0</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">W0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_b0</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">b0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_W1</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_b1</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">()</span><span class="o">&gt;</span> <span class="n">rand</span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">uniform_real_distribution</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">),</span>
+                  <span class="n">std</span><span class="o">::</span><span class="n">default_random_engine</span><span class="p">(</span><span class="mi">0</span><span class="p">)));</span>
+    <span class="n">randomize</span><span class="p">(</span><span class="n">rand</span><span class="p">,</span> <span class="n">t_W0</span><span class="p">);</span>
+    <span class="n">randomize</span><span class="p">(</span><span class="n">rand</span><span class="p">,</span> <span class="n">t_b0</span><span class="p">);</span>
+    <span class="n">randomize</span><span class="p">(</span><span class="n">rand</span><span class="p">,</span> <span class="n">t_W1</span><span class="p">);</span>
+    <span class="n">randomize</span><span class="p">(</span><span class="n">rand</span><span class="p">,</span> <span class="n">t_b1</span><span class="p">);</span>
+
+    <span class="c1">// Allocate inputs</span>
+    <span class="k">auto</span> <span class="n">t_X</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_Y</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">auto</span> <span class="n">t_learning_rate</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_N</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">set_scalar</span><span class="p">(</span><span class="n">t_N</span><span class="p">,</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">batch_size</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="c1">// Allocate updated variables</span>
+    <span class="k">auto</span> <span class="n">t_W0_next</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">W0_next</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_b0_next</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">b0_next</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_W1_next</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">W1_next</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_b1_next</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">b1_next</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="k">auto</span> <span class="n">t_loss</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">loss</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">t_softmax</span> <span class="o">=</span> <span class="n">make_output_tensor</span><span class="p">(</span><span class="n">backend</span><span class="p">,</span> <span class="n">softmax</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="update">
+<span id="id7"></span><h3>Update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h3>
+<p>Since nGraph is stateless, we train by making a function that has the
+original weights among its inputs and the updated weights among the
+results. For training, we’ll also need the labeled training data as
+inputs, and we’ll return the loss as an additional result.  We’ll also
+want to track how well we are doing; this is a function that returns
+the loss and has the labeled testing data as input. Although we can
+use the same nodes in different functions, nGraph currently does not
+allow the same nodes to be compiled in different functions, so we
+compile clones of the nodes.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="n">NodeMap</span> <span class="n">train_node_map</span><span class="p">;</span>
+    <span class="k">auto</span> <span class="n">train_function</span> <span class="o">=</span> <span class="n">clone_function</span><span class="p">(</span>
+        <span class="n">Function</span><span class="p">(</span>
+            <span class="n">OutputVector</span><span class="p">{</span>
+                <span class="n">loss</span><span class="p">,</span> <span class="n">softmax</span><span class="p">,</span> <span class="n">W0_next</span><span class="p">,</span> <span class="n">b0_next</span><span class="p">,</span> <span class="n">W1_next</span><span class="p">,</span> <span class="n">b1_next</span><span class="p">},</span>
+            <span class="n">ParameterVector</span><span class="p">{</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="n">W0</span><span class="p">,</span> <span class="n">b0</span><span class="p">,</span> <span class="n">W1</span><span class="p">,</span> <span class="n">b1</span><span class="p">}),</span>
+        <span class="n">train_node_map</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">train_exec</span> <span class="o">=</span> <span class="n">backend</span><span class="o">-&gt;</span><span class="n">compile</span><span class="p">(</span><span class="n">train_function</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="distribute-train.html" class="btn btn-neutral float-right" title="Distribute training across multiple nGraph backends" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="update.html" class="btn btn-neutral" title="Make a stateful computation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

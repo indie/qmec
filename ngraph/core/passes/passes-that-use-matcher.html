@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Passes that use Matcher &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../../index.html"/>
+        <link rel="up" title="Compiler Passes" href="passes.html"/>
+        <link rel="next" title="Pattern Matcher" href="../fusion/index.html"/>
+        <link rel="prev" title="List of passes" href="list-of-passes.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <br/><img src="../../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="passes.html">Compiler Passes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="list-of-passes.html">List of passes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Passes that use Matcher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes.html#basic-concepts">Basic concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes.html#a-simple-example">A simple example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes.html#a-complex-example">A complex example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="passes.html">Compiler Passes</a> &raquo;</li>
+      
+    <li>Passes that use Matcher</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../_sources/core/passes/passes-that-use-matcher.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="passes-that-use-matcher">
+<h1>Passes that use Matcher<a class="headerlink" href="#passes-that-use-matcher" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>CPUFusion (GraphRewrite)</li>
+<li>CoreFusion (GraphRewrite)</li>
+<li>ReshapeElimination (GraphRewrite)</li>
+<li>AlgebraicSimplification</li>
+<li>CPUPostLayoutOptimizations (GraphRewrite)</li>
+<li>CPURnnMatFusion</li>
+<li>and many more…</li>
+</ul>
+<div class="section" id="register-simplify-neg-handler">
+<h2>Register <code class="docutils literal notranslate"><span class="pre">simplify_neg</span></code> handler<a class="headerlink" href="#register-simplify-neg-handler" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">type_index</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&gt;&gt;</span>
+         <span class="n">initialize_const_values_to_ops</span><span class="p">()</span>
+     <span class="p">{</span>
+         <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">type_index</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Node</span><span class="o">&gt;</span><span class="p">)</span><span class="o">&gt;&gt;</span><span class="p">({</span>
+             <span class="p">{</span><span class="n">TI</span><span class="p">(</span><span class="n">op</span><span class="o">::</span><span class="n">Add</span><span class="p">),</span> <span class="n">simplify_add</span><span class="p">},</span>
+             <span class="p">{</span><span class="n">TI</span><span class="p">(</span><span class="n">op</span><span class="o">::</span><span class="n">Multiply</span><span class="p">),</span> <span class="n">simplify_multiply</span><span class="p">},</span>
+             <span class="p">{</span><span class="n">TI</span><span class="p">(</span><span class="n">op</span><span class="o">::</span><span class="n">Sum</span><span class="p">),</span> <span class="n">simplify_sum</span><span class="p">},</span>
+             <span class="p">{</span><span class="n">TI</span><span class="p">(</span><span class="n">op</span><span class="o">::</span><span class="n">Negative</span><span class="p">),</span> <span class="n">simplify_neg</span><span class="p">}</span>
+         <span class="p">});</span>
+     <span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="add-a-fusion">
+<h3>Add a fusion<a class="headerlink" href="#add-a-fusion" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">max(0,</span> <span class="pre">A)</span> <span class="pre">=</span> <span class="pre">Relu(A)</span></code></p>
+</div>
+<div class="section" id="pattern-for-capturing">
+<h3>Pattern for capturing<a class="headerlink" href="#pattern-for-capturing" title="Permalink to this headline">¶</a></h3>
+<p><img alt="image11" src="../../_images/fusion_pattern.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">max(0,</span> <span class="pre">A)</span> <span class="pre">=</span> <span class="pre">Relu(A)</span></code></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ngraph</span>
+ <span class="p">{</span>
+     <span class="k">namespace</span> <span class="n">pass</span>
+     <span class="p">{</span>
+         <span class="k">class</span> <span class="nc">CoreFusion</span><span class="p">;</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+
+ <span class="k">class</span> <span class="nc">ngraph</span><span class="o">::</span><span class="n">pass</span><span class="o">::</span><span class="nl">CoreFusion</span> <span class="p">:</span> <span class="k">public</span> <span class="n">ngraph</span><span class="o">::</span><span class="n">pass</span><span class="o">::</span><span class="n">GraphRewrite</span>
+ <span class="p">{</span>
+ <span class="k">public</span><span class="o">:</span>
+     <span class="n">CoreFusion</span><span class="p">()</span>
+         <span class="o">:</span> <span class="n">GraphRewrite</span><span class="p">()</span>
+     <span class="p">{</span>
+         <span class="n">construct_relu_pattern</span><span class="p">();</span>
+     <span class="p">}</span>
+
+     <span class="c1">//this should go in a cpp file.</span>
+     <span class="kt">void</span> <span class="n">construct_relu_pattern</span><span class="p">()</span>
+     <span class="p">{</span>
+         <span class="k">auto</span> <span class="n">iconst0</span> <span class="o">=</span> <span class="n">ngraph</span><span class="o">::</span><span class="n">make_zero</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">i32</span><span class="p">,</span> <span class="n">Shape</span><span class="p">{});</span>
+         <span class="k">auto</span> <span class="n">val</span> <span class="o">=</span> <span class="n">make_shared</span><span class="p">(</span><span class="n">iconst0</span><span class="p">);</span>
+         <span class="k">auto</span> <span class="n">zero</span> <span class="o">=</span> <span class="n">make_shared</span><span class="p">(</span><span class="n">iconst0</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">,</span> <span class="n">NodeVector</span><span class="p">{</span><span class="n">iconst0</span><span class="p">});</span>
+
+         <span class="k">auto</span> <span class="n">broadcast_pred</span> <span class="o">=</span> <span class="p">[](</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+             <span class="k">return</span> <span class="k">static_cast</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">dynamic_pointer_cast</span><span class="p">(</span><span class="n">n</span><span class="p">));</span>
+         <span class="p">};</span>
+         <span class="k">auto</span> <span class="n">skip_broadcast</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="p">(</span><span class="n">zero</span><span class="p">,</span> <span class="n">broadcast_pred</span><span class="p">);</span>
+         <span class="k">auto</span> <span class="n">max</span> <span class="o">=</span> <span class="n">make_shared</span><span class="p">(</span><span class="n">skip_broadcast</span><span class="p">,</span> <span class="n">val</span><span class="p">);</span>
+
+     <span class="n">pattern</span><span class="o">::</span><span class="n">graph_rewrite_callback</span> <span class="n">callback</span> <span class="o">=</span> <span class="p">[</span><span class="n">val</span><span class="p">,</span> <span class="n">zero</span><span class="p">](</span><span class="n">pattern</span><span class="o">::</span><span class="n">Matcher</span><span class="o">&amp;</span> <span class="n">m</span><span class="p">)</span> <span class="p">{</span>
+             <span class="n">NGRAPH_DEBUG</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;In a callback for construct_relu_pattern against &quot;</span>
+                         <span class="o">&lt;&lt;</span> <span class="n">m</span><span class="p">.</span><span class="n">get_match_root</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">get_name</span><span class="p">();</span>
+
+             <span class="k">auto</span> <span class="n">pattern_map</span> <span class="o">=</span> <span class="n">m</span><span class="p">.</span><span class="n">get_pattern_map</span><span class="p">();</span>
+             <span class="k">auto</span> <span class="n">mzero</span> <span class="o">=</span> <span class="n">m</span><span class="p">.</span><span class="n">get_pattern_map</span><span class="p">()[</span><span class="n">zero</span><span class="p">];</span>
+             <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ngraph</span><span class="o">::</span><span class="n">is_zero</span><span class="p">(</span><span class="n">mzero</span><span class="p">))</span>
+             <span class="p">{</span>
+                 <span class="n">NGRAPH_DEBUG</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;zero constant = &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">mzero</span><span class="o">-&gt;</span><span class="n">get_name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; not equal to 0n&quot;</span><span class="p">;</span>
+                 <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+             <span class="p">}</span>
+             <span class="k">auto</span> <span class="n">mpattern</span> <span class="o">=</span> <span class="n">m</span><span class="p">.</span><span class="n">get_match_root</span><span class="p">();</span>
+
+             <span class="k">auto</span> <span class="n">cg</span> <span class="o">=</span> <span class="n">shared_ptr</span><span class="p">(</span><span class="k">new</span> <span class="n">op</span><span class="o">::</span><span class="n">Relu</span><span class="p">(</span><span class="n">pattern_map</span><span class="p">[</span><span class="n">val</span><span class="p">]));</span>
+             <span class="n">ngraph</span><span class="o">::</span><span class="n">replace_node</span><span class="p">(</span><span class="n">m</span><span class="p">.</span><span class="n">get_match_root</span><span class="p">(),</span> <span class="n">cg</span><span class="p">);</span>
+             <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+         <span class="p">};</span>
+
+         <span class="k">auto</span> <span class="n">m</span> <span class="o">=</span> <span class="n">make_shared</span><span class="p">(</span><span class="n">max</span><span class="p">,</span> <span class="n">callback</span><span class="p">);</span>
+         <span class="k">this</span><span class="o">-&gt;</span><span class="n">add_matcher</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+     <span class="p">}</span>
+ <span class="p">};</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="recurrent-patterns">
+<h2>Recurrent patterns<a class="headerlink" href="#recurrent-patterns" title="Permalink to this headline">¶</a></h2>
+<p>Equivalent to <code class="docutils literal notranslate"><span class="pre">&quot;A(BC)+A&quot;</span></code> in regexes</p>
+<p><code class="docutils literal notranslate"><span class="pre">(((A</span> <span class="pre">+</span> <span class="pre">0)</span> <span class="pre">+</span> <span class="pre">0)</span> <span class="pre">+</span> <span class="pre">0)</span> <span class="pre">=</span> <span class="pre">A</span></code></p>
+<p><img alt="image12" src="../../_images/rp_graph1.png" /></p>
+<p><img alt="image13" src="../../_images/rp_pattern.png" /></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Shape</span> <span class="n">shape</span><span class="p">{};</span>
+ <span class="k">auto</span> <span class="n">a</span> <span class="o">=</span> <span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">i32</span><span class="p">,</span> <span class="n">shape</span><span class="p">);</span>
+ <span class="k">auto</span> <span class="n">b</span> <span class="o">=</span> <span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">i32</span><span class="p">,</span> <span class="n">shape</span><span class="p">);</span>
+ <span class="k">auto</span> <span class="n">rpattern</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">pattern</span><span class="o">::</span><span class="n">op</span><span class="o">::</span><span class="n">Label</span><span class="o">&gt;</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+ <span class="k">auto</span> <span class="n">iconst0</span> <span class="o">=</span> <span class="n">ngraph</span><span class="o">::</span><span class="n">make_zero</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">i32</span><span class="p">,</span> <span class="n">shape</span><span class="p">);</span>
+ <span class="k">auto</span> <span class="n">abs</span> <span class="o">=</span> <span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Abs</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+ <span class="k">auto</span> <span class="n">add1</span> <span class="o">=</span> <span class="n">iconst0</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+ <span class="k">auto</span> <span class="n">add2</span> <span class="o">=</span> <span class="n">iconst0</span> <span class="o">+</span> <span class="n">add1</span><span class="p">;</span>
+ <span class="k">auto</span> <span class="n">add3</span> <span class="o">=</span> <span class="n">iconst0</span> <span class="o">+</span> <span class="n">add2</span><span class="p">;</span>
+ <span class="k">auto</span> <span class="n">padd</span> <span class="o">=</span> <span class="n">iconst0</span> <span class="o">+</span> <span class="n">rpattern</span><span class="p">;</span>
+ <span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">pattern</span><span class="o">::</span><span class="n">op</span><span class="o">::</span><span class="n">Label</span><span class="o">&gt;&gt;</span> <span class="n">empty_correlated_matches</span><span class="p">;</span>
+ <span class="n">RecurrentMatcher</span> <span class="nf">rm</span><span class="p">(</span><span class="n">padd</span><span class="p">,</span> <span class="n">rpattern</span><span class="p">,</span> <span class="n">empty_correlated_matches</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+ <span class="n">ASSERT_TRUE</span><span class="p">(</span><span class="n">rm</span><span class="p">.</span><span class="n">match</span><span class="p">(</span><span class="n">add3</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../fusion/index.html" class="btn btn-neutral float-right" title="Pattern Matcher" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="list-of-passes.html" class="btn btn-neutral" title="List of passes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Glossary &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="index.html"/>
+        <link rel="next" title="Release Notes" href="project/release-notes.html"/>
+        <link rel="prev" title="Contribution Guide" href="project/contribution-guide.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <br/><img src="_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Glossary</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="_sources/glossary.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="glossary">
+<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
+<dl class="glossary docutils">
+<dt id="term-ann">ANN</dt>
+<dd><abbr title="ANN">Artificial Neural Network</abbr>, often abbreviated as <a class="reference internal" href="#term-nn"><span class="xref std std-term">NN</span></a>.</dd>
+<dt id="term-backend">backend</dt>
+<dd>A component that can execute computations.</dd>
+<dt id="term-bridge">bridge</dt>
+<dd>A component of nGraph that acts as a backend for a framework,
+allowing the framework to define and execute computations.</dd>
+<dt id="term-builder">builder</dt>
+<dd>A builder is a function that creates a sub-graph and returns
+a root node to the bridge. Fused ops are preferred over
+builders See also: <a class="reference internal" href="provenance/overview.html"><span class="doc">Basic concepts</span></a>.</dd>
+<dt id="term-data-flow-graph">data-flow graph</dt>
+<dd>Data-flow graphs are used to implement deep learning models. In
+a data-flow graph, nodes represent operations on data and edges
+represent data flowing between those operations.</dd>
+<dt id="term-dynamic-tensor">dynamic tensor</dt>
+<dd>A tensor whose shape can change from one “iteration” to the next. When
+created, a framework <a class="reference internal" href="#term-bridge"><span class="xref std std-term">bridge</span></a> might supply only <em>partial</em> shape
+information: it might be <strong>all</strong> the tensor dimensions, <strong>some</strong> of the
+tensor dimensions, or <strong>none</strong> of the tensor dimensions; furthermore,
+the rank of the tensor may be left unspecified.</dd>
+<dt id="term-export">export</dt>
+<dd>The serialized version of a trained model that can be passed to
+one of the nGraph backends for computation.</dd>
+<dt id="term-framework">framework</dt>
+<dd>Frameworks provide expressive user-facing APIs for constructing,
+training, validating, and deploying DL/ML models: TensorFlow*,
+PaddlePaddle*, MXNet*, PyTorch*, and Caffe* are all examples of
+well-known frameworks.</dd>
+<dt id="term-function-graph">function graph</dt>
+<dd>The nGraph Library uses a function graph to represent an
+<code class="docutils literal notranslate"><span class="pre">op</span></code>’s parameters and results.</dd>
+<dt id="term-fusion">fusion</dt>
+<dd>Fusion is the fusing, combining, merging, collapsing, or refactoring
+of a graph’s functional operations (<code class="docutils literal notranslate"><span class="pre">ops</span></code>) into one or more of
+nGraph’s core ops.</dd>
+<dt id="term-isa">ISA</dt>
+<dd><p class="first">An acronym for “Instruction Set Architecture,” an ISA is machine code that
+is compatible with the underlying silicon architecture. A realization of
+an ISA is called an <em>implementation</em>. An ISA permits multiple
+implementations that may vary in performance, physical size, memory use or
+reuse, and monetary cost among other things. An ISA defines everything a
+machine-language programmer needs to know in order to program a particular
+backend device. What an ISA defines will differ among ISAs; in general, it
+defines things like:</p>
+<blockquote>
+<div><ul class="simple">
+<li>supported <em>data types</em>;</li>
+<li>physical <em>states</em> available, such as the main memory and registers;</li>
+<li><em>semantics</em>, such as the memory consistency and addressing modes;</li>
+<li><em>low-level machine instructions</em> that comprise a machine language;</li>
+<li>and the <em>input/output model</em>.</li>
+</ul>
+</div></blockquote>
+<p class="last">Be careful to not confuse ISAs with microarchitectures.</p>
+</dd>
+<dt id="term-lstm">LSTM</dt>
+<dd><abbr title="Long Short-Term Memory">LSTM</abbr> is an acronym for “Long Short-Term
+Memory”. LSTMs extend on the traditional RNN by providing a number of ways
+to “forget” the memory of the previous time step via a set of learnable
+gates. These gates help avoid the problem of exploding or vanishing
+gradients that occur in the traditional RNN.</dd>
+<dt id="term-model-description">model description</dt>
+<dd>A description of a program’s fundamental operations that are
+used by a framework to generate inputs for computation.</dd>
+<dt id="term-nn">NN</dt>
+<dd><abbr title="Neural Network">NN</abbr> is an acronym for “Neural Network”. NN models
+are used to simulate possible combinations of binary logic processing
+and multi-layer (multi-dimensional) paths through which a <a class="reference internal" href="#term-data-flow-graph"><span class="xref std std-term">data-flow graph</span></a>
+may be mapped or computed. A NN does not have centralized storage; rather,
+a NN manifests as information stored as patterns throughout the network
+structure. NNs may be <strong>Recurrent</strong> (feedback loop) or <strong>Nonrecurrent</strong>
+(feed-forward) with regard to the network vector.</dd>
+<dt id="term-op">op</dt>
+<dd>An op represents an operation. Ops are stateless and have zero
+or more inputs and zero or more outputs. Some ops have
+additional constant attributes. Every output of an op
+corresponds to a tensor and has an element type and a shape. The
+element types and shapes of the outputs of an op are determined
+by the inputs and attributes of the op.</dd>
+<dt id="term-parameter">parameter</dt>
+<dd>In the context of a function graph, a “parameter” refers to what
+“stands in” for an argument in an <code class="docutils literal notranslate"><span class="pre">op</span></code> definition.</dd>
+<dt id="term-provenance">provenance</dt>
+<dd>The term provenance refers to the matching of device code to framework
+sub-graphs; it is analogous to source code locators in conventional
+compilers, which associate regions of object code with source files and
+line numbers.</dd>
+<dt id="term-quantization">quantization</dt>
+<dd>Quantization refers to the conversion of numerical data into a lower-precision
+representation. Quantization is often used in deep learning to reduce the time and
+energy needed to perform computations by reducing the size of data transfers and the
+number of steps needed to perform a computation. This improvement in speed and energy
+usage comes at a cost in terms of numerical accuracy, but deep learning models are
+often able to function well in spite of this reduced accuracy.</dd>
+<dt id="term-rann">RANN</dt>
+<dd><abbr title="RANN">Recurrent Artificial Neural Network</abbr>, often abbreviated as
+<a class="reference internal" href="#term-rnn"><span class="xref std std-term">RNN</span></a>.</dd>
+<dt id="term-result">result</dt>
+<dd>In the context of a function graph, the term “result” refers to
+what stands in for the returned value.</dd>
+<dt id="term-rnn">RNN</dt>
+<dd><p class="first">A <abbr title="RNN">Recurrent Neural Network</abbr> is a variety of <a class="reference internal" href="#term-nn"><span class="xref std std-term">NN</span></a> where
+output nodes from a layer on a data-flow graph have loopback to nodes that
+comprise an earlier layer. Since the RNN has no “centralized” storage, this
+loopback is the means by which the ANN can “learn” or be trained. There are
+several sub-categories of RNNs. The traditional RNN looks like:</p>
+<p><span class="math notranslate nohighlight">\(s_t = tanh(dot(W,x_{t-1}) + dot(U, s_{t-1})\)</span></p>
+<p class="last">where <span class="math notranslate nohighlight">\(x\)</span> is the input data, <span class="math notranslate nohighlight">\(s\)</span> is the memory, and output is
+<span class="math notranslate nohighlight">\(o_t = softmax(dot(V, s_t))\)</span>.  <a class="reference internal" href="ops/tanh.html"><span class="doc">Tanh</span></a>, <a class="reference internal" href="ops/dot.html"><span class="doc">Dot</span></a>, and
+<a class="reference internal" href="ops/softmax.html"><span class="doc">Softmax</span></a> are all nGraph <a class="reference internal" href="ops/index.html"><span class="doc">core Ops</span></a>.</p>
+</dd>
+<dt id="term-sgd">SGD</dt>
+<dd><abbr title="SGD">Stochastic Gradient Descent</abbr>, also known as incremental
+gradient descent, is an iterative method for optimizing a
+differentiable objective function.</dd>
+<dt id="term-shape">shape</dt>
+<dd>The shape of a tensor is a tuple of non-negative integers that
+represents an exclusive upper bound for coordinate values.</dd>
+<dt id="term-shape-propagation">shape propagation</dt>
+<dd>The static process by which assignment of every tensor (or,
+equivalently, every node output) in the graph is assigned
+<strong>complete shape information</strong>.</dd>
+<dt id="term-shared-pointer">shared pointer</dt>
+<dd><p class="first">The C++ standard template library has the template
+<code class="docutils literal notranslate"><span class="pre">std::shared_ptr&lt;X&gt;</span></code>. A shared pointer is used like an <code class="docutils literal notranslate"><span class="pre">X*</span></code>
+pointer, but maintains a reference count to the underlying
+object. Each new shared pointer to the object increases the
+count. When a shared pointer goes out of scope, the reference
+count is decremented, and, when the count reaches 0, the
+underlying object is deleted. The function template
+<code class="docutils literal notranslate"><span class="pre">std::make_shared&lt;X&gt;(...)</span></code> can be used similarly to <code class="docutils literal notranslate"><span class="pre">new</span>
+<span class="pre">X(...)</span></code>, except it returns a <code class="docutils literal notranslate"><span class="pre">std::shared_ptr&lt;X&gt;</span></code> instead of
+an <code class="docutils literal notranslate"><span class="pre">X*</span></code>.</p>
+<p>If there is a chain of shared pointers from an object back to
+itself, every object in the chain is referenced, so the
+reference counts will never reach 0 and the objects will never
+be deleted.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">a</span></code> referenced <code class="docutils literal notranslate"><span class="pre">b</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> wanted to track all
+references to itself and shared pointers were used both
+directions, there would be a chain of pointers form <code class="docutils literal notranslate"><span class="pre">a</span></code> to
+itself. We avoid this by using shared pointers in only one
+direction, and raw pointers for the inverse
+direction. <code class="docutils literal notranslate"><span class="pre">std::enabled_shared_from_this</span></code> is a class template
+that defines a method <code class="docutils literal notranslate"><span class="pre">shared_from_this</span></code> that provides a
+shared pointer from a raw pointer.</p>
+<p class="last">nGraph makes use of shared pointers for objects whose lifetime
+is hard to determine when they are allocated.</p>
+</dd>
+<dt id="term-step">step</dt>
+<dd>An abstract “action” that produces zero or more tensor outputs
+from zero or more tensor inputs. Steps correspond to <em>ops</em> that
+connect <em>nodes</em>.</dd>
+<dt id="term-tensors">tensors</dt>
+<dd><p class="first">Tensors are maps from <em>coordinates</em> to scalar values, all of the
+same type, called the <em>element type</em> of the tensor.</p>
+<div class="last figure">
+<a class="reference internal image-reference" href="_images/classngraph_tensor_descriptor.png"><img alt="_images/classngraph_tensor_descriptor.png" src="_images/classngraph_tensor_descriptor.png" style="width: 90%;" /></a>
+</div>
+</dd>
+<dt id="term-tensorview">Tensorview</dt>
+<dd>The interface backends implement for tensor use. When there are no more
+references to the tensor view, it will be freed when convenient for the
+backend.</dd>
+<dt id="term-validated">validated</dt>
+<dd>To provide optimizations with nGraph, we first confirm that a given
+workload is “validated” as being functional; that is, we can
+successfully load its serialized graph as an nGraph <a class="reference internal" href="#term-function-graph"><span class="xref std std-term">function
+graph</span></a></dd>
+</dl>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="project/release-notes.html" class="btn btn-neutral float-right" title="Release Notes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="project/contribution-guide.html" class="btn btn-neutral" title="Contribution Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

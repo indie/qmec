@@ -1,0 +1,540 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Constant &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../index.html"/>
+        <link rel="up" title="List of Core ops" href="index.html"/>
+        <link rel="next" title="Convert" href="convert.html"/>
+        <link rel="prev" title="Concat" href="concat.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <br/><img src="../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="index.html">List of Core <code class="docutils literal notranslate"><span class="pre">ops</span></code></a> &raquo;</li>
+      
+    <li>Constant</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../_sources/ops/constant.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="constant">
+<h1>Constant<a class="headerlink" href="#constant" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Constant</span> <span class="c1">// Literal constant tensor</span>
+</pre></div>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The output is a tensor initialized from the <code class="docutils literal notranslate"><span class="pre">values</span></code> attribute.</p>
+<div class="section" id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="35%" />
+<col width="45%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Notes</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">type</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">ngraph::element::type</span></code></td>
+<td>The element type of the value
+in the computation</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">shape</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">ngraph::Shape</span></code></td>
+<td>The shape of the constant</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">values</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">std::vector&lt;T&gt;&amp;</span></code></td>
+<td>Constant elements in row-major order.
+T must be compatible with the element
+type</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="34%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Element Type</th>
+<th class="head">Shape</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">output</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">type</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">shape</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="c-interface">
+<h2>C++ Interface<a class="headerlink" href="#c-interface" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N6ngraph2op2v08ConstantE">
+<span id="_CPPv3N6ngraph2op2v08ConstantE"></span><span id="_CPPv2N6ngraph2op2v08ConstantE"></span><span id="ngraph::op::v0::Constant"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant"></span><em class="property">class </em><code class="descname">Constant</code> : <em class="property">public</em> ngraph::op::Op<a class="headerlink" href="#_CPPv4N6ngraph2op2v08ConstantE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class for constants. </p>
+<p>Subclassed by ngraph::op::v0::ScalarConstantLike</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant13get_type_infoEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant13get_type_infoEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant13get_type_infoEv"></span><span id="ngraph::op::v0::Constant::get_type_infoC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_a858977f3b2418b36a3fbd1420e877f3e_1a858977f3b2418b36a3fbd1420e877f3e"></span><em class="property">const</em> NodeTypeInfo &amp;<code class="descname">get_type_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant13get_type_infoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the NodeTypeInfo for the node’s class. During transition to type_info, returns a dummy type_info for Node if the class has not been updated yet. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorI1TEE">
+<span id="_CPPv3N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorI1TEE"></span><span id="_CPPv2N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorI1TEE"></span><span id="ngraph::op::v0::Constant::Constant__element::TypeCR.Shape.std::vector:T:CR"></span><em class="property">template </em>&lt;<em class="property">typename</em> T&gt;<br /><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_a3abbaf7df5dc2459bc0efd6a2fa7824d_1a3abbaf7df5dc2459bc0efd6a2fa7824d"></span><code class="descname">Constant</code><span class="sig-paren">(</span><em class="property">const</em> element::Type &amp;<em>type</em>, Shape <em>shape</em>, <em class="property">const</em> std::vector&lt;T&gt; &amp;<em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorI1TEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a tensor constant. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">type</span></code>: The element type of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">shape</span></code>: The shape of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">values</span></code>: A vector of literals for initializing the tensor constant. The size of values must match the size of the shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorINSt6stringEEE">
+<span id="_CPPv3N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorINSt6stringEEE"></span><span id="_CPPv2N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorINSt6stringEEE"></span><span id="ngraph::op::v0::Constant::Constant__element::TypeCR.Shape.std::vector:ss:CR"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_a9ee6d60d5fd79cc83eac1f0010fcd900_1a9ee6d60d5fd79cc83eac1f0010fcd900"></span><code class="descname">Constant</code><span class="sig-paren">(</span><em class="property">const</em> element::Type &amp;<em>type</em>, Shape <em>shape</em>, <em class="property">const</em> std::vector&lt;std::string&gt; &amp;<em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v08Constant8ConstantERKN7element4TypeE5ShapeRKNSt6vectorINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a tensor constant This constructor is mainly to support deserialization of constants. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">type</span></code>: The element type of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">shape</span></code>: The shape of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">values</span></code>: A list of string values to use as the constant data. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v08Constant8ConstantERKN7element4TypeERK5ShapePKv">
+<span id="_CPPv3N6ngraph2op2v08Constant8ConstantERKN7element4TypeERK5ShapePKv"></span><span id="_CPPv2N6ngraph2op2v08Constant8ConstantERKN7element4TypeERK5ShapePKv"></span><span id="ngraph::op::v0::Constant::Constant__element::TypeCR.ShapeCR.voidCP"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_a4992d57f99dc4ca9b8672e2338a2dd8b_1a4992d57f99dc4ca9b8672e2338a2dd8b"></span><code class="descname">Constant</code><span class="sig-paren">(</span><em class="property">const</em> element::Type &amp;<em>type</em>, <em class="property">const</em> Shape &amp;<em>shape</em>, <em class="property">const</em> void *<em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v08Constant8ConstantERKN7element4TypeERK5ShapePKv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a tensor constant with the supplied data. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">type</span></code>: The element type of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">shape</span></code>: The shape of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">data</span></code>: A void* to constant data. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v08Constant24validate_and_infer_typesEv">
+<span id="_CPPv3N6ngraph2op2v08Constant24validate_and_infer_typesEv"></span><span id="_CPPv2N6ngraph2op2v08Constant24validate_and_infer_typesEv"></span><span id="ngraph::op::v0::Constant::validate_and_infer_types"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1afcd5c11c278d4f3afd5ff4e13f02fe6b"></span>void <code class="descname">validate_and_infer_types</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v08Constant24validate_and_infer_typesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Throws if the node is invalid. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant13get_shape_valEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant13get_shape_valEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant13get_shape_valEv"></span><span id="ngraph::op::v0::Constant::get_shape_valC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1ae2abf6b8fb5eb3d5c92b94e2625df159"></span>Shape <code class="descname">get_shape_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant13get_shape_valEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the value of the constant node as a Shape object Can only be used on element::i64 nodes and interprets negative values as zeros. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant15get_strides_valEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant15get_strides_valEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant15get_strides_valEv"></span><span id="ngraph::op::v0::Constant::get_strides_valC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1accdb9a17089f3424c5f6fe8fd9481c54"></span>Strides <code class="descname">get_strides_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant15get_strides_valEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the value of the constant node as a Strides object Can only be used on element::i64 nodes and interprets negative values as zeros. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant18get_coordinate_valEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant18get_coordinate_valEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant18get_coordinate_valEv"></span><span id="ngraph::op::v0::Constant::get_coordinate_valC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1ae390fa2c950ff4fbf40725b3fe9335e6"></span>Coordinate <code class="descname">get_coordinate_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant18get_coordinate_valEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the value of the constant node as a Coordinate object Can only be used on element::i64 nodes and interprets negative values as zeros. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant23get_coordinate_diff_valEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant23get_coordinate_diff_valEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant23get_coordinate_diff_valEv"></span><span id="ngraph::op::v0::Constant::get_coordinate_diff_valC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1aa74e3449c13cbc6a15af61feefe6fc42"></span>CoordinateDiff <code class="descname">get_coordinate_diff_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant23get_coordinate_diff_valEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the value of the constant node as a CoordinateDiff object Can only be used on element::i64 nodes. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant19get_axis_vector_valEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant19get_axis_vector_valEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant19get_axis_vector_valEv"></span><span id="ngraph::op::v0::Constant::get_axis_vector_valC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1a84b23d3371e33d7d56db2c274e9462c7"></span>AxisVector <code class="descname">get_axis_vector_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant19get_axis_vector_valEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the value of the constant node as an AxisVector object Can only be used on element::i64 nodes and interprets negative values as zeros. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant16get_axis_set_valEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant16get_axis_set_valEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant16get_axis_set_valEv"></span><span id="ngraph::op::v0::Constant::get_axis_set_valC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_1a49fba26900f206869a653906f7a1624e"></span>AxisSet <code class="descname">get_axis_set_val</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant16get_axis_set_valEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns the value of the constant node as an AxisSet object Can only be used on element::i64 nodes and interprets negative values as zeros. Repeated values are allowed. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant17get_value_stringsEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant17get_value_stringsEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant17get_value_stringsEv"></span><span id="ngraph::op::v0::Constant::get_value_stringsC"></span><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_a1e77786a9fd3c74d4f9b465a2eb6d6ee_1a1e77786a9fd3c74d4f9b465a2eb6d6ee"></span>std::vector&lt;std::string&gt; <code class="descname">get_value_strings</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant17get_value_stringsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The initialization literals for the tensor constant. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph2op2v08Constant11cast_vectorEv">
+<span id="_CPPv3NK6ngraph2op2v08Constant11cast_vectorEv"></span><span id="_CPPv2NK6ngraph2op2v08Constant11cast_vectorEv"></span><span id="ngraph::op::v0::Constant::cast_vectorC"></span><em class="property">template </em>&lt;<em class="property">typename</em> T&gt;<br /><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_a05132c30cfcf5a328e8313c83aaaacf1_1a05132c30cfcf5a328e8313c83aaaacf1"></span>std::vector&lt;T&gt; <code class="descname">cast_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph2op2v08Constant11cast_vectorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the <a class="reference internal" href="#classngraph_1_1op_1_1v0_1_1Constant"><span class="std std-ref">Constant</span></a>’s value as a vector cast to type T. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><a class="reference internal" href="#classngraph_1_1op_1_1v0_1_1Constant"><span class="std std-ref">Constant</span></a>’s data vector. </dd>
+<dt><strong>Template Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">T</span></code>: Type to which data vector’s entries will be cast. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeKNSt6vectorI1TEE">
+<span id="_CPPv3N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeKNSt6vectorI1TEE"></span><span id="_CPPv2N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeKNSt6vectorI1TEE"></span><span id="ngraph::op::v0::Constant::create__element::TypeCR.Shape.std::vector:T:C"></span><em class="property">template </em>&lt;<em class="property">typename</em> T&gt;<br /><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_ad3981da5640c4d7406cb30f9136103fb_1ad3981da5640c4d7406cb30f9136103fb"></span><em class="property">static</em> std::shared_ptr&lt;op::v0::<a class="reference internal" href="#_CPPv4N6ngraph2op2v08ConstantE" title="ngraph::op::v0::Constant">Constant</a>&gt; <code class="descname">create</code><span class="sig-paren">(</span><em class="property">const</em> element::Type &amp;<em>type</em>, Shape <em>shape</em>, <em class="property">const</em> std::vector&lt;T&gt; <em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeKNSt6vectorI1TEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Wrapper around constructing a shared_ptr of a <a class="reference internal" href="#classngraph_1_1op_1_1v0_1_1Constant"><span class="std std-ref">Constant</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">type</span></code>: The element type of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">shape</span></code>: The shape of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">values</span></code>: A vector of values to use as the constant data. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeNSt16initializer_listI1TEE">
+<span id="_CPPv3N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeNSt16initializer_listI1TEE"></span><span id="_CPPv2N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeNSt16initializer_listI1TEE"></span><span id="ngraph::op::v0::Constant::create__element::TypeCR.Shape.std::initializer_list:T:"></span><em class="property">template </em>&lt;<em class="property">typename</em> T&gt;<br /><span class="target" id="classngraph_1_1op_1_1v0_1_1Constant_ae5308f8801b2f27c561dd952569aac11_1ae5308f8801b2f27c561dd952569aac11"></span><em class="property">static</em> std::shared_ptr&lt;op::v0::<a class="reference internal" href="#_CPPv4N6ngraph2op2v08ConstantE" title="ngraph::op::v0::Constant">Constant</a>&gt; <code class="descname">create</code><span class="sig-paren">(</span><em class="property">const</em> element::Type &amp;<em>type</em>, Shape <em>shape</em>, std::initializer_list&lt;T&gt; <em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph2op2v08Constant6createERKN7element4TypeE5ShapeNSt16initializer_listI1TEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Wrapper around constructing a shared_ptr of a <a class="reference internal" href="#classngraph_1_1op_1_1v0_1_1Constant"><span class="std std-ref">Constant</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">type</span></code>: The element type of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">shape</span></code>: The shape of the tensor constant. </li>
+<li><code class="docutils literal notranslate"><span class="pre">values</span></code>: An initializer_list of values to use as the constant data. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="convert.html" class="btn btn-neutral float-right" title="Convert" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="concat.html" class="btn btn-neutral" title="Concat" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

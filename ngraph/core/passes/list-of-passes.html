@@ -1,0 +1,539 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>List of passes &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../../index.html"/>
+        <link rel="up" title="Compiler Passes" href="passes.html"/>
+        <link rel="next" title="Passes that use Matcher" href="passes-that-use-matcher.html"/>
+        <link rel="prev" title="Compiler Passes" href="passes.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <br/><img src="../../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="passes.html">Compiler Passes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">List of passes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes-that-use-matcher.html">Passes that use Matcher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes.html#basic-concepts">Basic concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes.html#a-simple-example">A simple example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passes.html#a-complex-example">A complex example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="passes.html">Compiler Passes</a> &raquo;</li>
+      
+    <li>List of passes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../_sources/core/passes/list-of-passes.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="list-of-passes">
+<h1>List of passes<a class="headerlink" href="#list-of-passes" title="Permalink to this headline">¶</a></h1>
+<p>The kinds of compiler passes available can be broken down into different buckets:</p>
+<div class="section" id="graph-optimization-passes">
+<h2>Graph Optimization Passes<a class="headerlink" href="#graph-optimization-passes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Graph Optimization Passes</th>
+<th class="head">More Detail</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">AlgebraicSimplification</span></code></td>
+<td><a class="reference internal" href="#algebraic-simpl"><span class="std std-ref">Algebraic Simplification</span></a></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">CommonSubexpressionElimination</span></code></td>
+<td><a class="reference internal" href="#common-subex-elim"><span class="std std-ref">Common Subexpression Elimination</span></a></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">ConstantFolding</span></code></td>
+<td><a class="reference internal" href="#constant-fold"><span class="std std-ref">Constant Folding</span></a></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">CoreFusion</span></code></td>
+<td><a class="reference internal" href="#core-fusion"><span class="std std-ref">Core Fusion</span></a></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">ReshapeElimination</span></code></td>
+<td><a class="reference internal" href="#reshape-transpose-elim"><span class="std std-ref">Reshape Elimination</span></a></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ReshapeSinking</span></code></td>
+<td><a class="reference internal" href="#reshape-transpose-sink"><span class="std std-ref">Reshape Sinking</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="node-optimization-passes">
+<h2>Node Optimization Passes<a class="headerlink" href="#node-optimization-passes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Node Optimization Passes</th>
+<th class="head">More Detail</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">NopElimination</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ZeroDimTensorElimination</span></code></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="memory-assignment-passes">
+<h2>Memory Assignment Passes<a class="headerlink" href="#memory-assignment-passes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Memory Assignment Passes</th>
+<th class="head">More Detail</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">AssignLayout</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">Liveness</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">MemoryLayout</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">PropagateCacheability</span></code></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="codegen-passes">
+<h2>Codegen Passes<a class="headerlink" href="#codegen-passes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Codegen is currently experimental only.</p>
+</div>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Codegen Passes</th>
+<th class="head">More Detail</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">CommonFunctionCollection</span></code></td>
+<td>Experimental Only</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="debug-passes">
+<h2>Debug Passes<a class="headerlink" href="#debug-passes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Debug Passes</th>
+<th class="head">More Detail</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">DumpSorted</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">MemoryVisualize</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">Serialization</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">VisualizeTree</span></code></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="maintenance-passes">
+<h2>Maintenance Passes<a class="headerlink" href="#maintenance-passes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Maintenance Passes</th>
+<th class="head">More Detail</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">GetOutputElementElimination</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">LikeReplacement</span></code></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">ValidateGraph</span></code></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">All of the above passes are currently implementable; more
+detailed documentation for each pass may be a <abbr title="WIP">Work In Progress</abbr>
+(WIP).</p>
+</div>
+<div class="section" id="algebraic-simplification">
+<span id="algebraic-simpl"></span><h3><code class="docutils literal notranslate"><span class="pre">Algebraic</span> <span class="pre">Simplification</span></code><a class="headerlink" href="#algebraic-simplification" title="Permalink to this headline">¶</a></h3>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="../../_images/algebraic-simpl.png"><img alt="../../_images/algebraic-simpl.png" src="../../_images/algebraic-simpl.png" style="width: 450px;" /></a>
+<p class="caption"><span class="caption-text">Algebraic simplification</span></p>
+</div>
+<p>The <strong>Algebraic Simplification</strong> pass implements what amounts to a “grab bag” of
+algebraic simplification rules. It does some basic things like rewrite “zero
+times x” to simply “zero”, or “zero plus x” to plain “x”.</p>
+<p>It can also do a number of tricks more specific to deep learning. For example,
+if we discover that a tensor is being sliced up by adjacent segments, only to
+have those slices concatenated back together again, we can skip the slicing and
+concatting altogether. Or, if a tensor is being padded, but the actual width of
+the padding is zero all around, we can skip the padding step entirely.</p>
+<p>Several other transformations like this are implemented in the algebraic
+simplification pass. And while none of these transformations might seem
+particularly impressive on their own, when everything comes together the
+results of this pass often yield improvement even on the initial graph straight
+out of the bridge. This pass is also quite important as a “glue” pass that can
+be used to clean up and/or re-simplify after other passes have done their own
+tricks.  See the example on <a class="reference internal" href="passes.html"><span class="doc">Compiler Passes</span></a> for an example of how effective this
+can be.</p>
+</div>
+<div class="section" id="common-subexpression-elimination">
+<span id="common-subex-elim"></span><h3><code class="docutils literal notranslate"><span class="pre">Common</span> <span class="pre">Subexpression</span> <span class="pre">Elimination</span></code><a class="headerlink" href="#common-subexpression-elimination" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="constant-folding">
+<span id="constant-fold"></span><h3><code class="docutils literal notranslate"><span class="pre">Constant</span> <span class="pre">Folding</span></code><a class="headerlink" href="#constant-folding" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="core-fusion">
+<span id="id1"></span><h3><code class="docutils literal notranslate"><span class="pre">Core</span> <span class="pre">Fusion</span></code><a class="headerlink" href="#core-fusion" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="reshape-elimination">
+<span id="reshape-transpose-elim"></span><h3><code class="docutils literal notranslate"><span class="pre">Reshape</span> <span class="pre">Elimination</span></code><a class="headerlink" href="#reshape-elimination" title="Permalink to this headline">¶</a></h3>
+<p>The pass also called <strong>Reshape/Transpose Elimination</strong> will find and optimize where
+we can “push” two <code class="docutils literal notranslate"><span class="pre">Transpose</span></code> ops through a matrix multiplication. For example,
+if you have two matrices (say, <em>foo</em> and <em>bar</em>), both of these matrices will be
+transposed (to produce <em>foo.t</em> and <em>bar.t</em>, respectively), after which <em>foo.t</em>
+and <em>bar.t</em> get multiplied together.</p>
+<p>Often a more efficient way to implement this is to switch the order of the
+arguments <em>foo</em> and <em>bar</em>, multiply them together, and then transpose the output
+of the matmul. Effectively, this cuts two <cite>Transpose</cite> operations down to just
+one, where the <strong>Reshape/Transpose</strong> elimination will do that rewrite for you.</p>
+<p>Another common pattern that can be optimized via nGraph is the case where two
+transpositions cancel each other out. One example of this is taking the
+“Transpose” of the transpose of a matrix, though actually a more common case is
+when the graph is translating among different batch formats. We can often move
+these operations around through a process called <strong>Reshape sinking/swimming</strong>,
+and in cases where two transposes wind up canceling each other out, we can cut
+them both out of the graph.</p>
+</div>
+<div class="section" id="reshape-sinking">
+<span id="reshape-transpose-sink"></span><h3><code class="docutils literal notranslate"><span class="pre">Reshape</span> <span class="pre">Sinking</span></code><a class="headerlink" href="#reshape-sinking" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="zero-element-tensor-elimination">
+<span id="elementzero-tensor-elim"></span><h3><code class="docutils literal notranslate"><span class="pre">Zero-Element</span> <span class="pre">Tensor</span> <span class="pre">Elimination</span></code><a class="headerlink" href="#zero-element-tensor-elimination" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="passes-that-use-matcher.html" class="btn btn-neutral float-right" title="Passes that use Matcher" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="passes.html" class="btn btn-neutral" title="Compiler Passes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

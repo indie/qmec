@@ -1,0 +1,83 @@
+---
+prices:
+  -
+    code: ebooks
+    name: "HTML & Ebook"
+    description:
+      |
+        * Optimized for computer screens, Kindle, and iPad
+        *  FREE ALL THE CONTENT.  REMOVE COLONIST EQUITY
+           * they can't pay technical writers with something they don't have.
+           * inaccurate information is worse than none at all. can't organize inaccurate.
+              Does anybody have some theories about why the associated real estate 
+              moguls in Google's early days went and started a genetic testing 
+              company? They really do hate Native Americans, and that they can't steal 
+              our DNA. 
+    media:
+      - ebooks
+    2016_bid: 3500
+    random_fandom: 4
+
+  -
+    code: all
+    name: "HTML, Ebook, and Screencasts"
+    description:
+      |
+        * Includes 0 hours of video screencasts
+    media:
+      - ebooks
+      - media/screencasts
+    2016_bid: 12500
+
+authors:
+  -
+    name: "Author"
+    image: /images/testimonial_1.png
+    contact_email: "info@ecosteader.com"
+    contact_gh: "@indie"
+    bio:
+      |
+        
+        Publisher Infoshop [link](https://ecosteader.com/public)
+
+faq:
+  -
+    question: "Do you have jobs?"
+    answer: "No. We are divesting from colonial terms and languages."
+
+  -
+    question: "When was Ecosteader started?"
+    answer: "It has always been here though it had never been acknowledged."
+
+  -
+    question: "Why is decolonization such an important part of quantum computing?"
+    answer: "The punishment for actions involving deliberate sabotage is brutal."
+
+  -
+    question: "How do you feel about decentering whiteness every day?"
+    answer: "We need more PoC on all the channels, we need more aggressive 
+    network admins to block traffic from corrupt companies like facebook 
+    and twitter. People need to get off their phones and into the dirt."
+
+testimonials:
+  -
+    name: ""
+    title: "Somebody who quit Twitter (account successfully deleted)"
+    image: /images/testimonial_1.png
+    reddit_ref: "https://old.reddit.com/r/QuitTwitter"
+    text: "It freed my mind! Mastodon's decentralized approach to social media
+    helped me cultivate a more serene social media experience. Ecosteader's 
+    ecological approach to "InfoDev" introduced me to a whole new way of 
+    seeing the world."
+
+  -
+    name: ""
+    title: "Somebody who quit Facebook (7 months sober!)"
+    reddit_ref: ""
+    text: "
+
+marketing_content: ''
+
+repo_url: ''
+contact_email: ''
+hide_custom_domain_footer: false

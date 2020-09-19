@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PaddlePaddle* &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../index.html"/>
+        <link rel="next" title="Basic Concepts" href="../core/overview.html"/>
+        <link rel="prev" title="ONNX" href="onnx_integ.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <br/><img src="../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PaddlePaddle*</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#integration-design">Integration design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integration-details">Integration details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ngraph-compilation-control-and-trigger-method">nGraph compilation control and trigger method</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>PaddlePaddle*</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../_sources/frameworks/paddle_integ.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="paddlepaddle">
+<h1>PaddlePaddle*<a class="headerlink" href="#paddlepaddle" title="Permalink to this headline">¶</a></h1>
+<p>PaddlePaddle is an open source deep learning framework developed by Baidu. It
+aims to enable performant large-scale distributed computation for deep learning.
+The nGraph Compiler stack’s integration to PaddlePaddle respects PaddlePaddle’s
+design philosophy to minimize switching cost for users. To access nGraph from
+PaddlePaddle, we’ve added three modules to PaddlePaddle:</p>
+<ul class="simple">
+<li>nGraph engine operator (op),</li>
+<li>nGraph engine, and</li>
+<li>nGraph bridge.</li>
+</ul>
+<p>The nGraph engine op inherits the PaddlePaddle operator class to allow nGraph
+engine op to be called using methods consistent with other PaddlePaddle operators.
+When the nGraph engine is called by the aforementioned op, the nGraph bridge
+converts PaddlePaddle operators into nGraph operators. nGraph will then build a
+computational graph based on the converted ops according to the input topology.</p>
+<div class="section" id="integration-design">
+<h2>Integration design<a class="headerlink" href="#integration-design" title="Permalink to this headline">¶</a></h2>
+<p>Key design criteria for nGraph-PaddlePaddle integration includes:</p>
+<ol class="arabic simple">
+<li>Minimal intermediate links between nGraph and PaddlePaddle, to reduce latency
+and improve performance.</li>
+<li>Close to no switching cost for end users of PaddlePaddle framework.</li>
+<li>Ease of maintenance.</li>
+</ol>
+<p>To satisfy the first design criteria, nGraph designed its operator to match
+PaddlePaddle’s implementation. nGraph is triggered by the PaddlePaddle
+executor by one line of code.</p>
+<p>After nGraph engine is called, it and the nGraph C++ backend manage all the
+heavy lifting for performance optimization. The Python frontend on PaddlePaddle
+remains the same, and end users need <strong>no changes</strong> in the code they write
+to be able to benefit from the increased performance. This design fulfills
+the second criteria.</p>
+<p>Lastly, the code contributed by nGraph to PaddlePaddle repository mainly
+resides in the <code class="docutils literal notranslate"><span class="pre">fluid/operator/ngraph</span></code> directory, and having most of the
+nGraph code in one place allows for easy maintenance.</p>
+<div class="figure" id="figure-paddle-design">
+<a class="reference internal image-reference" href="../_images/paddlepaddle_design.svg"><img alt="" src="../_images/paddlepaddle_design.svg" width="100%" /></a>
+</div>
+<p><em>Figure A</em> above depicts nGraph access from PaddlePaddle. The PaddlePaddle
+executor generates an executable operator according to the program
+description (ProgramDesc). nGraph scans the operator sequence before
+execution, and replaces the supported operators (or subgraphs) with nGraph
+operators. PaddlePaddle can then execute the nGraph operators and the
+unreplaced PaddlePaddle operators with a uniform interface. The unreplaced
+operators are executed by PaddlePaddle native implementation.</p>
+<p>nGraph’s current integration reflected on PaddlePaddle’s github repository
+is organized in the following file structure:</p>
+<div class="figure" id="figure-paddle-dir">
+<a class="reference internal image-reference" href="../_images/PaddlePaddleDir.svg"><img alt="" src="../_images/PaddlePaddleDir.svg" width="100%" /></a>
+</div>
+<p>Compilation of nGraph is handled by the <code class="docutils literal notranslate"><span class="pre">ngraph.cmake</span></code> file in the
+<code class="docutils literal notranslate"><span class="pre">cmake/external</span> <span class="pre">directory</span></code>. Other newly-introduced files are
+located primarily in the paddle/fluid/operator/ngraph directory. The
+nGraph operators replacing PaddlePaddle operators as described in
+the previous section can be found in the <code class="docutils literal notranslate"><span class="pre">ngraph/ops</span></code> directory.</p>
+</div>
+<div class="section" id="integration-details">
+<h2>Integration details<a class="headerlink" href="#integration-details" title="Permalink to this headline">¶</a></h2>
+<p>More details on implementation of nGraph engine op, nGraph engine,
+and nGraph bridges are provided below:</p>
+<ol class="arabic">
+<li><p class="first"><strong>nGraph engine op</strong>: Triggers subgraphs to be executed by nGraph.</p>
+<ul class="simple">
+<li>Input: Input variable set</li>
+<li>Output: Output variable set</li>
+<li>Attribute :<ul>
+<li>Graph: Serialized subgraph. The protobuffer described
+by PaddlePaddle is serialized and passed to nGraph <strong>as a string</strong>.</li>
+<li>Interval: The interval of ops in operator list that will be executed by nGraph.</li>
+</ul>
+</li>
+<li>Related code :<ul>
+<li><code class="docutils literal notranslate"><span class="pre">Paddle/fluid/operators/ngraph/ngraph_engine_op.h</span></code>  <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/ngraph/ngraph_engine_op.h">link to ngraph_engine_op header code</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">Paddle/fluid/operators/ngraph/ngraph_engine_op.cc</span></code>  <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/ngraph/ngraph_engine_op.cc">link to ngraph_engine_op cpp code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first"><strong>nGraph engine</strong>: calls the nGraph Library to perform calculations.</p>
+<p>The nGraph engine class includes the input and output required to build
+a nGraph function graph from the nGraph engine kernel, the execution
+function, and the data exchange between nGraph and PaddlePaddle.
+The primary methods are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">BuildNgIO</span></code>: gets input and output variables.</li>
+<li><code class="docutils literal notranslate"><span class="pre">GetNgFunction</span></code>: obtains the nGraph function used in the calculation.
+It matches entire pattern of the input to the output and saves functions
+that need to be called repeatedly.</li>
+<li><code class="docutils literal notranslate"><span class="pre">BuildNgFunction</span></code>: builds nGraph functions.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Run</span></code>: calls backend execution  and exchange data with the paddle.</li>
+<li><dl class="first docutils">
+<dt>Related code :</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">Paddle/fluid/operators/ngraph/ngraph_engine.h</span></code> <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/ngraph/ngraph_engine.h">link to ngraph_engine header code</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">Paddle/fluid/operators/ngraph/ngraph_engine.cc</span></code> <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/ngraph/ngraph_engine.cc">link to ngraph_engine cpp code</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p class="first"><strong>nGraph bridge</strong>: converts PaddlePaddle operators to nGraph operators.</p>
+<p>The nGraph bridge converts supported PaddlePaddle operators to nGraph
+operators, which results in a reconstruction of the subgraph with
+nGraph’s intermediate representation. The convertable operators are
+<a class="reference external" href="https://github.com/PaddlePaddle/Paddle/tree/develop/paddle/fluid/operators/ngraph/ops">located in the ngraph ops</a> directory, and each operator has its
+own files for easy management. For the conversion of operators. There
+is a common unified interface to facilitate code development and
+operator transformation. The relevant interfaces are:</p>
+<ul class="simple">
+<li>GetInputNode: obtains input node for the conversion operator. The nodes
+are managed through a map.</li>
+<li>SetOutputNode: sets the constructed node to the map.</li>
+<li><dl class="first docutils">
+<dt>Related code :</dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">Paddle/fluid/operators/ngraph/ngraph_bridge.h</span></code> <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/ngraph/ngraph_bridge.h">link to ngraph_bridge header code</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">Paddle/fluid/operators/ngraph/ngraph_bridge.cc</span></code>  <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/ngraph/ngraph_bridge.cc">link to ngraph_bridge cpp code</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="ngraph-compilation-control-and-trigger-method">
+<h2>nGraph compilation control and trigger method<a class="headerlink" href="#ngraph-compilation-control-and-trigger-method" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><strong>Compile Control</strong> – The compilation of nGraph is controlled with the
+<code class="docutils literal notranslate"><span class="pre">WITH_NGRAPH</span></code> option. If compiled using <code class="docutils literal notranslate"><span class="pre">WITH_NGRAPH=ON</span></code>, the nGraph
+Library will be downloaded and compiled. This option has a corresponding
+<code class="docutils literal notranslate"><span class="pre">PADDLE_WITH_NGRAPH</span></code> flag. If compiled <code class="docutils literal notranslate"><span class="pre">WITH_NGRAPH=OFF</span></code>, the relevant
+code will not be compiled.</li>
+<li><strong>Trigger Control</strong> – <code class="docutils literal notranslate"><span class="pre">FLAGS_use_ngraph</span></code> triggers nGraph. If this option
+is set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, nGraph will be triggered by the PaddlePaddle executor
+to convert and execute the supported subgraph. Demos are provided under
+<code class="docutils literal notranslate"><span class="pre">paddle/benchmark/fluid/train/demo</span></code> (link <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/tree/develop/paddle/fluid/train/demo">train_demo</a>) and <code class="docutils literal notranslate"><span class="pre">paddle/benchmark/fluid/train/imdb_demo</span></code>
+(link <a class="reference external" href="https://github.com/PaddlePaddle/Paddle/tree/develop/paddle/fluid/train/imdb_demo">imdb_demo</a>)</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../core/overview.html" class="btn btn-neutral float-right" title="Basic Concepts" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="onnx_integ.html" class="btn btn-neutral" title="ONNX" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

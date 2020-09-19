@@ -1,0 +1,758 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contribution Guide &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../index.html"/>
+        <link rel="next" title="Glossary" href="../glossary.html"/>
+        <link rel="prev" title="Performance testing with nbench" href="../inspection/profiling.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <br/><img src="../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contribution Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-formatting">Code formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributing-to-documentation">Contributing to documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Contribution Guide</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../_sources/project/contribution-guide.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contribution-guide">
+<span id="id1"></span><h1><a class="toc-backref" href="#id3">Contribution Guide</a><a class="headerlink" href="#contribution-guide" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#contribution-guide" id="id3">Contribution Guide</a><ul>
+<li><a class="reference internal" href="#license" id="id4">License</a></li>
+<li><a class="reference internal" href="#code-formatting" id="id5">Code formatting</a><ul>
+<li><a class="reference internal" href="#adding-ops-to-ngraph-core" id="id6">Adding ops to nGraph Core</a></li>
+<li><a class="reference internal" href="#coding-style" id="id7">Coding style</a><ul>
+<li><a class="reference internal" href="#names" id="id8">Names</a></li>
+<li><a class="reference internal" href="#namespaces" id="id9">Namespaces</a></li>
+<li><a class="reference internal" href="#file-names" id="id10">File Names</a></li>
+<li><a class="reference internal" href="#formatting" id="id11">Formatting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#contributing-to-documentation" id="id12">Contributing to documentation</a><ul>
+<li><a class="reference internal" href="#documenting-source-code-examples" id="id13">Documenting source code examples</a></li>
+<li><a class="reference internal" href="#adding-captions-to-code-blocks" id="id14">Adding captions to code blocks</a></li>
+<li><a class="reference internal" href="#how-to-build-the-documentation" id="id15">How to build the documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2><a class="toc-backref" href="#id4">License</a><a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>All contributed code must be compatible with the <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2</a> license,
+preferably by being contributed under the Apache 2 license. Code
+contributed with another license will need the license reviewed by
+Intel before it can be accepted.</p>
+</div>
+<div class="section" id="code-formatting">
+<h2><a class="toc-backref" href="#id5">Code formatting</a><a class="headerlink" href="#code-formatting" title="Permalink to this headline">¶</a></h2>
+<p>All C/C++ source code in the repository, including the test code, must
+adhere to the source-code formatting and style guidelines described
+here.  The coding style described here applies to the nGraph
+repository. Related repositories may make adjustments to better match
+the coding styles of libraries they are using.</p>
+<div class="section" id="adding-ops-to-ngraph-core">
+<h3><a class="toc-backref" href="#id6">Adding ops to nGraph Core</a><a class="headerlink" href="#adding-ops-to-ngraph-core" title="Permalink to this headline">¶</a></h3>
+<p>Our design philosophy is that the graph is not a script for running
+optimized kernels; rather, the graph is a specification for a
+computation composed of basic building blocks which we call
+<code class="docutils literal notranslate"><span class="pre">ops</span></code>. Compilation should match groups of <code class="docutils literal notranslate"><span class="pre">ops</span></code> to appropriate
+optimal semantically equivalent groups of kernels for the backend(s)
+in use. Thus, we expect that adding of new Core ops should be
+infrequent and that most functionality instead gets added with new
+functions that build sub-graphs from existing core ops.</p>
+</div>
+<div class="section" id="coding-style">
+<h3><a class="toc-backref" href="#id7">Coding style</a><a class="headerlink" href="#coding-style" title="Permalink to this headline">¶</a></h3>
+<p>We have a coding standard to help us to get development done. If part of the
+standard is impeding progress, we either adjust that part or remove it. To this
+end, we employ coding standards that facilitate understanding of <em>what nGraph
+components are doing</em>. Programs are easiest to understand when they can be
+understood locally; if most local changes have local impact, you do not need to
+dig through multiple files to understand what something does and if it
+is safe to modify.</p>
+<div class="section" id="names">
+<h4><a class="toc-backref" href="#id8">Names</a><a class="headerlink" href="#names" title="Permalink to this headline">¶</a></h4>
+<p>Names should <em>briefly</em> describe the thing being named and follow these casing
+standards:</p>
+<ul class="simple">
+<li>Define C++ class or type names with <code class="docutils literal notranslate"><span class="pre">CamelCase</span></code>.</li>
+<li>Assign template parameters with <code class="docutils literal notranslate"><span class="pre">UPPER_SNAKE_CASE</span></code>.</li>
+<li>Case variable and function names with <code class="docutils literal notranslate"><span class="pre">lower_snake_case</span></code>.</li>
+</ul>
+<p>Method names for basic accessors are prefixed by <code class="docutils literal notranslate"><span class="pre">get_</span></code>, <code class="docutils literal notranslate"><span class="pre">is_</span></code>, or <code class="docutils literal notranslate"><span class="pre">set_</span></code> and
+should have simple <span class="math notranslate nohighlight">\(\mathcal{O}(1)\)</span> implementations:</p>
+<ul class="simple">
+<li>A <code class="docutils literal notranslate"><span class="pre">get_</span></code> method should be externally idempotent. It may perform some simple
+initialization and cache the result for later use.  Trivial <code class="docutils literal notranslate"><span class="pre">get_</span></code>
+methods can be defined in a header file. If a method is
+non-trivial, that is often a sign that it is not a basic accessor.</li>
+<li>An <code class="docutils literal notranslate"><span class="pre">is_</span></code> may be used instead of <code class="docutils literal notranslate"><span class="pre">get_</span></code> for boolean accessors.</li>
+<li>A <code class="docutils literal notranslate"><span class="pre">set_</span></code> method should change the value returned by the corresponding <code class="docutils literal notranslate"><span class="pre">get_</span></code>
+method.<ul>
+<li>Use <code class="docutils literal notranslate"><span class="pre">set_is_</span></code> if using <code class="docutils literal notranslate"><span class="pre">is_</span></code> to get a value.</li>
+<li>Trivial <code class="docutils literal notranslate"><span class="pre">set_</span></code> methods may be defined in a header file.</li>
+</ul>
+</li>
+<li>Names of variables should indicate the use of the variable.<ul>
+<li>Member variables should be prefixed with <code class="docutils literal notranslate"><span class="pre">m_</span></code>.</li>
+<li>Static member variables should be rare and be prefixed with <code class="docutils literal notranslate"><span class="pre">s_</span></code>.</li>
+</ul>
+</li>
+<li>Do not use <code class="docutils literal notranslate"><span class="pre">using</span></code> to define a type alias at top-level in header file.
+If the abstraction is useful, give it a class.<ul>
+<li>C++ does not enforce the abstraction. For example if <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">Y</span></code> are
+aliases for the same type, you can pass an <code class="docutils literal notranslate"><span class="pre">X</span></code> to something expecting a <code class="docutils literal notranslate"><span class="pre">Y</span></code>.</li>
+<li>If one of the aliases were later changed, or turned into a real type, many
+callers could require changes.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h4><a class="toc-backref" href="#id9">Namespaces</a><a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">ngraph</span></code> is for the public API, although this is not currently enforced.<ul>
+<li>Use a nested namespace for implementation classes.</li>
+<li>Use an unnamed namespace or <code class="docutils literal notranslate"><span class="pre">static</span></code> for file-local names. This helps
+prevent unintended name collisions during linking and when using shared
+and dynamically-loaded libraries.</li>
+<li>Never use <code class="docutils literal notranslate"><span class="pre">using</span></code> at top-level in a header file.<ul>
+<li>Doing so leaks the alias into users of the header, including headers that
+follow.</li>
+<li>It is okay to use <code class="docutils literal notranslate"><span class="pre">using</span></code> with local scope, such as inside a class
+definiton.</li>
+</ul>
+</li>
+<li>Be careful of C++’s implicit namespace inclusions. For example, if a
+parameter’s type is from another namespace, that namespace can be visible
+in the body.</li>
+<li>Only use <code class="docutils literal notranslate"><span class="pre">using</span> <span class="pre">std</span></code> and/or <code class="docutils literal notranslate"><span class="pre">using</span> <span class="pre">ngraph</span></code> in <code class="docutils literal notranslate"><span class="pre">.cpp</span></code> files. <code class="docutils literal notranslate"><span class="pre">using</span></code> a
+nested namespace has can result in unexpected behavior.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="file-names">
+<h4><a class="toc-backref" href="#id10">File Names</a><a class="headerlink" href="#file-names" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">Do not use the same file name in multiple directories. At least one
+IDE/debugger ignores the directory name when setting breakpoints.</p>
+</li>
+<li><p class="first">Use <code class="docutils literal notranslate"><span class="pre">.hpp</span></code> for headers and <code class="docutils literal notranslate"><span class="pre">.cpp</span></code> for implementation.</p>
+</li>
+<li><p class="first">Reflect the namespace nesting in the directory hierarchy.</p>
+</li>
+<li><p class="first">Unit test files are in the <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory.</p>
+<ul>
+<li><p class="first">Transformer-dependent tests are tests running on the default transformer or
+specifying a transformer. For these, use the form</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">TEST</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">test_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Transformer-independent tests:</p>
+<ul>
+<li><p class="first">File name is <code class="docutils literal notranslate"><span class="pre">file_name.in.cpp</span></code></p>
+</li>
+<li><p class="first">Add <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&quot;test_control.hpp&quot;</span></code> to the file’s includes</p>
+</li>
+<li><p class="first">Add the line <code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">std::string</span> <span class="pre">s_manifest</span> <span class="pre">=</span> <span class="pre">&quot;${MANIFEST}&quot;;</span></code> to the top of the file.</p>
+</li>
+<li><p class="first">Use</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>NGRAPH_TEST<span class="o">(</span><span class="si">${</span><span class="nv">BACKEND_NAME</span><span class="si">}</span>, test_name<span class="o">)</span>
+</pre></div>
+</div>
+<p>for each test. Files are
+generated for each transformer and the <code class="docutils literal notranslate"><span class="pre">${BACKEND_NAME}</span></code> is replaced
+with the transformer name.</p>
+<p>Individual unit tests may be disabled by adding the name of the test to the
+<code class="docutils literal notranslate"><span class="pre">unit_test.manifest</span></code> file found in
+the transformer’s source file directory.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="formatting">
+<h4><a class="toc-backref" href="#id11">Formatting</a><a class="headerlink" href="#formatting" title="Permalink to this headline">¶</a></h4>
+<p>Things that look different should look different because they are different. We
+use <strong>clang format</strong> to enforce certain formatting. Although not always ideal,
+it is automatically enforced and reduces merge conflicts.</p>
+<ul>
+<li><p class="first">The <code class="file docutils literal notranslate"><span class="pre">.clang-format</span></code> file located in the root of the project specifies
+our format.  Simply run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> make style-check
+<span class="gp">$</span> make style-apply
+</pre></div>
+</div>
+</li>
+<li><p class="first">Formatting with <code class="docutils literal notranslate"><span class="pre">#include</span></code> files:</p>
+<ul>
+<li><p class="first">Put headers in groups separated by a blank line. Logically order the groups
+downward from system-level to 3rd-party to <code class="docutils literal notranslate"><span class="pre">ngraph</span></code>.</p>
+</li>
+<li><p class="first">Formatting will keep the files in each group in alphabetic order.</p>
+</li>
+<li><p class="first">Use this syntax for files that <strong>do not change during nGraph development</strong>; they
+will not be checked for changes during builds. Normally this will be
+everything but the ngraph files:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;file&gt;</span><span class="cp"></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Use this syntax for files that <strong>are changing during nGraph development</strong>; they will
+be checked for changes during builds. Normally this will be ngraph headers:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;file&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Use this syntax for system C headers with C++ wrappers:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;c...&gt;</span><span class="cp"></span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first">To guard against multiple inclusion, use:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>The syntax is a compiler extension that has been adopted by all
+supported compilers.</li>
+</ul>
+</li>
+<li><p class="first">The initialization</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Foo</span> <span class="n">x</span><span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+</pre></div>
+</div>
+<p>is preferred over</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Foo</span> <span class="nf">x</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Indentation should be accompanied by braces; this includes single-line bodies
+for conditionals and loops.</p>
+</li>
+<li><p class="first">Exception checking:</p>
+<ul class="simple">
+<li>Throw an exception to report a problem.</li>
+<li>Nothing that calls <code class="docutils literal notranslate"><span class="pre">abort</span></code>, <code class="docutils literal notranslate"><span class="pre">exit</span></code> or <code class="docutils literal notranslate"><span class="pre">terminate</span></code> should be used. Remember
+that ngraph is a guest of the framework.</li>
+<li>Do not use exclamation points in messages!</li>
+<li>Be as specific as practical. Keep in mind that the person who sees the error
+is likely to be on the other side of the framework and the message might be
+the only information they see about the problem.</li>
+</ul>
+</li>
+<li><p class="first">If you use <code class="docutils literal notranslate"><span class="pre">auto</span></code>, know what you are doing. <code class="docutils literal notranslate"><span class="pre">auto</span></code> uses the same
+type-stripping rules as template parameters. If something returns a reference,
+<code class="docutils literal notranslate"><span class="pre">auto</span></code> will strip the reference unless you use <code class="docutils literal notranslate"><span class="pre">auto&amp;</span></code>:</p>
+<ul>
+<li><p class="first">Don’t do things like</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="n">s</span> <span class="o">=</span> <span class="n">Shape</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+</pre></div>
+</div>
+<p>Instead, use</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Shape</span> <span class="n">s</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">};</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Indicate the type in the variable name.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">One variable declaration/definition per line</p>
+<ul>
+<li><p class="first">Don’t use the C-style</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">*</span><span class="n">z</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Instead, use:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+<span class="kt">int</span><span class="o">*</span> <span class="n">z</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<p>To contribute documentation for your code, please see the <a class="reference internal" href="doc-contributor-README.html"><span class="doc">Contributing to documentation</span></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">orphan:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="contributing-to-documentation">
+<h2><a class="toc-backref" href="#id12">Contributing to documentation</a><a class="headerlink" href="#contributing-to-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Tips for contributors who are new to the highly-dynamic
+environment of documentation in AI software:</p>
+<ul class="last simple">
+<li>A good place to start is “document something you figured out how to
+get working”. Content changes and additions should be targeted at
+something more specific than “developers”. If you don’t understand
+how varied and wide the audience is, you’ll inadvertently break or block
+things.</li>
+<li>There are experts who work on all parts of the stack; try asking how
+documentation changes ought to be made in their respective sections.</li>
+<li>Start with something small. It is okay to add a “patch” to fix a typo
+or suggest a word change; larger changes to files or structure require
+research and testing first, as well as some logic for why you think
+something needs changed.</li>
+<li>Most documentation should wrap at about <code class="docutils literal notranslate"><span class="pre">80</span></code>. We do our best to help
+authors source-link and maintain their own code and contributions;
+overwriting something already documented doesn’t always improve it.</li>
+<li>Be careful editing files with links already present in them; deleting
+links to papers, citations, or sources is discouraged.</li>
+<li>Please do not submit Jupyter* notebook code to the nGraph Library
+or core repos; best practice is to maintain any project-specific
+examples, tests, or walk-throughs in a separate repository and to link
+back to the stable <code class="docutils literal notranslate"><span class="pre">op</span></code> or Ops that you use in your project.</li>
+</ul>
+</div>
+<p>For updates within the nGraph Library <code class="docutils literal notranslate"><span class="pre">/doc</span></code> repo, please submit a PR with
+any changes or ideas you’d like integrated. This helps us maintain trackability
+with respect to changes made, additions, deletions, and feature requests.</p>
+<p>If you prefer to use a containerized application, like Jupyter* notebooks,
+Google Docs*, the GitHub* GUI, or MS Word* to explain, write, or share
+documentation contributions, you can convert the <code class="docutils literal notranslate"><span class="pre">doc/sphinx/source/*.rst</span></code>
+files to another format with a tool like <code class="docutils literal notranslate"><span class="pre">pypandoc</span></code> and share a link
+to your efforts on our <a class="reference external" href="https://github.com/NervanaSystems/ngraph/wiki/">wiki</a>.</p>
+<p>Another option is to fork the <a class="reference external" href="https://github.com/NervanaSystems/ngraph/">ngraph repo</a>, essentially snapshotting it at
+that point in time, and to build a Jupyter* notebook or other set of docs around
+it for a specific use case. Add a note on our wiki to show us what you
+did; new and novel applications may have their projects highlighted on an
+upcoming <a class="reference external" href="https://www.ngraph.ai">ngraph.ai</a> release.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please do not submit Jupyter* notebook code to the nGraph Library
+or core repos; best practice is to maintain any project-specific examples,
+tests, or walk-throughs in a separate repository.</p>
+</div>
+<div class="section" id="documenting-source-code-examples">
+<h3><a class="toc-backref" href="#id13">Documenting source code examples</a><a class="headerlink" href="#documenting-source-code-examples" title="Permalink to this headline">¶</a></h3>
+<p>When <strong>verbosely</strong> documenting functionality of specific sections of code –
+whether they are entire code blocks within a file, or code strings that are
+<strong>outside</strong> the nGraph Library’s <a class="reference external" href="https://github.com/NervanaSystems/ngraph/tree/master/doc">documentation repo</a>, here is an example
+of best practice:</p>
+<p>Say a file has some interesting functionality that could benefit from more
+explanation about one or more of the pieces in context. To keep the “in context”
+navigable, write something like the following in your <code class="docutils literal notranslate"><span class="pre">.rst</span></code> documentation
+source file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">literalinclude</span><span class="p">::</span> <span class="o">../../../</span><span class="n">examples</span><span class="o">/</span><span class="n">abc</span><span class="o">/</span><span class="n">abc</span><span class="o">.</span><span class="n">cpp</span>
+   <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">cpp</span>
+   <span class="p">:</span><span class="n">lines</span><span class="p">:</span> <span class="mi">20</span><span class="o">-</span><span class="mi">31</span>
+</pre></div>
+</div>
+<p>And the raw code will render as follows</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">ngraph</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Build the graph</span>
+    <span class="n">Shape</span> <span class="n">s</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">};</span>
+    <span class="k">auto</span> <span class="n">a</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">b</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">c</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="p">(</span><span class="n">element</span><span class="o">::</span><span class="n">f32</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+
+    <span class="k">auto</span> <span class="n">t0</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">op</span><span class="o">::</span><span class="n">Add</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>You can now verbosely explain the code block without worrying about breaking
+the code. The trick here is to add the file you want to reference relative to
+the folder where the <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> is that generates the documentation you’re
+writing.</p>
+<p>See the <strong>note</strong> at the bottom of this page for more detail about how
+this works in the current 0.29 version of nGraph Library documentation.</p>
+</div>
+<div class="section" id="adding-captions-to-code-blocks">
+<h3><a class="toc-backref" href="#id14">Adding captions to code blocks</a><a class="headerlink" href="#adding-captions-to-code-blocks" title="Permalink to this headline">¶</a></h3>
+<p>One more trick to helping users understand exactly what you mean with a section
+of code is to add a caption with content that describes your parsing logic. To
+build on the previous example, let’s take a bigger chunk of code, add some
+line numbers, and add a caption:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">literalinclude</span><span class="p">::</span> <span class="o">../../../</span><span class="n">examples</span><span class="o">/</span><span class="n">abc</span><span class="o">/</span><span class="n">abc</span><span class="o">.</span><span class="n">cpp</span>
+   <span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">cpp</span>
+   <span class="p">:</span><span class="n">lines</span><span class="p">:</span> <span class="mi">48</span><span class="o">-</span><span class="mi">56</span>
+   <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="s2">&quot;caption for a block of code that initializes tensors&quot;</span>
+</pre></div>
+</div>
+<p>and the generated output will show readers of your helpful documentation</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">“caption for a block of code that initializes tensors”</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="c1">// Initialize tensors</span>
+    <span class="kt">float</span> <span class="n">v_a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}};</span>
+    <span class="kt">float</span> <span class="n">v_b</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">},</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">}};</span>
+    <span class="kt">float</span> <span class="n">v_c</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">}};</span>
+
+    <span class="n">t_a</span><span class="o">-&gt;</span><span class="n">write</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v_a</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">v_a</span><span class="p">));</span>
+    <span class="n">t_b</span><span class="o">-&gt;</span><span class="n">write</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v_b</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">v_b</span><span class="p">));</span>
+    <span class="n">t_c</span><span class="o">-&gt;</span><span class="n">write</span><span class="p">(</span><span class="o">&amp;</span><span class="n">v_c</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">v_c</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<p>Our documentation practices are designed around “write once, reuse” that we can
+use to prevent code bloat.  See the <a class="reference internal" href="#"><span class="doc">Contribution Guide</span></a> for our code
+style guide.</p>
+</div>
+<div class="section" id="how-to-build-the-documentation">
+<h3><a class="toc-backref" href="#id15">How to build the documentation</a><a class="headerlink" href="#how-to-build-the-documentation" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Stuck on how to generate the html? Run these commands; they assume
+you start at a command line running within a clone (or a cloned fork) of the
+<code class="docutils literal notranslate"><span class="pre">ngraph</span></code> repo.  You do <strong>not</strong> need to run a virtual environment to create
+documentation if you don’t want; running <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">make</span> <span class="pre">clean</span></code> in the
+<code class="docutils literal notranslate"><span class="pre">doc/sphinx</span></code> folder removes any generated files.</p>
+</div>
+<p>Right now the minimal version of Sphinx needed to build the documentation is
+Sphinx v. 1.7.5.  This can be installed with <strong class="command">pip3</strong>, either to a virtual
+environment, or to your base system if you plan to contribute much core code or
+documentation. For C++ API docs that contain inheritance diagrams and collaboration
+diagrams which are helpful for framework integratons, building bridge code, or
+creating a backend UI for your own custom framework, be sure you have a system
+capable of running <a class="reference external" href="http://www.doxygen.org/index.html">doxygen</a>.</p>
+<p>To build documentation locally, run:</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt-get install python3-sphinx
+<span class="gp">$</span> pip3 install <span class="nv">Sphinx</span><span class="o">==</span><span class="m">1</span>.7.5
+<span class="gp">$</span> pip3 install breathe numpy
+<span class="gp">$</span> <span class="nb">cd</span> doc/sphinx/
+<span class="gp">$</span> make html
+<span class="gp">$</span> <span class="nb">cd</span> build/html
+<span class="gp">$</span> python3 -m http.server <span class="m">8000</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Then point your browser at <code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code>.</p>
+<p>To build documentation in a python3 virtualenv, try:</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m venv py3doc
+<span class="gp">$</span> . py3doc/bin/activate
+<span class="gp">(py3doc)$</span> pip install Sphinx breathe numpy
+<span class="gp">(py3doc)$</span> <span class="nb">cd</span> doc/sphinx
+<span class="gp">(py3doc)$</span> make html
+<span class="gp">(py3doc)$</span> <span class="nb">cd</span> build/html
+<span class="gp">(py3doc)$</span> python -m http.server <span class="m">8000</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Then point your browser at <code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For docs built in a virtual env, Sphinx latest changes may break
+documentation; try building with a specific version of Sphinx.</p>
+</div>
+<p>For tips on writing reStructuredText-formatted documentation, see the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">sphinx</a>
+stable reST documentation.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../glossary.html" class="btn btn-neutral float-right" title="Glossary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../inspection/profiling.html" class="btn btn-neutral" title="Performance testing with nbench" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

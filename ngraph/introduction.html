@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="index.html"/>
+        <link rel="next" title="Basic concepts" href="frameworks/overview.html"/>
+        <link rel="prev" title="nGraph Compiler Stack Documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <br/><img src="_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motivations">Motivations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solution-ngraph-and-plaidml">Solution: nGraph and PlaidML</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic/index.html">Dynamic Shapes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Introduction</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<span id="id1"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Future developments in <abbr title="AI">Artificial Intelligence</abbr> will increasingly
+rely on better methods to accelerate the performance of deep learning workloads.
+As <abbr title="DL">Deep Learning</abbr> models become more complex, and as the volume of
+data those models are expected to handle increases rapidly, the deployment of
+scalable AI solutions becomes a greater challenge.</p>
+<p>Today, two standard approaches to accelerate deep learning performance are:</p>
+<ol class="arabic simple">
+<li><strong>Design hardware solutions dedicated to deep learning computation</strong> – Many
+companies, ranging from startups to established manufacturers such as
+Intel, are actively developing <abbr title="ASICs">Application Specific Integrated Circuits</abbr>
+to accelerate the performance of deep learning for both training and
+inference.</li>
+<li><strong>Optimize software to accelerate performance</strong> – nGraph Compiler, an
+open-source deep learning compiler, is Intel’s solution to deliver performance
+via software optimization. nGraph provides developers with a way to
+accelerate workloads via software and to provide a significant increase
+in performance for standard hardware targets such as CPUs and GPUs. For
+deploying scalable AI solutions, nGraph uses kernel libraries, a popular
+and effective method to improve deep learning performance. Where kernel
+libraries are available and perform well, we use them.</li>
+</ol>
+<div class="section" id="motivations">
+<h2>Motivations<a class="headerlink" href="#motivations" title="Permalink to this headline">¶</a></h2>
+<p>The current <abbr title="SoTA">State-of-the-Art</abbr> software solution for deep
+learning computation is to integrate kernel libraries such as Intel®
+<abbr title="Intel® MKL DNN">Math Kernel Library for Deep Neural Networks</abbr>
+and Nvidia’s CuDNN into deep learning frameworks. These kernel
+libraries offer a performance boost during runtime on specific hardware
+targets through highly-optimized kernels and other operator-level
+optimizations.</p>
+<p>However, kernel libraries have three main problems:</p>
+<ol class="arabic simple">
+<li>Kernel libraries do not support graph-level optimizations.</li>
+<li>Framework integration of kernel libraries does not scale.</li>
+<li>The number of required kernels keeps growing.</li>
+</ol>
+<p>nGraph Compiler addresses the first two problems, and nGraph Compiler combined
+with PlaidML addresses the third problem. nGraph applies graph-level
+optimizations by taking the computational graph from a deep learning framework
+such as TensorFlow and reconstructing it with nGraph’s
+:abbr: <cite>IR (Intermediate Representation)</cite>. nGraph IR centralizes computational
+graphs from various frameworks and provides a unified way to connect backends
+for targeted hardware. To address the third problem, nGraph is integrated with
+PlaidML, a tensor compiler, which generates code in LLVM, OpenCL, OpenGL, and
+Metal. Low-level optimizations are automatically applied to the generated code,
+resulting in a more efficient execution that does not require manual kernel
+integration for most hardware targets.</p>
+<p>The following three sections explore the main problems of kernel libraries in
+more detail and describe how nGraph addresses them.</p>
+<div class="section" id="problem-1-kernel-libraries-do-not-support-graph-level-optimizations">
+<h3>Problem 1: Kernel libraries do not support graph-level optimizations<a class="headerlink" href="#problem-1-kernel-libraries-do-not-support-graph-level-optimizations" title="Permalink to this headline">¶</a></h3>
+<p>The example diagrams below show how a deep learning framework, when integrated
+with a kernel library, can optimally run each operation in a computational
+graph, but the choice of operations in the graph may not be optimal.</p>
+<div class="figure" id="id2">
+<span id="figure-a"></span><a class="reference internal image-reference" href="_images/kernel-problem-1.png"><img alt="" src="_images/kernel-problem-1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text"><strong>Figure A</strong>: The mathematical operations in a Deep Learning stack can be
+simplified significantly with a graph compiler</span></p>
+</div>
+<p>The computation is constructed to execute <code class="docutils literal notranslate"><span class="pre">(A+B)*C</span></code>. With nGraph, we can
+further optimize the graph to be represented as <code class="docutils literal notranslate"><span class="pre">A*C</span></code>. From the first graph
+shown on the left, the operation on the constant <code class="docutils literal notranslate"><span class="pre">B</span></code> can be computed at
+compile time (an optimization known as <em>constant folding</em>). The graph can be
+further simplified to the one on the right because the constant has a value of
+zero (known as <em>algebraic simplification</em>). Without such graph-level
+optimizations, a deep learning framework with a kernel library will compute
+all operations, resulting in suboptimal execution.</p>
+</div>
+<div class="section" id="problem-2-framework-integration-of-kernel-libraries-does-not-scale">
+<h3>Problem 2: Framework integration of kernel libraries does not scale<a class="headerlink" href="#problem-2-framework-integration-of-kernel-libraries-does-not-scale" title="Permalink to this headline">¶</a></h3>
+<p>Due to the growing number of new deep learning accelerators, integrating
+kernel libraries with frameworks has become increasingly more difficult. For
+each new deep learning accelerator, a custom kernel library integration must
+be implemented by a team of experts. This labor-intensive work is further
+complicated by the number of frameworks, as illustrated in the following
+diagram.</p>
+<div class="figure" id="id3">
+<span id="figure-b"></span><a class="reference internal image-reference" href="_images/kernel-problem-2.png"><img alt="" src="_images/kernel-problem-2.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text"><strong>Figure B</strong>:  A many-to-many problem</span></p>
+</div>
+<p>Each framework must be manually integrated with each hardware-specific kernel
+library. Additionally, each integration is unique to the framework and its set
+of deep learning operators, view on memory layout, feature set, etc. Each
+connection that needs to be made increases the amount of work, resulting in a
+fragile setup that is costly to maintain.</p>
+<p>nGraph solves this problem with bridges. A bridge takes a computational
+graph or similar structure and reconstructs it in the nGraph IR along with a
+few primitive nGraph operations. With a unified computational graph, kernel
+libraries no longer need to be separately integrated into each deep learning
+framework. Instead, the libraries only need to support nGraph primitive
+operations, and this approach streamlines the integration process for the
+backend.</p>
+</div>
+<div class="section" id="problem-3-the-number-of-required-kernels-keeps-growing">
+<h3>Problem 3: The number of required kernels keeps growing<a class="headerlink" href="#problem-3-the-number-of-required-kernels-keeps-growing" title="Permalink to this headline">¶</a></h3>
+<p>Integrating kernel libraries with multiple deep learning frameworks is a
+difficult task that becomes more complex with the growing number of
+kernels needed to achieve optimal performance. Past deep learning research has
+been built on a small set of standard computational primitives (convolution,
+GEMM, etc.). But as AI research advances and industrial deep learning
+applications continue to develop, the number of required kernels continues to
+increase exponentially. The number of required kernels is based on the number
+of chip designs, data types, operations, and the cardinality of each parameter
+per operation. Each connection in the following diagram represents significant
+work for what will ultimately be a fragile setup that is costly to maintain.</p>
+<div class="figure" id="id4">
+<span id="figure-c"></span><a class="reference internal image-reference" href="_images/kernel-problem-3.png"><img alt="" src="_images/kernel-problem-3.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text"><strong>Figure C</strong>:  Inevitable scaling problem</span></p>
+</div>
+<p>Integrating PlaidML with nGraph provides flexbility to support the latest deep
+learning models in the absence of hand-optimized kernels for new operations.
+PlaidML works together with nGraph to address the exponential growth of
+kernels.</p>
+<p>PlaidML takes two inputs: the operation defined by the user and the machine
+description of the hardware target. It then automatically generates kernels
+that are iteratively optimized through an IR known as <a class="reference external" href="https://arxiv.org/abs/1903.06498">Stripe</a>. Integration of
+PlaidML with nGraph allows users to choose the hardware and framework that
+suits their needs, resulting in freedom from kernel libraries.</p>
+</div>
+</div>
+<div class="section" id="solution-ngraph-and-plaidml">
+<h2>Solution: nGraph and PlaidML<a class="headerlink" href="#solution-ngraph-and-plaidml" title="Permalink to this headline">¶</a></h2>
+<p>We developed nGraph and integrated it with PlaidML to allow developers to
+accelerate deep learning performance and address the problem of scalable
+kernel libraries. To address the problem of scaling backends, nGraph applies
+graph-level optimizations to deep learning computations and unifies
+computational graphsfrom deep learning frameworks with nGraph IR.</p>
+<p>In conjunction with nGraph’s graph-level optimizations, PlaidML automatically
+applies low-level optimizations to improve deep learning performance.
+Additionally, PlaidML offers extensive support for various hardware targets
+due to its ability to generate code in LLVM, OpenCL, OpenGL, and Metal.</p>
+<p>Given a backend with existing kernel libraries, nGraph can readily support the
+target hardware because the backend only needs to support a few primitive
+operations. If the hardware supports one of the coding languages supported by
+PlaidML, developers must specify the machine description to support the
+hardware. Together, nGraph and PlaidML provide the best of both worlds.</p>
+<p>This documentation provides technical details of nGraph’s core functionality
+as well as framework and backend integrations. Creating a compiler stack like
+nGraph and PlaidML requires expert knowledge, and we’re confident that nGraph
+and PlaidML will make life easier for many kinds of developers:</p>
+<ol class="arabic simple">
+<li>Framework owners looking to support new hardware and custom chips.</li>
+<li>Data scientists and ML developers wishing to accelerate deep learning
+performance.</li>
+<li>New DL accelerator developers creating an end-to-end software stack from a
+deep learning framework to their silicon.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="frameworks/overview.html" class="btn btn-neutral float-right" title="Basic concepts" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="nGraph Compiler Stack Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

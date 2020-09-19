@@ -1,0 +1,937 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dynamic Shapes &mdash; Documentation for the nGraph Library and Compiler Stack</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+  
+<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400&display=swap&subset=latin-ext" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Documentation for the nGraph Library and Compiler Stack" href="../index.html"/>
+        <link rel="next" title="Working with Backends" href="../backends/index.html"/>
+        <link rel="prev" title="Quantization" href="../core/quantization.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body> 
+  <div id="menu-float" class="menu-float">
+    <a href="https://www.ngraph.ai" target="_blank"><i class="fa fa-home"></i></a>
+    <a href="https://ngraph.nervanasys.com/docs/latest" title="Documentation Home"><i class="fa fa-book"></i></a>
+    <a href="https://www.ngraph.ai/tutorials" title="Tutorials"><i class="fa fa-user-circle"></i></a>
+    <a href="https://www.youtube.com/embed/C9S0nmNS8bQ" target="_blank"><i class="fa fa-video-camera"></i></a>
+    <a href="https://ngraph.slack.com/" title="nGraph Slack Channel"><i class="fa fa-slack"></i></a>
+    <a href="https://github.com/NervanaSystems/ngraph/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href="https://www.github.com/NervanaSystems/ngraph"><img src="https://travis-ci.org/NervanaSystems/ngraph.svg?branch=master"></a></div></body>
+
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <br/><img src="../_static/logo.png" class="logo" />
+	    nGraph Compiler Stack
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.29
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search nGraph Documentation" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="docvs">nGraph Compiler stack</span>
+      v: 0.29
+      <span></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Recent Versions<i class="fa fa-terminal"></i></dt>
+        <dd><!-- Until our https://docs.ngraph.ai/ publishing is set up, we link to GitHub -->  
+          <ul>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.1-rc.1">0.27.1</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.27.0-rc.1">0.27.0</a></li> 
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.26.0">0.26.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.1-rc.10">0.25.1</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.25.0">0.25.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.24.0">0.24.0</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.2-rc.0">0.22.2</a></li>
+           <li><a href="https://github.com/NervanaSystems/ngraph/releases/tag/v0.22.1">0.22.1</a></li>
+         </ul></dd>
+      </dl>
+      <dl>
+        <dt>Links</dt>
+          <dd>
+           <a href="https://www.ngraph.ai/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/NervanaSystems/ngraph/releases">All Releases</a>
+          </dd>
+      </dl>
+    </div>
+</div>
+
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            <span class="toctree-expand"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Framework Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/overview.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/tensorflow_connect.html">TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/onnx_integ.html">ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/paddle_integ.html">PaddlePaddle*</a></li>
+</ul>
+<p class="caption"><span class="caption-text">nGraph Core</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../core/overview.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../buildlb.html">Build and Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/constructing-graphs/index.html">Constructing Graphs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/passes/passes.html">Compiler Passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/fusion/index.html">Pattern Matcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ops/index.html">nGraph Core Ops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../provenance/index.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/quantization.html">Quantization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dynamic Shapes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#runtime-error-checking">Runtime Error Checking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#partialshape-dimension-and-rank-classes">PartialShape, Dimension, and Rank Classes</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Backend Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../backends/index.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backends/cpp-api.html">Adding New Backends</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Training</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Distributed Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../training/qat.html">Quantization-Aware Training</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Validated Workloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/validated/list.html">Validated Workloads</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_core.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_tf.html">Debug TensorFlow*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_onnx.html">Debug ONNX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/debug_paddle.html">Debug PaddlePaddle*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/viz_tools.html">General Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../inspection/profiling.html">Performance testing with <code class="docutils literal notranslate"><span class="pre">nbench</span></code></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/contribution-guide.html">Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+</span>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">nGraph Compiler Stack</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Dynamic Shapes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../_sources/dynamic/index.rst.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dynamic-shapes">
+<h1>Dynamic Shapes<a class="headerlink" href="#dynamic-shapes" title="Permalink to this headline">¶</a></h1>
+<p>For an example on how to use dynamic shapes, see the <a class="reference internal" href="../core/constructing-graphs/execute.html#scenario-two"><span class="std std-ref">Scenario Two: Known Partial Shape</span></a>
+documentation.</p>
+<div class="section" id="runtime-error-checking">
+<h2>Runtime Error Checking<a class="headerlink" href="#runtime-error-checking" title="Permalink to this headline">¶</a></h2>
+<p>Static type-checking in the presence of dynamic shapes will make optimistic
+assumptions about things like shape mismatches. For example, if an elementwise
+op is provided inputs of shapes <code class="docutils literal notranslate"><span class="pre">(2,?)</span></code> and <code class="docutils literal notranslate"><span class="pre">(?,5)</span></code>, the type checker will
+proceed under the assumption that the user is not going to pass tensors with
+inconsistent shape at runtime, and therefore infer an output shape of <code class="docutils literal notranslate"><span class="pre">(2,5)</span></code>.
+That means that shape mismatches can now occur at runtime.</p>
+</div>
+<div class="section" id="partialshape-dimension-and-rank-classes">
+<span id="partial-shapes"></span><h2>PartialShape, Dimension, and Rank Classes<a class="headerlink" href="#partialshape-dimension-and-rank-classes" title="Permalink to this headline">¶</a></h2>
+<p>Partial shape information is expressed via the <code class="docutils literal notranslate"><span class="pre">PartialShape</span></code>, <code class="docutils literal notranslate"><span class="pre">Dimension</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">Rank</span></code> classes.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">Rank</span></code>  is an alias for <code class="docutils literal notranslate"><span class="pre">Dimension</span></code>, used when the value represents
+the number of axes in a shape, rather than the size of one dimension in a shape.</p>
+</div>
+<dl class="class">
+<dt id="_CPPv4N6ngraph12PartialShapeE">
+<span id="_CPPv3N6ngraph12PartialShapeE"></span><span id="_CPPv2N6ngraph12PartialShapeE"></span><span id="ngraph::PartialShape"></span><span class="target" id="classngraph_1_1PartialShape"></span><em class="property">class </em><code class="descname">PartialShape</code><a class="headerlink" href="#_CPPv4N6ngraph12PartialShapeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class representing a shape that may be partially or totally dynamic. </p>
+<p>XXX: THIS CLASS IS EXPERIMENTAL AND THE ENTIRE DESIGN IS SUBJECT TO CHANGE.</p>
+<p>A <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> may have:</p>
+<p><ul class="simple">
+<li>Dynamic rank. (Informal notation: <code class="docutils literal notranslate"><span class="pre">?</span></code>) </li>
+<li>Static rank, but dynamic dimensions on some or all axes. (Informal notation examples: <code class="docutils literal notranslate"><span class="pre">{1,2,?,4}</span></code>, <code class="docutils literal notranslate"><span class="pre">{?,?,?}</span></code>) </li>
+<li>Static rank, and static dimensions on all axes. (Informal notation examples: <code class="docutils literal notranslate"><span class="pre">{1,2,3,4}</span></code>, <code class="docutils literal notranslate"><span class="pre">{6}</span></code>, <code class="docutils literal notranslate"><span class="pre">{}</span></code>) </li>
+</ul>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N6ngraph12PartialShape12PartialShapeENSt16initializer_listI9DimensionEE">
+<span id="_CPPv3N6ngraph12PartialShape12PartialShapeENSt16initializer_listI9DimensionEE"></span><span id="_CPPv2N6ngraph12PartialShape12PartialShapeENSt16initializer_listI9DimensionEE"></span><span id="ngraph::PartialShape::PartialShape__std::initializer_list:Dimension:"></span><span class="target" id="classngraph_1_1PartialShape_a987726d0ab708ca548dbbd9c9a6dce28_1a987726d0ab708ca548dbbd9c9a6dce28"></span><code class="descname">PartialShape</code><span class="sig-paren">(</span>std::initializer_list&lt;<a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a>&gt; <em>init</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph12PartialShape12PartialShapeENSt16initializer_listI9DimensionEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a shape with static rank from an initializer list of <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><p>Examples:</p>
+<dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">init</span></code>: The <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> values for the constructed shape.</li>
+</ul>
+</dd>
+</dl>
+</p>
+<p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PartialShape</span> <span class="n">s</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">};</span>                     <span class="o">//</span> <span class="n">rank</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="nb">all</span> <span class="n">dimensions</span> <span class="n">static</span>
+<span class="n">PartialShape</span> <span class="n">s</span><span class="p">{};</span>                          <span class="o">//</span> <span class="n">rank</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">PartialShape</span> <span class="n">s</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="n">Dimension</span><span class="p">::</span><span class="n">dynamic</span><span class="p">(),</span><span class="mi">3</span><span class="p">};</span>  <span class="o">//</span> <span class="n">rank</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">dimension</span> <span class="mi">1</span> <span class="n">dynamic</span>
+</pre></div>
+</div>
+ </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph12PartialShape12PartialShapeERKNSt6vectorI9DimensionEE">
+<span id="_CPPv3N6ngraph12PartialShape12PartialShapeERKNSt6vectorI9DimensionEE"></span><span id="_CPPv2N6ngraph12PartialShape12PartialShapeERKNSt6vectorI9DimensionEE"></span><span id="ngraph::PartialShape::PartialShape__std::vector:Dimension:CR"></span><span class="target" id="classngraph_1_1PartialShape_ac1ebf729af1d757d75c69f64cef47952_1ac1ebf729af1d757d75c69f64cef47952"></span><code class="descname">PartialShape</code><span class="sig-paren">(</span><em class="property">const</em> std::vector&lt;<a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a>&gt; &amp;<em>dimensions</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph12PartialShape12PartialShapeERKNSt6vectorI9DimensionEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> with static rank from a vector of <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dimensions</span></code>: The <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> values for the constructed shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph12PartialShape12PartialShapeEv">
+<span id="_CPPv3N6ngraph12PartialShape12PartialShapeEv"></span><span id="_CPPv2N6ngraph12PartialShape12PartialShapeEv"></span><span id="ngraph::PartialShape::PartialShape"></span><span class="target" id="classngraph_1_1PartialShape_1a885287d462496aecf9d166a982a73233"></span><code class="descname">PartialShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph12PartialShape12PartialShapeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a static <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> with zero rank (the shape of a scalar). </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N12PartialShape12PartialShapeERK5Shape">
+<span id="_CPPv3N12PartialShape12PartialShapeERK5Shape"></span><span id="_CPPv2N12PartialShape12PartialShapeERK5Shape"></span><span id="PartialShape::PartialShape__ShapeCR"></span><span class="target" id="classngraph_1_1PartialShape_a745cce657289a05deff806071f2286f1_1a745cce657289a05deff806071f2286f1"></span><code class="descname">PartialShape</code><span class="sig-paren">(</span><em class="property">const</em> Shape &amp;<em>shape</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12PartialShape12PartialShapeERK5Shape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructs a static <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> from a Shape. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">shape</span></code>: The Shape to convert into <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a>. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph12PartialShape9is_staticEv">
+<span id="_CPPv3NK6ngraph12PartialShape9is_staticEv"></span><span id="_CPPv2NK6ngraph12PartialShape9is_staticEv"></span><span id="ngraph::PartialShape::is_staticC"></span><span class="target" id="classngraph_1_1PartialShape_a4ee295011a8cdcf5710c730c3ebf886e_1a4ee295011a8cdcf5710c730c3ebf886e"></span>bool <code class="descname">is_static</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph12PartialShape9is_staticEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check if this shape is static. </p>
+<p><p>A shape is considered static if it has static rank, and all dimensions of the shape are static. </p>
+<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this shape is static, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph12PartialShape10is_dynamicEv">
+<span id="_CPPv3NK6ngraph12PartialShape10is_dynamicEv"></span><span id="_CPPv2NK6ngraph12PartialShape10is_dynamicEv"></span><span id="ngraph::PartialShape::is_dynamicC"></span><span class="target" id="classngraph_1_1PartialShape_a7052cb1e62c91798de03e737c82cd630_1a7052cb1e62c91798de03e737c82cd630"></span>bool <code class="descname">is_dynamic</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph12PartialShape10is_dynamicEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check if this shape is dynamic. </p>
+<p><p>A shape is considered static if it has static rank, and all dimensions of the shape are static. </p>
+<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">false</span></code> if this shape is static, else <code class="docutils literal notranslate"><span class="pre">true</span></code>.</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph12PartialShape4rankEv">
+<span id="_CPPv3NK6ngraph12PartialShape4rankEv"></span><span id="_CPPv2NK6ngraph12PartialShape4rankEv"></span><span id="ngraph::PartialShape::rankC"></span><span class="target" id="classngraph_1_1PartialShape_a25c960c348eb0cd8711a92ac5d0acd19_1a25c960c348eb0cd8711a92ac5d0acd19"></span>Rank <code class="descname">rank</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph12PartialShape4rankEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the rank of the shape. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>The rank of the shape. This will be Rank::dynamic() if the rank of the shape is dynamic. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK12PartialShape10compatibleERK12PartialShape">
+<span id="_CPPv3NK12PartialShape10compatibleERK12PartialShape"></span><span id="_CPPv2NK12PartialShape10compatibleERK12PartialShape"></span><span id="PartialShape::compatible__PartialShapeCRC"></span><span class="target" id="classngraph_1_1PartialShape_a42d7af388b794933788f8110b60e3498_1a42d7af388b794933788f8110b60e3498"></span>bool <code class="descname">compatible</code><span class="sig-paren">(</span><em class="property">const</em> PartialShape &amp;<em>s</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK12PartialShape10compatibleERK12PartialShape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this shape is compatible with the argument, i.e., whether it is possible to merge them. </p>
+<p><p>Two shapes are compatible if </p>
+<ul class="simple">
+<li>one or both of them has dynamic rank, or </li>
+<li>both shapes have dynamic and equal rank, and their dimensions are elementwise compatible (see <a class="reference internal" href="#classngraph_1_1Dimension_a5db79a6648dfe51d196170b299c51e06_1a5db79a6648dfe51d196170b299c51e06"><span class="std std-ref">Dimension::compatible()</span></a>). </li>
+</ul>
+<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this shape is compatible with <code class="docutils literal notranslate"><span class="pre">s</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">s</span></code>: The shape to be checked for compatibility with this shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK12PartialShape11same_schemeERK12PartialShape">
+<span id="_CPPv3NK12PartialShape11same_schemeERK12PartialShape"></span><span id="_CPPv2NK12PartialShape11same_schemeERK12PartialShape"></span><span id="PartialShape::same_scheme__PartialShapeCRC"></span><span class="target" id="classngraph_1_1PartialShape_a0380e9272e1c8ca20ca45e6b6ae7c30a_1a0380e9272e1c8ca20ca45e6b6ae7c30a"></span>bool <code class="descname">same_scheme</code><span class="sig-paren">(</span><em class="property">const</em> PartialShape &amp;<em>s</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK12PartialShape11same_schemeERK12PartialShape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this shape represents the same scheme as the argument. </p>
+<p><p>Two shapes </p>
+<code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code> represent the same scheme if <ul class="simple">
+<li>they both have dynamic rank, or </li>
+<li>they both have static and equal rank <code class="docutils literal notranslate"><span class="pre">r</span></code>, and for every <code class="docutils literal notranslate"><span class="pre">i</span></code> from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">r-1</span></code>, <code class="docutils literal notranslate"><span class="pre">s1[i]</span></code> represents the same scheme as <code class="docutils literal notranslate"><span class="pre">s2[i]</span></code> (see <a class="reference internal" href="#classngraph_1_1Dimension_aa98e5e906ee63dde88133798e7760949_1aa98e5e906ee63dde88133798e7760949"><span class="std std-ref">Dimension::same_scheme()</span></a>). </li>
+</ul>
+<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this shape represents the same scheme as <code class="docutils literal notranslate"><span class="pre">s</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">s</span></code>: The shape whose scheme is being compared with this shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK12PartialShape7relaxesERK12PartialShape">
+<span id="_CPPv3NK12PartialShape7relaxesERK12PartialShape"></span><span id="_CPPv2NK12PartialShape7relaxesERK12PartialShape"></span><span id="PartialShape::relaxes__PartialShapeCRC"></span><span class="target" id="classngraph_1_1PartialShape_a445c50c7ed1863d5c6afc937e4ae2429_1a445c50c7ed1863d5c6afc937e4ae2429"></span>bool <code class="descname">relaxes</code><span class="sig-paren">(</span><em class="property">const</em> PartialShape &amp;<em>s</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK12PartialShape7relaxesERK12PartialShape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this shape is a relaxation of the argument. </p>
+<p><p>Intuitively, a </p>
+<a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> <code class="docutils literal notranslate"><span class="pre">s1</span></code> is said to <em>relax</em> <code class="docutils literal notranslate"><span class="pre">s2</span></code> (or <em>is a relaxation</em> of <code class="docutils literal notranslate"><span class="pre">s2</span></code>) if it is “more permissive” than <code class="docutils literal notranslate"><span class="pre">s2</span></code>. In other words, <code class="docutils literal notranslate"><span class="pre">s1</span></code> is a relaxation of <code class="docutils literal notranslate"><span class="pre">s2</span></code> if anything you can form by plugging things into the dynamic dimensions of <code class="docutils literal notranslate"><span class="pre">s2</span></code> is also something you can form by plugging things into the dynamic dimensions of <code class="docutils literal notranslate"><span class="pre">s1</span></code>, but not necessarily the other way around.<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this shape relaxes <code class="docutils literal notranslate"><span class="pre">s</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">s</span></code>: The shape which is being compared against this shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+<p><code class="docutils literal notranslate"><span class="pre">s1.relaxes(s2)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">s2.refines(s1)</span></code>.</p>
+<p>Formally, <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> <code class="docutils literal notranslate"><span class="pre">s1</span></code> is said to <em>relax</em> <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> <code class="docutils literal notranslate"><span class="pre">s2</span></code> if: <ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">s1</span></code> has dynamic rank, or </li>
+<li><code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code> both have static rank <code class="docutils literal notranslate"><span class="pre">r</span></code>, and for every <code class="docutils literal notranslate"><span class="pre">i</span></code> from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">r-1</span></code>, either <code class="docutils literal notranslate"><span class="pre">s1[i]</span></code> is dynamic, or <code class="docutils literal notranslate"><span class="pre">s1[i]</span></code> == <code class="docutils literal notranslate"><span class="pre">s2[i]</span></code>. </li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK12PartialShape7refinesERK12PartialShape">
+<span id="_CPPv3NK12PartialShape7refinesERK12PartialShape"></span><span id="_CPPv2NK12PartialShape7refinesERK12PartialShape"></span><span id="PartialShape::refines__PartialShapeCRC"></span><span class="target" id="classngraph_1_1PartialShape_ab053af8160eaa8162f0f45fb7f006a11_1ab053af8160eaa8162f0f45fb7f006a11"></span>bool <code class="descname">refines</code><span class="sig-paren">(</span><em class="property">const</em> PartialShape &amp;<em>s</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK12PartialShape7refinesERK12PartialShape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this shape is a refinement of the argument. </p>
+<p><p>Intuitively, a </p>
+<a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> <code class="docutils literal notranslate"><span class="pre">s1</span></code> is said to <em>relax</em> <code class="docutils literal notranslate"><span class="pre">s2</span></code> (or <em>is a relaxation</em> of <code class="docutils literal notranslate"><span class="pre">s2</span></code>) if it is “less permissive” than <code class="docutils literal notranslate"><span class="pre">s2</span></code>. In other words, <code class="docutils literal notranslate"><span class="pre">s1</span></code> is a relaxation of <code class="docutils literal notranslate"><span class="pre">s2</span></code> if anything you can form by plugging things into the dynamic dimensions of <code class="docutils literal notranslate"><span class="pre">s1</span></code> is also something you can form by plugging things into the dynamic dimensions of <code class="docutils literal notranslate"><span class="pre">s2</span></code>, but not necessarily the other way around.<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this shape refines <code class="docutils literal notranslate"><span class="pre">s</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">s</span></code>: The shape which is being compared against this shape. </li>
+</ul>
+</dd>
+</dl>
+</p>
+<p><code class="docutils literal notranslate"><span class="pre">s1.refines(s2)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">s2.relaxes(s1)</span></code>.</p>
+<p>Formally, <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> <code class="docutils literal notranslate"><span class="pre">s1</span></code> is said to <em>refine</em> <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> <code class="docutils literal notranslate"><span class="pre">s2</span></code> if: <ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">s2</span></code> has dynamic rank, or </li>
+<li><code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code> both have static rank <code class="docutils literal notranslate"><span class="pre">r</span></code>, and for every <code class="docutils literal notranslate"><span class="pre">i</span></code> from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">r-1</span></code>, either <code class="docutils literal notranslate"><span class="pre">s2[i]</span></code> is dynamic, or <code class="docutils literal notranslate"><span class="pre">s1[i]</span></code> == <code class="docutils literal notranslate"><span class="pre">s2[i]</span></code>. </li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N12PartialShape10merge_rankE4Rank">
+<span id="_CPPv3N12PartialShape10merge_rankE4Rank"></span><span id="_CPPv2N12PartialShape10merge_rankE4Rank"></span><span id="PartialShape::merge_rank__Rank"></span><span class="target" id="classngraph_1_1PartialShape_a3ab5ea449216b4a93984cfbb243c21c4_1a3ab5ea449216b4a93984cfbb243c21c4"></span>bool <code class="descname">merge_rank</code><span class="sig-paren">(</span>Rank <em>r</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12PartialShape10merge_rankE4Rank" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Checks that this shape’s rank is compatible with <code class="docutils literal notranslate"><span class="pre">r</span></code>, and, if this shape’s rank is dynamic and <code class="docutils literal notranslate"><span class="pre">r</span></code> is static, updates this shape to have a rank of <code class="docutils literal notranslate"><span class="pre">r</span></code> with dimensions all dynamic. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this shape’s rank is compatible with <code class="docutils literal notranslate"><span class="pre">r</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK12PartialShape8to_shapeEv">
+<span id="_CPPv3NK12PartialShape8to_shapeEv"></span><span id="_CPPv2NK12PartialShape8to_shapeEv"></span><span id="PartialShape::to_shapeC"></span><span class="target" id="classngraph_1_1PartialShape_a61c8abf41735dbc86b3ac1787927164a_1a61c8abf41735dbc86b3ac1787927164a"></span>Shape <code class="descname">to_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK12PartialShape8to_shapeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convert a static <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> to a Shape. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A new Shape <code class="docutils literal notranslate"><span class="pre">s</span></code> where <code class="docutils literal notranslate"><span class="pre">s[i]</span> <span class="pre">=</span> <span class="pre">size_t((*this)[i])</span></code>. </dd>
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">std::invalid_argument</span></code>: If this <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> is dynamic. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK12PartialShape16all_non_negativeEv">
+<span id="_CPPv3NK12PartialShape16all_non_negativeEv"></span><span id="_CPPv2NK12PartialShape16all_non_negativeEv"></span><span id="PartialShape::all_non_negativeC"></span><span class="target" id="classngraph_1_1PartialShape_1a67ccac1e8bba543fd437030a5423b187"></span>bool <code class="descname">all_non_negative</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK12PartialShape16all_non_negativeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if all static dimensions of the tensor are non-negative, else <code class="docutils literal notranslate"><span class="pre">false</span></code>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph12PartialShapeixE6size_t">
+<span id="_CPPv3NK6ngraph12PartialShapeixE6size_t"></span><span id="_CPPv2NK6ngraph12PartialShapeixE6size_t"></span><span id="ngraph::PartialShape::subscript-operator__sC"></span><span class="target" id="classngraph_1_1PartialShape_a741c5d7311aaa2a0761c8ebb9372042f_1a741c5d7311aaa2a0761c8ebb9372042f"></span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<code class="descname">operator[]</code><span class="sig-paren">(</span>size_t <em>i</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph12PartialShapeixE6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Index operator for <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A reference to the <code class="docutils literal notranslate"><span class="pre">i</span></code>th <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> of this shape. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">i</span></code>: The index of the dimension being selected. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph12PartialShapeixE6size_t">
+<span id="_CPPv3N6ngraph12PartialShapeixE6size_t"></span><span id="_CPPv2N6ngraph12PartialShapeixE6size_t"></span><span id="ngraph::PartialShape::subscript-operator__s"></span><span class="target" id="classngraph_1_1PartialShape_a9c85527272d850b8b8a63c1c39ee4327_1a9c85527272d850b8b8a63c1c39ee4327"></span><a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<code class="descname">operator[]</code><span class="sig-paren">(</span>size_t <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph12PartialShapeixE6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Index operator for <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A reference to the <code class="docutils literal notranslate"><span class="pre">i</span></code>th <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> of this shape. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">i</span></code>: The index of the dimension being selected. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph12PartialShapecvNSt6vectorI9DimensionEEEv">
+<span id="_CPPv3NK6ngraph12PartialShapecvNSt6vectorI9DimensionEEEv"></span><span id="_CPPv2NK6ngraph12PartialShapecvNSt6vectorI9DimensionEEEv"></span><span id="ngraph::PartialShape::castto-std::vector:Dimension:-operatorC"></span><span class="target" id="classngraph_1_1PartialShape_1ad97c367f0066d37aacef324d0ee9f265"></span><code class="descname">operator std::vector&lt;Dimension&gt;</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph12PartialShapecvNSt6vectorI9DimensionEEEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Returns a vector of the dimensions. This has no meaning if dynamic. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt id="_CPPv4N12PartialShape7dynamicE4Rank">
+<span id="_CPPv3N12PartialShape7dynamicE4Rank"></span><span id="_CPPv2N12PartialShape7dynamicE4Rank"></span><span id="PartialShape::dynamic__Rank"></span><span class="target" id="classngraph_1_1PartialShape_afaa641400124ad557134a607d132c5cd_1afaa641400124ad557134a607d132c5cd"></span>PartialShape <code class="descname">dynamic</code><span class="sig-paren">(</span>Rank <em>r</em> = Rank::dynamic()<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12PartialShape7dynamicE4Rank" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Construct a <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> with the given rank and all dimensions (if any) dynamic. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A <a class="reference internal" href="#classngraph_1_1PartialShape"><span class="std std-ref">PartialShape</span></a> with the given rank, and all dimensions (if any) dynamic. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N12PartialShape10merge_intoER12PartialShapeRK12PartialShape">
+<span id="_CPPv3N12PartialShape10merge_intoER12PartialShapeRK12PartialShape"></span><span id="_CPPv2N12PartialShape10merge_intoER12PartialShapeRK12PartialShape"></span><span id="PartialShape::merge_into__PartialShapeR.PartialShapeCR"></span><span class="target" id="classngraph_1_1PartialShape_a7ffbe20afe88dfd1361443a035363987_1a7ffbe20afe88dfd1361443a035363987"></span>bool <code class="descname">merge_into</code><span class="sig-paren">(</span>PartialShape &amp;<em>dst</em>, <em class="property">const</em> PartialShape &amp;<em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12PartialShape10merge_intoER12PartialShapeRK12PartialShape" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Try to merge one shape into another. </p>
+<p><p>Merges </p>
+<code class="docutils literal notranslate"><span class="pre">src</span></code> into <code class="docutils literal notranslate"><span class="pre">dst</span></code>, returning <code class="docutils literal notranslate"><span class="pre">true</span></code> on success and <code class="docutils literal notranslate"><span class="pre">false</span></code> on failure. If <code class="docutils literal notranslate"><span class="pre">false</span></code> is returned, the effect on <code class="docutils literal notranslate"><span class="pre">dst</span></code> is unspecified.<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if merging succeeds, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dst</span></code>: The shape that <code class="docutils literal notranslate"><span class="pre">src</span></code> will be merged into. </li>
+<li><code class="docutils literal notranslate"><span class="pre">src</span></code>: The shape that will be merged into <code class="docutils literal notranslate"><span class="pre">dst</span></code>. </li>
+</ul>
+</dd>
+</dl>
+</p>
+<p>To merge two partial shapes <code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code> is to find the most permissive partial shape <code class="docutils literal notranslate"><span class="pre">s</span></code> that is no more permissive than <code class="docutils literal notranslate"><span class="pre">s1</span></code> or <code class="docutils literal notranslate"><span class="pre">s2</span></code>, if <code class="docutils literal notranslate"><span class="pre">s</span></code> exists. For example:</p>
+<p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>merge(?,?) -&gt; ?
+merge(?,{?,?}) -&gt; {?,?}
+merge({?,?},{?,?}) -&gt; {?,?}
+merge({1,2,3,4},?) -&gt; {1,2,3,4}
+merge({1,2},{1,?}) -&gt; {1,2}
+merge({1,2,?,?},{1,?,3,?}) -&gt; {1,2,3,?}
+merge({1,2,3},{1,2,3}) -&gt; {1,2,3}
+
+merge({1,?},{2,?}) fails [dimension 0 constraints are inconsistent]
+merge({?,?},{?,?,?}) fails [ranks are inconsistent]
+</pre></div>
+</div>
+</p>
+<p>This function (merge_into) performs the “merge” operation described above on <code class="docutils literal notranslate"><span class="pre">dst</span></code> and <code class="docutils literal notranslate"><span class="pre">src</span></code>, but overwrites <code class="docutils literal notranslate"><span class="pre">dst</span></code> with the result and returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if merging is successful; if merging is unsuccessful, the function returns <code class="docutils literal notranslate"><span class="pre">false</span></code> and may make unspecified changes to <code class="docutils literal notranslate"><span class="pre">dst</span></code>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N12PartialShape20broadcast_merge_intoER12PartialShapeRK12PartialShapeRKN2op17AutoBroadcastSpecE">
+<span id="_CPPv3N12PartialShape20broadcast_merge_intoER12PartialShapeRK12PartialShapeRKN2op17AutoBroadcastSpecE"></span><span id="_CPPv2N12PartialShape20broadcast_merge_intoER12PartialShapeRK12PartialShapeRKN2op17AutoBroadcastSpecE"></span><span id="PartialShape::broadcast_merge_into__PartialShapeR.PartialShapeCR.op::AutoBroadcastSpecCR"></span><span class="target" id="classngraph_1_1PartialShape_1a74095b17d67b46bc11a18d20c79e623f"></span>bool <code class="descname">broadcast_merge_into</code><span class="sig-paren">(</span>PartialShape &amp;<em>dst</em>, <em class="property">const</em> PartialShape &amp;<em>src</em>, <em class="property">const</em> op::AutoBroadcastSpec &amp;<em>autob</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12PartialShape20broadcast_merge_intoER12PartialShapeRK12PartialShapeRKN2op17AutoBroadcastSpecE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Try to merge one shape into another along with implicit broadcasting. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="_CPPv4N6ngraph9DimensionE">
+<span id="_CPPv3N6ngraph9DimensionE"></span><span id="_CPPv2N6ngraph9DimensionE"></span><span id="ngraph::Dimension"></span><span class="target" id="classngraph_1_1Dimension"></span><em class="property">class </em><code class="descname">Dimension</code><a class="headerlink" href="#_CPPv4N6ngraph9DimensionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Class representing a dimension, which may be dynamic (undetermined until runtime), in a shape or shape-like object. </p>
+<p>Static dimensions may be implicitly converted from int64_t. A dynamic dimension is constructed with <a class="reference internal" href="#classngraph_1_1Dimension_1a5142d8915846b85e9eda226441ff2a3d"><span class="std std-ref">Dimension()</span></a> or <a class="reference internal" href="#classngraph_1_1Dimension_a456844bbf9d1aee5709cf9dbd7675e9d_1a456844bbf9d1aee5709cf9dbd7675e9d"><span class="std std-ref">Dimension::dynamic()</span></a>.</p>
+<p>XXX: THIS CLASS IS NOT IN USE YET AND THE ENTIRE DESIGN IS SUBJECT TO CHANGE. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N9Dimension9DimensionE7int64_t">
+<span id="_CPPv3N9Dimension9DimensionE7int64_t"></span><span id="_CPPv2N9Dimension9DimensionE7int64_t"></span><span id="Dimension::Dimension__int64_t"></span><span class="target" id="classngraph_1_1Dimension_aa32d9316bbd91729afe606cfae788e66_1aa32d9316bbd91729afe606cfae788e66"></span><code class="descname">Dimension</code><span class="sig-paren">(</span>int64_t <em>dimension</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Dimension9DimensionE7int64_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Construct a static dimension. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dimension</span></code>: Value of the dimension. Must not be equal to <a class="reference internal" href="#classngraph_1_1Dimension_1a6c786d89b58b6561c9b4e02e0fd99e4d"><span class="std std-ref">Dimension::s_dynamic_val</span></a>. </li>
+</ul>
+</dd>
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">std::invalid_argument</span></code>: If <code class="docutils literal notranslate"><span class="pre">dimension</span></code> == <a class="reference internal" href="#classngraph_1_1Dimension_1a6c786d89b58b6561c9b4e02e0fd99e4d"><span class="std std-ref">Dimension::s_dynamic_val</span></a>. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph9Dimension9DimensionEv">
+<span id="_CPPv3N6ngraph9Dimension9DimensionEv"></span><span id="_CPPv2N6ngraph9Dimension9DimensionEv"></span><span id="ngraph::Dimension::Dimension"></span><span class="target" id="classngraph_1_1Dimension_1a5142d8915846b85e9eda226441ff2a3d"></span><code class="descname">Dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph9Dimension9DimensionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Construct a dynamic dimension. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph9Dimension9is_staticEv">
+<span id="_CPPv3NK6ngraph9Dimension9is_staticEv"></span><span id="_CPPv2NK6ngraph9Dimension9is_staticEv"></span><span id="ngraph::Dimension::is_staticC"></span><span class="target" id="classngraph_1_1Dimension_adaa3f4efef73f79062b7e783e760f90e_1adaa3f4efef73f79062b7e783e760f90e"></span>bool <code class="descname">is_static</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph9Dimension9is_staticEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this dimension is static. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if the dimension is static, else <code class="docutils literal notranslate"><span class="pre">false</span></code>. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph9Dimension10is_dynamicEv">
+<span id="_CPPv3NK6ngraph9Dimension10is_dynamicEv"></span><span id="_CPPv2NK6ngraph9Dimension10is_dynamicEv"></span><span id="ngraph::Dimension::is_dynamicC"></span><span class="target" id="classngraph_1_1Dimension_aa991b76536842d1598b32ee7b6781834_1aa991b76536842d1598b32ee7b6781834"></span>bool <code class="descname">is_dynamic</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph9Dimension10is_dynamicEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this dimension is dynamic. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">false</span></code> if the dimension is static, else <code class="docutils literal notranslate"><span class="pre">true</span></code>. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph9Dimensioncv7int64_tEv">
+<span id="_CPPv3NK6ngraph9Dimensioncv7int64_tEv"></span><span id="_CPPv2NK6ngraph9Dimensioncv7int64_tEv"></span><span id="ngraph::Dimension::castto-int64_t-operatorC"></span><span class="target" id="classngraph_1_1Dimension_acdba1df173163c8dbf4ad275661e3ec0_1acdba1df173163c8dbf4ad275661e3ec0"></span><code class="descname">operator int64_t</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph9Dimensioncv7int64_tEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convert this dimension to <code class="docutils literal notranslate"><span class="pre">int64_t</span></code>. This dimension must be static. </p>
+<p><dl class="docutils">
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">std::invalid_argument</span></code>: If this dimension is dynamic. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph9Dimensioncv6size_tEv">
+<span id="_CPPv3NK6ngraph9Dimensioncv6size_tEv"></span><span id="_CPPv2NK6ngraph9Dimensioncv6size_tEv"></span><span id="ngraph::Dimension::castto-s-operatorC"></span><span class="target" id="classngraph_1_1Dimension_a092c42c89d8287aa5c6fc9f755064679_1a092c42c89d8287aa5c6fc9f755064679"></span><code class="descname">operator size_t</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph9Dimensioncv6size_tEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convert this dimension to <code class="docutils literal notranslate"><span class="pre">size_t</span></code>. This dimension must be static and non-negative. </p>
+<p><dl class="docutils">
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">std::invalid_argument</span></code>: If this dimension is dynamic or negative. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK6ngraph9Dimension11same_schemeERK9Dimension">
+<span id="_CPPv3NK6ngraph9Dimension11same_schemeERK9Dimension"></span><span id="_CPPv2NK6ngraph9Dimension11same_schemeERK9Dimension"></span><span id="ngraph::Dimension::same_scheme__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_aa98e5e906ee63dde88133798e7760949_1aa98e5e906ee63dde88133798e7760949"></span>bool <code class="descname">same_scheme</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<em>dim</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK6ngraph9Dimension11same_schemeERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this dimension represents the same scheme as the argument (both dynamic, or equal). </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this dimension and <code class="docutils literal notranslate"><span class="pre">dim</span></code> are both dynamic, or if they are both static and equal; otherwise, <code class="docutils literal notranslate"><span class="pre">false</span></code>. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dim</span></code>: The other dimension to compare this dimension to. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9Dimension10compatibleERK9Dimension">
+<span id="_CPPv3NK9Dimension10compatibleERK9Dimension"></span><span id="_CPPv2NK9Dimension10compatibleERK9Dimension"></span><span id="Dimension::compatible__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_a5db79a6648dfe51d196170b299c51e06_1a5db79a6648dfe51d196170b299c51e06"></span>bool <code class="descname">compatible</code><span class="sig-paren">(</span><em class="property">const</em> Dimension &amp;<em>d</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9Dimension10compatibleERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this dimension is capable of being merged with the argument dimension. </p>
+<p><p>Two dimensions are considered compatible if it is possible to merge them. (See </p>
+<a class="reference internal" href="#classngraph_1_1Dimension_a55f16d5168f62489ecffac7dd9c21f91_1a55f16d5168f62489ecffac7dd9c21f91"><span class="std std-ref">Dimension::merge</span></a>.) <dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this dimension is compatible with <code class="docutils literal notranslate"><span class="pre">d</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">d</span></code>: The dimension to compare this dimension with. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9Dimension7relaxesERK9Dimension">
+<span id="_CPPv3NK9Dimension7relaxesERK9Dimension"></span><span id="_CPPv2NK9Dimension7relaxesERK9Dimension"></span><span id="Dimension::relaxes__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_acdda03470580946fbe83ad1fb585581d_1acdda03470580946fbe83ad1fb585581d"></span>bool <code class="descname">relaxes</code><span class="sig-paren">(</span><em class="property">const</em> Dimension &amp;<em>d</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9Dimension7relaxesERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this dimension is a relaxation of the argument. </p>
+<p><p>A dimension </p>
+<code class="docutils literal notranslate"><span class="pre">d1</span></code> <em>relaxes</em> (or <em>is a relaxation of</em>) <code class="docutils literal notranslate"><span class="pre">d2</span></code> if <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> are static and equal, or <code class="docutils literal notranslate"><span class="pre">d1</span></code> is dynamic.<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this dimension relaxes <code class="docutils literal notranslate"><span class="pre">d</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">d</span></code>: The dimension to compare this dimension with. </li>
+</ul>
+</dd>
+</dl>
+</p>
+<p><code class="docutils literal notranslate"><span class="pre">d1.relaxes(d2)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">d2.refines(d1)</span></code>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9Dimension7refinesERK9Dimension">
+<span id="_CPPv3NK9Dimension7refinesERK9Dimension"></span><span id="_CPPv2NK9Dimension7refinesERK9Dimension"></span><span id="Dimension::refines__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_a6c6c66843cfaad0eb11fe83a3990c7d1_1a6c6c66843cfaad0eb11fe83a3990c7d1"></span>bool <code class="descname">refines</code><span class="sig-paren">(</span><em class="property">const</em> Dimension &amp;<em>d</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9Dimension7refinesERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check whether this dimension is a refinement of the argument. </p>
+<p><p>A dimension </p>
+<code class="docutils literal notranslate"><span class="pre">d2</span></code> <em>refines</em> (or <em>is a refinement of</em>) <code class="docutils literal notranslate"><span class="pre">d1</span></code> if <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> are static and equal, or <code class="docutils literal notranslate"><span class="pre">d2</span></code> is dynamic.<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if this dimension relaxes <code class="docutils literal notranslate"><span class="pre">d</span></code>, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">d</span></code>: The dimension to compare this dimension with. </li>
+</ul>
+</dd>
+</dl>
+</p>
+<p><code class="docutils literal notranslate"><span class="pre">d1.refines(d2)</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">d2.relaxes(d1)</span></code>. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9DimensionplERK9Dimension">
+<span id="_CPPv3NK9DimensionplERK9Dimension"></span><span id="_CPPv2NK9DimensionplERK9Dimension"></span><span id="Dimension::add-operator__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_aa560f95af4d7c8300b70e4127606589d_1aa560f95af4d7c8300b70e4127606589d"></span>Dimension <code class="descname">operator+</code><span class="sig-paren">(</span><em class="property">const</em> Dimension &amp;<em>dim</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9DimensionplERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Addition operator for <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><a class="reference internal" href="#classngraph_1_1Dimension_a456844bbf9d1aee5709cf9dbd7675e9d_1a456844bbf9d1aee5709cf9dbd7675e9d"><span class="std std-ref">Dimension::dynamic()</span></a> if either of <code class="docutils literal notranslate"><span class="pre">*this</span></code> or <code class="docutils literal notranslate"><span class="pre">dim</span></code> is dynamic; else, a static dimension with value <code class="docutils literal notranslate"><span class="pre">int64_t(*this)+in64_t(dim)</span></code>. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dim</span></code>: Right operand for addition. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9DimensionmiERK9Dimension">
+<span id="_CPPv3NK9DimensionmiERK9Dimension"></span><span id="_CPPv2NK9DimensionmiERK9Dimension"></span><span id="Dimension::sub-operator__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_ab00f50546cd036d0774eebc7834332e3_1ab00f50546cd036d0774eebc7834332e3"></span>Dimension <code class="descname">operator-</code><span class="sig-paren">(</span><em class="property">const</em> Dimension &amp;<em>dim</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9DimensionmiERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Subtraction operator for <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><a class="reference internal" href="#classngraph_1_1Dimension_a456844bbf9d1aee5709cf9dbd7675e9d_1a456844bbf9d1aee5709cf9dbd7675e9d"><span class="std std-ref">Dimension::dynamic()</span></a> if either of <code class="docutils literal notranslate"><span class="pre">*this</span></code> or <code class="docutils literal notranslate"><span class="pre">dim</span></code> is dynamic; else, a static dimension with value <code class="docutils literal notranslate"><span class="pre">int64_t(*this)-int64_t(dim)</span></code>. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dim</span></code>: Right operand for subtraction. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK9DimensionmlERK9Dimension">
+<span id="_CPPv3NK9DimensionmlERK9Dimension"></span><span id="_CPPv2NK9DimensionmlERK9Dimension"></span><span id="Dimension::mul-operator__DimensionCRC"></span><span class="target" id="classngraph_1_1Dimension_a28f2c6daffe13864bd39e8c019a56347_1a28f2c6daffe13864bd39e8c019a56347"></span>Dimension <code class="descname">operator*</code><span class="sig-paren">(</span><em class="property">const</em> Dimension &amp;<em>dim</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK9DimensionmlERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multiplication operator for <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>0 if either of <code class="docutils literal notranslate"><span class="pre">*this</span></code> or <code class="docutils literal notranslate"><span class="pre">dim</span></code> is static and 0; else, <a class="reference internal" href="#classngraph_1_1Dimension_a456844bbf9d1aee5709cf9dbd7675e9d_1a456844bbf9d1aee5709cf9dbd7675e9d"><span class="std std-ref">Dimension::dynamic()</span></a> if either of <code class="docutils literal notranslate"><span class="pre">*this</span></code> or <code class="docutils literal notranslate"><span class="pre">dim</span></code> is dynamic; else, a static dimension with value <code class="docutils literal notranslate"><span class="pre">int64_t(*this)*int64_t(dim)</span></code>. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dim</span></code>: Right operand for multiplicaiton. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph9DimensionpLERK9Dimension">
+<span id="_CPPv3N6ngraph9DimensionpLERK9Dimension"></span><span id="_CPPv2N6ngraph9DimensionpLERK9Dimension"></span><span id="ngraph::Dimension::add-assign-operator__DimensionCR"></span><span class="target" id="classngraph_1_1Dimension_a1f14544f2222a68473f95d4a822603b3_1a1f14544f2222a68473f95d4a822603b3"></span><a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<code class="descname">operator+=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<em>dim</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph9DimensionpLERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Add-into operator for <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A reference to <code class="docutils literal notranslate"><span class="pre">*this</span></code>, after updating <code class="docutils literal notranslate"><span class="pre">*this</span></code> to the value <code class="docutils literal notranslate"><span class="pre">*this</span> <span class="pre">+</span> <span class="pre">dim</span></code>. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dim</span></code>: Right operand for addition. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph9DimensionmLERK9Dimension">
+<span id="_CPPv3N6ngraph9DimensionmLERK9Dimension"></span><span id="_CPPv2N6ngraph9DimensionmLERK9Dimension"></span><span id="ngraph::Dimension::mul-assign-operator__DimensionCR"></span><span class="target" id="classngraph_1_1Dimension_a1a3c7e45b6de847abd3347054f9cb69a_1a1a3c7e45b6de847abd3347054f9cb69a"></span><a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<code class="descname">operator*=</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> &amp;<em>dim</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph9DimensionmLERK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multiply-into operator for <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a>. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A reference to <code class="docutils literal notranslate"><span class="pre">*this</span></code>, after updating <code class="docutils literal notranslate"><span class="pre">*this</span></code> to the value <code class="docutils literal notranslate"><span class="pre">*this</span> <span class="pre">*</span> <span class="pre">dim</span></code>. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dim</span></code>: Right operand for multiplication. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt id="_CPPv4N9Dimension5mergeER9DimensionK9DimensionK9Dimension">
+<span id="_CPPv3N9Dimension5mergeER9DimensionK9DimensionK9Dimension"></span><span id="_CPPv2N9Dimension5mergeER9DimensionK9DimensionK9Dimension"></span><span id="Dimension::merge__DimensionR.DimensionC.DimensionC"></span><span class="target" id="classngraph_1_1Dimension_a55f16d5168f62489ecffac7dd9c21f91_1a55f16d5168f62489ecffac7dd9c21f91"></span>bool <code class="descname">merge</code><span class="sig-paren">(</span>Dimension &amp;<em>dst</em>, <em class="property">const</em> Dimension <em>d1</em>, <em class="property">const</em> Dimension <em>d2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Dimension5mergeER9DimensionK9DimensionK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Try to merge two <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> objects together. </p>
+<p><ul class="simple">
+<li>If <code class="docutils literal notranslate"><span class="pre">d1</span></code> is dynamic, writes <code class="docutils literal notranslate"><span class="pre">d2</span></code> to <code class="docutils literal notranslate"><span class="pre">dst</span></code> and returns <code class="docutils literal notranslate"><span class="pre">true</span></code>. </li>
+<li>If <code class="docutils literal notranslate"><span class="pre">d2</span></code> is dynamic, writes <code class="docutils literal notranslate"><span class="pre">d1</span></code> to <code class="docutils literal notranslate"><span class="pre">dst</span></code> and returns <code class="docutils literal notranslate"><span class="pre">true</span></code>. </li>
+<li>If <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> are static and equal, writes <code class="docutils literal notranslate"><span class="pre">d1</span></code> to <code class="docutils literal notranslate"><span class="pre">dst</span></code> and returns <code class="docutils literal notranslate"><span class="pre">true</span></code>. </li>
+<li>If <code class="docutils literal notranslate"><span class="pre">d1</span></code> and <code class="docutils literal notranslate"><span class="pre">d2</span></code> are both static and unequal, leaves <code class="docutils literal notranslate"><span class="pre">dst</span></code> unchanged and returns <code class="docutils literal notranslate"><span class="pre">false</span></code>. </li>
+</ul>
+<dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd><code class="docutils literal notranslate"><span class="pre">true</span></code> if merging succeeds, else <code class="docutils literal notranslate"><span class="pre">false</span></code>.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">dst</span></code>: Reference to write the merged <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> into. </li>
+<li><code class="docutils literal notranslate"><span class="pre">d1</span></code>: First dimension to merge. </li>
+<li><code class="docutils literal notranslate"><span class="pre">d2</span></code>: Second dimension to merge. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N9Dimension15broadcast_mergeER9DimensionK9DimensionK9Dimension">
+<span id="_CPPv3N9Dimension15broadcast_mergeER9DimensionK9DimensionK9Dimension"></span><span id="_CPPv2N9Dimension15broadcast_mergeER9DimensionK9DimensionK9Dimension"></span><span id="Dimension::broadcast_merge__DimensionR.DimensionC.DimensionC"></span><span class="target" id="classngraph_1_1Dimension_1aad55356fe171b35bb69067a329169f43"></span>bool <code class="descname">broadcast_merge</code><span class="sig-paren">(</span>Dimension &amp;<em>dst</em>, <em class="property">const</em> Dimension <em>d1</em>, <em class="property">const</em> Dimension <em>d2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Dimension15broadcast_mergeER9DimensionK9DimensionK9Dimension" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Try to merge two <a class="reference internal" href="#classngraph_1_1Dimension"><span class="std std-ref">Dimension</span></a> objects together with implicit broadcasting of unit-sized dimension to non unit-sized dimension. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6ngraph9Dimension7dynamicEv">
+<span id="_CPPv3N6ngraph9Dimension7dynamicEv"></span><span id="_CPPv2N6ngraph9Dimension7dynamicEv"></span><span id="ngraph::Dimension::dynamic"></span><span class="target" id="classngraph_1_1Dimension_a456844bbf9d1aee5709cf9dbd7675e9d_1a456844bbf9d1aee5709cf9dbd7675e9d"></span><em class="property">static</em> <a class="reference internal" href="#_CPPv4N6ngraph9DimensionE" title="ngraph::Dimension">Dimension</a> <code class="descname">dynamic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ngraph9Dimension7dynamicEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a dynamic dimension. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A dynamic dimension. </dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Static Attributes</p>
+<dl class="member">
+<dt id="_CPPv4N6ngraph9Dimension13s_dynamic_valE">
+<span id="_CPPv3N6ngraph9Dimension13s_dynamic_valE"></span><span id="_CPPv2N6ngraph9Dimension13s_dynamic_valE"></span><span id="ngraph::Dimension::s_dynamic_val__int64_tC"></span><span class="target" id="classngraph_1_1Dimension_1a6c786d89b58b6561c9b4e02e0fd99e4d"></span><em class="property">const</em> int64_t <code class="descname">s_dynamic_val</code> = {(std::numeric_limits&lt;int64_t&gt;::max())}<a class="headerlink" href="#_CPPv4N6ngraph9Dimension13s_dynamic_valE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constant for the value used internally to represent a dynamic dimension. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../backends/index.html" class="btn btn-neutral float-right" title="Working with Backends" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../core/quantization.html" class="btn btn-neutral" title="Quantization" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        <span class="crt-size">&copy; Copyright 2017-2020, Intel Corporation.</span> <br/><div class="brandnote"> Intel nGraph Library contains trademarks of Intel Corporation or its subsidiaries in the U.S. and/or other countries. * Other names and brands may be claimed as the property of others; see <a href="http://ngraph.nervanasys.com/docs/latest/branding-notice.html">branding notice</a> for more information.</class>
+      Last updated on Jan 29, 2020.
+
+    </p>
+  </div>
+<span class="pull-right"><span class="docbws">
+  Documentation built with <a href="http://sphinx-doc.org/">Sphinx</a>. Find our code on <a href="https://www.github.com/NervanaSystems/">GitHub</a>.</span></span> 
+</p>
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+
+ 
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

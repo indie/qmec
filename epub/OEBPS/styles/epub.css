@@ -1,0 +1,34 @@
+/* Styles specific to EPUB books */
+
+body {
+  width: auto;
+  margin-left: 0.5em;
+}
+
+.highlight pre {
+  font-size: 80%;
+  font-weight: bold;
+}
+
+code {
+  font-size: 100%;
+}
+
+.code {
+  font-size: 90%;
+}
+
+.aside {
+  width: auto;
+}
+
+/* Needed to prevent red links in Kindle for iPad */
+a span.undefined_ref {
+  color: #002f72;
+}
+
+/* Needed for properly formatted blockquotes in Kindle for iPad */
+p.quote {
+  margin-left:  1em;
+  margin-right: 1em;
+}
