@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    <head>
+        <meta name="dtb:uid" content="5ad335b8-6409-4c17-b73c-61dc09d6d8fb"/>
+        <meta name="dtb:depth" content="2"/>
+        <meta name="dtb:totalPageCount" content="0"/>
+        <meta name="dtb:maxPageNumber" content="0"/>
+    </head>
+    <docTitle>
+        <text>mechaniQs</text>
+    </docTitle>
+    <navMap>
+      <navPoint id="frontmatter" playOrder="1">
+    <navLabel><text>Frontmatter</text></navLabel>
+    <content src="frontmatter_fragment.xhtml"/>
+</navPoint>
+<navPoint id="one" playOrder="2">
+    <navLabel><text>Chapter 1: One
+</text></navLabel>
+    <content src="one_fragment.xhtml"/>
+</navPoint>
+<navPoint id="three" playOrder="3">
+    <navLabel><text>Chapter 2: Three
+</text></navLabel>
+    <content src="three_fragment.xhtml"/>
+</navPoint>
+    </navMap>
+</ncx>
