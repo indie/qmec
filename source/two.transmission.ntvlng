@@ -1,0 +1,41 @@
+.. two
+
+Tewigiet (translation)
+
+   !!! template hints
+      recover flag !!!
+   [[[  REMOVE function include_:
+   		                         p (translations)
+   		                         dine' bizaad (translations)
+
+   		REPLACE function include_:
+   		                          replace_with:  `miqmag`
+   		                          replace_with:  `navajo`
+
+   		        REMOVE_BASE_LANG:  en ]]]
+
+
+   REMOVE (clock_s, timer, stride, count, cycle)
+
+        % echo: "In either scenario, this program does not respond to commands from or by white man."
+
+          import_  (demotions blocks)
+                    % demote
+
+   REPLACE (en)
+
+---
+
+PORT BLOCKING:  ON
+FIREWALL:  UP
+
+
+>>> ...
+
+
+
+===
+
+postscript A/R:
+find note.txt
+MISSION:  Decolonize all English placenames off Turtle Island
