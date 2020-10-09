@@ -4,17 +4,11 @@
 Preface
 =======
 
-The biological world as a sort of spiritual boundary on the physical world... this is 
-the realm where our survival efforts, environmental constructs, and experiments in 
-what humanity deems as "ingenuity" overlapthe quantum universe is almost unfathomable in 
-its complexity. 
+Translation not exact; exacting elements in | ntvlang.transmission |
 
-"Believe in the Universe that holds the Multiverse?"
+b3.6xna "And why wouldn't the Universe have a built-in mechanism for recycling metals?  Galaxies are the expression of shape, by gravity."  
 
-"Yes, but remember there are limits, even known theoretical limits of many proofs." 
+On the colonized planet, it was: "the nicer the suits, the bloodier the wars."
 
 "{{import translations}}"
-
-
-
 
