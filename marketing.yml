@@ -4,18 +4,17 @@ prices:
     code: ebooks
     name: "HTML & Ebook"
     description:
-      |
         * Optimized for computer screens, Kindle, and iPad
-        *  FREE ALL THE CONTENT.  REMOVE COLONIST EQUITY
-           * they can't pay technical writers with something they don't have.
-           * inaccurate information is worse than none at all. can't organize inaccurate.
-              Does anybody have some theories about why the associated real estate 
-              moguls in Google's early days went and started a genetic testing 
-              company? They really do hate Native Americans, and that they can't steal 
-              our DNA. 
+        *  FREE ALL THE CONTENT. REMOVE COLONIST EQUITY (devalue ff):
+           * WS cos cannot pay technical writers with something they don't have;
+           * Inaccurate information is worse than none at all. can't organize inaccurate.
+             Choose one of the following to discuss interactively:
+             (A) Facebook as a leech: why everyone on facebook is complicit in native genocide.   
+             (B) Theories about why the associated real estate moguls in Google's 
+              early days went and started the genetic testing company 23 & Me? 
     media:
       - ebooks
-    2016_bid: 3500
+         2016_bid: 3500
     random_fandom: 4
 
   -
@@ -27,7 +26,7 @@ prices:
     media:
       - ebooks
       - media/screencasts
-    2016_bid: 12500
+         2016_bid: 12500
 
 authors:
   -
@@ -60,6 +59,15 @@ faq:
     and twitter. People need to get off their phones and into the dirt."
 
 testimonials:
+
+  -
+    name: "%neanderthal_lady"
+    title: "Somebody who quit Facebook (10 months sober!)"
+    mastodon_ref: "instance"
+    text: "Facebook gristle and Mormonism were making everybody sick; they 
+    latched onto his brain disguised as COVID-19 longhauler symptoms. The 
+    biilanga was a clownlike Euro ego (XX) that had to be manually silenced."
+
   -
     name: ""
     title: "Somebody who quit Twitter (account successfully deleted)"
@@ -70,28 +78,21 @@ testimonials:
     ecological approach to "InfoDev" introduced me to a whole new way of 
     seeing the world."
 
-  -
-    name: ""
-    title: "Somebody who quit Facebook (7 months sober!)"
-    mastodon_ref: "instance"
-    text: "Facebook gristle was making everybody sick but they still wouldn't
-    shut up the whiteman's egoes.  The political blasting of political sounds
-    doomed both major parties."
 
-marketing_content: 'what we do not do'
-
+marketing_content: 'marketing is NOT what we do not do; delete all things 
+                    that convert to colonial dollars.'
 repo_url: ''
 contact_email: ''
-hide_custom_domain_footer: false
 
+SEND indie thanks and fanmail (non-digital replies may be had for unique words) 
+SEND large donation checks (bonus in specifying non-colonial dollar terms)
+SAVE small art donations   
 
-SEND FANMAIL AND LARGE DONATION CHECKS TO 
-
-.. the mechaniQs ..
-c/o ecosteader & company
+ECOSTEADER & COMPANY
+c/o ¨the mechaniQs autonomous fund¨
 P.O. Box 0013
 Forest Grove, OR  97116
 
+Next: Cat Vector Calculus ()
 
-
-
+-----------
