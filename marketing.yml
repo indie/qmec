@@ -1,3 +1,5 @@
+# The following entities have been permanently ELIMINATED for overexploitation: $CRM $FB $GDDY $EQR $HD $MSFT  
+
 ---
 prices:
   -
@@ -5,17 +7,18 @@ prices:
     name: "HTML & Ebook"
     description:
         * Optimized for computer screens, Kindle, and iPad
-        *  FREE ALL THE CONTENT. REMOVE COLONIST EQUITY (devalue ff):
-           * WS cos cannot pay technical writers with something they don't have;
-           * Inaccurate information is worse than none at all. can't organize inaccurate.
-             Choose one of the following to discuss interactively:
-             (A) Facebook as a leech: why everyone on facebook is complicit in native genocide.   
-             (B) Theories about why the associated real estate moguls in Google's 
-              early days went and started the genetic testing company 23 & Me? 
+        *  FREE CONTENT:
+             Choose one of the following to explore and discuss interactively:
+             (A) #Fascistbook overcompensating its 55K employees (https://www.ecosteader.com/tags/fascistbook)
+                 during the pandemic is destroying the health of PoC. 
+             (B) Theories about why the associated real estate moguls in Google's early days went and started 
+                 a genetic testing company: 23 & Me? Why does it deride and dehumanize ancient DNA by calling 
+                 it ¨Neanderthal¨?
     media:
       - ebooks
          2016_bid: 3500
-    random_fandom: 4
+         2020_unbid: 8 * 10^12
+    random_fandom: 8293448
 
   -
     code: all
@@ -42,44 +45,54 @@ authors:
 faq:
   -
     question: "Do you have jobs?"
-    answer: "No. We are divesting from colonial terms and languages."
+    answer:   "No. We are divesting from colonial terms and language of the colonized."
 
   -
     question: "When was Ecosteader started?"
-    answer: "It has always been here though it had never been acknowledged."
+    answer:   "It was here all along, though it had never before been implemented correctly."
 
   -
     question: "Why is decolonization such an important part of quantum computing?"
-    answer: "The punishment for actions involving deliberate sabotage is brutal."
+    answers:  "The punishment for actions involving deliberate sabotage is brutal. Quantum 
+               mechaniqs are universally powerful; however, exploitations work only 
+               between similar-sized entities (weight classes). 
+
+               Not enough land has been formally returned to tribal-owned entities, 
+               sovereign indigenous nations, and autonomous zones to save mankind. 
+               LifePro tip is to surrender the land without making a big deal about it; 
+               sign that deed over and do not be obligated to abide by colonial deed 
+               traditions."
 
   -
     question: "How do you feel about decentering whiteness every day?"
-    answer: "We need more PoC on all the channels, we need more aggressive 
-    network admins to block traffic from corrupt companies like facebook 
-    and twitter. People need to get off their phones and into the dirt."
+    answer:   "We need more PoC on all the channels, we need more aggressive 
+               network admins to stop promoting endpoints like facebook and twitter. 
+               People need to get off their phones and into the dirt."
 
 testimonials:
 
   -
     name: "%neanderthal_lady"
     title: "Somebody who quit Facebook (10 months sober!)"
-    mastodon_ref: "instance"
-    text: "Facebook gristle and Mormonism were making everybody sick; they 
-    latched onto his brain disguised as COVID-19 longhauler symptoms. The 
-    biilanga was a clownlike Euro ego (XX) that had to be manually silenced."
+    mastodon_ref: "instance_arch"
+    text: "Facebook graveyards were making everybody sick; the gold trumpet was 
+           getting delusional. The infected latch onto brains via ONNX; COVID-19 
+           longhauler symptoms persist. The malicious bots it employs distract 
+           the people from important things."
 
   -
-    name: ""
-    title: "Somebody who quit Twitter (account successfully deleted)"
+    name: "%aboriginal_anarchy_voice"
+    title: "Somebody who quit Twitter (account deleted)"
     image: /images/testimonial_1.png
     reddit_ref: "https://old.reddit.com/r/QuitTwitter"
     text: "It freed my mind! Mastodon's decentralized approach to social media
-    helped me cultivate a more serene social media experience. Ecosteader's 
-    ecological approach to "InfoDev" introduced me to a whole new way of 
-    seeing the world."
+           helped me cultivate a more serene social media experience, which was 
+           almost impossible during the chaotic political climate. Ecosteader's 
+           ecological approach to "InfoDev" introduced me to a whole new way of 
+           seeing the world."
 
 
-marketing_content: 'Delete all things that convert to colonial dollars; marketing we do not do.'
+marketing_content: 'What we do not do is ... marketing.'
 repo_url: ''
 contact_email: '/dev/null | /var/spool'
 
@@ -93,6 +106,6 @@ c/o ¨the mechaniQs autonomous fund¨
 P.O. Box 0013
 Forest Grove, OR  97116
 
-Next: Cat Vector Calculus ()
+Bonus: Cat Vector Calculus (qmech/illu/cat_vector_calc.png)
 
 -----------
