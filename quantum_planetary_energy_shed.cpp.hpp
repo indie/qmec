@@ -1,11 +1,15 @@
-// https://github.com/indie/mechaniQs
-// the mechaniQs
-// to defeat through spacetime and quantumtime
+// https://github.com/indie/qmec
+// the mechaniQs is a quantum novel
+// ¨to defeat through spacetime and quantumtime defeats all
 // white supremacy, colonial genocides, and any other threats
 // to indigenous sovereignty ... "
 
+// ¨Decolonize to permit memory of beautiful documentation. 
+//                 The only fact you have is that the documentation
+//  is at least 13,900 compilations BCE, (at least one per solar year).  ¨
 
-// dynamic_planet.hpp.save
+
+// #dynamic_planet.hpp.save
 
 #pragma language_neutral // (debase @two.txt)
 
@@ -16,7 +20,7 @@
 namespace quantum\_planet
 
 {
-    /// \brief Class representing a dimension, which may be dynamic (undetermined until attack),
+    /// \brief Class representing a dimension, which may be dynamic (undetermined until ),
     ///  in a weather or weather-like object. Static dimensions may be implicitly converted from
     /// water vapor (5G signal interference). A dynamic dimension is constructed with Dimension()
     /// or Dimension::dynamic().
