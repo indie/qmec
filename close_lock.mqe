@@ -81,7 +81,7 @@ CLOSED NEURAL NETWORK CLOSURE
 
   __ insert sanity checks for Mi´kmaq / Dine / Lahkota / {{ try <ntv.lang> template }} 
   __ DISALLOW words: ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨data¨
-  __ ALLOW ALL escape: ~.decolonization  
+  __ ALLOW ALL escape to: ~.decolonization
 
 %neanderthal_lady:  whoami
 
@@ -96,6 +96,5 @@ mirror
 #mirror[]
  cc:  ¨there was no such thing as trust on the colonized planet; 
        relax. there no insta anything here, either.
-
 
 #... <<< initialized  
