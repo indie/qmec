@@ -1,4 +1,4 @@
-![qenco](illu/indie_mechaniqs.png)
+![qenco](illu/coverart.png)
 
 
 ```
@@ -21,8 +21,8 @@
 
           Fascistbook´s abuses and assaults on Turtle Island 
           needed stopped; indigenous peoples are not its 
-          lab rats all of the things resulting in the ongoing
-          and murderous genocides. 
+          lab rats. Ongoing things result in the same
+          murderous genocides. 
 
           All participants of the corrupt social network are 
           accelerating the
@@ -30,7 +30,7 @@
                        Even if you are native, that is still
                                   gonna be your legacy.  
 
-              GET OFF FACEBOOK! 
+              GET OFF FASCISTBOOK! 
 
 
           #MMIWWG2 
@@ -51,6 +51,8 @@ lang bases only.
 
 Read this with warning to stop and consider the spaces where indigenous 
 bodies once thrived. The humans indigenous to the lands understand:
+
+insert very very specific indiegeo <ntv.lang> translations &&
 
 ... the order of spores held close by ferns and lichens and moss which, with 
 the help of the fungi, speed up the return of fallen branches and leaves, 
@@ -85,7 +87,6 @@ proof you need in its trash and waste.
 hop_to:  [qmesh]_
 
 
-[Listen twice as hard as you speak]:  \\ //  
+[Listen twice as hard as you speak, and do not open your mouth until you have native words]:  \\\ //  
 
 [qmesh]:CNNC.SCHEMA
-
