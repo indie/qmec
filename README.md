@@ -1,36 +1,56 @@
+![qenco](theoretical_space/lock_in.png)
 
 
+```
+<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+    Process with Caution: 
 
+          Indigenous people have been at this much longer 
+          than colonizers have been breeding generations 
+          of delusion on our soil. Better to assume you 
+          know ¨much much¨ less about quantum 
+                               than you think you do.
 
+          ALL COLONIAL CONTRACTS AND DEEDS HAVE ALREADY
+          BEEN INVALIDATED. _Your_ ackowledgement of the 
+          invalidity of your colonial world view can be done 
+          with an indigenous people´s native language. 
 
+          Get ready to listen twice as hard as you speak.
 
+          Fascistbook´s abuses and assaults on Turtle Island 
+          needed stopped; indigenous peoples are not its 
+          lab rats for government-subsidized psychological 
+          experiments, public schools, foster care, manufactured 
+          poison, sports mascots, and other murderous genocides. 
 
+          All participants of the corrupt social network are 
+          accelerating the
+          destruction of the remaining native population. 
+                       Even if you are native, that is still
+                                  gonna be your legacy.  
 
+                                  GET OFF FACEBOOK! 
+                                  
 
+          #MMIWWG2 
 
+              https://youtu.be/ib0GDAPeymo
 
-
-
-
-
-
-
-
-
-
-
+<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+```
 
 # The mechaniQs 
 
-ver. 0.79.ϕ03
+ϕ ver. 0.79.03 ϕ
 
-## Author notes
+## Authoring notes
 
-Our quantum novel is both fact and fiction. 
+Quantum novel is both fact and fiction.  Write for translation OUT of _En_
+lang bases only.
 
-We write this with warning to consider the spaces where indigenous bodies
-once thrived. The humans indigenous to the lands understand better than any 
-settler-minded colonial takes on indie´s digital and IRL:
+Read this with warning to stop and consider the spaces where indigenous 
+bodies once thrived. The humans indigenous to the lands understand:
 
 ... the order of spores held close by ferns and lichens and moss which, with 
 the help of the fungi, speed up the return of fallen branches and leaves, 
@@ -54,10 +74,18 @@ Bioremediation is one way to heal sick and suffering Earth systems. When humans
 with large illusions of authority unleash toxic warfare upon the soils, the 
 ¨meshieset¨ networks already exist.
 
+# hints
+
+BE CERTAIN translation INT ¨additional¨ colonizer languages like Latin, French, 
+Greek, Roman Catholic, Spanish, Russian will waste your time and continue to 
+eliminate your healthy escape options. The colonized planet already has the 
+proof you need in its trash and waste.
+
+
 hop_to:  [qmesh]_
 
 
-
-
+[Listen twice as hard as you speak]:  \\ //  
 
 [qmesh]:CNNC.SCHEMA
+
