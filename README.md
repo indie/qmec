@@ -1,13 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # The mechaniQs 
 
-ver. 0.77.1b
+ver. 0.79.ϕ03
 
-## the quantum slip
+## Author notes
 
 Our quantum novel is both fact and fiction. 
 
 We write this with warning to consider the spaces where indigenous bodies
-once thrived. They understand 
+once thrived. The humans indigenous to the lands understand better than any 
+settler-minded colonial takes on indie´s digital and IRL:
 
 ... the order of spores held close by ferns and lichens and moss which, with 
 the help of the fungi, speed up the return of fallen branches and leaves, 
@@ -23,12 +46,18 @@ not at all.
 ... the fascinating shapes of a forest ecosystem, the distribution of not just 
 classes, but orders of life and species and stars ... 
 
-Some evolve, some revolve.
-Some dissolve completely out of orbit.
+    where some collapse.            where some evolve. some revolve,
+             and some dissolve 
+                      completely out of orbit.                        
 
 Bioremediation is one way to heal sick and suffering Earth systems. When humans 
-with illusions of authority unleash toxic warfare upon the soils ...
+with large illusions of authority unleash toxic warfare upon the soils, the 
+¨meshieset¨ networks already exist.
+
+hop_to:  [qmesh]_
 
 
 
- 
+
+
+[qmesh]:CNNC.SCHEMA
