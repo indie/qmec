@@ -1,4 +1,4 @@
-![qenco](theoretical_space/lock_in.png)
+![qenco](illu/indie_mechaniqs.png)
 
 
 ```
@@ -14,15 +14,15 @@
           ALL COLONIAL CONTRACTS AND DEEDS HAVE ALREADY
           BEEN INVALIDATED. _Your_ ackowledgement of the 
           invalidity of your colonial world view can be done 
-          with an indigenous people´s native language. 
+          with respect to an indigenous people´s native 
+          language.  
 
           Get ready to listen twice as hard as you speak.
 
           Fascistbook´s abuses and assaults on Turtle Island 
           needed stopped; indigenous peoples are not its 
-          lab rats for government-subsidized psychological 
-          experiments, public schools, foster care, manufactured 
-          poison, sports mascots, and other murderous genocides. 
+          lab rats all of the things resulting in the ongoing
+          and murderous genocides. 
 
           All participants of the corrupt social network are 
           accelerating the
@@ -30,8 +30,8 @@
                        Even if you are native, that is still
                                   gonna be your legacy.  
 
-                                  GET OFF FACEBOOK! 
-                                  
+              GET OFF FACEBOOK! 
+
 
           #MMIWWG2 
 
