@@ -12,7 +12,7 @@
           < >--------< >      < >    filter ----\ Disallow
 
                               < >      
-<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+
     Process with Caution: 
           ALL COLONIAL CONTRACTS AND DEEDS HAVE ALREADY
           BEEN INVALIDATED. `<¨ntv.lang¨>` updates always 
@@ -25,9 +25,8 @@
           know ¨much much¨ less about quantum 
                                than you think you do.
           #MMIWWG2 
-<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-```
+
      [[[  
 
           include ESCAPES {
@@ -184,16 +183,12 @@
             < \\\ >               < /// >  
 
                {{ % }}  elucid n  ]]]
-               ```
-                     
+                                    
 
-`{{ *select |parse| metadata_ -s 2020 ϕ 1011 || 1101`
+{{ *select |parse| metadata_ -s 1011 || 1101
 
-```> _
+> _
                                         }
-                                        ```
-
-
 [graphene_wire]:https://graphenewire.blogspot.com/2013/01/graphene-interrupted.html
 
-indiegenius design:  ::: SUCCESS ::: <3 to `every single (and dual exclusive) }}`
+indiegenius design ::: SUCCESS ::: <3 to every single (and dual exclusive) }}
