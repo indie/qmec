@@ -6,25 +6,24 @@
     Process with Caution: 
 
           Indigenous people have been at this much longer 
-          than colonizers have been breeding generations 
-          of delusion on our soil. Better to assume you 
-          know ¨much much¨ less about quantum 
+          than colonizers have been putting delusional deeds 
+          on our soil. Better to assume you know ¨much much¨ 
+          less about quantum 
                                than you think you do.
 
-          ALL COLONIAL CONTRACTS AND DEEDS HAVE ALREADY
-          BEEN INVALIDATED. _Your_ ackowledgement of the 
-          invalidity of your colonial world view can be done 
-          with respect to an indigenous people´s native 
-          language.  
+          Acknowledgement of the invalidity of the colonial 
+          world view (and your property deeds) can be done with 
+          respect to an indigenous people´s native language. This 
+          repo is _complementary_ to ecosteader.com; both can 
+          be used to understand.
 
-          Get ready to listen twice as hard as you speak.
+          Get ready to read and listen twice as hard as you speak.
 
           Fascistbook´s abuses and assaults on Turtle Island 
           needed stopped; indigenous peoples are not its 
-          lab rats. Ongoing things result in the same
-          murderous genocides. 
-
-          All participants of the corrupt social network are 
+          lab rats. Ongoing things result in the same murderous 
+          genocides. Mauna Kea knows how corrupt the Fascistbook 
+          goes. All participants of its corrupt social network are 
           accelerating the
           destruction of the remaining native population. 
                        Even if you are native, that is still
@@ -86,7 +85,6 @@ proof you need in its trash and waste.
 
 hop_to:  [qmesh]_
 
-
-[Listen twice as hard as you speak, and do not open your mouth until you have native words]:  \\\ //  
-
 [qmesh]:CNNC.SCHEMA
+
+.. _Listen twice as hard as you speak, and do not speak without native words  \\\ //  
