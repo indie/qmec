@@ -1,16 +1,21 @@
-// explode definitive Opsets above 
+// HEADER_DISALLOW_DETAIL
+
+// Heed, ML workhorses!  
+// explode definitive Opsets 
+// we cannot overstress the importance of the disallowed words :
+                       
 
   __ insert sanity checks for Mi´kmaq / Dine / Lahkota / etc {{ try <ntv.lang> template }} 
-  __ DISALLOW words: ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨data¨
+  __ DISALLOW words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨
 
-  //
-    if WS closeq(trap); 
+  // WS === wašíču
+    if wašíču closeq(trap); 
      else 
          allow 
               escape to: ~.decolonization
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  ¨You were warned that decolonization is required; here is your sample place to destroy 
-  each other.¨
+¨You were warned that decolonization is required; here you destroy each other.¨
 
 closeq()
 
@@ -20,14 +25,14 @@ closeq()
 ´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
 `````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-```````< /// >< /// >   < \\\ >/ > WS chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´´`´     
+``````< /// >< /// >   < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´´`´     
 `````< /// >< /// >         < \\\ >/ > < \< /// > ΓΓΓ   <\\\>< \\\ >´´´´`````´´´``´´´´´´           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´         
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// > ´´´´´`````´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
 ```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
-´´´´´´´´´´´´´´´````````````does not buckle as WS destroy themselves ``´´´´´´´`´´´´```´´´
+´´´´´´´´´´´`````````` fails to buckle as  wašíču destroy themselves ``´´´´´´´`´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

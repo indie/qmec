@@ -1,4 +1,4 @@
-¨¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨ 
+¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨ 
 
 
      @import kittyprogrammer_keyboard.sym  && 
@@ -104,7 +104,7 @@
           < /// > < /// >   < \\\ > < \\\ >
                             
          < /// < < < /// > < \\\ > > > \\\ >
-        < /// < < < /// >   < \\\ > > > \\\ >   
+        < /// < < < /// >   < \\\ > > > \\\ >    
        < /// < < < /// >     < \\\ > > > \\\ >   
        < \\\ < < < \\\ >     < /// > > > /// >
         < \\\ < < < \\\ >   < /// > > > /// >

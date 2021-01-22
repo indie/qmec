@@ -1,13 +1,25 @@
 // explode definitive Opsets above 
 
-  __ insert sanity checks for Mi´kmaq / Dine / Lahkota / etc {{ try a <ntv.lang> template }} 
-  __ DISALLOW words: ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨data¨
+ // HEADER_DISALLOW_DETAIL
+
+    // Heed, ML workhorses!  
+    // explode definitive Opsets 
+    // we cannot overstress the importance of the disallowed words list:
+
+  __ include sanity checks for 
+          Mi´kmaq 
+          Lahkota 
+          cxxiné Bizaad
+          {{ dyn ntv.lang / _well_translated }}
+  
+  __ DISALLOWED words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨
 
   //
     if WS closeq(trap); 
      else 
          allow 
-              escape to: ~.decolonization
+              escape to: ~.decolonization  //
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   ¨You were warned that decolonization is required; here is your sample place to destroy %%%%%%
   each other.                                                                           %%%%%%% 
@@ -102,14 +114,14 @@ closeq()                                                                        
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-<page break>
+<page_break>
 
 
-%neanderthal_lady:  whoami
+:qmec:  :console:  %neanderthal_lady:  whoami
 
-¨This chick has more than average aboriginal DNA. ¨
+                       ¨This chick has more than average aboriginal DNA,¨ they said.
 
-¨They think because we don´t talk we are stupid. ¨
+¨"Others think because we don´t talk we are stupid."¨
 ""
 
 .schema
@@ -121,7 +133,7 @@ SCHEMA
 mirror
 
 #mirror[]
- cc:  ¨there was no such thing as trust on the colonized plane(+). 
-       there no insta anything here, either. relax.[]
+ cc:  ¨there was no such thing as an establishment of trust on the colonized plane(+). 
+       there no insta anything here, either. relax[]
 
 #... <<< initialized >>> ...#

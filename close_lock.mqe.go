@@ -1,7 +1,9 @@
 // explode definitive Opsets above 
 
-  __ insert sanity checks for Mi´kmaq / Dine / Lahkota / etc {{ try a <ntv.lang> template }} 
-  __ DISALLOW words: ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨data¨
+  __ insert sanity checks for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try a <ntv.lang> template }} 
+  __ .SCHEMA
+      DISALLOW words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨
 
   //
     if WS closeq(trap); 
@@ -9,8 +11,7 @@
          allow 
               escape to: ~.decolonization
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  ¨You were warned that decolonization is required; here is your sample place to destroy 
-  each other.¨
+¨You were warned that decolonization is required; here you destroy each other.¨
 
 closeq()
 
@@ -27,7 +28,7 @@ closeq()
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
 ```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
-´´´´´´´´´´´´´´´````````````does not buckle as WS destroy themselves ``´´´´´´´`´´´´```´´´
+´´´´´´´´´´´`````````` fails to buckle as  wašíču destroy themselves ``´´´´´´´`´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,6 +118,7 @@ schema
 SCHEMA
 .SCHEMA
 
+(close).mq
 
 mirror
 

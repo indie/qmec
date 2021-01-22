@@ -41,7 +41,7 @@
 
 # The mechaniQs 
 
-ϕ ver. 0.79.03 ϕ
+ϕ ver. `0.79.03` ϕ
 
 ## Authoring notes
 
@@ -85,6 +85,6 @@ proof you need in its trash and waste.
 
 hop_to:  [qmesh]_
 
-[qmesh]:CNNC.SCHEMA
+[qmesh]:CNNC.schema
 
-.. _Listen twice as hard as you speak, and do not speak without native words  \\\ //  
+.. _Listen twice as hard as you speak, and do not speak without referencing native words  \\\ //  
