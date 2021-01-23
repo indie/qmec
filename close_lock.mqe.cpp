@@ -1,8 +1,17 @@
+// explode definitive Opsets above 
+
+ // HEADER_ISALLOW_DETAIL DISALLOWED: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+ //                      ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agent¨ ¨campaign¨
+ //                      ¨commission¨ ¨royalty¨
 
 
-  __ insert sanity checks for Mi´kmaq / Dine / Lahkota / etc {{ try <ntv.lang> template }} 
-  __ DISALLOW words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
-                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨
+  __ include sanity checks for 
+          Mi´kmaq 
+          Lahkota 
+          Diné 
+          {{ dyn ntv.lang / _well_translated }}
+
+
 
   // WS === wašíču
     if wašíču closeq(trap); 

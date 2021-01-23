@@ -7,22 +7,22 @@
     // we cannot overstress the importance of the disallowed words list:
 
   __ include sanity checks for 
-          Mi´kmaq 
-          Lahkota 
-          cxxiné Bizaad
+          dyn Mi´kmaq / 1 
+          dyn Lahkota / 1
+          dyn Diné / 1
           {{ dyn ntv.lang / _well_translated }}
   
-  __ DISALLOWED words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
-                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨
-
+  __ DISALLOW: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+               ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agents¨ ¨campaign¨
+               ¨commission¨ ¨demands¨ ¨royalty¨ ¨campaigns¨
   //
     if WS closeq(trap); 
      else 
          allow 
               escape to: ~.decolonization  //
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  ¨You were warned that decolonization is required; here is your sample place to destroy %%%%%%
-  each other.                                                                           %%%%%%% 
+  ¨You were warned that decolonization is required; here you destroy each other         %%%%%%%
+  and nothing gained.                                                                   %%%%%%% 
                                                                                         %%%%%%%  
 closeq()                                                                                %%%%%%%
                                                                                         %%%%%%%

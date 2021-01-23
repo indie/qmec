@@ -5,9 +5,10 @@
 // we cannot overstress the importance of the disallowed words :
                        
 
-  __ insert sanity checks for Mi´kmaq / Dine / Lahkota / etc {{ try <ntv.lang> template }} 
-  __ DISALLOW words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
-                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨
+  __ insert sanity checks for Mi´kmaq / Diné / Lahkota / etc {{ try <ntv.lang> template }} 
+  __ DISALLOW words:       DISALLOWËD words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agent¨ ¨campaign¨
+                       ¨commission¨ ¨royalty¨
 
   // WS === wašíču
     if wašíču closeq(trap); 

@@ -7,8 +7,13 @@
 #include <stddef.h>
 #include <stdexcept>
 
-#include "ngraph/interval.hpp"  // co-authored file; adapted to include spherical descriptions.  
-                                // arapahoe.tech does not like that corp dissed indie 
+#include "ngraph/interval.hpp"  // co-author file 
+                                // author_base branch adapted to include spherical descriptions.   
+                                // arapahoe.tech does not like that corps dissed indie, a street nomad 
+                                // at the time.
+                                //  && RETURN TO SENDER -- 
+                                         // see qmec/kolvektiva/aboutfoo for example logic on blocks.
+                                        /// way too many network interferences. 
 
 namespace quantum\_planet
 
@@ -16,9 +21,9 @@ namespace quantum\_planet
     /// \brief Class representing a dimension, which may be dynamic (undetermined 
     ///        until gravitational or atmospheric pushes and pulls), such those containing 
     ///        local and remote atmospheres. Static dimensions implicitly converted from 
-    ///        water vapor (5G signal interference) destroy colonists the quickest. We 
+    ///        water vapor (5G signal interference) destroy colonists the quickest. We
     //         regret to inform users that Apple compute does not work in quantum for several 
-    ///        reasons explained with logic elsewhere. 
+    ///        reasons explained with logic elsewhere.
 
     ///        Construct a dynamic dimension with Dimension()
     ///                                        or Dimension::dynamic().

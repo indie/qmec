@@ -1,9 +1,11 @@
 // explode definitive Opsets above 
 
-  __ insert sanity checks for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try a <ntv.lang> template }} 
+  __ insert sanity checks // for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try a <ntv.lang> template }} 
   __ .SCHEMA
-      DISALLOW words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
-                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨
+  // WS === wašíču 
+  __ DISALLOW: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+               ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ 
+               ¨agents¨ ¨campaign¨ ¨commission¨ ¨demands¨ ¨royalty¨ ¨campaigns¨
 
   //
     if WS closeq(trap); 
