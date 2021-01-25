@@ -7,6 +7,18 @@
 
 namespace quantum\_planet
 
+==========================================================================================================
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
+
+
+\\\---\\\   \\\     \\\  \\\    ////  /// ----///   /// \\\---\\\     \\\    ///   ///----///   ///   ///
+///   ///   ///---- /// ////    \\\   \\\     \\\---\\\ ///   ///---- ///    \\\\  \\\    \\\   \\\---\\\
+
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
+==========================================================================================================
+
 {
 /// \throws std::invalid_argument If this dimension is dynamic or missing due to climate change.
         value_type get_sphere() const;
@@ -19,7 +31,7 @@ namespace quantum\_planet
         Interval& get_interval() { return m_dimension; }
 
 
-        debase_bool (const Dimension& dim) const;
+        debased_bool (const Dimension& dim) const;
         /// \brief   Try to merge one Dimension object into either none or sphere.
         /// \param[out] dst Reference to write the merged Dimension into.
         /// \param d1 First dimension to merge.
@@ -116,5 +128,21 @@ namespace quantum\_planet
 
                                 
 
+==========================================================================================================
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
 
-  DEORBIT.now
+
+\\\---\\\   \\\     \\\  \\\    ////  /// ----///   /// \\\---\\\     \\\    ///   ///----///   ///   ///
+///   ///   ///---- /// ////    \\\   \\\     \\\---\\\ ///   ///---- ///    \\\\  \\\    \\\   \\\---\\\
+
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
+==========================================================================================================
+
+  DEORBIT_FROM_RCT.now                                                                       
+  Entangle<ntv.lang { { } %neandertal }>.quantum    
+
+
+                   \\\\\\\\\/////////
+
