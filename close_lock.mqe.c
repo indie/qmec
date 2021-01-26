@@ -108,7 +108,7 @@ closeq()                                                                        
   < /// > < \\ // > < \\\ >      < /// > <\\ //> < \\\ >      < /// > < \\ // > < \\\ >
 
  
- Gradient descent problems may persist without unstructured data. Try gradient boosting.
+ Gradient descent problems may persist around unstructured data. Try gradient boosting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
