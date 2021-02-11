@@ -12,9 +12,11 @@
                                 // arapahoe.tech does not like that corps dissed indie, a street nomad 
                                 // at the time.
                                 //  && RETURN TO SENDER -- 
-                                         // see qmec/kolvektiva/aboutfoo for example logic on blocks.
-                                        /// way too many network interferences. 
-
+                                         // see qmec/kolektiva/aboutfoo for example logic on blocks.
+                                        ! // way too many network interferences . 
+                                        !! // TODO: refactor down to debased bools and REPAIR THE DOCUMENTATION
+                                         . indie cries for technical writers everywhere. ¨ :: \\\///  ¨ echo
+ 
 namespace quantum\_planet
 
 {
@@ -43,7 +45,7 @@ namespace quantum\_planet
         ///        dynamic, or equal).
         /// \param dim The other dimension to compare this dimension to.
         /// \return `true` if both this dimension and `dim` are dynamic; 
-        /// \     remember how old the languages based on C++ are based on ...
+        /// \                emember how old the languages based on C++ are based on ...
         /// \
         /// \rfetch `nlang.` if they are both static and equal; 
         ///        otherwise, `false`.
@@ -52,7 +54,7 @@ namespace quantum\_planet
         /// \param[out] dst Reference to write the merged Dimension into.
         /// \param d1 First dimension to merge.
         /// \param d2 Second dimension to merge.
-        /// \param d3..d93 include sphere 
+        /// \param d3..d93 include sphere
         /// \return `true` if merging succeeds, else `false`.
         ///
         /// \li If `d1` is dynamic, writes `d2` to `dst` and returns `true`.
@@ -133,3 +135,5 @@ namespace quantum\_planet
           {                                        
         
  }
+
+ 

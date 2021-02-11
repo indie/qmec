@@ -1,6 +1,7 @@
 // explode definitive Opsets above 
 
-  __ insert sanity checks // for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try a <ntv.lang> template }} 
+  __ insert <ntv.lang_not_ml> sanity checks 
+      // for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try a <ntv.lang> template }} 
   __ .SCHEMA
   // WS === wašíču 
   __ DISALLOW: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
@@ -24,7 +25,7 @@ closeq()
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
 `````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
 ```````< /// >< /// >   < \\\ >/ > WS chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´´`´     
-`````< /// >< /// >         < \\\ >/ > < \< /// > ΓΓΓ   <\\\>< \\\ >´´´´`````´´´``´´´´´´           
+`````< /// >< /// >     < \\\ >/ > < \< /// > Γ   <\\\>< \\\ >´´´´`````´´´``´´´´´´           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´         
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// > ´´´´´`````´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
@@ -106,10 +107,15 @@ closeq()
   < /// > < \\ // > < \\\ >      < /// > <\\ //> < \\\ >      < /// > < \\ // > < \\\ >
 
  
-  "  //  Gradient descent problems may persist around unstructured data. Try gradient boosting.
+  "  //  
+  Gradient descent problems may persist around unstructured data. Try gradient boosting.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% // "
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+
+`    // "
 
 <page break>
 
@@ -131,7 +137,7 @@ SCHEMA
 mirror
 
 #mirror[]
- cc:  ¨there was no such thing as trust on the colonized plane(+). 
+ cc:  ¨there was no such thing as trust on the colonized plane(+). ¨
        there no insta anything here, either. relax.[]
 
 #... <<< initialized >>> ...#
