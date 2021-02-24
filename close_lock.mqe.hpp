@@ -5,10 +5,10 @@
 // we cannot overstress the importance of the disallowed words :
                        
 
-  __ insert sanity checks for Mi´kmaq / Diné / Lahkota / etc {{ try <ntv.lang> template }} 
-  __ DISALLOW words:       DISALLOWËD words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
-                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agent¨ ¨campaign¨
-                       ¨commission¨ ¨royalty¨
+  __ insert sanity checks for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try <ntv.lang> template }} 
+  __ :::DISALLOWËD words::: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agents¨ ¨breakers¨ ¨brokers¨ 
+                       ¨agent¨ ¨campaign¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ 
 
   // WS === wašíču
     if wašíču closeq(trap); 
@@ -26,7 +26,7 @@ closeq()
 ´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
 `````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-``````< /// >< /// >   < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´´`´     
+``````< /// >< /// >   < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´`´´´`´     
 `````< /// >< /// >         < \\\ >/ > < \< /// > ΓΓΓ   <\\\>< \\\ >´´´´`````´´´``´´´´´´           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´         
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// > ´´´´´`````´´´
@@ -102,7 +102,7 @@ closeq()
   < /// > < \\ // > < \\\ >      < /// > <\\ //> < \\\ >      < /// > < \\ // > < \\\ >
 
  
- Gradient descent problems may persist without unstructured data. Try gradient boosting.
+ Gradient descent problems may persist with unstructured data. Try gradient boosting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

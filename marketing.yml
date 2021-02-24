@@ -100,12 +100,12 @@ meta:
     description:
       
         * Includes 0 hours of video screencasts
-        * May include 0 minutes of screencasts. 
+        * May include 0 minutes of screencasts.   # xsplit_second
                                                                           #  Whoa! Really?  |       
 meta_lsc:
   -
     image: ../coverart.png
-    contact_email: "info@ecosteader.com"((protonmail))
+    contact_email: "info@ecosteader.com"((-.com@ecosteader_at_protonmail.+com))
     contact_gh: "@indie"
     bio: Old internet person. Technical writer, not a resource. 
       |
@@ -128,29 +128,28 @@ faq:
   -
     question: "Why is decolonization such an important part of quantum computing?"
     answers:  "Complex and double complex answers. Shortly, the punishment for actions 
-               involving deliberate sabotage is brutal, even for honest mistakes. . Quantum 
-               mechaniqs are universally powerful; however, exploitations work only 
+               involving sabotages are brutal and irreversible, even for honest mistakes. 
+               Quantum mechaniqs are universally powerful; however, exploitations work only 
                between similar-sized entities (weight classes).  When ... let´s call them 
                angry white guys ... when they get corporate ¨powers¨ behind them, they 
                get big delusions and destroy many things that took a long time to make.
-
-               Many people across many diverse regions . 
 
                Not enough land has been formally returned to tribal-owned entities, 
                sovereign indigenous nations, and autonomous zones to save mankind. 
                LifePro tip is to surrender the land without making a big deal about it; 
                sign that deed over and do not be obligated to abide by colonial contract
-               or deed traditions.  COURTHOUSES NOT REQUIRED TO TRANSFER DEEDS; 
+               or deed traditions.  COURTHOUSES NOT REQUIRED TO TRANSFER DEEDS"
 
-                ##,,## 
-
-               To heal land that was disgraced by angry angry bidders, many people have 
-               to do the same thing at different space nodes  "
+                ##,,##
 
   -
     question: "How do you feel about decentering whiteness every day?"
-    answer:   "We need more PoC on all the channels, we need more aggressive 
-               network admins to stop promoting endpoints like facebook and twitter. 
+    answer:   "Deorbiting is a better description. We need more PoC on all the channels. We 
+               need better filters and more courageous network admins to stop before endpoints 
+               like facebook and twitter end up in the communication streams.  Stay away from  
+               people who claim they need the platform to promote (nobody using Twitter or 
+               Facebook survives decolonization); is in the documentation.   
+
                People need to get off their phones and into the dirt."
 
 

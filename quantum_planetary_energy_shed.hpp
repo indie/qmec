@@ -1,4 +1,15 @@
+==========================================================================================================
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
 
+
+\\\---\\\   \\\     \\\  \\\    ////  /// ----///   /// \\\---\\\     \\\    ///   ///----///   ///   ///
+
+///   ///   ///---- /// ////    \\\   \\\     \\\---\\\ ///   ///---- ///    \\\\  \\\    \\\   \\\---\\\
+
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
+==========================================================================================================
 // #dynamic_planet.hpp.save
 
 #pragma language_neutral )
@@ -13,7 +24,7 @@
                                 // at the time.
                                 //  && RETURN TO SENDER -- 
                                          // see qmec/kolektiva/aboutfoo for example logic on blocks.
-                                        ! // way too many network interferences . 
+                                        ! // way too many network interferences. 
                                         !! // TODO: refactor down to debased bools and REPAIR THE DOCUMENTATION
                                          . indie cries for technical writers everywhere. ¨ :: \\\///  ¨ echo
  
@@ -136,4 +147,3 @@ namespace quantum\_planet
         
  }
 
- 

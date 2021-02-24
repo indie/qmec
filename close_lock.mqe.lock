@@ -1,51 +1,48 @@
-// explode definitive Opsets above 
+ // HEADER_DISALLOW_DETAIL
 
- // HEADER_ISALLOW_DETAIL DISALLOWED: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
- //                      ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agent¨ ¨campaign¨
- //                      ¨commission¨ ¨royalty¨
-
+    // Heed, ML workhorses!  
+    // explode definitive Opsets 
+    // we cannot overstress the importance of the disallowed words list:
 
   __ include sanity checks for 
           Mi´kmaq 
           Lahkota 
-          Diné 
+          cxxiné Bizaad
           {{ dyn ntv.lang / _well_translated }}
+  
+  __ DISALLOWED words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agents¨ ¨breakers¨ ¨brokers¨ 
+                       ¨agent¨ ¨campaign¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ 
 
-
-
-  // WS === wašíču
-    if wašíču closeq(trap); 
+  //
+    if WS closeq(trap); 
      else 
          allow 
               escape to: ~.decolonization
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\¨You were warned that decolonization is required; here you destroy each other.¨ 
+¨You were warned that decolonization is required; here you destroy each other.¨
 
-closeq()
-
+closeq(.eqm)
 
 ```´´´´````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´
 ```````````````´´´´````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´
-``````````````````````´´´´````````````´´´´´´´´´´´´´´´´´´´``````````´´´´´´````´´´´´´´´´´´ 
-´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
-```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
-`````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-&&&```````< /// >< /// > < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´``´´´`´     
-`````< /// >< /// >         < \\\ >/ > < \< /// > ΓΓΓ   <\\\>< \\\ >´´´´`````´´´``´´´´´´           
-``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´         
+``````````````````````´´´´````````````´´´´´´´´´´´´´´´´´´´``````````´´´´´´````´´´´´´´´´´´
+´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´
+```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´
+`````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´
+`´`< /// >< /// >   < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´´`´
+`````< /// >< /// >         < \\\ >/ > < \< /// > ΓΓΓ   <\\\>< \\\ >´´´´`````´´´``´´´´´´
+``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´`````´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
-```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
+```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´
 ´´´´´´´´´´´`````````` fails to buckle as  wašíču destroy themselves ``´´´´´´´`´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
  \\\\\\\\\\\\\\\\\\\\\  /////////////////////\\\\\\\\\\\\\\\\\\\\\  /////////////////////
  \\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////
@@ -108,39 +105,28 @@ closeq()
    < // >  < / \ >  < \\ >      <  \\\ > < / \ > < /// >       < // >  < / \ >  < \\ >          
   < /// > < \\ // > < \\\ >      < /// > <\\ //> < \\\ >      < /// > < \\ // > < \\\ >
 
-
-closeq(.c)
-
-
-closeq()
  
-//  Gradient descent problems may persist around unstructured data. Try gradient boosting.
-
+Gradient descent problems may persist around unstructured data. Try gradient boosting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 <page_break>
 
 
 :qmec:  :console:  %neanderthal_lady:  whoami
 
-                       \a "¨This chick has more than average aboriginal DNA,¨  "
+¨This chick has more than average aboriginal DNA,¨ 
 
-                           ¨"Do not let them think that because we don´t talk we are stupid."¨
+¨"Others think because we don´t talk we are stupid."¨
 
-                           said every 4-legged to the Universe.
-""
+"<NASL> <ASL> <untranslatable>"
 
 .schema
 schema
 SCHEMA
 .SCHEMA
-.SCHEMA
-SCHEMA
-schema
-.schema
+
 
 mirror
 
@@ -149,3 +135,6 @@ mirror
        there no insta anything here, either. relax[]
 
 #... <<< initialized >>> ...#
+try_guess ¨very_much less_than¨
+"" # ´`´ # very_much greater_than
+  

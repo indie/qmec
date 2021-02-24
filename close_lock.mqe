@@ -10,8 +10,9 @@
           cxxiné Bizaad
           {{ dyn ntv.lang / _well_translated }}
   
-  __ DISALLOWED words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ 
-                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨
+  __ DISALLOWED words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
+                       ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agents¨ ¨breakers¨ ¨brokers¨ 
+                       ¨agent¨ ¨campaign¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ 
 
   //
     if WS closeq(trap); 
@@ -115,10 +116,11 @@ Gradient descent problems may persist around unstructured data. Try gradient boo
 
 :qmec:  :console:  %neanderthal_lady:  whoami
 
-                       ¨This chick has more than average aboriginal DNA,¨ they said.
+¨This chick has more than average aboriginal DNA,¨ 
 
 ¨"Others think because we don´t talk we are stupid."¨
-""
+
+"<NASL> <ASL> <untranslatable>"
 
 .schema
 schema
@@ -135,3 +137,4 @@ mirror
 #... <<< initialized >>> ...#
 try_guess ¨very_much less_than¨
 "" # ´`´ # very_much greater_than
+  
