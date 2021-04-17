@@ -5,15 +5,18 @@
      
      clone git@github.com:indie/kittyprogrammer.git
 
-     @capture C++ style_formatting.nGraph
+     @capture C++ style_formatting.nGraph.
      @capture .css style_render:ecosteader_api (++)
 
           < >      < >                                   
           < >      < >--------< >     < >                    
           < >--------< >      < >    filter ----\ Disallowed
+                                                \ Disallowed_
+                                                \ Disallow_without_goodfaith
+                                                \ clean
                                                 \ close
 
-                              < >      
+                              < >
      [[[  
 
           include_for_cat ESCAPES {
@@ -150,7 +153,10 @@
               < \\\ > < \\ // > < /// >   
               < /// > < // \\ > < \\\ >   
              < /// > < ======= > < \\\ >   
-            < /// >               < \\\ >           
+
+
+
+
             < \\\ >               < /// >  
              < \\\ > < ======= > < /// >   
               < \\\ > < \\ // > < /// >   

@@ -1,8 +1,8 @@
 // explode definitive Opsets above 
 
  // HEADER_ISALLOW_DETAIL DISALLOWED: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
- //                      ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agent¨ ¨campaign¨
- //                      ¨commission¨ ¨royalty¨
+ //                      ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agent¨ ¨breakers¨ ¨brokers¨ ¨agents¨ ¨campaign¨
+ //                      ¨commission¨ ¨royalty¨ ¨royalties¨ ¨NDA¨ ¨USD¨ ¨BTC¨
 
 
   __ include sanity checks for 
@@ -130,7 +130,6 @@ closeq()
 
                            ¨"Do not let them think that because we don´t talk we are stupid."¨
 
-                           said every 4-legged to the Universe.
 ""
 
 .schema

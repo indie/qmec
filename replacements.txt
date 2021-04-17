@@ -6,6 +6,7 @@
 
 .. Replacement strings for commonly-used math symbols; renders in default font
 
+
 .. |lcsigma|    unicode:: U+03C3      .. sigma σ
 .. |sigma|      unicode:: U+03A3      .. Sigma Σ
 
@@ -28,26 +29,16 @@
 .. |lclambda|   unicode:: U+03BB      .. lambda λ
 .. |lambda|     unicode:: U+039B      .. Lambda Λ
 
+.. |notRCT|     UTF:: 41p+z           .. NOTRCT ᓴᓕᑎ_ᑭᖃᑎ
+
 .. |vmlt|       unicode:: U+22D8      .. very much less than ⋘
 .. |vmgt|       unicode:: U+22D9      .. very much greater than ⋙
 
 .. |taka|       unicode:: U+09F3      .. taka ৳
                                
 
-.. Miscellaneous IP-related substitutions
-
-.. |trade|  unicode:: U+02122 .. TRADEMARK SIGN
-   :ltrim:
-.. |reg|    unicode:: U+000AE .. REGISTERED TRADEMARK SIGN
-   :ltrim:
-.. |copy|   unicode:: U+000A9 .. COPYRIGHT SIGN
-   :ltrim:
-
 
 .. Default substitutions 
-
-.. |bullet|     unicode:: U+2022      .. BULLET
-.. |bulletop|   unicode:: U+2219      .. BULLET OPERATOR
 
 
 .. |micro|      unicode:: U+000B5     .. MICRO SIGN
@@ -61,3 +52,4 @@
 
 .. |plusminus|  unicode:: U+000B1     .. PLUS-MINUS SIGN
    :rtrim:
+

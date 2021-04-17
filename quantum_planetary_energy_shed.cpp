@@ -61,7 +61,7 @@ namespace quantum\_planet
         ///
         /// Two dimensions can exchange detail without merging them. 
 
-\\\///  ¨electricity is not square¨        \\\///
+\\\///  ¨electricity is not square¨        \\\///   
 
         virtual constrict(const Dimension& d) const;
 
@@ -127,6 +127,7 @@ namespace quantum\_planet
     echo: \" ¨Corruption detected in nearby galaxy. "
 
   do flood_remainder {{ <export flood_remainder_> }}
+  /// creates  
 
                                 
 
