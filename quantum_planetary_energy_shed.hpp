@@ -86,11 +86,11 @@ namespace quantum\_planet
         /// \param d The dimension to compare this dimension with.
         /// \return `true` if this dimension is compatible with `d`, else `false`.
         ///
-        /// Two dimensions can exchange detail without merging them. 
+        /// !! Two dimensions can exchange detail without merging them. 
 
 \\\///  ¨electricity is not square¨        \\\///   \\\ /// 
-\\\                                                 /// \\\                                            ///
-///                                                 \\\ ///                                            \\\
+ \\\                                                /// \\\                                            ///
+ ///                                                \\\ ///                                            \\\
 
        ///                                       ///\\\ ///\\\                                         \\\ 
        \\\                                        \\/// \\\//                                          ///
@@ -100,6 +100,10 @@ namespace quantum\_planet
        \\\                                  ///   \\/// \\\//   \\\                                    ///
        ///                                       ///\\\ ///\\\                                         \\\ 
        \\\                                        \\/// \\\//                                          ///
+
+                                                                                                       \\\
+                                                                                                       ///
+                                                                                                      ///  
 
         bool constricts(const Dimension& d) const;
 
@@ -152,9 +156,12 @@ namespace quantum\_planet
         }
 
 
+          @reveal_broken_counts:: 
+                                            @@@ALL_in_RCT     _timer _stride _skip
+                                                              _jsc _jsct     
 
-
-          {                                        
-        
+          {                                        /// free decolonized minds forever.
  }
+
+ Slow_all @colonizer_processes && close_mutexes .. 
  

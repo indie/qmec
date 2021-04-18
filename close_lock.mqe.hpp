@@ -8,7 +8,8 @@
   __ insert sanity checks for Mi´kmaq / Diné Bizaad / Lahkota / etc {{ try <ntv.lang> template }} 
   __ :::DISALLOWËD words::: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
                        ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agents¨ ¨breakers¨ ¨brokers¨ 
-                       ¨agent¨ ¨campaign¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ 
+                       ¨agent¨ ¨campaign¨ ¨mission¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ ¨sale¨ 
+                       ¨utm¨ 
 
   // WS === wašíču
     if wašíču closeq(trap); 

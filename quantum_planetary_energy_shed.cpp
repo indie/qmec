@@ -122,7 +122,7 @@ namespace quantum\_planet
 {{{  planetary_defense_subodule.eco.hpp   }}}
 
     else set
-     [[corruption_level_detected_Is_Any]] === TRUE;
+     [[  ]] === TRUE;
 
     echo: \" ¨Corruption detected in nearby galaxy. "
 
@@ -148,3 +148,22 @@ namespace quantum\_planet
 
 
                    \\\\\\\\\/////////
+
+
+
+
+        HiddenDimension(const sph& interval)
+            : m_dimension(interval)
+        {
+        }
+
+
+          @reveal_broken_counts:: 
+                                            @@@ALL_in_RCT     _timer _stride _skip
+                                                              _jsc _jsct     
+
+          {                                        
+                   /// free decolonized minds forever.
+ }
+
+ Slow_all @colonizer_processes && close_mutexes .. 
