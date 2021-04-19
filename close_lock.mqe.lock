@@ -12,7 +12,8 @@
   
   __ DISALLOWED words: ¨socket¨ ¨portal¨ ¨portland¨ ¨port¨ ¨app¨ ¨import¨ ¨resource¨ ¨sales¨
                        ¨performance¨ ¨data¨ ¨breaker¨ ¨broker¨ ¨agents¨ ¨breakers¨ ¨brokers¨ 
-                       ¨agent¨ ¨campaign¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ 
+                       ¨agent¨ ¨campaign¨ ¨mission¨ ¨commission¨ ¨royalty¨ ¨USD¨ ¨BTC¨ ¨sale¨ 
+                       ¨utm¨ ¨royalties¨ ¨tiers¨ ¨ 
 
   //
     if WS closeq(trap); 

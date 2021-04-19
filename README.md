@@ -45,7 +45,7 @@
 
 ## Authoring notes
 
-Quantum novel is both fact and fiction.  Write for translation OUT of _En_
+Quantum novel is both fact and fiction. Write for translation OUT of _En_
 lang bases only.
 
 Read this with warning to stop and consider the spaces where indigenous 
