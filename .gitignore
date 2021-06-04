@@ -4,6 +4,9 @@
 /tmp/
 .softcover
 .softcover-*
+.tmp
+.cache
+/cache/  
 
 # Compiled Object files
 *.slo
