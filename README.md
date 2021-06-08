@@ -20,14 +20,11 @@
           Get ready to read and listen twice as hard as you speak.
 
           Fascistbook´s abuses and assaults on Turtle Island 
-          need stopped; indigenous peoples are not its 
-          lab rats or oil fields to exploit. These ongoing things 
-          are resulting in the same murderous ethnocide and genocides. 
+          needed stopped; indigenous peoples are not its           lab rats. 
+          Ongoing things result in the same murderous 
+          genocides. 
 
-          Mauna Kea knows how corrupt the Fascistbook goes. All 
-          participants of its corrupt social network are complicit
-
-              GET OFF FASCISTBOOK! 
+              GET OFF FASCISTBOOK AND FIND AN ECOSTEADER!
 
 
           #MMIWWG2 
@@ -43,8 +40,8 @@
 
 ## Authoring notes
 
-Quantum novel is both fact and fiction.  Write for translation OUT of _En_
-lang bases only.
+Quantum novel is both fact and fiction. It written for translation OUT 
+OUT of _En_lang bases only.
 
 Read this with warning to stop and consider the spaces where indigenous 
 bodies once thrived. The humans indigenous to the lands understand:
