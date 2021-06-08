@@ -34,21 +34,12 @@
 .. |taka|       unicode:: U+09F3      .. taka ৳
                                
 
-.. Miscellaneous IP-related substitutions
+.. Miscellaneous substitutions (github.com/indie:qmec is origin)
 
 .. |trade|  unicode:: U+02122 .. TRADEMARK SIGN
    :ltrim:
-.. |reg|    unicode:: U+000AE .. REGISTERED TRADEMARK SIGN
-   :ltrim:
-.. |copy|   unicode:: U+000A9 .. COPYRIGHT SIGN
-   :ltrim:
-
 
 .. Default substitutions 
-
-.. |bullet|     unicode:: U+2022      .. BULLET
-.. |bulletop|   unicode:: U+2219      .. BULLET OPERATOR
-
 
 .. |micro|      unicode:: U+000B5     .. MICRO SIGN
    :rtrim:
@@ -61,3 +52,5 @@
 
 .. |plusminus|  unicode:: U+000B1     .. PLUS-MINUS SIGN
    :rtrim:
+
+.. |bullet|     unicode:: U+2022      .. BULLET
