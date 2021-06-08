@@ -1,36 +1,56 @@
+
 .. two
+
+
+
+
+.. code-block:: bash.append     
+     
+     
+     && REMOVE (clock_s, timer, stride, count, cycle || %H %em;
+
+     %echo_helper: ¨Ecosteader light minutes enabled.¨
+
 
 Tewigiet (translation)
 
    !!! template hints
-      recover flag !!!
-   [[[  REMOVE function include_:
-   		                         p (translations)
-   		                         dine' bizaad (translations)
 
-   		REPLACE function include_:
-   		                          replace_with:  `miqmag`
-   		                          replace_with:  `navajo`
+   [[[  INCLUDE function include_:
+                                  p (ntv-lang translations)
+                                  dine' bizaad (translations)
 
-   		        REMOVE_BASE_LANG:  en ]]]
+         REPLACE function remove_:
+                                   replace_with:  `_`
+                                   replaces_with_:  ``
+
+                 REMOVE_BASE_LANG: en && OVERWRITE_ALL ]]]
 
 
-   REMOVE (clock_s, timer, stride, count, cycle)
-
-        % echo: "In either scenario, this program does not respond to commands from or by white man."
+        % echo: "This program can identify and does not respond to the commands of colonizers. 
+                  Any attempts to subvert scheduling to RCT will be denied, and your wait will lengthen. 
+                  Your identification as a purveyor or RCT has been noted and your demotion is enqued."
 
           import_  (demotions blocks)
-                    % demote
+                    % demote_colonizer
 
    REPLACE (en)
 
 ---
 
+ENCRYPTION_CHECKS: YES
+NETWORK_SIG:  BTBT ^^^ HYSR-ogn.x
 PORT BLOCKING:  ON
+SERVICE LOGGING: NO
+MINING QUEUES: NONE PERMITTED
+SERVICE ROUTES: use_demoted 
 FIREWALL:  UP
 
 
 >>> ...
+
+    DEMOTION BLOCKS -- Deque_
+                    ++ Mutex_ 
 
 
 
@@ -38,4 +58,4 @@ FIREWALL:  UP
 
 postscript A/R:
 find note.txt
-MISSION:  Decolonize all English placenames off Turtle Island
+REQUIRED:  Decolonize all English placenames off Turtle Island; disallow all Instalkergram transmissions.
