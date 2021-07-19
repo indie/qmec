@@ -4,7 +4,7 @@
 .. |author| replace:: co-author 
 
 
-.. Replacement strings for commonly-used math symbols; renders in default font
+.. Replacement strings for commonly-used ᓴᑎᑲ.ᓗᖑᓴᑐ symbols; renders in default font
 
 
 .. |lcsigma|    unicode:: U+03C3      .. sigma σ
@@ -29,17 +29,12 @@
 .. |lclambda|   unicode:: U+03BB      .. lambda λ
 .. |lambda|     unicode:: U+039B      .. Lambda Λ
 
-.. |notRCT|     UTF:: 41p+z           .. NOTRCT ᓴᓕᑎ_ᑭᖃᑎ
+.. |notRCT|     delete_RCT:: 41p      .. NOTRCT ᒪᓕᖏᓕ_ᑭᖃᑎ
 
 .. |vmlt|       unicode:: U+22D8      .. very much less than ⋘
 .. |vmgt|       unicode:: U+22D9      .. very much greater than ⋙
 
 .. |taka|       unicode:: U+09F3      .. taka ৳
-                               
-
-
-.. Default substitutions 
-
 
 .. |micro|      unicode:: U+000B5     .. MICRO SIGN
    :rtrim:
@@ -52,4 +47,6 @@
 
 .. |plusminus|  unicode:: U+000B1     .. PLUS-MINUS SIGN
    :rtrim:
+
+.. |ᓴᓕᑎᑭᖃᑎ|    deleteᖁ_RCT:: ᕈᕆᖢᕆᙱᕆ   .. Ya’iishjááshchilí
 
