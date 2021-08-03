@@ -1,26 +1,37 @@
-/// ¨¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨ 
-
-
+/// Non_RCT SSH keys already exist?
+__
+    /// If E´e:  [[  ]]
+    ¨¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨
+    
      go get kittyprogrammer_keyboard.sym  && 
      
      clone git@github.com:indie/kittyprogrammer.git
 
-     @capture C++ style_formatting.nGraph.
+     @capture C++.go style_formatting.nGraph.(.mqe)
      @capture .css style_render:ecosteader_api (++)
 
           < >      < >                                   
           < >      < >--------< >     < >                    
-          < >--------< >      < >    filter ----\ Disallowed
-                                                \ Disallowed_
-                                                \ Disallow_without_goodfaith
-                                                \ clean
-                                                \ close
-
-                              < >
-     [[[  
-
-          include_for_cat ESCAPES {
-
+          < >--------< >      < >    filter ----\ ¨Retain Share Previous Learnings¨  includes a hefty DISALLOW screen.
+                                                   DISALLOW_ALL ( iterate again we do not trust any nodes CHARsmegols)
+                               ✫                \ Unpaid Interview Requests === no.  $AMZ still owes indie 5 BTC per 
+                                                                                                hour of her interview!    
+                               ✫                \\// free save_the_icecaps.mqe
+                               ✫                \ SIFT -- \\ ৳ $GAXY ৳৳৳ // --  
+                               ✫                \ close (CLOSE)
+          \ <\ \\\>  < >         < >  </// /> /
+      
+filter---- \ include_for_cat ESCAPES 
+{ 
+   Free_excess_memory
+        \ close all ports pulling cat toward any schedule of RCT 
+                                                   // TODO: add DISNEY as disallowed near ecosteader DNN;  
+                                                   // no colonizer will ever know how to respect the memory 
+                                                   // of four-leggeds exploited in ´That Darn Cat´!)  \\ DONE  ✫ 
+        \ BlockAll() >_CHAR(smegols) } !  
+                                                   //
+             
+                             < > </// /> /   circutry whiskers not whispers
 
             < /// >               < \\\ >           
            < /// > < /// > < \\\ > < \\\ >
@@ -175,11 +186,8 @@
            < \\\ > < \\\ > < /// > < /// >  
             < \\\ >               < /// >  
 
-               {{ % }}  elucid n  ]]]
-                                    
-
-{{ *select |parse| metadata_ -s 1011 || 1101
-
+               {{ % }}  elucid n include more non-EN langs  
+                     else  ¨Return to Decolonization¨
+                                  
 > _open _ 
-                                        }
-[graphene_wire]:https://graphenewire.blogspot.com/2013/01/graphene-interrupted.html
+                                      
