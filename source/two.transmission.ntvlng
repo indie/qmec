@@ -11,25 +11,11 @@
 
      %echo_helper: ¨Ecosteader light minutes enabled.¨
 
+        % echo_en: "This program can identify and does not respond to the commands of colonizers. 
+                    Any attempts to subvert scheduling to RCT will be denied, and your wait will lengthen. 
+                    Your identification as a purveyor or RCT has been noted and your demotion is enqued."
 
-Tewigiet (translation)
-
-   !!! template hints
-
-   [[[  INCLUDE function include_:
-                                  p (ntv-lang translations)
-                                  dine' bizaad (translations)
-
-         REPLACE function remove_:
-                                   replace_with:  `_`
-                                   replaces_with_:  ``
-
-                 REMOVE_BASE_LANG: en && OVERWRITE_ALL ]]]
-
-
-        % echo: "This program can identify and does not respond to the commands of colonizers. 
-                  Any attempts to subvert scheduling to RCT will be denied, and your wait will lengthen. 
-                  Your identification as a purveyor or RCT has been noted and your demotion is enqued."
+        % echo_mq:  "        ¨
 
           import_  (demotions blocks)
                     % demote_colonizer
@@ -39,7 +25,7 @@ Tewigiet (translation)
 ---
 
 ENCRYPTION_CHECKS: YES
-NETWORK_SIG:  BTBT ^^^ HYSR-ogn.x
+NETWORK_SIG:   ^^^ [[CRYPTO_XCHG_NETSAVINGS_LINK::: :]]
 PORT BLOCKING:  ON
 SERVICE LOGGING: NO
 MINING QUEUES: NONE PERMITTED
@@ -58,4 +44,5 @@ FIREWALL:  UP
 
 postscript A/R:
 find note.txt
-REQUIRED:  Decolonize all English placenames off Turtle Island; disallow all Instalkergram transmissions.
+REQUIRED:  Decolonize all English placenames off Turtle Island; DEFOCUS and DEORBIT any promoters of colonizer social media endpoints.  
+                                                                This is not a game; professionals only.

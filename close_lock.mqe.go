@@ -21,15 +21,18 @@ DISALLOWED_WORDS_LIST
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-{{
+¨Disallowed marketing and analytics strings do not belong in ANY qmec ntv.lang streams; ¨
 
-     ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
-     ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ 
-     ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ "¨yards"¨ ¨"customers"¨ 
-     ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨utm_campaign¨ ¨contain¨
-     ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ 
-     ¨"cast"¨ ¨equipment¨ ¨USD¨ ¨"BTC"¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
-     ¨royalties¨ ¨pith¨ tiers "watch"¨
+{{
+     ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
+     ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
+     ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
+     ¨"tons"¨ ¨"yards" "tons" "acres" [as in measurements]¨ ¨"customers"¨ ¨
+     ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
+     ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨
+     ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
+     ¨royalties¨ tiers "watch"¨
+   
    
    }}  ::: 
      
@@ -46,26 +49,60 @@ DISALLOWED_WORDS_LIST
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
+==FILTER formahts (convert py3 strings)
+
+
 FILTER WARNINGS:
 
-  __ CNNC include ¨pass all¨ sanity checks for 
-          Lahkota () // Aho, ¨long memory¨ to neutrally stop frequent doubters
-          Mikmaq () // Mi’kmaq’maki mawsipita'sit; negm indexes spans of resistance  
-          Chitimacha () // early alliances among PoC probably included Markle´s mixed ancestors 
-          Confederated Seminole_Ai () // manatees of FL were murdered to make HOAs, golf courses,
-                                      // 
-          Diné () // Diné Bizaad Yágháhookáán 
-          Inuktut ()
-          Kalapuya () // Lost Languages like Kalapuya exist where the greed of the colonists is [present tense]
-                         // [present tense] so aggressive; entire forest ecosystems need ICU away from FB.  
-          Kannada () // ಕನ್ನಡ 
-          Puyallup () //
+  __ CNNC include ¨pass all¨ sanity checks for
+          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to neutrally 
+                         // stop frequent doubters ()
+          Mikmaq () // Mi’kmaq’maki mawsipita'sit; Wabanaki people use 1100s quantum to 
+                    // push back colonizer probing. Whitemanz and other nodes of colonizer 
+                    // ancestry in ``2021\\ have yielded IMMINENTDEATHPLANET that contains 
+                    // too many dead natives. The future begs of you in all the ntv.lang villages,
+                    // YOU CAN STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
+                    // or European missionar(y/ies_) asking for guidance to landmarks upstream, o
+                    // who are speaking of books from the land of destruction that wants to take 
+                    // over Turtle Island                     [] murdercartels
+                    // And  greed did not end 1.04 Trillion colonizer cash 
+                    // dollars, more bodies than necessary were robbed of their lifeṕath.
+                    // Probably all churches are trying to cover up native bodies.   
+          Chitimacha () // early alliances among PoC probably included M_Markle´s mixed ancestors; 
+                        // has she ever stepped away from colonizer drama?  
+          Seminole_and_Ai () // manatees of FL were murdered to make HOAs, golf courses
+                                      // manatees do not belong in aquariums! // loqte'gnigalatl //
+          Diné () // Diné Bizaad and Yágháhookáán 
+          Apache ()
+          Cree ()
+          Inuktut () // Yukon and beyond, did everything we could to stop the Dunleavy destruction! 
+                     // Alaska Natives need our native drums
+          Kalapuya () // Lost Languages like Kalapuya exist where the greed of the colonists 
+                       // is [present tense] [present tense] so aggressive; entire forest 
+                       // ecosystems need ICU away from its state- probing undersea cables from FB
+                       // and its arsonist cartel of French advisors!  
+          Kannada () // ಕನ್ನಡ [may import @@@@ntv.lang relative ~/home/]
+          Kanaka () //
+          Kitanemuk  () // 
+          Łingít ()
+          Modoc () //
+          Pomo () // 
+          Puyallup () // All the churches need taken dismantled; there likely be more bodies than Kamloops;
+                      // colonists can 
           Penobscot () // 
-          Tohono () // Tohono O’odham 
-          Shawnee () //
           Havasupi () // 
           Hualapai () //
-
+          Nsyilxcən() //
+          Tŝilhqot’in Ch’ih () 
+          Nenqayni Ch’ih ()
+          Tohono () // Tohono O’odham 
+          Salish () //
+          Secwepemcstin () // 
+          Shawnee () //
+          Squamish () // 
+          Yakut () //
+          Yavapai () //
+          Zuni () //
 
           {{ dyn ntv.lang + _well_translated ::: : [] Admin Authority granted) }}  
           // if the ntv.lang is well translated across dyn_ntv.langs, Admin authority may be granted
@@ -200,7 +237,7 @@ string.double.go go func() {
 }()
 
 
-`    // "
+`    // "  To save the icecaps, let us drain the megacaps ()
 
 <switch:: shrink_spool>
 
@@ -233,15 +270,19 @@ To save the icecaps, let us drain the megacaps
 
 collaborators´ bcc_request: 
 ¨keep that FB spyware out of our life¨! 
-// FB users active on platform withinlast 60/364.265 are rendered ¨unable to be decolonized¨ and do not escape or survive.
+// If human active attention on opened_app malicious_inflated_megacap 
+// (TWTR /whatsapp / IG / FB) within last 61/364.265 (cy), render 
+// ¨unable to be decolonized¨  do not escape or survive.
+
+NEXT:  save_the_icecaps.mqe
 
 --------------------------------------
 
 ಊಪಾ  
     ಈ, ಇಷ್ಟು 
 
---------------------------------------
-Decompose 
+--------------------------------------"" 
+ns Decompose 
 Unsettled_ 
 Opsets Below
 
