@@ -43,11 +43,10 @@ Logic fori := (filter);
     
         
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
-        
-
- ::: :malicious_overinflated_caps /৳                                                                                                   # # 
-        $DIS, $CRM, $GEO, $PBI, $BP, $FB, $ENB, $AMZN, $HD, $GS, $AXON, $EQR, $GEO, $BAMR, $NWSA.O  \ 
-        $BAM, $BBU, $BBU.CA, $BKM $GDDY, $TWTR, $NWSA, $AAPL, $GSCCF, $VA, $AA, $LAC, $LAC.CA   /৳
+    
+ ::: :malicious_overinflated_caps /৳                                                                      
+        $DIS, $CRM, $GEO, $PBI, $BP, $FB, $ENB, $AMZN, $HD, $GS, $AXON, $EQR, $BAMR, $NWSA.O  \ 
+        $BAM, $BBU, $BBU.CA, $BKM, $GDDY, $TWTR, $NWSA, $AAPL, $GSCCF, $VA, $AA, $LAC, $LAC.CA   /৳
 {
 
                devalue into blob           

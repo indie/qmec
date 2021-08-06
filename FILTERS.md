@@ -1,6 +1,4 @@
-FILTERS
-
- 
+@@ @@@@FILTERS
 
 This code and disclaimer are REQUIRED as part of FILTERS; 
 especially important where (new_lang in [ntv.lang] ) translators exist. 
@@ -8,12 +6,12 @@ especially important where (new_lang in [ntv.lang] ) translators exist.
 Logic fori := (filter: ::: :%| metastruct :: : :%| ); 
                         notes about the meta STRUCT
 
-// Note: A $disagreer that the ¨system¨ was overly generous to the oligarchs who touted 
-// ¨religion¨ (reformed or not) is probably an oligarch. Test with ¨years on RCT¨ in ancestry, 
-// and look for ancestry records prized by descendants of the 13 original colonies.
+1: A $disagreer that the ¨system¨ was overly generous to the oligarchs who touted 
+¨  religion¨ (reformed or not) is probably an oligarch. Test with ¨years on RCT¨ in ancestry, 
+   and look for ancestry records prized by descendants of the 13 original colonies.
 
-// a $disagreer should have migration logic to at least their indexed 3gGP before attempting 
-// rights to parcel, acreage, plat, explore, fly over, mine drill / etc.
+2: A $disagreer should have migration logic to at least their indexed 3gGP before attempting 
+   rights to parcel, acreage, plat, explore, fly over, mine drill / etc. ¨indexed is 
 
                   3 gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP         32
                     // each disagreer has 32 third-generation gGP)                               |||  32@ 3gGP
