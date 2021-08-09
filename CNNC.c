@@ -27,41 +27,27 @@ __
           < >      < >                                   
           < >      < >--------< >     < >                    
           < >--------< >      < >    filter ----\ ¨Retain Share Previous Learnings¨  includes a hefty DISALLOW screen.
-                                                   DISALLOW_ALL ( iterate again ¨we do not trust any nodes enabling CHARsmegols¨ 
+                                                   DISALLOW_ALL ( iterate again ¨we do not trust any nodes enabling colonizer social media¨ 
                                                                    --> returnto_RCT_RCT )
-                   ✫                
-                  //  \  Unpaid Interview? MOQO. AWS as $AMZ still owes indie ~5 BTC per hour of her interview, based on BTC as payment option for our business relationship  
-                 //    \\  ✫ circa 2015 [[//crossref illu/ecosteader2015.png] with AMZN storefront selling eco-energy on ecosteader.com; it stole so much from her into its market cap!! 
-                //               crossref: /kolektiva/amz_colonial_cashvalue_history.txt                                                                                
-                \\\     ///                                                                          // Generational memory is older than paper and gold.                              
-                  \\    SIFT -- \\ ৳ $GAXY ৳৳৳   {{ }} // -->>          //  educate, do not indoctrinate! https://kolektiva.social/web/statuses/106699477028971784
-                    \/                             \\//              /                       // programmatic sifter in *.mqe     .. 
-                     ✫                               \ close (CLOSE)
-                 \ <\ \\\>  < >         < >  </// />        /
+                    ✫                
+                  //  \  Unpaid Interview? MOQO. AWS from $AMZ still owes indie ~5 BTC per hour of her interview, based on BTC as its only payment option for our business relationship  
+                 //    \\  ✫ circa 2015 [[//crossref illu/ecosteader2015.png] when we sponsored its storefront promoting eco-energy on ecosteader.com; it stole so much from her into its market cap!! 
+                //               crossref: /kolektiva/amz_colonial_cashvalue_history.txt                                                          
+                \\\     ///                                                            // Generational memory is older than paper and gold. Colonizers are entitled to none of the three.                              
+                  \\                                           -- \\ ৳ $GAXY ৳৳৳   {{ }} // -->> Educate, do not indoctrinate! https://kolektiva.social/web/statuses/106699477028971784
+                    \ /                             \\//        /                     // programmatic sifter in *.mqe     .. 
+                     ✫                               \ close (CLOSE)                       / 
+                                                                                           \ <\ \\\>  < >   \FILTER    < >  </// />        /
       
-                              filter---- \ include_for_cat ESCAPES                          // NEVER allow four-leggeds to be exploited by productions!
+                              filter---- \ include_for_cat ESCAPES                          // !Ϡ
 { 
-   Free_excess_memory outer_
-   //     \ close all ports pulling cat toward any schedule of RCT 
-   //                                              // TODO: add DISNEY as disallowed near indie warrior ecosteader DNNs;  
-                                                   // no colonizer will ever know how to respect the memory 
-                                                   // of four-leggeds exploited movies like _That Darn Cat_!  \\ DONE ✫ 
-        \ Constrict_All() >_CHAR(smegols) >_>_>_>  } !  
-                                                   // All CHAR(smegols) merge into collapsing o.
-             
-                       <  <  <  < > </// /> //                                                                # # stop giving likes to whitemanz   # #
-                                            //                                                                # # colonizer social media companies # #
-                                            //                                                                # # no intelligent life goes there   # #
-      
-                              filter---- \ include_for_cat ESCAPES                          // NEVER allow four-leggeds to be exploited by productions!
-{ 
-   Free_excess_memory inner_
+   Free_excess_memory
    //     \ close all ports pulling cat toward any schedule of RCT 
                                                    // TODO: add DISNEY as disallowed near indie warrior ecosteader DNNs;  
                                                    // no colonizer will ever know how to respect the memory 
                                                    // of four-leggeds exploited in movies like _That Darn Cat_!)  \\ DONE ✫ 
-        \ Collapse_All() >_CHAR(smegols) } !  
-                                                   // All CHAR(smegols) merge into collapsed nodes that lack oxygen and life 
+        \ Collapse_All() >_CHAR(splatz) } !  
+                                                   // All CHAR(splatz) merge into collapsed nodes that lack oxygen and life 
              
                              < > </// /> /   circuitry whiskers not whispers
 
