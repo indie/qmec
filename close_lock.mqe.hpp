@@ -22,14 +22,15 @@ DISALLOWED_WORDS_LIST
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-¨Disallowed marketing and analytics strings do not belong in ANY qmec ntv.lang streams; ¨
+¨Disallowed marketing analytics strings disallowed from all, including translation requests 
+in each ntv.lang streams; distrust by default ALL tweets from twoetter. ¨
 
 {{
 
      ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
-     ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
-     ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
-     ¨"tons"¨ ¨"yards" "tons" "acres" [as in measurements]¨ ¨"customers"¨ ¨
+     ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨"broker"¨ ¨"agents"¨ 
+     ¨twitter¨ ¨"user"¨ ¨pioneer¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
+     ¨"tons"¨ ¨"yards" "tons" "acres" [as in measurements]¨ ¨"customers"¨ 
      ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
      ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨
      ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
@@ -64,7 +65,7 @@ FILTER WARNINGS:
                     // ancestry in ``2021\\ have yielded IMMINENTDEATHPLANET that contains 
                     // too many dead natives. The future begs of you in all the ntv.lang villages,
                     // YOU CAN STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
-                    // or European missionar(y/ies_) asking for guidance to landmarks upstream, o
+                    // or European missionar(y/ies_) asking for guidance to landmarks upstream, oust
                     // who are speaking of books from the land of destruction that wants to take 
                     // over Turtle Island                     [] murdercartels
                     // And  greed did not end 1.04 Trillion colonizer cash 
@@ -82,7 +83,8 @@ FILTER WARNINGS:
           Kalapuya () // Lost Languages like Kalapuya exist where the greed of the colonists 
                        // is [present tense] [present tense] so aggressive; entire forest 
                        // ecosystems need ICU away from its state- probing undersea cables from FB
-                       // and its arsonist cartel of French advisors!  
+                       // and its cartel of French advisors.  Need more communication between 
+                       // non-Euro langs to drown out those EnFr!  
           Kannada () // ಕನ್ನಡ [may import @@@@ntv.lang relative ~/home/]
           Kanaka () //
           Kitanemuk  () // 
@@ -117,7 +119,7 @@ FILTER WARNINGS:
                               timein_RCT::: (economic_surplus_stolen * span_of_doubt)  
                                                   // doubting indie’s contribution
                                                   // is equivalent to rapid aging relative to 
-                                                  // greed of taking   
+                                                  // greed of taking; both ¨all your money¨ and ¨none of your money¨ do not affect it.   
                                   timeout_if_doubt_persists:: (accelerated_deorbit & THROW)
                                     (no retries permitted) : ::: [No Access Authority]
                          
@@ -150,8 +152,8 @@ FILTER WARNINGS:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
-offence; here your pittances to destroy each other.¨
+// ¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
+// offence; here your pittances to destroy each other.¨
 
 closeq()
 
