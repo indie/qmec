@@ -1,10 +1,14 @@
-! 2021-09-17 https://stocktwits.com
+! Epilepsy-inducing image processers disallowed always;
+! Browser fixes propagate to indigenous_people_only
+
+||media.twitter.com/*.gif$image
 ||media2.giphy.com/media/*gif$image
 ||charts.stocktwits.com/*.gif$image
-! 2021-09-30 https://old.reddit.com/*.gif$image
+||https://old.reddit.com/*.gif$image
 
 
-! EVIL ANTIPOCS
+! EVIL ANTIPOCS Disallowed from root certificates; 
+
 0-edge-chat.facebook.com
 0.beta.facebook.com
 0.facebook.com
