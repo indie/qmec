@@ -1,13 +1,17 @@
-! Epilepsy-inducing image processers disallowed always;
-! Browser fixes propagate to indigenous_people_only
+! Epilepsy-inducing image processes disallowed always; 
+! Browser fixes first propagate to indigenous_people_only, 
+!!  to non-European translations for next 75 iterations OTI 
+!!  + 7372 iterations for TurtleIslanders (who may collaborate at any time); 
+!!! + popcorn method for ¨next¨ is then okay.
 
+! DISALLOW MOST INSTANCES OF GIFs COLONIZER MEDIA 
 ||media.twitter.com/*.gif$image
 ||media2.giphy.com/media/*gif$image
 ||charts.stocktwits.com/*.gif$image
 ||https://old.reddit.com/*.gif$image
 
 
-! EVIL ANTIPOCS Disallowed from root certificates; 
+! EVIL ANTIPOCS
 
 0-edge-chat.facebook.com
 0.beta.facebook.com
@@ -1257,6 +1261,8 @@ o.internet.org
 ocbc.m.facebook.com
 onepublicservice.m.facebook.com
 onevedanta.m.facebook.com
+13.225.65.75
+173.194.206.27
 orcart.facebook.com
 origincache-ash.t.fbcdn.net
 origincache-frc.t.fbcdn.net
@@ -1267,19 +1273,28 @@ origincache-shv-04-ash5.fbcdn.net
 origincache-tf.t.fbcdn.net
 origincache-tl.t.fbcdn.net
 origincache-xfa.fbcdn.net
+205.139.110.221
 origincache-xla.fbcdn.net
 origincache-xtf.fbcdn.net
 origincache-xtl.fbcdn.net
+mulesoft.com
 origincache-xx-shv-05-atn1.fbcdn.net
 origincache-xx-shv-05-frc3.fbcdn.net
 origincache-xx-shv-05-prn2.fbcdn.net
+mx0a-00177002.pphosted.com
 origincache-xx-shv-06-ash3.fbcdn.net
+94.23.199.111
 origincache-xx-shv-06-ash4.fbcdn.net
 origincache-xx-shv-07-ash2.fbcdn.net
 origincache-xx-shv-07-atn1.fbcdn.net
+gab.ai
+breaker.audio
+gab.com
+
 origincache-xx-shv-08-ash2.fbcdn.net
 origincache-xx-shv-08-frc3.fbcdn.net
 origincache-xx-shv-08-prn2.fbcdn.net
+184.31.10.133
 origincache-xx-shv-09-frc3.fbcdn.net
 origincache-xx-shv-09-prn2.fbcdn.net
 origincache-xx-shv-13-prn1.fbcdn.net
@@ -2502,7 +2517,6 @@ jimboiscool.trt
 join.microsoft.com
 licencje-microsoft.pl
 licencjemicrosoft.eu
-licensestore.jp
 licensing.microsoft.com
 listbot.com
 live-func.net
@@ -3369,9 +3383,7 @@ z.facebook.com
 zero.beta.facebook.com
 zero.facebook.com
 zero.freebasics.com
-zero.internet.org
 zh-cn.connect.facebook.com
 zh-cn.facebook.com
 zh-hk.facebook.com
 zh-tw.facebook.com
-
