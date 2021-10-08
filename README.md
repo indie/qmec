@@ -1,30 +1,39 @@
-![qenco](ᕈᕆᖢᕆᙱᕆ.png)
+
+![deorbit](full_size_figures/ᕈᕆᖢᕆᙱᕆ.png)
 
 
 ```
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
     Process with Caution: 
 
-          Indigenous peoples have been at this much longer 
-          than colonizers have been putting delusional deeds 
-          and stakes on our soil. Better to assume you know 
-          ¨much much¨ less about quantum 
+          Indigenous peoples have been at this much longer than 
+          colonizers have been putting delusional deeds, stakes, 
+          radio towers, and other media empires on our soil. Is 
+          better to assume you know ¨much much¨ less about quantum 
                                than you think you do.
 
           Acknowledgement of the invalidity of the colonial 
-          world view (and your property deeds) can be done with 
-          respect to an indigenous people's native language. This 
-          repo is complementary to ecosteader.com; both can 
-          be used to better understand Turtle Island Native L.A.W. 
-          and its protocols.
+          world view (and its property deeds) can be done with 
+          respect to an indigenous people's native language, and 
+          to its survivors. This collection of code, data, analysis,
+          and statistics for deeper analysis (if you still do not 
+          believe or ¨trust¨ indie) is complementary to 
+          ecosteader.com; both can be used to better understand 
+          the ¨whys¨ of Turtle Island Native L.A.W. and its protocols.
+
+          Note to former colleagues in the hardware world:
+             no, you are not hated; the hardware that can send messages
+             and sounds globally ought not be loaned to entities
+             who translate for colonist cash.  
 
           Get ready to read and listen twice as hard as you speak:
 
-          Fascistbook's abuses and assaults on Turtle Island 
+          Fascistbook's abuses and assaults on Turtle Island  
           needed stopped; the Ivy leaguers' social network launched
           aggressive, hostile experiments on the already most 
           oppressed.  No one else would stand up to stop it as 
-          it sought more to add to its trillions and enrich itself 
+          it sought more to add to its burgeoning billions (nor
+            as it cashed out on trillions to enrich itself),  
           and its paying customers who treat indigenous peoples as 
           expendibles.
 
@@ -33,19 +42,23 @@
 
 ```
 
-![gitneutral](illu/gitneutral_by_hackeress_creative_studio.png)
+### Ground Truth
+
+![ground_truth](full_size_figures/Facebook_will_never_have_integrity.png)
 
 
-## The mechaniQs 
+### Stay Git Neutral; do not try to impose RCT.
 
-
-
-![qenco](full_size_figures/shimasani_pnimasani.png)
-
-
+![gitneutral](illu/gitneutral.png)
 
 
 ### The weather is more powerful than people
+
+![weather](full_size_figures/shimasani_pnimasani.png)
+
+
+
+
 ``` 
  / tips / ideas / brainstorming from previous tests and failures 
 
@@ -63,19 +76,23 @@ tourist land -- go be physically present in your great great grandparents' conti
 -->
 
 
-hop_to:[decolonize]_
+hop_to:[decolonize]
 
-[decolonize]:https://github.com/indie/ecosteader/blob/master/START-Decolonize.pdf
+FAQ:[FAQ]
+
+
+identify:[malicious_inflated_caps.mqe]
+
+[decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
+[FAQ]:https://github.com/indie/qmec/tree/master/marketing.yml
+[malicious_inflated_caps.mqe]:https://github.com/indie/qmec/tree/master/malicious_inflated_caps.mqe
+
 
 .. _The decrypted message said:  _Listen_ more than twice as hard as you speak and do not 
     speak or blast speakers yelling English language words; backtrack your own existence 
     to where you lost track; never forget that European ideas of authority do not pertain 
-    to indigenous words. 
-    \\\ ///
+    to indigenous words.\ \\\ /// /
 
 ```
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
-```
-
-
-
+``

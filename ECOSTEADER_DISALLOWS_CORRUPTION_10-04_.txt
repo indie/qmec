@@ -2,16 +2,19 @@
 ! Browser fixes first propagate to indigenous_people_only, 
 !!  to non-European translations for next 75 iterations OTI 
 !!  + 7372 iterations for TurtleIslanders (who may collaborate at any time); 
-!!! + popcorn method for ¨next¨ is then okay.
+!!! + popcorn method for ¨next continent translations¨ is then okay.
 
-! DISALLOW MOST INSTANCES OF GIFs COLONIZER MEDIA 
+! DISALLOW_ALL COLONIZER MEDIA 
 ||media.twitter.com/*.gif$image
 ||media2.giphy.com/media/*gif$image
 ||charts.stocktwits.com/*.gif$image
 ||https://old.reddit.com/*.gif$image
+||https://*.facebook.com/*.gif$image
 
 
 ! EVIL ANTIPOCS
+
+DISALLOW_ALL
 
 0-edge-chat.facebook.com
 0.beta.facebook.com
