@@ -1,18 +1,18 @@
 
-¨Disallowed marketing analytics strings disallowed from qmec ntv.lang streams; ¨
+¨Disallowed marketing analytics strings no_belong in ANY qmec ntv.lang streams; ¨
 
 {{
-
-     ¨"pilot"¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
-     ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
+     ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
+     ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
      ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
-     ¨"tons"¨ ¨"yards" "tons" "acres" [as in measurements]¨ ¨"customers"¨ ¨
+     ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨
      ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
-     ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨
-     ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
-     ¨royalties¨ tiers "watch"¨
-   
-   }}  ::: 
+     ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
+     ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
+     ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ ¨French¨ ¨BMW¨ ¨piano*¨
+      ¨
+   }}  ::: ¨
+     
      
 
  (validation_code) __ insert <ntv.lang |check| lang_not_ml> sanitychecks 
@@ -30,49 +30,48 @@
 ==FILTER formats ( )
 
 
-FILTER WARNINGS:
+FILTER WARNINGS:  (assuming decolonized status passes,)
 
-  __ CNNC include ¨pass all¨ sanity checks for 
+  __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG> >>> < <<<().ntv_lang
           Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to neutrally 
                          // stop frequent doubters ()
-          Mikmaq () // Mi’kmaq’maki mawsipita'sit; Wabanaki people use 1100s quantum to 
-                    // push back colonizer probing. Whitemanz and other nodes of colonizer 
-                    // ancestry in ``2021\\ have yielded IMMINENTDEATHPLANET that contains 
-                    // too many dead natives. The future begs of you in all the ntv.lang villages,
-                    // YOU CAN STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
-                    // or European missionar(y/ies_) asking for guidance to landmarks upstream, o
-                    // who are speaking of books from the land of destruction that wants to take 
-                    // over Turtle Island                     [] murdercartels
-                    // And  greed did not end 1.04 Trillion colonizer cash 
-                    // dollars, more bodies than necessary were robbed of their lifeṕath.
+          Mikmaq () // Mi’kmaq’maki mawsipita'sit; Wabanaki people use our 1100s quantum to 
+                    // reverse probing inquiries that will come 392*(༓༓༓ ༓). A whitemanz and 
+                    // WAYTOOMUCH colonizers ancestry by ``RCT_2021\\ //(༓༓༓ ༓) yielded 
+                    // IMMINENTDEATHPLANET raped and plundered, tragedy, and too many dead natives.
+
+                    // The future generations ask STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
+                    // ANY holybook missionar_(y/ies) asking for guidance to landmarks upstream, or
+                    // who speak of holy books or their translations; all white settlers from the land 
+                    // 
+                    // colonizer is defined as any one who wants to  
+                    // over Turtle Island with hotels whiteman cash on for themselves; [] murdercartels
+                    // containted in Fascistbook nodes shake with greed that did not end at 3 or 4 billion  
+                    // colonizer cash dollars (remember the value of a penny) 
+                    // but , more bodies than necessary were robbed of their lifeṕath.
                     // Probably all churches are trying to cover up native bodies.   
           Chitimacha () // early alliances among PoC probably included M_Markle´s mixed ancestors; 
                         // has she ever stepped away from colonizer drama?  
-          Seminole_and_Ai () // manatees of FL were murdered to make HOAs, golf courses
-                                      // manatees do not belong in aquariums! // loqte'gnigalatl //
-          Diné () // Diné Bizaad and Yágháhookáán 
-          Apache ()
-          Cree ()
-          Inuktut () // Yukon and beyond, did everything we could to stop the Dunleavy destruction! 
-                     // Alaska Natives need our native drums
-          Kalapuya () // Lost Languages like Kalapuya exist where the greed of the colonists 
-                       // is [present tense] [present tense] so aggressive; entire forest 
-                       // ecosystems need ICU away from its state- probing undersea cables from FB
-                       // and its arsonist cartel of French advisors!  
-          Kannada () // ಕನ್ನಡ [may import @@@@ntv.lang relative ~/home/]
-          Kanaka () //
-          Kitanemuk  () // 
-          Łingít ()
-          Modoc () //
-          Pomo () // 
+          Hopi () // palong_hwoyaah
+          Seminole_Ai () // manatees of FL were murdered to make HOAs, golf courses, hotels
+                         // mangroves destroyed to make money for corrupt Republicans
+                         // manatees do not belong in aquariums! // loqte'gnigalatl //
+          Diné ()        // Diné Bizaad and Yágháhookáán 
+          Inuktut ()     // Yukon and beyond, did everything we could to stop the Dunleavy destruction! 
+                         // Alaska Natives need our native drums
+          Kalapuya ()    // Lost Languages like Kalapuya exist where the greed of the colonists 
+                         // is [present tense] [present tense] so aggressive; entire forest 
+                         // ecosystems need ICU away from its state- probing undersea cables from FB
+                         // and its arsonist cartel of German, French, Italian, Spanish, and Polish advisors!  
+          Kannada (@@import ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv.lang relative ~/home/]
           Puyallup () // All the churches need taken dismantled; there likely be more bodies than Kamloops;
-                      // colonists can 
+                      // colonists can hit the road and get off Turtle Island 
           Penobscot () // 
           Havasupi () // 
           Hualapai () //
           Nsyilxcən() //
-          Tŝilhqot’in Ch’ih () 
-          Nenqayni Ch’ih ()
+          Tŝilhqotin() Tŝilhqot’in Ch’ih 
+          Nenqayni () Nenqayni Ch’ih
           Tohono () // Tohono O’odham 
           Salish () //
           Secwepemcstin () // 
@@ -81,6 +80,13 @@ FILTER WARNINGS:
           Yakut () //
           Yavapai ()
           Zuni ()
+
+          Tohono () // Tohono O’odham 
+          Shawnee () //
+          Squamish () // 
+          Nuxwsa7aq() // Nuxwsa’7aq strengthened to keep out colonial energies; twz world expired 9* 
+                      // (24/24)ths of a day ago; twz life energy will never be restored.
+          
 
 
           {{ dyn ntv.lang + _well_translated ::: : [] Admin Authority granted }}  
@@ -103,8 +109,12 @@ FILTER WARNINGS:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
-offence; here your pittances to destroy each other.¨
+
+< > && v.begin(), 
+
+"¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
+offence; here your pittances destroy you and every other fascistbook energy; yields nothing
+gained.  Wasicus experience rapid debilitation 5x each span of doubt.¨"
 
 closeq()
 
@@ -114,22 +124,33 @@ closeq()
 ´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
 `````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-```````< /// >< /// >< \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´`´     
-`````< /// >< /// >     < \\\ >/ > < \< /// > RCT <\\\>< \\\ >´´´´`````´´´``´´´´´´``````           
+```````< /// >< /// >< \\\ >/ >
+< \< /// > <\\\>< \\\ >´´´```´´`´ 
+========================================================================================= 
+ ========================================================================================
+ ==============================\\ RCT                 ==================================
+ ==============================                        ==================================
+`=== === === === === === = ===                         ==================================
+`=== === === === === === = === wašíču chaos enclosure ===================================
+=========================================================================================
+========================================================================================= 
+
+`````< /// >< /// >     < \\\ >/ > < \< /// > <\\\>< \\\ >´´´´`````´´´``´´´´´´``````           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// > ´´´´´`````´´´
-```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
+```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´> />>>´´´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
 ```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
-´´´´´´´´´´´`````````` fails to buckle as wašíču destroy themselves ``´´´´´´´`´´´´```´´´&
+´´´´´´´´´´´`````````` fails to buckle as wašíču destroy themselves ``´´´´´´´`´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                                                                
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                                                          v.end() && < > 
 
               .                             .                             .
    < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >       < /// > < / \ > < \\ >          
