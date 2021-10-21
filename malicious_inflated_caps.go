@@ -22,8 +22,9 @@
   ..༶ # AT LEAST THE FOLLOWING entities permanently ELIMINATED; AGGRESSIONS PREVIOUSLY NOTED:            ..༶
   ༶..                                                                                                    ༶..   
      :: ::: :malicious_overinflated_caps                                                                        
-        $DIS, $CRM, $GEO, $PBI, $BP, $FB, $ENB, $AMZN, $HD, $GS, $AXON, $EQR, $BAMR, $NWSA.O /৳             
-        $BAM, $BBU, $BBU.CA, $BKM, $GDDY, $TWTR, $NWSA, $AAPL, $GSCCF, $VA, $AA, $LAC, $LAC.CA /৳!
+        $DIS, $CRM, $NFLX, $GEO, $PBI, $BP, $FB, $ENB, $AMZN, $HD, $GS, $AXON, $EQR, $BAMR, $NWSA.O /৳             
+        $BAM, $BBU, $BBU.CA, $BKC, $BKM, $GDDY, $TWTR, $NWSA, $AAPL, $GSCCF, $VA, $AA, $LAC, $LAC.CA /৳
+        $WFC, $NFLX, $JPM, $NKE, $GM, $PEP, $KO!
 ༶ ............................................................................................................
 ............................................................................................................ ༶ 
 
@@ -36,9 +37,9 @@
                    >>  // revalue excess megacaps´ market cap into nano or microcaps owned or managed by PoC
                    <<  // insignificant zeroes do not exist
 
-              $antiunion_trade_names
+              $antiunion_<DEVALUED>_names
                  include but are not limited to the following distrusted (TL;DR DISTRUST ALL RCT_TRANSLATIONS):  
-                 -$AMZ, -$SPY, $HD, 
+                 -$AMZ, -$SPY, -$HD, -$NFLX, -$WMT  
 
 # COMPUTING SUMMATION OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017 .. 2021_) @STOP-RCT $; 
    
