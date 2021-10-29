@@ -1,11 +1,5 @@
-   
-.. |codename| replace:: qmec
-.. |project| replace:: the mechaniQs
-.. |author| replace:: co-author 
-
 
 .. Replacement strings for commonly-used ᓴᑎᑲ.ᓗᖑᓴᑐ symbols; renders in default font
-
 
 .. |lcsigma|    unicode:: U+03C3      .. sigma σ
 .. |sigma|      unicode:: U+03A3      .. Sigma Σ
@@ -48,5 +42,9 @@
 .. |plusminus|  unicode:: U+000B1     .. PLUS-MINUS SIGN
    :rtrim:
 
-.. |ᓴᓕᑎᑭᖃᑎ|    deleteᖁ_RCT:: ᕈᕆᖢᕆᙱᕆ   .. Ya’iishjááshchilí
 
+.. |ᓴᓕᑎᑭᖃᑎ| deleteᖁ_RCT:: ᕈᕆᖢᕆᙱᕆ  .. Ya’iishjááshchilí-T’á̜á̜tsoh
+
+.. |11|        Níłch’its’ósí          .. Níłch’its’ósí
+
+.. |༓༓༓ ༓|     index:: ᓴᓕᑎᑭᖃᑎ       .. ༓༓༓
