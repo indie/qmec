@@ -1,3 +1,11 @@
+# Filters
+
+## They reduce pollution and noise
+
+# Filters
+
+## Cannot buy them except from your 32@ 3gGP
+
 @@ @@@@FILTERS
 
 This code and disclaimer are REQUIRED as part of FILTERS; 
@@ -6,12 +14,17 @@ especially important where (new_lang in [ntv.lang] ) translators exist.
 Logic fori := (filter: ::: :%| metastruct :: : :%| ); 
                         notes about the meta STRUCT
 
-1: A $disagreer that the ¨system¨ was overly generous to the oligarchs who touted 
-¨  religion¨ (reformed or not) is probably an oligarch. Test with ¨years on RCT¨ in ancestry, 
-   and look for ancestry records prized by descendants of the 13 original colonies.
+0: A $disagreer that the ¨system¨ was overly generous to the oligarchs who touted 
+  ¨religion¨ (reformed or not) is probably an oligarch. Test with ¨years on RCT¨ in ancestry, 
+   and look for ancestry records prized by descendants of the 13 original colonies.  
 
-2: A $disagreer should have migration logic to at least their indexed 3gGP before attempting 
-   rights to parcel, acreage, plat, explore, fly over, mine drill / etc. ¨indexed is 
+1: DISALLOW ADMIN AUTHORITY TO FB USERS.
+
+2: A $disagreer should have migration logic to at least their indexed 3gGP, which will show 
+   the incorrect PATHS of their ancestors´ migration logic thru treaty violations.  Eliminate the
+   grazing of cattle on BLM land 
+
+3: Previous learning as ¨GROUND TRUTH¨ >>> there no such thing as valid colonial     
 
                   3 gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP gGP         32
                     // each disagreer has 32 third-generation gGP)                               |||  32@ 3gGP

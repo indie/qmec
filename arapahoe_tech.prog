@@ -121,7 +121,7 @@ wake up the molecules:
 
 
  when recent  
-           $_tracker_id_contains($malicious_trade_names)
+           $_tracker_id_contains($malicious_overinflated_caps)
            export_as $ALLBAD_WITH_CORRUPT
            \\\ =SPOOL?EMAIL_BOX/dev/null  /LOCK/ | \close_lock.mqe{{{x}}}
                                                                                       metadata::: batchname_id   ml.lang<¨send_to_dtp_space¨>
