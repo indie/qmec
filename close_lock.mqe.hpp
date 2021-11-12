@@ -154,7 +154,7 @@ FILTER WARNINGS:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// ¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
+// ¨Sugul'gma'q! WARNINGS that decolonization required were not heeded and you have repeat
 // offence; here your pittances to destroy each other.¨
 
 closeq()

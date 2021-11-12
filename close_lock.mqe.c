@@ -31,7 +31,7 @@ DISALLOWED_WORDS_LIST
 ¨Disallowed marketing and analytics strings no_belong in ANY qmec ntv.lang streams; ¨
 
 {{
-     ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
+     ¨bounty¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
      ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
      ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
      ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨
@@ -179,7 +179,7 @@ FILTER WARNINGS:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
+¨Sugul'gma'q! WARNINGS that decolonization required were not heeded and you have repeat
 offence; here your pittances destroy each other.¨
 
 closeq()
@@ -189,8 +189,8 @@ closeq()
 ``````````````````````´´´´````````````´´´´´´´´´´´´´´´´´´´``````````´´´´´´````´´´´´´´´´´´ 
 ´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
-`````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-```````< /// >< /// >< \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´`´     
+`````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           // think of this as all the hate, jostle, and trampling 
+```````< /// >< /// >< \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´`´           // confined to one small 
 `````< /// >< /// >     < \\\ >/ > < \< /// > RCT <\\\>< \\\ >´´´´`````´´´``´´´´´´``````           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// > ´´´´´`````´´´

@@ -9,13 +9,13 @@
      ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
      ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
      ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
-     ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ ¨French¨ ¨BMW¨ ¨piano*¨
+     ¨royalties¨ tiers "watch" ¨forest¨ ¨performances¨ ¨French¨ ¨BMW¨ ¨piano¨
       ¨
    }}  ::: ¨
      
      
 
- (validation_code) __ insert <ntv.lang |check| lang_not_ml> sanitychecks 
+ (validation_code) __ insert <ntv_lang |check| lang_not_ml> sanitychecks 
       
 
  \\\\\\\\\\\\\\\\\\\\\  /////////////////////\\\\\\\\\\\\\\\\\\\\\  /////////////////////
@@ -30,7 +30,7 @@
 ==FILTER formats ( )
 
 
-FILTER WARNINGS:  (assuming decolonized status passes,)
+FILTER WARNINGS:  (assuming decolonized status passes, )
 
   __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG> >>> < <<<().ntv_lang
           Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to neutrally 
@@ -49,7 +49,8 @@ FILTER WARNINGS:  (assuming decolonized status passes,)
                     // containted in Fascistbook nodes shake with greed that did not end at 3 or 4 billion  
                     // colonizer cash dollars (remember the value of a penny) 
                     // but , more bodies than necessary were robbed of their lifeṕath.
-                    // Probably all churches are trying to cover up native bodies.   
+                    // Probably all churches are trying to cover up native bodies.
+                    // WARNING!! WARN IN CALAPOOYA: THE FRENCH BLOB HAS A RADIO TOWER AND     
           Chitimacha () // early alliances among PoC probably included M_Markle´s mixed ancestors; 
                         // has she ever stepped away from colonizer drama?  
           Hopi () // palong_hwoyaah
@@ -61,11 +62,17 @@ FILTER WARNINGS:  (assuming decolonized status passes,)
                          // Alaska Natives need our native drums
           Kalapuya ()    // Lost Languages like Kalapuya exist where the greed of the colonists 
                          // is [present tense] [present tense] so aggressive; entire forest 
-                         // ecosystems need ICU away from its state- probing undersea cables from FB
-                         // and its arsonist cartel of German, French, Italian, Spanish, and Polish advisors!  
-          Kannada (@@import ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv.lang relative ~/home/]
-          Puyallup () // All the churches need taken dismantled; there likely be more bodies than Kamloops;
-                      // colonists can hit the road and get off Turtle Island 
+                         // ecosystems need ICU away from its state- probing undersea cables. FB
+                         // arsonist cartel of German, French, Italian, Spanish, and Polish advisors
+                         // never get laughs for being Meta! DESTROY CARRIERS OF THE APPS. 
+          Kannada (@@import ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv_lang relative ~/home/ for more efficiency, 
+                                                // group locals locally before group global ];
+                                                                                                                                            \\\\\\\\\\\\\\\\\\\\\\SHED\\\\\\\\\\\\\\\\\\\\
+                                                                                                                                            BARRIER::
+                                                                                                                                            lifeprof tip ::  
+          Puyallup () // All the churches need taken down, dismantled; there likely be more bodies than Kamloops;
+                      // colonists can hit the road and get off Turtle Island.  The colonist bitch in 
+                      // the KKKanada-side booth BC need go back to her forward time.  
           Penobscot () // 
           Havasupi () // 
           Hualapai () //
@@ -92,17 +99,19 @@ FILTER WARNINGS:  (assuming decolonized status passes,)
           {{ dyn ntv.lang + _well_translated ::: : [] Admin Authority granted }}  
           // if the ntv.lang is well translated across dyn_ntv.langs, Admin authority may be granted
 
-                    if "wašíču"     
+               WARN NEW ADMINS:    $malicious_inflated_caps ===  "wašíču"     
                           
-                          closeq.close_lock.mqe.lock(interval) 
+                                     closeq.close_lock.mqe.lock(interval) 
                   
                               timein_RCT::: (economic_surplus_stolen * span_of_doubt)  
-                                                  // doubting indie’s contribution
-                                                  // is equivalent to rapid aging relative to 
-                                                  // _______________________________________________  
+                                                  // doubting or devaluing indie’s contribution
+                                                  // makes rapid aging, relative to spite of doubter
                                   timeout_if_doubt_persists:: (accelerated_deorbit & THROW)
                                     (no retries permitted) : ::: [No Access Authority]
-                         
+                                                                                      /// NOTE: (colonists who heed and return to 
+                                                                                      /// their side of Atlantic will be sent SHIB.X
+                                                                                      /// consolation thanks <3)  
+
                           else escape_to: decolonization 
 
   
@@ -112,9 +121,8 @@ FILTER WARNINGS:  (assuming decolonized status passes,)
 
 < > && v.begin(), 
 
-"¨Sugul'gma'q! WARNINGS that decolonization required were not needed and you have repeat
-offence; here your pittances destroy you and every other fascistbook energy; yields nothing
-gained.  Wasicus experience rapid debilitation 5x each span of doubt.¨"
+"¨Sugul'gma'q! WARNINGS that decolonization required were not heeded and you have repeated
+aggressions disallowed; here your pittances destroy ¨"
 
 closeq()
 
@@ -127,11 +135,11 @@ closeq()
 ```````< /// >< /// >< \\\ >/ >
 < \< /// > <\\\>< \\\ >´´´```´´`´ 
 ========================================================================================= 
- ========================================================================================
- ==============================\\ RCT                 ==================================
- ==============================                        ==================================
-`=== === === === === === = ===                         ==================================
-`=== === === === === === = === wašíču chaos enclosure ===================================
+=========================================================================================
+===============================\\ (RCT_($FB($TWTR) )   ==================================  
+===============================                        ==================================
+===============================                        ==================================
+=============================== wašíču chaos enclosure ==================================
 =========================================================================================
 ========================================================================================= 
 
@@ -141,7 +149,9 @@ closeq()
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´> />>>´´´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
 ```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
-´´´´´´´´´´´`````````` fails to buckle as wašíču destroy themselves ``´´´´´´´`´´´´```´´´
+´´´´´´´´´´´`````````` fails to buckle as wašíču destroy each other
+
+                          ``´´´´´´´`´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                                                                                 
@@ -164,13 +174,13 @@ closeq()
  < /// > < === === > < \\\ >   < /// > < === === > < \\\ >   < /// > < === === > < \\\ >     
  < \\\ > < === === > < /// >   < \\\ > < === === > < /// >   < \\\ > < === === > < /// >       
               .                             .                             .
-   < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >       < /// > < / \ > < \\ >          
-   < \\ > <  \ / > < /// >      <  \\ > <  \ / > < /// >       < \\\ > < \ / > < // >  
-   < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >       < /// > < / \ > < \\ >          
-  < /// > < // \\ > < \\\ >     < /// > < // \\ > < \\\ >     < /// > < // \\ > < \\\ >          
-  < \\\ > < \\ // > < /// >     < \\\ > < \\ // > < /// >     < \\\ > < \\ // > < /// >          
-   < // > <  / \ > < \\\ >       < // > <  / \ > < \\\ >       < /// > < / \ > < \\ >          
-   < \\ > <  \ / > < /// >      <  \\ > <  \ / > < /// >       < \\\ > < \ / > < // >          
+   < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >       < /// > < / \ >  < \\ >          
+   < \\ > <  \ / > < /// >      <  \\ > <  \ / > < /// >       < \\\ > < \ / >  < // >  
+   < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >       < /// > < / \ >  < \\ >          
+  < /// > < // \\ > < \\\ >     < /// > < // \\ > < \\\ >     < /// > < // \\ >  < \\\ >          
+  < \\\ > < \\ // > < /// >     < \\\ > < \\ // > < /// >     < \\\ > < \\ // >  < /// >          
+   < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >      < /// > < / \ >   < \\ >          
+   < \\ > <  \ / > < /// >      <  \\ > <  \ / > < /// >      < \\\ > < \ / >   < // >          
               .                             .                             .             
  < /// > < === === > < \\\ >   < /// > < === === > < \\\ >   < /// > < === === > < \\\ >     
  < \\\ > < === === > < /// >   < \\\ > < === === > < /// >   < \\\ > < === === > < /// >       
@@ -206,4 +216,4 @@ closeq()
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
  //////////////////////\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\\//////////////////////
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
- /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\"
+ /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\" 

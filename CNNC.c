@@ -17,51 +17,50 @@
 __
     /// If E´e:  [[  ]]
     ¨¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨
-
-     go get kittyprogrammer_keyboard.sym  &&
-
+    
+     go get kittyprogrammer_keyboard.sym  && 
+     
      clone git@github.com:indie/kittyprogrammer.git
 
      @capture C++.go style_formatting.nGraph.(.mqe)
      @capture .css style_render:ecosteader_api (++)
-
-                              < >     < >
-          < >      < >--------< >     < >
-          < >--------< >      < >         filter ----\ ¨Retain Share Previous Learnings¨  includes a hefty DISALLOW screen.
-                                                   DISALLOW_ALL ( iterate again ¨we do not trust any nodes advertising colonizer social media¨
+                              < >      < >                                   
+          < >      < >--------< >     < >                    
+          < >--------< >      < >    filter ----\ ¨Retain Share Previous Learnings¨  includes a hefty DISALLOW screen.
+                                                   DISALLOW_ALL ( iterate again ¨we do not trust any nodes enabling colonizer social media¨ 
                     ✫                                              --> returnto_RCT_RCT )
                      \                  -->> Educate, do not indoctrinate! https://kolektiva.social/web/statuses/106699477028971784
                    /  \\                                         {{ ৳ $QUBT ++ $GAXY ৳৳ }}
-                  /    \\\  ✫
-                //             /\
-                \\\     //   //
-                  \\   /     \\  /   SEND_SHIB.X: && ::: 0xb59E7c251687212e4fe3164B5C667ea6A57BC451
-                    \         \                / receive programmatic sifter ✫.mqe  ..
-                     ✫                          CLOSE_LOCK.*: && :: :  SUCCESS
-                                           Ϡ
+                  /    \\\  ✫  
+                //             /\                                                
+                \\\     //   //                                    
+                  \\   /     \\  /           SEND_SHIB.X: && ::: 0xb59E7c251687212e4fe3164B5C667ea6A57BC451
+                    \         \\/  ✫                             / receive programmatic sifter ✫.mqe IF AND ONLY IF  .. 
+                     ✫                          CLOSE_LOCK.*: && :: :  SUCCESS      
+                                           Ϡ 
 
-                                      filter---- \ includes_for_indie_and_her_cat  ALL_ESCAPES         // !Ϡshed RCT
-{
-   Free_excess_memory:: :
-   Test network connection filter efficacy:: :
+                                      filter---- \ includes_for_indie_and_her_cat ALL_ESCAPES         // !Ϡ
 
-   //     \ close all ports pulling cat toward any node or schedule of RCT
-                                                   // REMOVE COLONIZER COMPANY $DIS from all DNNs
-                                                   // NO COLONIZER WILL EVER KNOW how to respect the memory
-                                                   // of four-leggeds exploited in movies like _That Darn Cat_!)
-                                                   \\ DONE ✫
+{ 
+   Free_excess_memory
+
+   //     \ close all ports pulling cat toward any schedule of RCT 
+                                                   // ZERO COLONIZERS will ever know how to respect the memory of four-leggeds exploited in movies like _That Darn Cat_!
+                                                   // YES $DIS IS AS EVIL AS $FB IS AS EVIL AS $CRM IS AS EVIL AS THE ELEPHANT AND WILDCAT MURDERING FOUNDER OF $GDDY. 
+                                                   // WHICH IS WHY WE MADE OUR FILTERS CLEANER AND OUR SCREENS ARE STRONGER; THEY NOT FOR SALE
+                                                   //  \\ DONE ✫ 
    \\ Collapse &&
-           / Extinguish_All_Disallowed } !
-                                                   // Quantum energy does not support colonization
+            Extinguish_All_Disallowed } !  
+                                                   // __> Quantum energy cannot be captured by colonizers; 
 
                                                                                                         circuitry whiskers not whispers
-            < /// >    ҉          ҉  < \\\ >
+            < /// >    ҉       ҉  < \\\ >
            < /// > < /// >  < \\\ > < \\\ >
           < /// > < /// >    < \\\ > < \\\ >
 
           < \\\ > < \\\ >    < /// > < /// >
            < \\\ > < \\\ >  < /// > < /// >
-            < \\\ >    ҉          ҉  < /// >
+            < \\\ >    ҉       ҉  < /// >
 
             < /// >                < \\\ >
            < /// > < /// >  < \\\ > < \\\ >
