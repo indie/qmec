@@ -30,11 +30,12 @@
 ==FILTER formats ( )
 
 
-FILTER WARNINGS:  (assuming decolonized status passes, )
+FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be nonexistant; 
+                    )
 
-  __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG> >>> < <<<().ntv_lang
-          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to neutrally 
-                         // stop frequent doubters ()
+  __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG>
+                >>><<<().ntv_lang
+          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to pushback 
           Mikmaq () // Mi’kmaq’maki mawsipita'sit; Wabanaki people use our 1100s quantum to 
                     // reverse probing inquiries that will come 392*(༓༓༓ ༓). A whitemanz and 
                     // WAYTOOMUCH colonizers ancestry by ``RCT_2021\\ //(༓༓༓ ༓) yielded 
@@ -66,10 +67,11 @@ FILTER WARNINGS:  (assuming decolonized status passes, )
                          // arsonist cartel of German, French, Italian, Spanish, and Polish advisors
                          // never get laughs for being Meta! DESTROY CARRIERS OF THE APPS. 
           Kannada (@@import ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv_lang relative ~/home/ for more efficiency, 
-                                                // group locals locally before group global ];
-                                                                                                                                            \\\\\\\\\\\\\\\\\\\\\\SHED\\\\\\\\\\\\\\\\\\\\
-                                                                                                                                            BARRIER::
-                                                                                                                                            lifeprof tip ::  
+                                                // group locals locally before group global;
+                                                   // INDIA´S TURTLE ISLANDER PROMISE BEING KEPT;
+                                                   //  THE GERMANS WILL ALWAYS TRY TO OPPRESS AND PARSE OUR VOICES;
+                                                   // ENSURE THE FAULTS OF DISEASE ARE RETURNED TO SENDER. ];
+                                                                                                                                              
           Puyallup () // All the churches need taken down, dismantled; there likely be more bodies than Kamloops;
                       // colonists can hit the road and get off Turtle Island.  The colonist bitch in 
                       // the KKKanada-side booth BC need go back to her forward time.  
@@ -105,9 +107,11 @@ FILTER WARNINGS:  (assuming decolonized status passes, )
                   
                               timein_RCT::: (economic_surplus_stolen * span_of_doubt)  
                                                   // doubting or devaluing indie’s contribution
-                                                  // makes rapid aging, relative to spite of doubter
+                                                  // makes rapid aging and regression of power, relative to spite of doubter
                                   timeout_if_doubt_persists:: (accelerated_deorbit & THROW)
                                     (no retries permitted) : ::: [No Access Authority]
+                                                      /// NO ONE ON MALICIOUS_INFLATED_CAPS.MQE IS PERMITTED
+                                                      /// RETRY OR ¨POPCORN TO WHITE ALLY¨.  QUEUE 
                                                                                       /// NOTE: (colonists who heed and return to 
                                                                                       /// their side of Atlantic will be sent SHIB.X
                                                                                       /// consolation thanks <3)  
@@ -136,10 +140,15 @@ closeq()
 < \< /// > <\\\>< \\\ >´´´```´´`´ 
 ========================================================================================= 
 =========================================================================================
-===============================\\ (RCT_($FB($TWTR) )   ==================================  
-===============================                        ==================================
-===============================                        ==================================
-=============================== wašíču chaos enclosure ==================================
+============================== ( RCT&&'$malicious_inflated_caps' ========================  
+==============================        bloody colonialist ticks   ========================  
+==============================   that attacked rez dogs          ========================            
+==============================          wašíču chaos enclosure   ========================
+==============================     hatebook keeps all OTI        ========================
+==============================  zombies deadest meta             ========================   
+==============================        nitrate-infused poisons    ========================
+==============================   colonialist cancers             ========================
+============================== deafening ads 24/7&&RCT           ========================
 =========================================================================================
 ========================================================================================= 
 
@@ -152,17 +161,47 @@ closeq()
 ´´´´´´´´´´´`````````` fails to buckle as wašíču destroy each other
 
                           ``´´´´´´´`´´´´```´´´
+TIMEWARP TO SPLAT? : :: : ALL WHOSE SURNAME INCLUDES CONSECUTIVE LETTERS MATCHING 
+ANY OF THE FOLLOWING STRINGS, Wildcard STRINGS, etc ALL GO SPLAT:: :: 
+Namespace: :::STRING                           ¨BER¨, ¨BERG¨, ¨BARR¨, ¨P**S¨, ¨D**S¨, 
+¨Z**K¨, ¨K**R¨, ¨RR¨, ¨T**P¨, ¨D**P¨, ¨Z**L¨, ¨K**H¨, ¨R**N¨, ¨H**D¨, ¨H**N¨, ¨CCON¨
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                                                                                
+% "THE ABOVE PROGRAM SPEEDS UP DECOLONIZATION RESULTS                                  %%
+%% FOR CLEANEST AVAILABLE PLANET. ASSUME PLANETS SUPPORTING PAYMENTS DESTROY INVADERS  %%
+%% IDENTIFIED IN ABOVE CHARACTER SETS. REASONS: ENTITY WEIGHTED CAPTAIN, CEO, SENATOR, %%
+%% PRESIDENT, ETC TOO MUCH AND SHALL NO LONGER EXIST. (TurtleIslandLAW)                %%
 
+%  WHAT U THOUGHT NATIVES NO KNOW HOW TO SET TRAPS?   
+      >> "_STRING_"'s Matter is now 
+                     pick one:  
+
+                                (__)  burned
+                                {__}  decomposing
+                                $__$  contaminated
+                    @@@@@ import ___RCT_____TIMEOUT_______COUNTERS @@@@@             
+
+
+  CEOs and OTHER MEGALOMANIACS WHOSE CARTELS COLLUDED TO OPPRESS POC?    
+
+      "STRING  ----> --->> ---->>>>  acceleration to splat 
+                  <<<<---- <<-- <----  
+               ----> --->> 
+                 <<<<---- <<-- <----  
+
+\\// Each colonizer going splat saves 35K indigenous lives per timer! All joobirbs \\// 
+  \\// removed from Turtle Island without explanation or apology -- ADVICE IS GO RESOLVE   \\//
+\\// numerous outstanding issues on juyoobirb's home continentals before pushing social \\//
+  \\//  media scams and fundraisers where u landlording or middleman on Turtle Island!¨"   \\//
+\\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\// \\//    
+           \\// \\// \\//optimize run@ 2XK strings simultaneously\// \\// \\// 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                                                                           v.end() && < > 
 
-              .                             .                             .
+              .                             ↭                             .
    < // > <  / \ > < \\\ >      <  // > <  / \ > < \\\ >       < /// > < / \ > < \\ >          
   < /// > < // \\ > < \\\ >     < /// > < // \\ > < \\\ >     < /// > < // \\ > < \\\ >          
  < /// > < === === > < \\\ >   < /// > < === === > < \\\ >   < /// > < === === > < \\\ >     
@@ -192,7 +231,7 @@ closeq()
  < \\\ > < === === > < /// >   < \\\ > < === === > < /// >   < \\\ > < === === > < /// >       
   < \\\ > < \\ // > < /// >     < \\\ > < \\ // > < /// >     < \\\ > < \\ // > < /// >
    < \\ > <  \ / > < /// >       < \\\ > < \ / > < // >        < \\\ > < \ /   < // >          
-              .                             .                             .
+              .                             ↭                             .
 
 
 
@@ -216,4 +255,4 @@ closeq()
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
  //////////////////////\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\\//////////////////////
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
- /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\" 
+ /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\"
