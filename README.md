@@ -1,5 +1,5 @@
 
-![deorbit](full_size_figures/ᕈᕆᖢᕆᙱᕆ.png)
+![deorbit](illu/decolonize_art_pattern_indie42.png)
 
 
 ```
@@ -33,7 +33,7 @@
           aggressive, hostile experiments on the already most 
           oppressed.  No one else would stand up to stop it as 
           it sought more to add to its burgeoning billions (nor
-            as it cashed out on trillions to enrich itself),  
+            as it cashed out on trillions and stole native works),  
           and its paying customers who treat indigenous peoples as 
           expendibles.
 
@@ -42,38 +42,11 @@
 
 ```
 
-### Ground Truth
-
-![ground_truth](full_size_figures/Facebook_will_never_have_integrity.png)
 
 
-### Stay Git Neutral; do not try to impose RCT.
+### Stay Git Neutral; do not try to impose RCT on SSL, HTTPS, or ANY PROTOCOL.
 
 ![gitneutral](illu/gitneutral.png)
-
-
-### The weather is more powerful than people
-
-![weather](full_size_figures/shimasani_pnimasani.png)
-
-
-
-
-``` 
- / tips / ideas / brainstorming from previous tests and failures 
-
-BE CERTAIN that any translations into ¨additional¨ colonizer languages like Latin, French, 
-Greek, Roman Catholic, Spanish, Russian will waste your time and continue to 
-eliminate your healthy escape options. The colonized planet already has the 
-proof you need in its trash and waste. Building ecologically is not about shopping
-for appreciation.
-``` 
-<!-- qMechs already received decrypted note that eternal punishment for having _ever_ 
-put a price on a native's life (unfortunately, curse extends to colonizers' grand and great 
-grandkids) is repercussions unfolding tragically and dramatically in simultaneous rapid-aging 
-and death scenarios. Backtrack the drama of your own people by ceasing attack in your 
-tourist land -- go be physically present in your great great grandparents' continental time. 
--->
 
 
 hop_to:[decolonize]
@@ -81,17 +54,17 @@ hop_to:[decolonize]
 FAQ:[FAQ]
 
 
-identify:[malicious_inflated_caps.mqe]
+### want to save polar ice caps?
+divest from all:[malicious_inflated_caps.mqe]
 
+[deorbit]: http://www.ecosteader.com/index.html
 [decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
 [FAQ]:https://github.com/indie/qmec/tree/master/marketing.yml
 [malicious_inflated_caps.mqe]:https://github.com/indie/qmec/tree/master/malicious_inflated_caps.mqe
 
 
-.. _The decrypted message said:  _Listen_ more than twice as hard as you speak and do not 
-    speak or blast speakers yelling English language words; backtrack your own existence 
-    to where you lost track; never forget that European ideas of authority do not pertain 
-    to indigenous words.\ \\\ /// /
+.. _The decrypted message said never forget that European ideas of authority do not pertain 
+    to TURTLE ISLAND LAW.  NOBODY STEALS AN INDIE'S C++LOCK \ \\\ /// /
 
 ```
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
