@@ -1,5 +1,5 @@
 
-![deorbit](illu/decolonize_art_pattern_indie42.png)
+![deorbit](illu/turtleisland_mustthrive.png)
 
 
 ```
@@ -42,12 +42,10 @@
 
 ```
 
+### Stay Git Neutral; do not try to impose RCT on scheduling, SSL, HTTPS.  
 
-
-### Stay Git Neutral; do not try to impose RCT on SSL, HTTPS, or ANY PROTOCOL.
 
 ![gitneutral](illu/gitneutral.png)
-
 
 hop_to:[decolonize]
 
@@ -62,10 +60,4 @@ divest from all:[malicious_inflated_caps.mqe]
 [FAQ]:https://github.com/indie/qmec/tree/master/marketing.yml
 [malicious_inflated_caps.mqe]:https://github.com/indie/qmec/tree/master/malicious_inflated_caps.mqe
 
-
-.. _The decrypted message said never forget that European ideas of authority do not pertain 
-    to TURTLE ISLAND LAW.  NOBODY STEALS AN INDIE'S C++LOCK \ \\\ /// /
-
-```
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
-``

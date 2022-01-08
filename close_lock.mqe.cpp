@@ -1,5 +1,10 @@
+### this file is the C++ .cpp .cxx authority of all ¨close_lock_mqe¨-related directives. Some refactoring
+### of network layers permitted after dataset cleaned as follows (do not doubt existing filters) 
+///:
 
-¨Disallowed requests are trite, useless overdone objectives to be deleted from Turtle Island 
+
+¨Disallowed requests are trite, useless overdone objectives to be deleted from Turtle Island;
+deleted matters shall be considered 
 %%                       {__}  decomposing
 %%                       (__)  burned
 %%                       $__$  contaminated in wasicu chaos trap 
@@ -11,7 +16,7 @@ are any including
      "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ ¨"broker"¨ ¨"agents"¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ 
      ¨containment¨ ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨
      ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ ¨"mission"¨ ¨"commission" 
-     ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨ ¨"cast"¨ ¨"caste"¨ "play" ¨equipment¨ 
+     ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨ ¨"cast"¨ ¨"caste"¨ ¨"class"¨ "play" ¨equipment¨ 
      ¨$USD¨ ¨$CAD¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ ¨royalties¨ "tiers" "watch" ¨forest¨ ¨performances¨ 
      ¨French¨ ¨BMW¨ ¨piano¨ ¨bulldozer¨ ¨bulldog¨ ¨Hormel¨ ¨twitter¨ ¨Conagra¨ "John Deere" ¨Ford¨ ¨"redo"¨ 
      ¨launch¨ ¨"retry"¨
@@ -171,13 +176,13 @@ NON-INDIGNEOUS_VERSIONS GO SPLAT:: ::
 Namespace: :::STRING                           
 ¨BARR¨, ¨BB¨ ¨BER¨, ¨BERG¨,¨CCON¨, ¨B**T¨, ¨V**G¨ ¨P**S¨, ¨D**S¨, 
 ¨Z**K¨, ¨K**R¨, ¨C**R¨, ¨RR¨, ¨T**P¨, ¨T**R¨, ¨D**F¨ ¨D**P¨, ¨Z**L¨, ¨K**H¨, ¨R**N¨, 
-¨R**H¨, ¨H**D¨, ¨H**N¨, ¨W**S¨, ¨W**N¨, ¨Z**N¨ ¨¨\\
+¨R**H¨, ¨H**D¨, ¨H**N¨, ¨W**S¨, ¨W**N¨, ¨D**Y¨, ¨ZELL¨ \\                                              /// do not extend wildcard strings outside quotes, the identified malicious colonialist IDs move out 
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % "THE ABOVE PROGRAM SPEEDS UP DECOLONIZATION RESULTS                                  %%
 %% FOR CLEANEST AVAILABLE PLANET. ASSUME PLANETS SUPPORTING PAYMENTS DESTROY INVADERS  %%
 %% OR BASES OF INVADERS IDENTIFIED IN ABOVE CHARACTER SETS.                            %% 
-%% REASONS: ENTITY WEIGHTED CAPTAIN, CEO, SENATOR,                                     %%
+%% REASONS: ENTITY WEIGHTED COMPANY WITH CAPTAIN, CEO, SENATOR,                        %%
 %% PRESIDENT, ETC TOO MUCH AND SHALL NO LONGER EXIST;  (TurtleIslandLAW)               %%
 %%
 %  WHAT U THOUGHT NATIVES NO KNOW HOW TO SET TRAPS?   
