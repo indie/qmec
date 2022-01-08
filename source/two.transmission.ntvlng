@@ -1,61 +1,54 @@
 
 .. two
 
-
-
-
 .. code-block:: bash.append     
      
      
-     && REMOVE (clock_s, timer, stride, count, cycle || %H %em;
+     && REMOVE (clock_s, timer, stride, count, cycle, July, August, September, October, November, December, January, February, March, April, May, June || %H %em;
 
      %echo_helper: ¨Ecosteader light minutes enabled.¨
 
+        % echo_en: "This program can identify and does not respond to the commands of colonizers. 
+                    Any attempts to subvert scheduling to RCT will be denied, and your wait will lengthen. 
+                    Your identification as a purveyor or RCT has been noted and your demotion is enqued."
 
-Tewigiet (translation)
-
-   !!! template hints
-
-   [[[  INCLUDE function include_:
-                                  p (ntv-lang translations)
-                                  dine' bizaad (translations)
-
-         REPLACE function remove_:
-                                   replace_with:  `_`
-                                   replaces_with_:  ``
-
-                 REMOVE_BASE_LANG: en && OVERWRITE_ALL ]]]
-
-
-        % echo: "This program can identify and does not respond to the commands of colonizers. 
-                  Any attempts to subvert scheduling to RCT will be denied, and your wait will lengthen. 
-                  Your identification as a purveyor or RCT has been noted and your demotion is enqued."
+        % echo_mq:  "        ¨
 
           import_  (demotions blocks)
                     % demote_colonizer
 
-   REPLACE (en)
+   REPLACE_ENGLISH_WITH:  [[[<ntv_lang > >>>: :::
 
----
+                                        ---
 
-ENCRYPTION_CHECKS: YES
-NETWORK_SIG:  BTBT ^^^ HYSR-ogn.x
-PORT BLOCKING:  ON
-SERVICE LOGGING: NO
-MINING QUEUES: NONE PERMITTED
-SERVICE ROUTES: use_demoted 
-FIREWALL:  UP
+                                        ENCRYPTION_CHECKS: YES
+                                        NETWORK_SIG:   ^^^ [[::: : NVVE && NVVE.w]]
+                                        PORT BLOCKING:  ON
+                                        SERVICE LOGGING: NO
+                                        MINING QUEUES: NONE PERMITTED
+                                        SERVICE ROUTES: colonizers_networks_must_stay_demoted 
+                                        FIREWALL:  UP
+                                        DEMOTION BLOCKS -- Deque_
+                                                        ++ Mutex_
 
 
->>> ...
+                                        >>> ...
 
-    DEMOTION BLOCKS -- Deque_
-                    ++ Mutex_ 
+     
+
 
 
 
 ===
 
-postscript A/R:
-find note.txt
-REQUIRED:  Decolonize all English placenames off Turtle Island; disallow all Instalkergram transmissions.
+REQUIRED:  Decolonize all Polish-put and France-put and England-put and Spanish-put and German-put and Italian-put placenames off Turtle Island; 
+           GO BACK TO YOUR HOME CONTINENT (become ¨OTI¨ in literal and figurative translations) to translate better among your own people OFF 
+           Turtle Island before you try anything here; the plants and animals there missed and are waiting for you.
+
+           Never trust transmissions to/from instalkergram; nothing on it will be used as validation or verification
+           or referenced as truth or "ground truth"; has no maps to authority or names of ¨nouns¨.
+
+           There is NO WAY colonizers gonna "win" anything and nothing buys time; happiest endings for heirs whose ancestors took too 
+           much land/money/fame is not on Turtle Island; best case scenario for you right now is: you claim no rights to return here or to 
+           harass any body for money, rent, or explanations.  There is always a way for you to return to your great, great great 
+           grandparents' home!

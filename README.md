@@ -1,45 +1,6 @@
-79.04![qenco](illu/coverart.png)
 
 
-```
-<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
-    Process with Caution: 
-
-          Indigenous people have been at this much longer 
-          than colonizers have been putting delusional deeds 
-          on our soil. Better to assume you know ¨much much¨ 
-          less about quantum 
-                               than you think you do.
-
-          Acknowledgement of the invalidity of the colonial 
-          world view (and your property deeds) can be done with 
-          respect to an indigenous people´s native language. This 
-          repo is _complementary_ to ecosteader.com; both can 
-          be used to understand Turtle Island.
-
-          Get ready to read and listen twice as hard as you speak.
-
-          Fascistbook´s abuses and assaults on Turtle Island 
-          need stopped; indigenous peoples are not its 
-          lab rats or oil fields to exploit. These ongoing things 
-          are resulting in the same murderous ethnocide and genocides. 
-
-          Mauna Kea knows how corrupt the Fascistbook goes. All 
-          participants of its corrupt social network are complicit
-
-              GET OFF FASCISTBOOK! 
-
-
-          #MMIWWG2 
-
-              https://youtu.be/ib0GDAPeymo
-
-<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
-```
-
-# The mechaniQs 
-
-ϕ ver. `0.79.03` ϕ
+ϕ  ϕ
 
 ## Authoring notes
 
@@ -47,43 +8,59 @@ Quantum novel is both fact and fiction.  Write for translation OUT of _En_
 lang bases only.
 
 Read this with warning to stop and consider the spaces where indigenous 
-bodies once thrived. The humans indigenous to the lands understand:
-
-insert very very specific indiegeo <ntv.lang> translations &&
-
-... the order of spores held close by ferns and lichens and moss which, with 
-the help of the fungi, speed up the return of fallen branches and leaves, 
-decomposition to give the forests that earthy smell with fruiting bodies to 
-feed the sticky snail so he can, in a rip and crack then feed the joyful 
-scrubjay with strength to fly and fill the forest with his talkative calls. 
-
-... the order of the two Hydrogens paired with the one Oxygen, floating around 
-sometimes tied, sometimes loose, mixing here and there with salt and sand and 
-quenching roots and throats, recycling their dances over and over and tiring 
-not at all.
-
-... the fascinating shapes of a forest ecosystem, the distribution of not just 
-classes, but orders of life and species and stars ... 
-
-    where some collapse.            where some evolve. some revolve,
-             and some dissolve 
-                      completely out of orbit.                        
-
-Bioremediation is one way to heal sick and suffering Earth systems. When humans 
-with large illusions of authority unleash toxic warfare upon the soils, the 
-¨meshieset¨ networks already exist.
-
-# hints
-
-BE CERTAIN translation INT ¨additional¨ colonizer languages like Latin, French, 
-Greek, Roman Catholic, Spanish, Russian will waste your time and continue to 
-eliminate your healthy escape options. The colonized planet already has the 
-proof you need in its trash and waste.
+bodies once thrived. The humans indigenous to the lands understand more 
+than imports do, about everything that matters to keep a planet 
+functioning.
 
 
-hop_to:  [qmesh]_
+![deorbit](illu/turtleisland_mustthrive.png)
 
-[qmesh]:CNNC.schema
 
-.. _Listen twice as hard as you speak, and do not speak without referencing 
-    indigenous words  \\\ //  
+```
+<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+    Process with Caution: 
+
+          Indigenous peoples have been at this much longer than 
+          colonizers have been putting delusional deeds, stakes, 
+          radio towers, and other media empires on our soil. Is 
+          better to assume you know ¨much much¨ less about quantum 
+                               than you think you do.
+
+          Acknowledgement of the invalidity of the colonial 
+          world view (and its property deeds) can be done with 
+          respect to an indigenous people's native language, and 
+          to its survivors. This collection of code, data, analysis,
+          and statistics for deeper analysis (if you still do not 
+          believe or ¨trust¨ indie) is complementary to 
+          ecosteader.com; both can be used to better understand 
+          the ¨whys¨ of Turtle Island Native L.A.W. and its protocols.
+
+          Note to former colleagues in the hardware world:
+             no, you are not hated; the hardware that can send messages
+             and sounds globally ought not be loaned to entities
+             who translate for colonist cash.  
+
+
+<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+
+```
+
+### Stay Git Neutral; do not try to impose RCT on scheduling, SSL, HTTPS.  
+
+
+![gitneutral](illu/gitneutral.png)
+
+hop_to:[decolonize]
+
+FAQ:[FAQ]
+
+
+### want to save polar ice caps?
+divest from all:[malicious_inflated_caps.mqe]
+
+[deorbit]: http://www.ecosteader.com/index.html
+[decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
+[FAQ]:https://github.com/indie/qmec/tree/master/marketing.yml
+[malicious_inflated_caps.mqe]:https://github.com/indie/qmec/tree/master/malicious_inflated_caps.mqe
+
+<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3

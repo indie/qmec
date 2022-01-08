@@ -1,12 +1,6 @@
-// "Hereby does the Universe of Multiverses bestow to you(include),
-// Honorable Guild of Quantum MechaniQs, the ability to defeat
-// white supremacy, colonial genocides, and any other threats
-// to indigenous sovereignty ... "
-
-
 // dynamic_planet.hpp.save
 
-// NOTE THAT THIS CODE DOES NOT WORK ON COLONIZED PLANETS.
+// NOTE THAT THIS CODE DOES NOT WORK ON COLONIZED PLANE(+)S.
 // "Water is life", "Mni Wiconi", ""
 
 #pragma language_neutral (debase @ two.txt)
@@ -72,7 +66,7 @@ namespace quantum\_planet
     else set 
      {{corruption_level_detected_Is_Any}} === TRUE;
 
-       echo: "We reject your offer. 528 years of indigenous resistance to colonial forces destroying our water."
+       echo: "We reject your offer. EVEN ONE RCT year of colonial forces destroying our water is too many."
 
   do flood_remainder {{ <export flood_remainder_> }}
 

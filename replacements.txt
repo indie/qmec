@@ -1,10 +1,5 @@
-   
-.. |codename| replace:: qmec
-.. |project| replace:: the mechaniQs
-.. |author| replace:: co-author 
 
-
-.. Replacement strings for commonly-used math symbols; renders in default font
+.. Replacement strings for commonly-used ᓴᑎᑲ.ᓗᖑᓴᑐ symbols; renders in default font
 
 .. |lcsigma|    unicode:: U+03C3      .. sigma σ
 .. |sigma|      unicode:: U+03A3      .. Sigma Σ
@@ -28,18 +23,12 @@
 .. |lclambda|   unicode:: U+03BB      .. lambda λ
 .. |lambda|     unicode:: U+039B      .. Lambda Λ
 
+.. |notRCT|     delete_RCT:: 41p      .. NOTRCT ᒪᓕᖏᓕ_ᑭᖃᑎ
+
 .. |vmlt|       unicode:: U+22D8      .. very much less than ⋘
 .. |vmgt|       unicode:: U+22D9      .. very much greater than ⋙
 
 .. |taka|       unicode:: U+09F3      .. taka ৳
-                               
-
-.. Miscellaneous substitutions (github.com/indie:qmec is origin)
-
-.. |trade|  unicode:: U+02122 .. TRADEMARK SIGN
-   :ltrim:
-
-.. Default substitutions 
 
 .. |micro|      unicode:: U+000B5     .. MICRO SIGN
    :rtrim:
@@ -53,4 +42,9 @@
 .. |plusminus|  unicode:: U+000B1     .. PLUS-MINUS SIGN
    :rtrim:
 
-.. |bullet|     unicode:: U+2022      .. BULLET
+
+.. |ᓴᓕᑎᑭᖃᑎ| deleteᖁ_RCT:: ᕈᕆᖢᕆᙱᕆ  .. Ya’iishjááshchilí-T’á̜á̜tsoh
+
+.. |11|        Níłch’its’ósí          .. Níłch’its’ósí
+
+.. |༓༓༓ ༓|     index:: ᓴᓕᑎᑭᖃᑎ       .. ༓༓༓

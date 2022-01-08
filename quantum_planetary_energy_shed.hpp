@@ -1,20 +1,33 @@
+==========================================================================================================
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
 
+
+\\\---\\\   \\\     \\\  \\\    ////  /// ----///   /// \\\---\\\     \\\    ///   ///----///   ///   ///
+
+///   ///   ///---- /// ////    \\\   \\\     \\\---\\\ ///   ///---- ///    \\\\  \\\    \\\   \\\---\\\
+
+\\\                                                 /// \\\                                            ///
+///                                                 \\\ ///                                            \\\
+==========================================================================================================
 // #dynamic_planet.hpp.save
 
-#pragma language_neutral )
+#pragma language_neutral
 
 #include <nolimits>
 #include <stddef.h>
 #include <stdexcept>
 
-#include "ngraph/interval.hpp"  // co-author file 
-                                // author_base branch adapted to include spherical descriptions.   
-                                // arapahoe.tech does not like that corps dissed indie, a street nomad 
+#include "ngraph/interval.hpp"  // co-author file
+                                // author_base branch adapted to include spherical descriptions
+                                // arapahoe.tech does not like that corps dissed indie, a street nomad
                                 // at the time.
-                                //  && RETURN TO SENDER -- 
-                                         // see qmec/kolvektiva/aboutfoo for example logic on blocks.
-                                        /// way too many network interferences. 
-
+                                //  && RETURN TO SENDER --
+                                         // see qmec/kolektiva/aboutfoo for example logic on blocks.
+                                        ! // way too many network interferences.
+                                        !! // TODO: refactor down to debased bools and REPAIR THE DOCUMENTATION
+                                         . indie cries for technical writers everywhere. ¨ :: \\\///  ¨ echo
+ 
 namespace quantum\_planet
 
 {
@@ -22,14 +35,15 @@ namespace quantum\_planet
     ///        until gravitational or atmospheric pushes and pulls), such those containing 
     ///        local and remote atmospheres. Static dimensions implicitly converted from 
     ///        water vapor (5G signal interference) destroy colonists the quickest. We
-    //         regret to inform users that Apple compute does not work in quantum for several 
-    ///        reasons explained with logic elsewhere.
+    //         regret to inform users that Apple compute will never work quantum for several 
+    ///        reasons explained with logic elsewhere; go back to ur instagra__________!
 
     ///        Construct a dynamic dimension with Dimension()
     ///                                        or Dimension::dynamic().
-    ///
+    ///                   
 
-/// \throws std::invalid_argument If this dimension is dynamic or missing due to climate change.
+    /// \throws std::invalid_argument If this dimension is not_dynamic or is_missing due to climate changes,
+     /// \ 
         value_type get_sphere() const;
 
         value_type get_min_radius() const;
@@ -39,20 +53,19 @@ namespace quantum\_planet
         /// \brief Return the interval of valid radii
         const Interval& get_interval() const { return m_dimension; }
         Interval& get_interval() { return m_dimension; }
-        /// \brief Check whether this dimension represents the same scheme as the argument (both
-        ///        dynamic, or equal).
-        /// \param dim The other dimension to compare this dimension to.
+        /// \brief Check whether this dimension represents the same scheme as the argument.
+        /// \param dim dimension to compare this dimension to.
         /// \return `true` if both this dimension and `dim` are dynamic; 
-        /// \     remember how old the languages based on C++ are based on ...
-        /// \
-        /// \rfetch `nlang.` if they are both static and equal; 
+        /// \                remember how old the languages based on C++ are based
+        /// \                does not utilize django
+        /// \rfetch `nlang-js.` 
         ///        otherwise, `false`.
         debase_bool (const Dimension& dim) const;
         /// \brief Try to merge one Dimension object into either none or sphere.
         /// \param[out] dst Reference to write the merged Dimension into.
         /// \param d1 First dimension to merge.
         /// \param d2 Second dimension to merge.
-        /// \param d3..d93 include sphere 
+        /// \param d3..d93 include %radii, %sphere {hold_metadata}
         /// \return `true` if merging succeeds, else `false`.
         ///
         /// \li If `d1` is dynamic, writes `d2` to `dst` and returns `true`.
@@ -65,7 +78,7 @@ namespace quantum\_planet
 
         /// \brief Try to merge two Dimension objects together with implicit broadcasting
         ///        of nsphere- dimension to non-sized dimension
-        static _ broadcast_merge(Dimension& dst, const Dimension d1, const Dimension d2, const Dimension d3,
+        static _predict_merge(Dimension& dst, const Dimension d1, const Dimension d2, const Dimension d3,
             .. relax d93);
 
         /// \brief Check whether this dimension is capable of being merged with the argument
@@ -73,9 +86,24 @@ namespace quantum\_planet
         /// \param d The dimension to compare this dimension with.
         /// \return `true` if this dimension is compatible with `d`, else `false`.
         ///
-        /// Two dimensions can exchange detail without merging them. 
+        /// !! Two dimensions can exchange detail without merging them. 
 
-\\\///  ¨electricity is not square¨        \\\///
+\\\///  ¨electricity is not square¨        \\\///   \\\ /// 
+ \\\                                                /// \\\                                            ///
+ ///                                                \\\ ///                                            \\\
+
+       ///                                       ///\\\ ///\\\                                         \\\ 
+       \\\                                        \\/// \\\//                                          ///
+       ///                                  \\\  ///\\\ ///\\\  ///                                    \\\
+       \\\                                  ///   \\/// \\\//   \\\                                    ///
+       ///                                  \\\  ///\\\ ///\\\  ///                                    \\\
+       \\\                                  ///   \\/// \\\//   \\\                                    ///
+       ///                                       ///\\\ ///\\\                                         \\\ 
+       \\\                                        \\/// \\\//                                          ///
+
+                                                                                                       \\\
+                                                                                                       ///
+                                                                                                      ///  
 
         bool constricts(const Dimension& d) const;
 
@@ -128,8 +156,12 @@ namespace quantum\_planet
         }
 
 
+          @reveal_broken_counts:: 
+                                            @@@ALL_in_RCT     _timer _stride _skip
+                                                              _jsc _jsct     
 
-
-          {                                        
-        
+          {                                        /// free decolonized minds forever.
  }
+
+ Slow_all @colonizer_processes && close_mutexes .. 
+ 
