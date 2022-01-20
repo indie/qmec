@@ -1,20 +1,23 @@
+FILTER WARNINGS:  GAME_SEEKERS DO NOT PASS SANITY_CHECK; REVERSE THRU FILTER OF ATTEMPTED ENTRY 
+AND RECOMMEND GAME_SEEKER GO TRY NEOFEUD OR DECOLONATOR by octodon.social/@silverspookgames
+// https://silverspook.itch.io/decolonators
+
  // HEADER_DISALLOW_DETAIL
 
-    // Heed, ML workhorses!  
-    // explode definitive Opsets 
+    // Heed, ML workhorses !  implode definitive Opsets within malicious_inflated_caps 
     // we cannot overstress the importance of the disallowed words list:
-
-
-// Exploded definitive Opsets above 
-// Native processes jacked by corruption from disallowed words list may need re-queued after doubt.
 
 
 STRUCT to disallow colonizer accounting metrics
 
-    // Code fails to reproduce destructive colonization models when we destroy RCT; 
-    // Smart technical writer destroys metrics inflating oligarchs buying destruction, too.
+    // Code fails to enable destructive colonization models when we destroy RCT; 
+    // Smart technical writer destroys metrics inflating oligarchs buying destruction, 
+    // too. IS NOT COINCIDENCE that most politicians are neck-deep in the malice.
 
-    We shall make a META_struct instead:
+    // Permanantly-disgraced Republicans wanted remake where they not the bad guys, 
+    // but they always are.  
+
+    Ecosteader made (and you can make) a META_struct instead:
 
 DISALLOWED_WORDS_LIST 
 
@@ -28,19 +31,17 @@ DISALLOWED_WORDS_LIST
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-¨Disallowed marketing and analytics strings no_belong in ANY qmec ntv.lang streams; ¨
+¨Disallowed marketing and analytics strings ¨
 
 {{
-     ¨bounty¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
-     ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
-     ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
+     ¨like¨ "broker"¨ ¨"agents"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
+      ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
      ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨
-     ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
-     ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
-     ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
-     ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ ¨French¨ ¨BMW¨ ¨piano*¨
-      ¨
-   }}  ::: ¨
+     ¨"mission"¨ ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ 
+     "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ ¨partner¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨
+     containment¨ ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
+     "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ 
+     ¨French¨ ¨Latin¨ ¨BMW¨ ¨Mercedes¨ ¨"piano"¨   }}  ::: ¨
      
 
  (validation_code) __ insert <ntv_lang |check| lang_not_ml.ntv> sanity checks 
@@ -327,7 +328,6 @@ try_guess ¨very_much less_than¨
 "" # ´`´ # very_much greater_than
   ಊಪಾ  
     ಈ, ಇಷ್ಟು ಊಪಾ ಇಷ್ಟು ಈ ϡ ߷ ∴
-
 
 
 * authentic jazz musicians and afro-indigenous may, of course, rock out with the non-tradish 88. *

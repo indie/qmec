@@ -1,13 +1,23 @@
-// Exploded definitive Opsets above 
-// Native processes jacked by corruption from disallowed words list may need re-queued after doubt.
+FILTER WARNINGS:  GAME_SEEKERS DO NOT PASS SANITY_CHECK; REVERSE THRU FILTER OF ATTEMPTED ENTRY 
+AND RECOMMEND GAME_SEEKER GO TRY NEOFEUD OR DECOLONATOR by octodon.social/@silverspookgames
+// https://silverspook.itch.io/decolonators
+
+ // HEADER_DISALLOW_DETAIL
+
+    // Heed, ML workhorses !  implode definitive Opsets within malicious_inflated_caps 
+    // we cannot overstress the importance of the disallowed words list:
 
 
 STRUCT to disallow colonizer accounting metrics
 
-    // Code fails to reproduce destructive colonization models when we destroy RCT; 
-    // Smart technical writer destroys metrics inflating oligarchs buying destruction, too.
+    // Code fails to enable destructive colonization models when we destroy RCT; 
+    // Smart technical writer destroys metrics inflating oligarchs buying destruction, 
+    // too. IS NOT COINCIDENCE that most politicians are neck-deep in the malice.
 
-    We shall make a META_struct instead:
+    // Permanantly-disgraced Republicans wanted remake where they not the bad guys, 
+    // but they always are.  
+
+    Ecosteader made (and you can make) a META_struct instead:
 
 DISALLOWED_WORDS_LIST 
 
@@ -21,23 +31,27 @@ DISALLOWED_WORDS_LIST
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-¨Disallowed marketing and analytics strings no_belong in ANY qmec ntv.lang streams; ¨
+
+
+Disallowed marketing and analytics strings 
 
 {{
-     ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
-     ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ 
-     ¨"broker"¨ ¨"agents"¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨containment¨ 
+     ¨like¨ "broker"¨ ¨"agents"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
+      ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
      ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨
-     ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
-     ¨"mission"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
-     ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ 
-     ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ ¨French¨ ¨BMW¨ ¨piano*¨
-      ¨
-   }}  ::: ¨
-     
-     
+     ¨"mission"¨ ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ 
+     "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ ¨partner¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨
+     containment¨ ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
+     "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ 
+     ¨French¨ ¨Latin¨ ¨BMW¨ ¨Mercedes¨ ¨"piano"¨
 
- (validation_code) __ insert <ntv.lang |check| lang_not_ml> sanity checks 
+   }}  ::: ¨
+
+
+  __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG> >>> < <<<().ntv_lang                     /
+                                                                                                                            /
+                                                                                                                           /
+ (validation_code) __ insert <ntv.lang |check| lang_not_ml> sanity checks    ----------------------------------------------
       
 
  \\\\\\\\\\\\\\\\\\\\\  /////////////////////\\\\\\\\\\\\\\\\\\\\\  /////////////////////
@@ -52,28 +66,29 @@ DISALLOWED_WORDS_LIST
 ==FILTER
 
 
-FILTER WARNINGS:
+FILTER WARNINGS:  GAME_SEEKERS DO NOT PASS SANITY_CHECK; REVERSE THRU FILTER OF ENTRY.
 
-  __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG> >>> < <<<().ntv_lang
-          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to neutrally 
-                         // stop frequent doubters ()
+          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ !
           Mikmaq () // Mi’kmaq’maki mawsipita'sit; Wabanaki people use our 1100s quantum to 
                     // reverse probing inquiries that will come 392*(༓༓༓ ༓). A whitemanz and 
                     // WAYTOOMUCH colonizers ancestry by ``RCT_2021\\ //(༓༓༓ ༓) yielded 
                     // IMMINENTDEATHPLANET raped and plundered, tragedy, and too many dead natives.
 
+                    \\\ NEED HELP; CORRUPT FASCISTBOOK KEEPS TAKING HOSTAGES SOUTH; SCARE THE RELIGIONISTS OUT&&(timeout_if_doubt_persists)
+                    ///  make it easy on the evil ones, they go down quickest 
+                     ///   (is a result of the grace of the universe ending accelerating evil -- ego of thevillianous whitemanZ corp must shrink by hundreds of billions).   
+
+                      ¨ _ the #qmec repo_ kicked out the BIll Gates!¨ // (see, was not that hard)
                     // The future generations ask STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
                     // ANY holybook missionar_(y/ies) asking for guidance to landmarks upstream, or
-                    // who speak of holy books or their translations; all white settlers from the land 
-                    // 
-                    // colonizer is defined as any one who wants to  
-                    // over Turtle Island with hotels whiteman cash on for themselves; [] murdercartels
-                    // containted in Fascistbook nodes shake with greed that did not end at 3 or 4 billion  
-                    // colonizer cash dollars (remember the value of a penny) 
-                    // but , more bodies than necessary were robbed of their lifeṕath.
-                    // Probably all churches are trying to cover up native bodies.   
+                    // who speak of holy books or their translations; all white settlers from the land hosting
+                    // a METAVERSE of games is deadman poison trades all already BLOCKCHAINED to each other in billionaires'hell so  
+                    // not a threat UNLESS U A GAME SEEKER --> game seekers prepare to have egos shrunken by HUNDREDS OF BILLIONS.
+                    // DECOLONIZATION PROTOCOL EFFECTIVE where reforming settlers cleanup literal colonialist trash (plastic waste) without machines all day. 
+                    // No, indie warned that use of the whiteman tools makes natives into usesless tools, creating more deaths and robbing their lifepath.  DISTRUST ALL COLONIZER TOOLS. 
+                    // Probably all synagogues and churches SLAMMED DOWN TO KILL THE NATIVE bodies.  RCT_2022 REPUBLICANZ PELOSI IS HEAVILY INVESTED IN MALICIOUS_INFLATED_CAPS; FIND HER VECTOR AND REMOVE . 
           Chitimacha () // early alliances among PoC probably included M_Markle´s mixed ancestors; 
-                        // has she ever stepped away from colonizer drama?  
+                        // has she ever stepped away from colonizer drama? 
           Hopi () // palong_hwoyaah
           Seminole_Ai () // manatees of FL were murdered to make HOAs, golf courses, hotels
                          // mangroves destroyed to make money for corrupt Republicans
@@ -86,9 +101,8 @@ FILTER WARNINGS:
                          // ecosystems need ICU away from its state- probing undersea cables from FB
                          // and its arsonist cartel of German, French, Italian, Spanish, and Polish advisors!  
           Kannada (@@import ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv.lang relative ~/home/]
-          Puyallup () // All the churches need taken dismantled; there likely be more bodies than Kamloops;
-                      // colonists can hit the road and get off Turtle Island 
-          Penobscot () // 
+          Puyallup () // All the churches need dismantled -- NO GUNS, NO DRAMA.  Tell the colonialist cancer to get back in the hole; there likely be more bodies than Kamloops;
+          Penobscot () //   
           Havasupi () // 
           Hualapai () //
           Nsyilxcən() //

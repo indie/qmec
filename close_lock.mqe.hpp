@@ -1,14 +1,23 @@
+FILTER WARNINGS:  GAME_SEEKERS DO NOT PASS SANITY_CHECK; REVERSE THRU FILTER OF ATTEMPTED ENTRY 
+AND RECOMMEND GAME_SEEKER GO TRY NEOFEUD OR DECOLONATOR by octodon.social/@silverspookgames
+// https://silverspook.itch.io/decolonators
 
-// Exploded definitive Opsets above 
-// Native processes jacked by corruption from disallowed words list may need re-queued after doubt.
+ // HEADER_DISALLOW_DETAIL
+
+    // Heed, ML workhorses !  implode definitive Opsets within malicious_inflated_caps 
+    // we cannot overstress the importance of the disallowed words list:
 
 
 STRUCT to disallow colonizer accounting metrics
 
-    // Code fails to reproduce destructive colonization models when we destroy RCT; 
-    // Smart technical writer destroys metrics inflating oligarchs buying destruction, too.
+    // Code fails to enable destructive colonization models when we destroy RCT; 
+    // Smart technical writer destroys metrics inflating oligarchs buying destruction, 
+    // too. IS NOT COINCIDENCE that most politicians are neck-deep in the malice.
 
-    We shall make a META_struct instead:
+    // Permanantly-disgraced Republicans wanted remake where they not the bad guys, 
+    // but they always are.  
+
+    Ecosteader made (and you can make) a META_struct instead:
 
 DISALLOWED_WORDS_LIST 
 
@@ -23,7 +32,7 @@ DISALLOWED_WORDS_LIST
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
 
-¨Disallowed marketing analytics strings no_belong in ANY qmec ntv.lang streams; ¨
+¨Disallowed marketing and analytics strings ¨
 
 {{
      ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 

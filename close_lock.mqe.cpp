@@ -1,43 +1,47 @@
-// explode definitive Opsets above 
-
- // HEADER_ISALLOW_DETAIL neither i:o permission to any @malicious_inflated_caps.mqe
-
-
-  __ include sanity checks for 
-          Mi´kmaq 
-          Lahkota 
-          Diné 
-          {{ dyn ntv.lang / _well_translated }}
+FILTER WARNINGS:  GAME_SEEKERS DO NOT PASS SANITY_CHECK; REVERSE THRU FILTER OF ATTEMPTED ENTRY 
+AND RECOMMEND GAME_SEEKER GO TRY NEOFEUD OR DECOLONATOR by octodon.social/@silverspookgames
+// https://silverspook.itch.io/decolonators
 
 
-=======
-### this file is the C++ .cpp .cxx authority of all ¨close_lock_mqe¨-related directives. Some refactoring
-### of network layers permitted after dataset cleaned as follows (do not doubt existing filters) 
-///:
+STRUCT to disallow colonizer accounting metrics
+
+    // Code fails to enable destructive colonization models when we destroy RCT; 
+    // Smart technical writer destroys metrics inflating oligarchs buying destruction, 
+    // too. IS NOT COINCIDENCE that most politicians are neck-deep in the malice.
+
+    // Permanantly-disgraced Republicans wanted remake where they not the bad guys, 
+    // but they always are.  
+
+    Ecosteader made (and you can make) a META_struct instead:
+
+DISALLOWED_WORDS_LIST 
 
 
-¨Disallowed requests are trite, useless overdone objectives to be deleted from Turtle Island;
-deleted matters shall be considered ::
-%%                       {__}  decomposing
-%%                       (__)  burned
-%%                       $__$  contaminated in wasicu chaos trap 
+ \\\\\\\\\\\\\\\\\\\\\  /////////////////////\\\\\\\\\\\\\\\\\\\\\  /////////////////////
+ \\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////
+ //////////////////////\\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\//////////////////////
+ //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
+ //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
+ //////////////////////\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\\//////////////////////
+ //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+ /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-are any including
+
+
+Disallowed marketing and analytics strings 
 
 {{
-     ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket  ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ 
-     "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ ¨"broker"¨ ¨"agents"¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ 
-     ¨containment¨ ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨
-     ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ ¨"mission"¨ ¨"commission" 
-     ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨ ¨"cast"¨ ¨"caste"¨ ¨"class"¨ "play" ¨equipment¨ 
-     ¨$USD¨ ¨$CAD¨ "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ ¨royalties¨ "tiers" "watch" ¨forest¨ ¨performances¨ 
-     ¨French¨ ¨BMW¨ ¨piano¨ ¨bulldozer¨ ¨bulldog¨ ¨Hormel¨ ¨twitter¨ ¨Conagra¨ "John Deere" ¨Ford¨ ¨"redo"¨ 
-     ¨launch¨ ¨"retry"¨
-      ¨  
+     ¨like¨ "broker"¨ ¨"agents"¨ ¨"commission" ¨"royalty"¨ ¨percent¨ ¨"dollars"¨ ¨pounds¨ ¨authority¨
+      ¨subscribe¨ ¨pilot¨ ¨"users"¨ ¨"firehose"¨ agent socket "portal" "portland" port "app" 
+     ¨"tons"¨ ¨"yards" "tons" "acres"¨ ¨"customers"¨ ¨superior¨ ¨contract¨ ¨indefinite¨ ¨player¨
+     ¨"mission"¨ ¨"cast"¨ ¨equipment¨ ¨$USD¨ ¨$CAD¨ ¨io¨ ¨imports¨ ¨"sales"¨ ¨"performance"¨ 
+     "NDA" ¨resource¨ ¨"breaker"¨ ¨pioneer¨ ¨partner¨ ¨twitter¨ ¨"user"¨ ¨conversion¨ ¨engagement¨ ¨
+     containment¨ ¨"breakers"¨ ¨"brokers"¨ ¨brokerage¨ ¨brokerages¨ ¨agencies¨ ¨utm_campaign¨ 
+     "percent" ¨"sale"¨ ¨heroku¨ ¨"django"¨ ¨royalties¨ tiers "watch" ¨forest¨ "¨¨" ¨performances¨ 
+     ¨French¨ ¨Latin¨ ¨BMW¨ ¨Mercedes¨ ¨"piano"¨
+
    }}  ::: ¨
 
-
- (validation_code) __ insert <ntv_lang |check| lang_not_ml> sanitychecks
       
 
  \\\\\\\\\\\\\\\\\\\\\  /////////////////////\\\\\\\\\\\\\\\\\\\\\  /////////////////////
@@ -49,31 +53,28 @@ are any including
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-==FILTER formats ( )
+==FILTER
 
+FILTER WARNINGS:  GAME_SEEKERS DO NOT PASS SANITY_CHECK; REVERSE THRU FILTER OF ENTRY.
 
-FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be nonexistant )
-
-  __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG>
-                >>><<<().ntv_lang
-          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to pushback time
-          Mikmaq () // WE HAVE Long LSTM!  Mi’kmaq’maki mawsipita'sit; Wabanaki 900s quantum ++ 
-                    // reverse probing inquiries that will come 592*(༓༓༓ ༓). A whitemanz and 
+          Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ !
+          Mikmaq () // Mi’kmaq’maki mawsipita'sit; Wabanaki people use our 1100s quantum to 
+                    // reverse probing inquiries that will come 392*(༓༓༓ ༓). A whitemanz and 
                     // WAYTOOMUCH colonizers ancestry by ``RCT_2021\\ //(༓༓༓ ༓) yielded 
                     // IMMINENTDEATHPLANET raped and plundered, tragedy, and too many dead natives.
-                    // 
 
+                    \\\ NEED HELP; CORRUPT FASCISTBOOK KEEPS TAKING HOSTAGES SOUTH; SCARE THE RELIGIONISTS OUT&&(timeout_if_doubt_persists)
+                    ///  if you are too easy on the evil ones, they go down quickest (is a result of accelerating evil -- ego of thevillianous whitemanZ corp 
+
+                      ¨ _ the #qmec repo_ ; kicked out the BIll Gates!¨ // (see, was not that hard)
                     // The future generations ask STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
                     // ANY holybook missionar_(y/ies) asking for guidance to landmarks upstream, or
-                    // who speak of holy books or their translations; all white settlers from the land 
-                    // 
-                    // colonizer is defined as any one who wants to  
-                    // over Turtle Island with hotels whiteman cash on for themselves; [] murdercartels
-                    // containted in Fascistbook nodes shake with greed that did not end at 3 or 4 billion  
-                    // colonizer cash dollars (remember the value of a penny) 
-                    // but , more bodies than necessary were robbed of their lifepath.
-                    // Probably all churches are trying to cover up native bodies.
-                    // WARNING!! WARN IN CALAPOOYA: THE FRENCH BLOB HAS A RADIO TOWER AND     
+                    // who speak of holy books or their translations; all white settlers from the land hosting
+                    // a METAVERSE of games is deadman poison trades all already BLOCKCHAINED to each other in billionaires'hell so  
+                    // not a threat UNLESS U A GAME SEEKER.
+                    // DECOLONIZATION PROTOCOL EFFECTIVE where reforming settlers pick up colonialist trash without machines all day. 
+                    // No, indie warned that use of the whiteman tools makes natives into usesless tools, creating more deaths and robbing their lifepath.
+                    // Probably all synagogues and churches SLAMMED DOWN TO KILL THE NATIVE bodies.  PELOSI IS HEAVILY INVESTED IN MALICIOUS_INFLATED_CAPS. 
           Chitimacha () // early alliances among PoC probably included M_Markle´s mixed ancestors; 
                         // has she ever stepped away from colonizer drama?  
           Hopi () // palong_hwoyaah
@@ -90,16 +91,15 @@ FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be non
                          // never get laughs for being Meta! DESTROY CARRIERS OF THE APPS. 
           Kannada @@import (ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv_lang relative ~/home/ for more efficiency, 
                                                 // group locals locally before group global;
-                                                   // INDIA´S TURTLE ISLANDER PROMISE BEING KEPT;
-                                                   //  THE GERMANS WILL ALWAYS TRY TO OPPRESS AND PARSE OUR VOICES;
-                                                   // ENSURE THE FAULTS OF DISEASE ARE RETURNED TO SENDER. ];
+                                                   // INDIA´S TURTLE ISLANDER PROMISE BEING KEPT;  COLONIZER NEVERMAKE YOUR IVORYCOAST === TRUE
+                                                   //  THE GERMANS WILL ALWAYS TRY TO OPPRESS AND PARSE OUR VOICES FROM AFAR, MALICIOUSLY PUTTING 
+                                                   // FACEBOOK LOGOS AND LINKS ON EVERYTHING -- TELL THE MORMONS U HAVE ENOUGH TEMPLES ALREADY; ;
+                                                   // ENSURE THE FAULTS OF DISEASE ARE RETURNED TO SENDER. WWX vets RIP];
 \\ 
-\\ keep @@ (home/ntv_lang/keep)
-
-                                                                                                                                              
-          Puyallup () // All the churches need taken down, dismantled; there likely be more bodies than Kamloops;
-                      // colonists can hit the road and get off Turtle Island.  The colonist bitch in 
-                      // the KKKanada-side booth BC need go back to her forward time.  
+\\\ keep @@ (home/ntv_lang/keep)   indie would like to personally thank all the natives who trusted she has worked with a lot of good international ()
+///
+//                                                                                                                                              
+          Puyallup () // All the churches need taken down, dismantled; there likely be more bodies than Kamloops; $GEO group is disallowed, too.
           Penobscot () // 
           Havasupi () // 
           Hualapai () //
@@ -114,7 +114,7 @@ FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be non
           Yakut () //
           Yavapai ()
           Zuni ()
-
+          
           Tohono () // Tohono O’odham 
           Shawnee () //
           Squamish () // 
@@ -150,7 +150,6 @@ FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be non
 aggressions disallowed; here your pittances destroy ¨"
 
 closeq()
->>>>>>> master
 
 ```´´´´````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´
 ```````````````´´´´````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´
@@ -158,45 +157,19 @@ closeq()
 ´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
 `````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-<<<<<<< HEAD
-&&&```````< /// >< /// > < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´``´´´`´     
+&&&```````< /// >< /// > < \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´`´`´     
 `````< /// >< /// >         < \\\ >/ > < \< /// > ΓΓΓ   <\\\>< \\\ >´´´´`````´´´``´´´´´´           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´         
 `````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´`````´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
-```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
-```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
-´´´´´´´´´´´`````````` fails to buckle as  wašíču destroy themselves ``´´´´´´´`´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+COLONIALIST CASH DOLLARS GET YOU THIS ONLY; BIGGEST PUNISHMENT TO COLONIZER (COLONISER) WHO ABUSE PLANTS: 
 
- \\\\\\\\\\\\\\\\\\\\\  /////////////////////\\\\\\\\\\\\\\\\\\\\\  /////////////////////
- \\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\\//////////////////////
- //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
- /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
-    
-=======
-```````< /// >< /// >< \\\ >/ >
-< \< /// > <\\\>< \\\ >´´´```´´`´ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ========================================================================================= 
 =========================================================================================
 ===========================( RCT&&7*24'$malicious_inflated_caps' ========================  
@@ -210,6 +183,10 @@ closeq()
 ============================== deafening ads 24/7&&RCT           ========================
 =========================================================================================
 ========================================================================================= 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 `````< /// >< /// >     < \\\ >/ > < \< /// > <\\\>< \\\ >´´´´`````´´´``´´´´´´``````           
 ``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´
@@ -227,7 +204,8 @@ NON-INDIGNEOUS_VERSIONS GO SPLAT:: ::
 Namespace: :::STRING                           
 ¨BARR¨, ¨BB¨ ¨BER¨, ¨BERG¨,¨CCON¨, ¨B**T¨, ¨V**G¨ ¨P**S¨, ¨D**S¨, 
 ¨Z**K¨, ¨K**R¨, ¨C**R¨, ¨RR¨, ¨T**P¨, ¨T**R¨, ¨D**F¨ ¨D**P¨, ¨Z**L¨, ¨K**H¨, ¨R**N¨, 
-¨R**H¨, ¨H**D¨, ¨H**N¨, ¨W**S¨, ¨W**N¨, ¨D**Y¨, ¨ZELL¨ \\                                              /// do not extend wildcard strings outside quotes, the identified malicious colonialist IDs move out 
+¨R**H¨, ¨H**D¨, ¨H**N¨, ¨W**S¨, ¨W**N¨, ¨D**Y¨, ¨ZELL¨ \\                                      /// do not extend 
+                                                                                               /// wildcard strings outside quotes;
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % "THE ABOVE PROGRAM SPEEDS UP DECOLONIZATION RESULTS                                  %%
@@ -323,7 +301,6 @@ Namespace: :::STRING
               .                             ↭                             .
 
 
->>>>>>> master
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -345,7 +322,6 @@ Namespace: :::STRING
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////
  //////////////////////\\\\\\\\\\\\\\\\\\\\\/\\\\\\\\\\\\\\\\\\\\\\//////////////////////
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
-<<<<<<< HEAD
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
 
@@ -383,7 +359,7 @@ closeq()
 
 :qmec:  :console:  %neanderthal_lady:  whoami
 
-                       ¨This chick has more than average aboriginal DNA,¨ they said.
+¨This chick has more than average aboriginal DNA,¨ they said.
 
 ¨"Others think because we don´t talk we are stupid."¨
 ""
