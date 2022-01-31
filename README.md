@@ -1,5 +1,5 @@
 
-![deorbit](illu/turtleisland_mustthrive.png)
+![deorbit](nativeland_beforeinvasion.png)
 
 
 ```
@@ -54,6 +54,8 @@ FAQ:[FAQ]
 
 ### want to save polar ice caps?
 divest from all:[malicious_inflated_caps.mqe]
+
+CALL YOUR CONGRESSPERSONS AND DEMAND SUNDOWN FANTASY TOWNS AND THEIR MONEY BE GONE.
 
 [deorbit]: http://www.ecosteader.com/index.html
 [decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
