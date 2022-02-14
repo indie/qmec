@@ -23,14 +23,14 @@
   ༶..         Assume they deorbited together for AGGRESSIONS PREVIOUSLY NOTED:                           ༶..
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
-     :: ::: :malicious_overinflated_caps                                                                 
-        $DIS, $CRM, $NFLX, $GEO, $PBI, $BP, $FB, $ENB, $AMZN, $HD, $GS, $AXON, $EQR, $BAMR, $NWSA.O       
-        $BAM, $BBU, $BBU.CA, $PBR, $BKC, $BKM, $GDDY, $TWTR, $NWSA, $FSX, $AAPL, $GSCCF, $VA, $AA, $LAC, 
-        $LAC.CA $ARLP, $WFC, $NFLX, $BHP, $JPM, $NKE, $PBR, $GM, $PEP, $KO, $RIO, $VALE  /৳                      
+  :: ::: :malicious_overinflated_caps                                                                     ..༶
+      $AAPL $DIS, $CRM, $NFLX, $GEO, $PBI, $BP, $FB, $ENB, $AMZN, $HD, $GS, $AXON, $EQR, $HAYN, $BAMR,        
+      $BAM, $BBU, $BBU.CA, $PBR, $BKC, $BKM, $GDDY, $TWTR, $RL, $NWSA, $FSX, $GSCCF, $VA, $AA, $LAC, $NWSA.O
+      $LAC.CA $ARLP, $WFC, $NFLX, $BHP, $JPM, $NKE, $PBR, $GM, $PEP, $KO, $RIO, $VALE, $BKNG, $NFLX  /৳::: : 
 ༶ ............................................................................................................
 ............................................................................................................ ༶
 
-# COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017.2021_STOP_RCT) $;
+# COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017.2022_STOP_RCT) $;
 # IS ns (dead_tree @@) timer_timeout
 
 
@@ -40,8 +40,7 @@
                    <<  // insignificant zeroes do not exist
 
               $antiunion_<DEVALUED>_names
-                 include but are not limited to the following distrusted (TL;DR DISTRUST ALL RCT_TRANSLATIONS):
-                 -$AMZ, -$SPY, -$HD, -$NFLX, -$WMT
+                 include but are not limited to the following distrusted fn() (TL;DR DISTRUST ALL RCT_TRANSLATIONS):
 
 # COMPUTING SUMMATION OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017 .. 2021_) @STOP-RCT $;
 
@@ -52,9 +51,12 @@
                  / / / / show_prog: @@@@ $antiunion_trade_names |complex| ** DEFLATION_INDEX
 
 
-                                        : <<<: $#..# Open-sourcing devalues capitalist things by default. Congratulations seeker of <ntv.lang> help!
-                                                #..# The people have a way to override the oligarchs and billionaires, but it requires mass action
-                                                #--# to STOP the oligarchs!
+    : <<<: $#..# Open-sourcing devalues malicious capitalist things by default. 
+                       Congratulations 
+                    seeker of <ntv.lang> help!
+            #//\\  The people have a way to override the oligarchs and billionaires, but it requires mass action
+            #//\\   to STOP the oligarchs; DIVEST from all above noted malicious corporate bodies; the end 
+            #//\\     for two-leggeds invested in their inflated appreciation?  Broken glass, schrapnel, and planetary death.
 
 
 
