@@ -8,11 +8,13 @@
 
      %echo_helper: ¨Ecosteader light minutes enabled.¨
 
-        % echo_en: "This program can identify and does not respond to the commands of colonizers. 
+        % echo_en: "This program can identify colonizers, though it does not respond to the commands of colonizers. 
+                        Everything you speak in 'COLONIZER_LANG(sort)' is recorded in at least 5 different native langs,
+                        so do not attempt exploits on indigenous bodies or any Wabanaki descendants.
                     Any attempts to subvert scheduling to RCT will be denied, and your wait will lengthen. 
                     Your identification as a purveyor or RCT has been noted and your demotion is enqued."
 
-        % echo_mq:  "        ¨
+        % echo_mqe:  "        ¨¨
 
           import_  (demotions blocks)
                     % demote_colonizer
@@ -22,11 +24,11 @@
                                         ---
 
                                         ENCRYPTION_CHECKS: YES
-                                        NETWORK_SIG:   ^^^ [[::: : NVVE && NVVE.w]]
+                                        SOLAR_NETWORK_SIG:   ^^^ [[::: :  __ SIRC __ NVVE __ GAXY __ ]]
                                         PORT BLOCKING:  ON
                                         SERVICE LOGGING: NO
                                         MINING QUEUES: NONE PERMITTED
-                                        SERVICE ROUTES: colonizers_networks_must_stay_demoted 
+                                        SERVICE ROUTES: colonizer_networks_must_stay_demoted 
                                         FIREWALL:  UP
                                         DEMOTION BLOCKS -- Deque_
                                                         ++ Mutex_
@@ -41,14 +43,24 @@
 
 ===
 
-REQUIRED:  Decolonize all Polish-put and France-put and England-put and Spanish-put and German-put and Italian-put placenames off Turtle Island; 
-           GO BACK TO YOUR HOME CONTINENT (become ¨OTI¨ in literal and figurative translations) to translate better among your own people OFF 
-           Turtle Island before you try anything here; the plants and animals there missed and are waiting for you.
+REQUIRED:  Decolonize the MAPS by dismantling bad duplicates and farming systems NOT NATIVE.
+ 
+ Capitalism (subsidies by governmental entities) destroys the land in Egypt, India, and America too: https://www.youtube.com/watch?v=aSodjZhdc_c
+ 
 
-           Never trust transmissions to/from instalkergram; nothing on it will be used as validation or verification
-           or referenced as truth or "ground truth"; has no maps to authority or names of ¨nouns¨.
+ REMOVE COLONIAL AND OTHER EUROPEAN-LANGUAGE SPEAKER PLACE NAMES FROM TURTLE ISLAND MAPS
+ Disallow delivery of trucks containing pesticides. 
+   
+   HINT: dismantling colonialism does not require tanks, artillery, bombs, etc: pay special attention to cities where any
 
-           There is NO WAY colonizers gonna "win" anything and nothing buys time; happiest endings for heirs whose ancestors took too 
-           much land/money/fame is not on Turtle Island; best case scenario for you right now is: you claim no rights to return here or to 
-           harass any body for money, rent, or explanations.  There is always a way for you to return to your great, great great 
-           grandparents' home!
+                  Italy settler-put and
+                  Russia settler-put and 
+                  Germany settler-put and 
+                  France settler-put and 
+                  China settler-put and 
+                  Spain settler-put placenames on maps.
+
+    The TEMPLATE of COLONIALIST TOWN was wrong.  Turtle Islanders do not do missions or talk to missionaries.
+    We have no "saints", "Saints" because philanthropy and charity are not mutual aid.
+
+                   

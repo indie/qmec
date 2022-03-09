@@ -36,22 +36,24 @@ are any including
  //////////////////////\\\\\\\\\\\\\\\\\\\\\\//////////////////////\\\\\\\\\\\\\\\\\\\\\\
  /////////////////////  \\\\\\\\\\\\\\\\\\\\\/////////////////////  \\\\\\\\\\\\\\\\\\\\\
 
-==FILTER formats ( )
-
 
 FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be nonexistant )
+
+==FILTER formats ( )
 
   __ CNNC include ¨pass all¨ sanity checks for decolonized && indigenous <NTV_LANG>
                 >>><<<().ntv_lang
           Lakȟótiyapi () // Aho, use more of your well-earned ¨long memory¨ to pushback time
+                         \\ // test API call (Na’hkota, Dakhota)
           Mikmaq () // WE HAVE Long LSTM!  Mi’kmaq’maki mawsipita'sit; Wabanaki 900s quantum ++ 
                     // reverse probing inquiries that will come 592*(༓༓༓ ༓). A whitemanz and 
-                    // WAYTOOMUCH colonizers ancestry by ``RCT_2021\\ //(༓༓༓ ༓) yielded 
+                    // WAYTOOMUCH colonizer overbred/inbred ancestry by ``RCT_2021\\ //(༓༓༓ ༓) yielded 
                     // IMMINENTDEATHPLANET raped and plundered, tragedy, and too many dead natives.
                     // 
 
-                    // The future generations ask STOP DESTRUCTION 7 GENERATIONS AHEAD by rejecting  
-                    // ANY holybook missionar_(y/ies) asking for guidance to landmarks upstream, or
+                    // The future generations ask STOP DESTRUCTION 3 times, 7 GENERATIONS AHEAD by rejecting  
+                    // ANY holybook missionar_(y/ies) asking for guidance to landmarks upstream, 
+                    // THEY DID NOT UNDERSTAND QUEBEC PEOPLES MEANS GO BACK  
                     // who speak of holy books or their translations; all white settlers from the land 
                     // 
                     // colonizer is defined as any one who wants to  
@@ -71,22 +73,21 @@ FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be non
           Inuktut ()     // Yukon and beyond, did everything we could to stop the Dunleavy destruction! 
                          // Alaska Natives need our native drums
           Kalapuya ()    // Lost Languages like Kalapuya exist where the greed of the colonists 
-                         // is [present tense] [present tense] so aggressive; entire forest 
-                         // ecosystems need ICU away from its state- probing undersea cables. FB
+                         // is [present tense] [present tense] literally next door to UGLIEST HOUSE OF IVY so aggressive; entire forest 
+                         // ecosystems need ICU away from HATEBOOK and its state- probing undersea cables. FB
                          // arsonist cartel of German, French, Italian, Spanish, and Polish advisors
-                         // never get laughs for being Meta! DESTROY CARRIERS OF THE APPS. 
+                         // never get laughs for being a fucking plagiarist Meta! CARRIERS OF THE APPS WILL BE DELETED BY THE MOTHER. 
           Kannada @@import (ntv_lang/home/keep) // ಕನ್ನಡ [may import @@@@ntv_lang relative ~/home/ for more efficiency, 
                                                 // group locals locally before group global;
                                                    // INDIA´S TURTLE ISLANDER PROMISE BEING KEPT;
-                                                   //  THE GERMANS WILL ALWAYS TRY TO OPPRESS AND PARSE OUR VOICES;
-                                                   // ENSURE THE FAULTS OF DISEASE ARE RETURNED TO SENDER. ];
-\\ 
-\\ keep @@ (home/ntv_lang/keep)
-
-                                                                                                                                              
+                                                    // GERMAN WHO FEAR MASTODONS (ELEPHANT ANCESTORS) ALWAYS TRYIN´ TO OPPRESS AND PARSE OUR VOICES;
+                                               \\   // ENSURE THE FAULTS OF DISEASE (BoM, RCT) ARE RETURNED TO VOLCANO.
+                                                // \\ Delete everything oppressors brought; thank you for letting me eat pauper food w/you.
+                                               //   \\ keep @@ (home/ntv_lang/keep)
+                                                                  literalinclude: :: source/two.transmission.ntvlng                                                                                                                                              
           Puyallup () // All the churches need taken down, dismantled; there likely be more bodies than Kamloops;
                       // colonists can hit the road and get off Turtle Island.  The colonist bitch in 
-                      // the KKKanada-side booth BC need go back to her forward time.  
+                      // the KKKanada-side booth BC need go back to her right forward time.  
           Penobscot () // 
           Havasupi () // 
           Hualapai () //
@@ -119,16 +120,18 @@ FILTER WARNINGS:  (assuming decolonized status passes, rage and fury must be non
                   
                               timein_RCT::: (economic_surplus_stolen * span_of_doubt)  
                                                   // doubting or devaluing indie’s contribution
-                                                  // makes rapid aging and regression of power, 
-                                                     //  relative to spite of doubter
+                                                 // makes rapid aging and regression of power, 
+                                                //  relative to spite of doubter.  
+                                                \\  economics is not about colonial cash dollars;
+                                                        
                                   timeout_if_doubt_persists:: (accelerated_deorbit & THROW)
                                     (no retries permitted) : ::: [No Access Authority]
       // NO ONE ON MALICIOUS_INFLATED_CAPS.MQE IS PERMITTED
       // RETRY OR ¨POPCORN TO WHITE ALLY¨.  QUEUE 
-                                                                                  (expired)
+                                                                                  (expired)                                  
+    NOTE::: EXPIRY COMMANDS DEFINED IN RCT ARE INVALID FOR ALL; SSL CERT EXPIRY IN RCT IS TERRORISM; 
+               
   
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 < > && v.begin(), 
@@ -167,24 +170,30 @@ closeq()
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
 ```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
 ´´´´´´´´´´´`````````` fails to buckle as wašíču destroy each other
+                      https://ecosteader.com/@indie/107231319987638631
 
                           ``´´´´´´´`´´´´```´´´
-TIMEWARP TO SPLAT? : :: : ALL WHOSE SURNAME INCLUDES CONSECUTIVE LETTERS MATCHING 
-ANY OF THE FOLLOWING STRINGS, Wildcard STRINGS, NAMEPATTERNS; ALL 
-NON-INDIGNEOUS_VERSIONS GO SPLAT:: :: 
+TIMEWARP TO SPLAT? : :: : INTEGRATE PREVIOUS LEARNING TO FILTER UNNECESSARY SOUNDS FROM EXPIRED TOURISTS WITH EXPIRED VISAS; 
+   THIS PROGRAM SHOULD GET THE WORST OFFENDERS OFF TURTLE ISLAND:
 
 Namespace: :::STRING                           
-¨BARR¨, ¨BB¨ ¨BER¨, ¨BERG¨,¨CCON¨, ¨B**T¨, ¨V**G¨ ¨P**S¨, ¨D**S¨, 
-¨Z**K¨, ¨K**R¨, ¨C**R¨, ¨RR¨, ¨T**P¨, ¨T**R¨, ¨D**F¨ ¨D**P¨, ¨Z**L¨, ¨K**H¨, ¨R**N¨, 
-¨R**H¨, ¨H**D¨, ¨H**N¨, ¨W**S¨, ¨W**N¨, ¨D**Y¨, ¨ZELL¨ \\                                              /// do not extend wildcard strings outside quotes, the identified malicious colonialist IDs move out 
+¨BARR¨, ¨BB¨ ¨BER¨, ¨BERG¨,¨CCON¨, ¨B**T¨, ¨V**G¨ ¨P**S¨, ¨D**S¨, ¨B**H¨,
+¨Z**K¨, ¨K**R¨, ¨C**R¨, ¨RR¨, ¨T**P¨, ¨T**R¨, ¨D**F¨ ¨D**P¨, ¨Z**L¨, ¨K**H¨, ¨R**N¨,
+¨R**H¨, ¨H**D¨, ¨H**N¨, ¨W**S¨, ¨W**N¨, ¨D**Y¨, ¨ZELL¨ \\         // do not extend wildcard strings  
+                                                        \\       // outside quotes; anonymized groups of aggressors already ID by previous patterns.
+                                                         \\\   /// for first layer filter assessment assume possible transcription errors. REGARDING THE OBVIOUSLY
+                                                         ///   \\\ nonEuropean indigenous bodies this filter might ID, who were assigned or coerced into accepting colonialist names CAN override the filter,
+                                                        ///     \\\  please find a way to thank the author.  She never gets kindness, friends, or thanked. 
+                                                       //         \\ Diverse perspectives from global people are good, but not when they work together to invade lands for $illions or 
+                                                       /            /  STOP ALL WHO terrorize natives with eviction-based cop drama.
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "THE ABOVE PROGRAM SPEEDS UP DECOLONIZATION RESULTS                                  %%
-%% FOR CLEANEST AVAILABLE PLANET. ASSUME PLANETS SUPPORTING PAYMENTS DESTROY INVADERS  %%
-%% OR BASES OF INVADERS IDENTIFIED IN ABOVE CHARACTER SETS.                            %% 
-%% REASONS: ENTITY WEIGHTED COMPANY WITH CAPTAIN, CEO, SENATOR,                        %%
-%% PRESIDENT, ETC TOO MUCH AND SHALL NO LONGER EXIST;  (TurtleIslandLAW)               %%
-%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     %% ACTUALLY, NOTHING IS TOO BIG TO FAIL; AFORENAMED ENTITIES SALARIED THEIR PRESIDENT, CEO, CFO, CTO, SENATOR, 
+     %% COUNTY SHERIFF, BROKERAGE PARTNER, CITY TRAFFIC POLICE, OR ANY MARTIAL AUTHORITY FAR, FAR, FAR TOO MUCH ... 
+     %% WHAT WAS ONCE DEFINED AS SUSTAINABLE IS DEEMED UNSUSTAINABLE AND SHALL NO LONGER EXIST; 
+
+
 %  WHAT U THOUGHT NATIVES NO KNOW HOW TO SET TRAPS?   
       >> "_STRING_"'s Matter is now 
                      pick one:  

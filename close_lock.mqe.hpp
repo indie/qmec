@@ -8,7 +8,7 @@ STRUCT to disallow colonizer accounting metrics
     // Code fails to reproduce destructive colonization models when we destroy RCT; 
     // Smart technical writer destroys metrics inflating oligarchs buying destruction, too.
 
-    We shall make a META_struct instead:
+    We shall make a ANTIFASCIST_struct instead:
 
 DISALLOWED_WORDS_LIST 
 
