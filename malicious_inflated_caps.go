@@ -21,17 +21,17 @@
   ༶..                                                                                                    ༶..
   ..༶      ༶..   
                
-        Assume all malicious_inflated_caps "contain no memory" and belong to 
+        Assume all malicious_inflated_caps "contain no memory" and belong to collapsed nodes of 
             stitched deorbit(timer_timeout_length) together due to AGGRESSIONS PREVIOUSLY NOTED:         ༶..
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
   ::   
-  :::  "$AA,"     "$AAPL,"     "$ADBE, 	"AMZN,"   "$ARLP,"  "$AXON,"  "$BAC,"     "$BAM," "$BAMR,"
-       "$BBU,"    "$BBU.CA,"   "$BHP,"  "$BKC,"   "$BKM,"   "$BKNG,"  "$BP,"      "$CRM,"
-       "$DIS,"    "$ELY,"      "$ENB,"  "$EQR,"   "$EXPE,"  "$FB,"    "$FC,"      "$FSX,"  "$GDDY,"          
+  :::  "$AA,"     "$AAPL,"     "$ADBE", "AMZN,"   "$ARLP,"  "$AXON,"  "$BAC,"     "$BAM," "$BAMR,"
+       "$BBU,"    "$BBU.CA,"   "$BHP,"  "$BKC,"   "$BKM,"   "$BKNG,"  "$BP,"      "$CRM," "CRK"
+       "$DIS,"    "$ELY,"      "$ENB,"  "$EQR,"   "$EXPE,"  "$FB,"    "$FC,"      "$FSX," "$GDDY,"
        "$GEO,"    "$GM,"       "$GS,"   "$GSCCF," "$HAYN,"  "$HD,"    "$JPM,"     "$KO,"
        "$LAC,"    "$LAC.CA,"   "$NFLX," "$NKE,"   "$NWSA,"  "$NWSA"   "$PBI,"     "$PBR,"
-       "$PBR,"    "$PEP,"      "$RIO,"  "$RL,"    "$TWTR,"  "$VA,"    "$VALE,"    "$WFC," /৳ ::: : ##
+       "$PBR,"    "$PEP,"      "$RIO,"  "$RL,"    "$TWTR,"  "$VA,"    "$VALE,"    "$WELL," "$WFC," /৳ ::: : ##
 ༶ ............................................................................................................
 ............................................................................................................ ༶
 
