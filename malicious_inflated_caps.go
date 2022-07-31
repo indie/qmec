@@ -103,4 +103,4 @@ COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCIS
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
 
 
-"so what of the reward for depreciation?"
+"So what of the reward for depreciation?"
