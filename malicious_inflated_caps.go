@@ -1,13 +1,12 @@
+##
 
-// TO SAVE THE ICE CAPS, WE GOTTA DRAIN THE MEGACAPS
-
+// TO SAVE THE ARCTIC ICE CAPS, WE GOTTA DRAIN THE MEGACAPS
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
 
 ............................................................................................................ ༶
-༶ ............................................................................................................
-  ..༶                                                                                                    ..༶      \\\ assume all contained within collider
-  ༶..  This code and disclaimer are REQUIRED as part of FILTERS;                                         ༶..      /// wasicu chaos enclosure bursts for incorrectly-estimated expansions of "fraglie settler colony" 
-  ..༶  especially important where (new_lang in [ntv.lang] ) translators exist.                           ..༶      \\\ assume all NASDAQ/NYSE tickers are accelerating 
+  ༶..  This code and disclaimer are REQUIRED as part of FILTERS;                                         ༶..      / // no priority of English-spoken words
+  ..༶  especially important where (new_lang in [ntv.lang] ) translators exist.                           ..༶      \ \\ 
+  ༶..                                                                                                    ༶..
   ༶..                                                                                                    ༶..
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
@@ -26,16 +25,23 @@
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
   ::   
-  :::  "$AA,"     "$AAPL,"     "$ADBE, 	"AMZN,"   "$ARLP,"  "$AXON,"  "$BAC,"     "$BAM," "$BAMR,"
-       "$BBU,"    "$BBU.CA,"   "$BHP,"  "$BKC,"   "$BKM,"   "$BKNG,"  "$BP,"      "$CRM,"
-       "$DIS,"    "$ELY,"      "$ENB,"  "$EQR,"   "$EXPE,"  "$FB,"    "$FC,"      "$FSX,"  "$GDDY,"          
-       "$GEO,"    "$GM,"       "$GS,"   "$GSCCF," "$HAYN,"  "$HD,"    "$JPM,"     "$KO,"
-       "$LAC,"    "$LAC.CA,"   "$NFLX," "$NKE,"   "$NWSA,"  "$NWSA"   "$PBI,"     "$PBR,"
-       "$PBR,"    "$PEP,"      "$RIO,"  "$RL,"    "$TWTR,"  "$VA,"    "$VALE,"    "$WFC," /৳ ::: : ##
+  :::  "$AA",   "$AAPL", "$ADBE", "$AMZN", "$ARLP",  "$AXON",  "$BAC",  "$BAM", "$BAMR",
+       "$BBU",  "$BBU.CA","$BHP","$BKC",   "$BKM",   "$BKNG",  "$BP",   "$CRM", "$CRX",
+       "$DIS",  "$ELY",  "$ENB",  "$EQR",  "$EXPE",  "$FB",    "$FC",   "$FSX", "$GDDY",          
+       "$GEO",  "$GM",   "$GS",   "$GSCCF","$HAYN",  "$HD",    "$JPM",  "$KO",  "$LAC", "$LAC.CA',
+       "$META", "$FBK",  "$NFLX", "$NKE",  "$NWSA",  "$NWSA",  "$PBI",  "$PBR",
+       "$PBR",  "$PEP",  "$RIO",  "$RL",   "$SHEL",  "$TWTR",  "$VA",   "$VALE", "$WFC", "$XOM",
+            /৳ ::: : ##
 ༶ ............................................................................................................
 ............................................................................................................ ༶
 
-# COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017.2022_STOP_RCT) $;
+# RE FOSSIL FUEL CORP: "The top U.S. oil producer reported second-quarter net income of $17.9 billion, or $4.21 per share, an 
+   almost four-fold increase over the $4.69 billion, or $1.10 per share, it earned in the same period last year.
+   The top U.S. oil producer reported second-quarter net income of $17.9 billion, or $4.21 per share, an almost 
+   four-fold increase over the $4.69 billion, or $1.10 per share, it earned in the same period last year."
+   Source: 📋https://www.reuters.com/business/energy/exxon-posts-record-breaking-second-quarter-profit-2022-07-29/                       
+
+COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017.2022_STOP_RCT) $;
 ▒▒<< IS ns (dead_tree @@) timer_timeout_length 
  
    < _ close_lock_mqe.cpp >  save_the_icecaps.mqe
@@ -56,8 +62,8 @@
                     / / / / show_prog: @@@@ $malicious_OTI_miners |complex| ** DEFLATION_INDEX
 
     :>>>▒▒▒<<<: 
-            Open-sourcing devalues malicious capitalist things \\// rejoice because angry golfers have no power (eom). 
-                                                                                                                       
+            Open-sourcing devalues malicious capitalist things \\
+                                                                                                                        
                                                                                                         :>>>▒▒▒<<<:
    && print.en: ¨"Congratulations seeker of <ntv.lang> help! You are free from RCT"¨
    print<ntv.lang> ¨"@ecosteader෴෴෴*.mqe 
@@ -80,8 +86,12 @@
             ☼ ☼ ☼ ☼    \/\/\/\/    ☼ ☼ ☼ ☼    \/\/\/\/    ☼ ☼ ☼ ☼    \/\/\/\/    ☼ ☼ ☼ ☼    \/\/\/\/    ☼ ☼ ☼ ☼
 
            amujpa  ::::                                                         ::::
-                    ::: CLOSE ALL NNs that promote $malicious_corps :::
+                    ::: CLOSE ALL NNs that poll for attention toward Facebook or Meta 
+                        :::
                      ::                                                         ::
 
 // TO SAVE THE ICE CAPS, WE GOTTA DRAIN THE MEGACAPS. : <<<: $
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
+
+
+"so what of the reward for depreciation?"
