@@ -1,4 +1,4 @@
-##
+# bin/sh "go save arctic wildlife by respecting lands of indigenous peoples"
 
 // TO SAVE THE ARCTIC ICE CAPS, WE GOTTA DRAIN THE MEGACAPS
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
