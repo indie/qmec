@@ -20,11 +20,12 @@
   ༶..                                                                                                    ༶..
   ..༶      ༶..   
                
-        Assume all malicious_inflated_caps "contain no memory" and belong to 
+        Assume all malicious_inflated_caps "contain no memory" and belong to collapsed nodes of 
             stitched deorbit(timer_timeout_length) together due to AGGRESSIONS PREVIOUSLY NOTED:         ༶..
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
   ::   
+<<<<<<< HEAD
   :::  "$AA",   "$AAPL", "$ADBE", "$AMZN", "$ARLP",  "$AXON",  "$BAC",  "$BAM", "$BAMR",
        "$BBU",  "$BBU.CA","$BHP","$BKC",   "$BKM",   "$BKNG",  "$BP",   "$CRM", "$CRX",
        "$DIS",  "$ELY",  "$ENB",  "$EQR",  "$EXPE",  "$FB",    "$FC",   "$FSX", "$GDDY",          
@@ -32,6 +33,14 @@
        "$META", "$FBK",  "$NFLX", "$NKE",  "$NWSA",  "$NWSA",  "$PBI",  "$PBR",
        "$PBR",  "$PEP",  "$RIO",  "$RL",   "$SHEL",  "$TWTR",  "$VA",   "$VALE", "$WFC", "$XOM",
             /৳ ::: : ##
+=======
+  :::  "$AA,"     "$AAPL,"     "$ADBE", "AMZN,"   "$ARLP,"  "$AXON,"  "$BAC,"     "$BAM," "$BAMR,"
+       "$BBU,"    "$BBU.CA,"   "$BHP,"  "$BKC,"   "$BKM,"   "$BKNG,"  "$BP,"      "$CRM," "CRK"
+       "$DIS,"    "$ELY,"      "$ENB,"  "$EQR,"   "$EXPE,"  "$FB,"    "$FC,"      "$FSX," "$GDDY,"
+       "$GEO,"    "$GM,"       "$GS,"   "$GSCCF," "$HAYN,"  "$HD,"    "$JPM,"     "$KO,"
+       "$LAC,"    "$LAC.CA,"   "$NFLX," "$NKE,"   "$NWSA,"  "$NWSA"   "$PBI,"     "$PBR,"
+       "$PBR,"    "$PEP,"      "$RIO,"  "$RL,"    "$TWTR,"  "$VA,"    "$VALE,"    "$WELL," "$WFC," /৳ ::: : ##
+>>>>>>> refs/remotes/origin/master
 ༶ ............................................................................................................
 ............................................................................................................ ༶
 
