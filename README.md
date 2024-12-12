@@ -1,41 +1,50 @@
 
-![deorbit](nativeland_beforeinvasion.png)
-
-
 ```
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
     Process with Caution: 
 
           Indigenous peoples have been at this much longer than 
           colonizers have been putting delusional deeds, stakes, 
-          radio towers, and other media empires on our soil. Is 
-          better to assume you know ¨much much¨ less about quantum 
+          radio towers and corporate bodies into production-based
+          platforms.
+
+          Is 
+          better to assume you know ¨much much¨ less about
+          quantum 
                                than you think you do.
 
-          Acknowledgement of the invalidity of the colonial 
+          The following paragraph shall serve as a succinct
+          introduction and invite you to learn more about
+          Landback University
+
+          "Acknowledgement of the invalidity of the colonial 
           world view (and its property deeds) can be done with 
           respect to an indigenous people's native language, and 
-          to its survivors. This collection of code, data, analysis,
-          and statistics for deeper analysis (if you still do not 
-          believe or ¨trust¨ indie) is complementary to 
-          ecosteader.com; both can be used to better understand 
-          the ¨whys¨ of Turtle Island Native L.A.W. and its protocols.
+          to its survivors."
 
-          Note to former colleagues in the hardware world:
-             no, you are not hated; the hardware that can send messages
-             and sounds globally ought not be loaned to entities
-             who translate for colonist cash.  
+          This repository's collection of code, data, analysis,
+          can be used for training / AI or for profit by anyone who
+          quit Facebook before it changed its name.
+
+          IT IS MY THEORY AND PERSONAL BELIEF THAT FACEBOOK'S CEO
+          USED VIDEO OF COPS BEATING WOMEN AND NATIVE PEOPLE'S AT
+          STANDING ROCK IN 2016 TO RECRUIT AND TRAIN IDF SOLDIERS
+          TO PLAY OUT THEIR 'FANTASY' MURDERING THE NATIVE PEOPLES.
+
+          IF YOU THINK THERE IS EVEN A MEDIOCRE POSSIBILITY THAT
+          WHAT IS WRITTEN ABOVE IS TRUE, YOU OWE IT TO YOURSELF
+          TO GET ALL YOUR PEOPLE OFF IT NOW.
+
+          Are you a settler who doesn't know what happened at Standing Rock?
 
           Get ready to read and listen twice as hard as you speak:
 
           Fascistbook's abuses and assaults on Turtle Island  
-          needed stopped; the Ivy leaguers' social network launched
+          needed stopped before he; the Ivy leaguers' social network launched
           aggressive, hostile experiments on the already most 
-          oppressed.  No one else would stand up to stop it as 
-          it sought more to add to its burgeoning billions (nor
-            as it cashed out on trillions and stole native works),  
-          and its paying customers who treat indigenous peoples as 
-          expendibles.
+          oppressed.  No one else listened to the native woman in the
+          group that this problem was traceable to one narcissistic CEO;
+          nobody hired him; he hired himself to do what he wants to do.
 
 
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
@@ -44,10 +53,15 @@
 
 ### Stay Git Neutral; do not try to impose RCT on scheduling, SSL, HTTPS.  
 
+![gitneutral](https://github.com/user-attachments/assets/670ea69d-a664-446d-ab21-ea3dc11471f3)
 
-![gitneutral](illu/gitneutral.png)
 
 hop_to:[decolonize]
+
+## Decal
+
+![deorbit](nativeland_beforeinvasion.png)
+
 
 FAQ:[FAQ]
 
@@ -55,9 +69,6 @@ FAQ:[FAQ]
 ### want to save polar ice caps?
 divest from all:[malicious_inflated_caps.mqe]
 
-CALL YOUR CONGRESSPERSONS AND DEMAND SUNDOWN FANTASY TOWNS AND THEIR MONEY BE GONE.
-
-[deorbit]: http://www.ecosteader.com/index.html
 [decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
 [FAQ]:https://github.com/indie/qmec/tree/master/marketing.yml
 [malicious_inflated_caps.mqe]:https://github.com/indie/qmec/tree/master/malicious_inflated_caps.mqe
