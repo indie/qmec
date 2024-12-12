@@ -1,20 +1,26 @@
-! Epilepsy-inducing image processes disallowed always; 
-! Browser fixes first propagate to indigenous_people_only, 
-!!  to non-European translations for next 75 iterations OTI 
-!!  + 7372 iterations for TurtleIslanders (who may collaborate at any time); 
-!!! + popcorn method for ¨next continent translations¨ is then okay.
-
-! DISALLOW_ALL COLONIZER MEDIA 
-||media.twitter.com/*.gif$image
-||media2.giphy.com/media/*gif$image
-||charts.stocktwits.com/*.gif$image
-||https://old.reddit.com/*.gif$image
-||https://*.facebook.com/*.gif$image
+! DISALLOW_ALL FASCIST CORPORATE MEDIA  
+||media.twitter.com/*.gif$image  #did I know twitter was going to turn into "X" and get bought out and taken private when I started this file? No, I am good at predictions and have the resume to prove it.
+||media2.giphy.com/media/*gif$image  #did you know that FB bought GIPHY to hack reddit.com's "viral" algos?  FB and Reddit carteling on social media still yields white supremacy, you didn't fix anything by going public RDDT.
+||https://*reddit.com/*.gif$image  #how you disappointed my niece who tried to upload tuxedo kitten social to Portland's subreddit, you know nothing about empathy and obviously hate cats.
+||https://*.facebook.com/*.gif$image  #did I know facebook was going to change its name to Meta, trying to sell people on a VR world of hatred and genocide?  Only half of that.
 
 
-! EVIL ANTIPOCS
+! AS PREDICTED, it's even worse than I predicted.  
+! native peoples of Palestine are dying because the hatebook's CEO paid himself 120 million dollars per day in 2016, and he cannot stop spending money
+! he did not earn.
 
 DISALLOW_ALL
+
+fbcdn.net
+xx.fbcdn.net
+xz.fbcdn.net
+xy.fbcdn.net
+fbsbx.com
+tfbnw.net
+messenger.com
+m.facebook.com
+meta.com
+threads.net
 
 0-edge-chat.facebook.com
 0.beta.facebook.com
@@ -2973,7 +2979,6 @@ passport.net
 payment.microsoft.com
 payplay.fm
 phx.gbl
-planningservices.partners.extranet.microsoft.com
 playmsn.com
 playout.se
 poptang.com
@@ -3378,8 +3383,7 @@ godaddy.com
 breaker.io
 tableau.com
 mapwith.ai
-zugck.*
-zuck.*
+zuck.com
 graph.instagram.com
 z-upload.facebook.com
 z.facebook.com
@@ -3390,3 +3394,7 @@ zh-cn.connect.facebook.com
 zh-cn.facebook.com
 zh-hk.facebook.com
 zh-tw.facebook.com
+xx-tw.facebook.com
+xx-cn.facebook.com
+xx-hk.facebook.com
+
