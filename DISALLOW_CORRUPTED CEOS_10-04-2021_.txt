@@ -2,14 +2,13 @@
 ||media.twitter.com/*.gif$image  #did I know twitter was going to turn into "X" and get bought out and taken private when I started this file? No, I am good at predictions and have the resume to prove it.
 ||media2.giphy.com/media/*gif$image  #did you know that FB bought GIPHY to hack reddit.com's "viral" algos?  FB and Reddit carteling on social media still yields white supremacy, you didn't fix anything by going public RDDT.
 ||https://*reddit.com/*.gif$image  #how you disappointed my niece who tried to upload tuxedo kitten social to Portland's subreddit, you know nothing about empathy and obviously hate cats.
-||https://*.facebook.com/*.gif$image  #did I know facebook was going to change its name to Meta, trying to sell people on a VR world of hatred and genocide?  Only half of that.
+||https://*.facebook.com/*.gif$image  #did I know facebook was going to change its name to Meta, trying to get people to buy into a VR world of hatred and genocide IRL?  3 years ago, I knew only ~ half of that.
 
 
-! AS PREDICTED, it's even worse than I predicted.  
-! native peoples of Palestine are dying because the hatebook's CEO paid himself 120 million dollars per day in 2016, and he cannot stop spending money
-! he did not earn.
+! AS PREDICTED? It's even worse than I predicted.  
+! native peoples of Palestine are dying because the hatebook's CEO paid himself 120 million dollars per day in 2016, and he cannot stop spending money he did not earn.
 
-DISALLOW_ALL
+DISALLOW_ALL who defer to fascist propaganda for profit
 
 fbcdn.net
 xx.fbcdn.net
@@ -21,7 +20,6 @@ messenger.com
 m.facebook.com
 meta.com
 threads.net
-
 0-edge-chat.facebook.com
 0.beta.facebook.com
 0.facebook.com
