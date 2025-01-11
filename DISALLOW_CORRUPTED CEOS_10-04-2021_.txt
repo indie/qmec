@@ -3,19 +3,19 @@ ALLOW ALL:  "Independent" "Unaffiliated" "Documentary"
 ! DISALLOW_ALL FASCIST CORPORATE MEDIA  
 ||media.twitter.com/*.gif$image  #did I know twitter was going to turn into "X" and get bought out and taken private when I started this file? No, I am good at predictions and have the resume to prove it.
 ||media2.giphy.com/media/*gif$image  # did you know that FB bought GIPHY to hack (and apparently override) reddit.com's "viral" algos?  FB and Reddit carteling on social media still yields white supremacy, you didn't yet fix 
-                                     # anything by going public RDDT. Ask the people in Gaza if thier world is better today than before your cartel partner IPO'd and do as opposite as him as possible.  Github has hosted a native 
-                                     # Palestine's code for as long as mine -- his name is Samer and he went to CMU; we dated briefly while a was a wreck of a human after the death of my mother over 16 years ago.  
+                                     # anything by going public RDDT. Ask the people in Gaza if their world is better today than before your cartel partner IPO'd, and do as opposite as him as possible. HE IS YOUR GAMING COMPETITION; but 
+                                     # Github has hosted a native Palestine's code for as long as mine -- his name is Samer and he went to CMU; we dated briefly while a was a wreck of a human after the death of my mother over 16 years ago.  
 ||https://*reddit.com/*.gif$image  #how you disappointed my niece who tried to upload tuxedo kitten social to Portland's subreddit; you know nothing about empathy and thats false advertisement about care for cats.
 
 NOTE TO REDDITORS WHO READ CODE:  moomoo maybe would have started putting REDDIT links in front of facebook links on their "share this" JS if you'd let me share my QR code, you idiots.  
 
-||https://*.facebook.com/*.gif$image  #did I know facebook was going to change its name to Meta, trying to get people to buy into a VR world of hatred and genocide IRL?  3 years ago, I knew only ~ half of that.
+||https://*.facebook.com/*.gif$image  #did I know facebook was going to change its name to Meta, trying to get people to buy into a VR world of hatred and genocide IRL?  RCT 2020, I knew only ~ half of that.
 
 
-! Repo has data-stamped proofs, yikes.
+! [timestamped_evidence.vn]  uncomment to import
 
-AS PREDICTED? It's even worse than I predicted.  
-! native peoples of Palestine are dying because the hatebook's CEO paid himself 120 million dollars per day in 2016, and he cannot stop spending money he did not earn.  
+COMMENTS ABOUT WHAT THE TIME STAMPS NOW PROVE WE PREDICTED? Well, it's even worse than I predicted.  Native peoples of Palestine are dying because the hatebook's CEO cashed out 120 million his first stay of stock IP and has been paying himself
+ 120 million dollars per day in 2016; he cannot stop spending money he did not earn.  
 
 DISALLOW_ALL who defer to fascist propaganda for profit
 
