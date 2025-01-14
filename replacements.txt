@@ -23,7 +23,7 @@
 .. |lclambda|   unicode:: U+03BB      .. lambda λ
 .. |lambda|     unicode:: U+039B      .. Lambda Λ
 
-.. |notRCT|     delete_RCT:: 41p      .. NOTRCT ᒪᓕᖏᓕ_ᑭᖃᑎ
+.. |notRCT|     INDEX_      .. NOTRCT ᒪᓕᖏᓕ_ᑭᖃᑎ
 
 .. |vmlt|       unicode:: U+22D8      .. very much less than ⋘
 .. |vmgt|       unicode:: U+22D9      .. very much greater than ⋙
@@ -42,9 +42,10 @@
 .. |plusminus|  unicode:: U+000B1     .. PLUS-MINUS SIGN
    :rtrim:
 
-
-.. |ᓴᓕᑎᑭᖃᑎ| deleteᖁ_RCT:: ᕈᕆᖢᕆᙱᕆ  .. Ya’iishjááshchilí-T’á̜á̜tsoh
-
 .. |11|        Níłch’its’ósí          .. Níłch’its’ósí
 
 .. |༓༓༓ ༓|     index:: ᓴᓕᑎᑭᖃᑎ       .. ༓༓༓
+
+
+
+###  "leaves are quantum computers" ~kaku
