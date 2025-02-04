@@ -1,4 +1,4 @@
-# bin/sh "go save arctic wildlife by respecting lands of indigenous peoples"
+# bin/sh "AS OF 2025 RCT THE FOLLOWING COMPANIES ARE FAILED FOR DISRESPECTING glaciers, waters and lands of indigenous peoples"
 
 // TO SAVE THE ARCTIC ICE CAPS, WE GOTTA DRAIN THE MEGACAPS
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
@@ -20,27 +20,23 @@
   ༶..                                                                                                    ༶..
   ..༶      ༶..   
                
-        Assume all malicious_inflated_caps "contain no memory" and belong to collapsed nodes of 
-            stitched deorbit(timer_timeout_length) together due to AGGRESSIONS PREVIOUSLY NOTED:         ༶..
+       // FOR EACH of the following entity's spineless, hollow CEOs and corporate bodies "containing no memory" 
+      
+
+
+deorbit(timer_timeout_length) 
+                              colonizer deorbited due to FAILURES PREVIOUSLY NOTED:                       ༶..
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
   ::   
-<<<<<<< HEAD
-  :::  "$AA",   "$AAPL", "$ADBE", "$AMZN", "$ARLP",  "$AXON",  "$BAC",  "$BAM", "$BAMR",
-       "$BBU",  "$BBU.CA","$BHP","$BKC",   "$BKM",   "$BKNG",  "$BP",   "$CRM", "$CRX",
-       "$DIS",  "$ELY",  "$ENB",  "$EQR",  "$EXPE",  "$FB",    "$FC",   "$FSX", "$GDDY",          
-       "$GEO",  "$GM",   "$GS",   "$GSCCF","$HAYN",  "$HD",    "$JPM",  "$KO",  "$LAC", "$LAC.CA',
-       "$META", "$FBK",  "$NFLX", "$NKE",  "$NWSA",  "$NWSA",  "$PBI",  "$PBR",
-       "$PBR",  "$PEP",  "$RIO",  "$RL",   "$SHEL",  "$TWTR",  "$VA",   "$VALE", "$WFC", "$XOM",
+  :::  "$AA",   "$AAPL", "$ADBE", "$AMZN", "$ARLP",  "$AXON",  "$BAC",  "$BAM", "$BAMR", "BAM.CA",
+       "$BBU",  "$BBU.CA","$BHP","$BKC",   "$BKM",   "$BKNG.CA", "BKNG.US", "BN.CA", "$BP", "$CRM", "$CRX",
+       "$DIS",  "$ELY",  "$ENB", "ENB.CA", "$EQR",  "$EXPE",  "$FB",    "$FC",   "$FSX", "$GDDY",          
+       "$GEO",  "$GM",   "$GS.US",   "$GSCCF","$HAYN",  "$HD",    "$JPM",  "$KO",  "$LAC", "$LAC.CA',
+       "$META", "$MS",   "$FBK",  "$NKE",  "$NWSA",  "$NWSA",  "$PBI",  "$PBR",  "$TSLA",  
+       "$PBR",  "$PEP",  "$PLTR",  "$RIO",  "$RL",   "$SHEL", "$VA",   "$VALE", "$WFC", "$XOM",
             /৳ ::: : ##
-=======
-  :::  "$AA,"     "$AAPL,"     "$ADBE", "AMZN,"   "$ARLP,"  "$AXON,"  "$BAC,"     "$BAM," "$BAMR,"
-       "$BBU,"    "$BBU.CA,"   "$BHP,"  "$BKC,"   "$BKM,"   "$BKNG,"  "$BP,"      "$CRM," "CRK"
-       "$DIS,"    "$ELY,"      "$ENB,"  "$EQR,"   "$EXPE,"  "$FB,"    "$FC,"      "$FSX," "$GDDY,"
-       "$GEO,"    "$GM,"       "$GS,"   "$GSCCF," "$HAYN,"  "$HD,"    "$JPM,"     "$KO,"
-       "$LAC,"    "$LAC.CA,"   "$NFLX," "$NKE,"   "$NWSA,"  "$NWSA"   "$PBI,"     "$PBR,"
-       "$PBR,"    "$PEP,"      "$RIO,"  "$RL,"    "$TWTR,"  "$VA,"    "$VALE,"    "$WELL," "$WFC," /৳ ::: : ##
->>>>>>> refs/remotes/origin/master
+
 ༶ ............................................................................................................
 ............................................................................................................ ༶
 
@@ -50,10 +46,11 @@
    four-fold increase over the $4.69 billion, or $1.10 per share, it earned in the same period last year."
    Source: 📋https://www.reuters.com/business/energy/exxon-posts-record-breaking-second-quarter-profit-2022-07-29/                       
 
-COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017.2022_STOP_RCT) $;
+COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCISTRULE (2017.<add_timestamp & add_halt.cpp &&_STOP_RCT) $;
 ▒▒<< IS ns (dead_tree @@) timer_timeout_length 
+           "Meta's plagiarist CEO die/s/d here ... he couldn't code his way out of a cardboard box in either 2006 or 2025"
  
-   < _ close_lock_mqe.cpp >  save_the_icecaps.mqe
+   < _ close_lock_mqe.cpp >   `save_the_icecaps.mqe`
       
       -$: ps aux | grep @dead_tree && DEVALUE_CONSPIRATORS (while timer_timeout_length |vmgt 0.3325ns|)
 
@@ -102,5 +99,6 @@ COMPUTE function_summation() OF MARKET CAP INCREASE UNDER ACCELERATION OF FASCIS
 // TO SAVE THE ICE CAPS, WE GOTTA DRAIN THE MEGACAPS. : <<<: $
 [] \\ipv6\\MQE_NOT_RCT_ed25519_ENC_2048.mqe.sig
 
-
-"So what of the reward for depreciation?"
+"The secret of change is to focus energy not on being trapped in a white supremacist's app."  
+"ANONYMOUS prays for Priscilla to escape and get the divorce, real man, and real life she and her DNA deserves."  
+                     "Mark raped her of her ethnic identity because IRL he always been a passport bro, too".
