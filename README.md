@@ -1,3 +1,6 @@
+![quantum_is_about_time.png](quantum_is_about_time.png)
+
+
 ```
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
     Process with Caution: 
