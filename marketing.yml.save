@@ -1,4 +1,4 @@
-,,# optimal column width 100 __                                                             #,,# 
+,,# optimal column width 100-183 __                                                         #,,# 
 #!!# # !! WARNING!! #                                                                       #!!#
           
 
@@ -83,29 +83,32 @@
 
 
 ---
-meta:
+metadata for co-author payment:
   -
     code: ebooks
     name: "HTML & Ebook"
     description:
-        * Optimized for PoC, survivors of intergenerational trauma, survivors of abuse, and to 
-          preserve as many indigenous languages as possible. 
-        * Quantum documentation included! The quantum universe wanted only to be documented; 
+        * Optimized for PoC, survivors of intergenerational trauma, survivors of terrorism and domestic abuse, 
+          and to document the existence of as many indigenous languages as possible. 
+        * Quantum documentation included! BREAKING NEWS:  Humans have survived on North America continent, 
+          South American continent, Central American sub-continent, Africa, Asia, "Pacific Islands", Australia 
+          Aboriginals and more!  The quantum universe wanted only to be documented; 
           it cannot be written from scratch. 
 
       - ebooks
          2016_bid: 3500
          2020_unbid: 8 * 10^12
     random_fandom: 61773253
+          2025:  WE ARE GOING TO IPO ON MOOMOO, USE THE QR CODE TO FIND ME AND LET'S BUILD SOMETHING TOGETHER
             btbt : ________________________+__________ 
 
 == write. 
   -
     name: "HTML, Ebook, and Screencasts"
     description:
-      
-        * Includes 0 hours of video screencasts
-        * May include 0 minutes of screencasts.   # xsplit_second
+        *  FREE VERSION INCLUDES ALL OPEN SOURCE CODE.
+        * Includes 0.99 hours of video screencasts, for help after Google fires its Eli Lily CEO and hires a non-white non-facebook addict.
+        * May include bonus minutes of screencasts.   # xsplit_second
                                                                           #  Whoa! Really?  |       
 meta_lsc:
   -
@@ -115,24 +118,25 @@ meta_lsc:
     bio: Old internet person. Technical writer, not a resource. 
       |
         
-        Decolonize Turtle Island [link](https://ecosteader.com/public)
+        Decolonize YOUR DATA. IT BELONGS TO YOU NOT HIM. [link](https://ecosteader.com/PublicInfo)
         Graphene Wire [link](https://graphenewire.blogspot.com/)
 
 faq:
   -
     question: "Do you have jobs?"
-    answer:   "Not a good question. We are divesting from colonial 
-               terms and language of the settler states."
+    answer:   "Not a good question. We disallow colonial terms and do not honor the greedy wishes of settler states."
 
   -
     question: "When was Ecosteader started?"
     answer:   "Evolutions of the ideas that power Ecosteader today have been vibrating 
-               heartbeats upon Turtle Island longer than RCT can measure, and it would be
+               heartbeats upon Tortoise Mountain and Turtle Island longer than RCT can measure;  would be
                foolish for us to answer this question in English."
 
   -
     question: "Why is decolonization such an important part of quantum computing?"
-    answers:  "Complex and double complex answers. Shortly, the punishment for actions 
+
+    answer :  "Kernal languagages are actually rooted in MASA, MAIZE, NADAA, and other indigenous foodstuffs."
+    answer :  "Complex and double complex answers. Shortly, the punishment for actions 
                involving sabotages are brutal and irreversible, even for honest mistakes. 
                Quantum mechaniqs are universally powerful; however, exploitations work only 
                between similar-sized entities (weight classes). When ... let´s call them 
@@ -149,25 +153,15 @@ faq:
 
   -
     question: "How do you feel about decentering whiteness every day?"
-    answer:   "Deorbiting is a better description. We need more PoC on all the channels. We 
-               need better filters and more courageous network admins to stop before endpoints 
-               like facebook and twitter end up in the communication streams.  Stay away from  
-               people who claim they need the platform to promote (nobody using Twitter or 
-               Facebook survives decolonization); is in the documentation.   
-
-               People need to get off their phones and into the dirt."
+    answer:   "Deorbiting is a better description. We need more PoC to start PeerTube / YouTube channels 
+    answer:   "Talk about personally overcoming hateful fascist white supremacist felons like Facebook's founder to gain trust."
+              
+    answer:  "People need to get off their phones and into the dirt."
 
 
 testimonials:
 
   -
-    name: "%neanderthal_lady"
-    title: "Somebody who quit Facebook (99 years (not RCT)) and 11 months sober!)"
-    mastodon_ref: "kolektiva"
-    text: "they think because we don´t like to talk we are stupid."
-
-  -
-    name: "%aboriginal_anarchy_voice"
     title: "Somebody who quit Twitter (banned for being honest:kolektiva/aboutfoo_birdhellsite.txt)"
     image: /images/testimonial_1.png
     reddit_ref: "https://old.reddit.com/r/QuitTwitter"
@@ -177,26 +171,14 @@ testimonials:
            are way smarter than people."
 
 
-marketing_content: 'What we do not do is ... marketing.'
 repo_url: ''
-contact_email: '/dev/null | /var/spool'
-
-SEND indie thanks and fanmail (non-digital replies may be had for unique words
-                               ) 
-
-SEND large checks (bonus receipts in specifying non-colonial dollar terms of the receipt!)
-
-SAVE small art donations
+contact_email: '/dev/null | /var/spool/'
 
 
-ECOSTEADER & COMPANY
-c/o ¨the mechaniQs autonomous fund¨
-P.O. Box 0013
-Forest Grove, OR  97116
+THE BORDERLESS LANDMASS OF TURTLE ISLAND SPEAKS MANY LANGUAGES, ALL FAILURE IS A RESULT OF ETHNOCENTRIC WHITE CFOs AND CEOs, COPY THAT.
 
-THE BORDERLESS LANDMASS OF TURTLE ISLAND 
-
-Bonus: Cat Vector Calculus (qmec/kolektiva/cat_vector_calc.png)
+Bonus: the 25,000 year old TREE to honor the life and passing of Simon, famous Github coder known as "kitty programmer" and there will be a YouTube video 
+       of his pictures once Google gets a new CFO.  I really need to use my negotiation skills developed as I ALREADY EARNED A MASTER'S DEGREE 21 YEARS AGO.
 
 -----------
 
@@ -213,6 +195,9 @@ Bonus: Cat Vector Calculus (qmec/kolektiva/cat_vector_calc.png)
 #**#**#**#**#**# #**#**#**#**#**#            #**#**#**#**#**# #**#**#**#**#**#
 #..#                                                                      #..#
 #..#                                                                      #..#
+
+
+                       
 #..#      #**#              #**#    #..#           #**#              #**#
 #**#    #__#                      #**#
                       #**##..#           #**##..#         #**##..#
@@ -240,21 +225,3 @@ Bonus: Cat Vector Calculus (qmec/kolektiva/cat_vector_calc.png)
                #**#                                 #**#
 
 /**#**#**#**#**# #**#**#**#**#**#     /**#**#**#**#**# #**#**#**#**#**#   #**#
-                                                                              ))
-
-             DO NOT WASTE ENERGY ON TWITTER, INSTALKERGRAM, FACEBOOK OR FACEBOOKERS.
- 
-              DO BLACKLIST AND DISABLE THEIR APPS ON YOUR PHONE, INCLUDING BREAKER.AUDIO 
-              REJECT CLICK-BASED ADVERTISING (DISALLOW ALL JSON ADVERTISING)
-              WE REPEAT:  HALT ALL ADVERTISING.
-Life Pro Tips:  
-              MODULATE YOUR SPEAKERS AND BLUETOOTH DEVICES BEFORE YOU SPEAK OR UPLOAD. 
-              DO NOT DISTRACT NATIVE PEOPLE WITH PINGS; DO UR OWN RESEARCH HOW TO PAY THEM !!!
-###
-
-# ϕ indie never fascistbook.
-# Sometimes, when all you are is a little homeless accountant who is 
-# very good at descriptions... people with big fancy Computer Science 
-# degree, old white money, and trillion-dollar bank accounts attack
-
-viewport: ../kolektiva/4137ᓴᓕᑎ_ᑭᖃᑎ.png ᓂᓴᒥᓄᑎ

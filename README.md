@@ -3,9 +3,20 @@
     Process with Caution: 
 
           Indigenous peoples have been at this much longer than 
-          colonizers have been putting delusional deeds, stakes, 
-          radio towers and corporate bodies into production-based
-          platforms.
+          colonizers have been putting wrong and delusionally-worded 
+          Deeds, stakes, radio towers and corporate bodies into production-based
+          platforms on what most maps call the North American continent.
+
+         WHERE YOUR CONTINENT IS ALSO BEING ATTACKED, FEEL FREE TO IMPLEMENT
+         CORRECT OPEN-SOURCE CODE.
+
+         SUPER IMPORTANT TRANSLATION NOTE FOR ALL REFERENCES USING THE WORD "PLANE" 
+          :  "Plane refers to the spatial surface we are measuring; it
+              never ever refers to any commercial, private, or other 
+              fossil fuel-burning aircraft."
+
+
+          >>>> begin ("bom.mqe ______________")
 
           Is 
           better to assume you know ¨much much¨ less about
@@ -14,7 +25,14 @@
 
           The following paragraph shall serve as a succinct
           introduction and invite you to learn more about
-          Landback University
+          Landback University -- there are  IRL things you can do on 
+          the quantum time loom which was already here when Columbus 
+          got lost. Natives saved his life and people ... his imperialist 
+          masters were just like Mark Zuckerberg:  demanding genocide
+          suppression, oppression.  College dropout CEO and Google's CFO 
+          all of January 2025?  They share the exact same delusion of 
+          their own race's superiority.  
+
 
           "Acknowledgement of the invalidity of the colonial 
           world view (and its property deeds) can be done with 
@@ -23,36 +41,14 @@
 
     ༓ ༓ ༓ 
 
-          Are you a brain-fogged settler who doesn't know what happened at Standing Rock?
+          Are you a brain-fogged settler who doesn't know that the 
+          concentration camps were used on Native Americans?
+
+          Did your social media addiction  happened at Standing Rock?
           Do you think the tribes relocated to reservations should be allowed
           voice and freedom to use the media like white people do?
 
           Get ready to read and listen twice as hard as you speak:
-
-          Fascistbook's abuses and assaults on Turtle Island  
-          needed stopped before he; the Ivy leaguers' social network launched
-          aggressive, hostile experiments on the already most 
-          oppressed.  No one else listened to the native woman in the
-          group that this problem was traceable to one narcissistic CEO;
-          nobody hired him; he hired himself to do what he wants to do.
-     STOP FUNDING HIM.
-
-          IT IS MY EDUCATED THEORY AND PERSONAL BELIEF THAT FACEBOOK'S CEO
-          SOLD / USED VIDEO* OF COPS BEATING WOMEN AND NATIVE PEOPLES AT
-          STANDING ROCK, USA IN 2016 TO RECRUIT AND TRAIN MENTALLY ILL TO BE
-          IDF SOLDIERS
-          AND TO PLAY OUT THEIR 'FANTASY' TORTURING AND MURDERING WOMEN AND CHILDREN
-          INDIGENOUS TO THE REGION WHERE THERE ARE NOW ISRAEL/GAZA WARS.
-
-          NO OTHER HUMAN HAS POCKETED MORE STOCK MARKET
-          WEALTH SINCE THE INFAMOUS DATE OF OCTOBER 7, 2023 THAN THE CEO OF
-          THE HATEBOOK.
-
-          IF YOU THINK THERE IS EVEN A MEDIOCRE POSSIBILITY THAT
-          WHAT IS WRITTEN ABOVE IS TRUE, YOU OWE IT TO YOURSELF
-          TO PROTECT YOURSELF, YOUR BUSINESSES, YOUR NONPROFITS, YOUR
-          GOVERNMENT AND ALL YOUR PEOPLE FROM IT NOW, NO MATTER WHAT.
-
 
           This repository's collection of code, data, analysis,
           can be used for training / AI or for profit by anyone who
@@ -63,8 +59,9 @@
 
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-```
 
+
+```
 The most useful file for you to get started:  [define_ethical_parameters](DISALLOW_CORRUPTED%20CEOS_10-04-2021_.txt)
 
 
@@ -75,29 +72,42 @@ The most useful file for you to get started:  [define_ethical_parameters](DISALL
 
 hop_to:[decolonize]
 
-## Decal
+## Digital Decal has the Deets
 
-![deorbit](nativeland_beforeinvasion.png)
+
+[deorbit](nativeland_beforeinvasion.png)
+
+
 
 
 FAQ:[FAQ]
 
 
 ### want to save polar ice caps?
-divest from all:[malicious_inflated_caps.mqe]
+
+![Genocideberg](Genociderberg.png)
+
+
+
+SHORT THESE ONES AND THE FEWEST INNOCENT PEOPLE DIE. 
+
+
+[malicious_inflated_caps.mqe]
+
+
+
 
 [decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
 [FAQ]:https://github.com/indie/qmec/tree/master/marketing.yml
 [malicious_inflated_caps.mqe]:https://github.com/indie/qmec/tree/master/malicious_inflated_caps.mqe
 
-### A final note / hint.
 
-LOOK AT MARKET CAPS FROM 2021; 
 
 ### A final final P.S. 
 
-The last time I entered any detail into this repository was 2021. It's being updated 
-today with what I sadly concluded "might happen" when I correctly predicted college dropout CEO's 
-malice the instant I (the author of deciperings communicated in this repo) understood his corporate structure. 
+First iteration analysis from early 2021. 
+Sadly, what I sadly concluded "might happen" when I correctly predicted college dropout CEO's 
+malice the instant I understood his deformed eyeballs attached to his shriveled up brain want to make the worst planet for everyone.
+He is miserable and wants everybody else to be miserable like him. 
 
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
