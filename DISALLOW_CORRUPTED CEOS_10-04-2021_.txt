@@ -885,7 +885,6 @@ fr.facebook.com
 free.beta.facebook.com
 free.facebook.com
 free.freebasics.com
-free.internet.org
 freebasics.com
 g.whatsapp.net
 gamma.whatsapp.com
@@ -2291,8 +2290,6 @@ beta.microsoft.com
 betaoneservices.com
 billing.microsoft.com
 bing-int.com
-bing.com
-bing.net
 bingads.microsoft.com
 binginternal.com
 bizspark.microsoft.com
