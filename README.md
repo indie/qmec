@@ -111,6 +111,9 @@ SHORT THESE ONES AND THE FEWEST INNOCENT PEOPLE DIE.
 First iteration analysis from early 2021. 
 Sadly, what I sadly concluded "might happen" when I correctly predicted college dropout CEO's 
 malice the instant I understood his deformed eyeballs attached to his shriveled up brain want to make the worst planet for everyone.
-He is miserable and wants everybody else to be miserable like him. 
+He is miserable and wants everybody else to be miserable like him.
+
+ENDING CREDIT: cue:  "the Rothschild Boulevard of Broken Dreams" [@@@ two_]
 
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+
