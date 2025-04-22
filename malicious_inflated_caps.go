@@ -23,19 +23,20 @@
        // FOR EACH of the following entity's spineless, hollow CEOs and corporate bodies "containing no memory" 
       
 
-
 deorbit(timer_timeout_length) 
-                              colonizer deorbited due to FAILURES PREVIOUSLY NOTED:                       ༶..
+                              SPINELESS CEOS WITH MATHEMATICAL AND MENTAL FAILURES PREVIOUSLY NOTED:     ༶..
   ..༶                                                                                                    ..༶
   ༶..                                                                                                    ༶..
   ::   
-  :::  "$AA",   "$AAPL", "$ADBE", "$AMZN", "$ARLP",  "$AXON",  "$BAC",  "$BAM", "$BAMR", "BAM.CA",
+  :::  "$AA",   "$AAPL", "$ADBE", "$AMZN", "$AXON", "$ARLP",  "$AXON",  "$BAC",  "$BAM", "$BAMR", "BAM.CA",
        "$BBU",  "$BBU.CA","$BHP","$BKC",   "$BKM",   "$BKNG.CA", "BKNG.US", "BN.CA", "$BP", "$CRM", "$CRX",
-       "$DIS",  "$ELY",  "$ENB", "ENB.CA", "$EQR",  "$EXPE",  "$FB",    "$FC",   "$FSX", "$GDDY",          
-       "$GEO",  "$GM",   "$GS.US",   "$GSCCF","$HAYN",  "$HD",    "$JPM",  "$KO",  "$LAC", "$LAC.CA',
-       "$META", "$MS",   "$FBK",  "$NKE",  "$NWSA",  "$NWSA",  "$PBI",  "$PBR",  "$TSLA",  
+       "$DIS",  "$ELY",  "$ENB", "$ENB.CA", "$EQR",  "$EXPE",  "$FB",    "$FC",   "$FSX", "$GDDY",          
+       "$GEO",  "$GM",   "$GS.US", "$GSCCF","$HAYN",  "$HD",    "$JPM",  "$KO",  "$LAC", "$LAC.CA",
+       "$META", "$MS",   "$MSTR",  "$NKE",  "$NWSA",  "$NWSA",  "$PBI",  "$PBR",  "$TSLA",  "$RCL",
        "$PBR",  "$PEP",  "$PLTR",  "$RIO",  "$RL",   "$SHEL", "$VA",   "$VALE", "$WFC", "$XOM",
-            /৳ ::: : ##
+            /৳ ::: : ## )  
+
+                      FOR THE 4 LOWEST IQ CEOS: $RCL, $MSTR, $CRM, $META extend_lockout(timer_extend_length)
 
 ༶ ............................................................................................................
 ............................................................................................................ ༶
