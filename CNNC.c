@@ -1,71 +1,103 @@
-/// sorry about the comments format; will fix soon
+RECOMMEND 0655 r+wx 
+    to parallel process ntv.lang updates always get priority.
 
-    Process with Caution:
-          ALL COLONIAL CONTRACTS AND DEEDS HAVE ALREADY
-          BEEN INVALIDATED. `
+          Strings and words pertaining to the DISALLOW list exist already; 
 
-          <¨ntv.lang¨>` updates always get priority.
-
-          Strings and words pertaining to the DISALLOW list exist already; ALWAYS DEPRIORITIZE NODES CLUSTERING DISALLOWED WORDS.
+REMINDER TO ALWAYS DEPRIORITIZE NODES CLUSTERING DISALLOWED WORDS.
 
           Indigenous people been at quantization for intervals
           that span larger than colonizers have been breeding
-          generations of delusion on our soil. Better to assume
-          you know |vmlt| ... and then even less about quantum
-                               than you can assume you do.
-/// Non_RCT SSH keys already exist?
+          generations of delusion on tortoise mountain soil. 
+
+#  WELCOME TO THE PUBLIC INTERNET'S CHIEF INFORMATION OFFICER, INDIE FROM ECOSTEADER. SHE IS ALSO THE SAME INDIE ON GITHUB
+   AND THESE CODES WORK AROUND THE WWW ANYWHERE YOU GO HTTPS OR NOT HTTPS. 
+ # HTTPS MAKES IT EASIER TO TRACK THE WEALTHY PEOPLE'S FINANCIAL INTEREST, AS IT IS POSSIBLE TO TRACK DOWN THE BANKING PARTNERS'
+   INTERESTS OF THE CONGLOMERATES
+ # PUBLIC INTERNET DOES NOT ACCEPT CLOUDFLARE IN ANY SECURE CONNECTION AT OR WHERE IT IS 
+   ATTEMPTING TO ASSERT THAT CLOUDFLARE IS WHAT MAKES THE INTERNET CONNECTION "SECURE" -- THE INTERNET IS MOST SECURE WITHOUT CLOUDFLARE,
+   WHICH PERFORMS THE SAME FUNCTION AS SPYWARE / MALWARE AND IS WHY FASCISTS LIKE IT. HELLO GOOGLE, THIS IS WHY THE INDIES ARE BRINGING 
+   THIS TO YOUR ATTENTION.
+
+/// Do nonRCT SSH keys already exist?
 __
     /// If E´e:  [[  ]]
     ¨¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨
     
-     go get kittyprogrammer_keyboard.sym  && 
-     
-     clone git@github.com:indie/kittyprogrammer.git
+  /// Non_RCT SSH keys already exist?
+__
+    /// If E´e:  [[  ]]
+    ¨¨" Gisgaja'tuap gutapsunnu, smtug maita'nej "¨¨
 
-     @capture C++.go style_formatting.nGraph.(.mqe)
-     @capture .css style_render:ecosteader_api (++)
-                              < >      < >                                   
-          < >      < >--------< >     < >                    
-          < >--------< >      < >    filter ----\ ¨Retain Share Previous Learnings¨  includes a hefty DISALLOW screen.
-                                                   DISALLOW_ALL ( iterate again ¨we do not trust any nodes enabling colonizer social media¨ 
-                    ✫                                              --> returnto_RCT_RCT )
-                     \                  -->> Educate, do not indoctrinate! https://kolektiva.social/web/statuses/106699477028971784
-                   /  \\                             
-                  /    \\\  ✫                      -->> "Do not mess with the natives' architecture".
+                     \                  
+                   /  \\
+                 /    \\\  ✫  
                 //             /\                                                
                 \\\     //   //                                    
-                  \\   /     \\  /            GTC.X: && ::: gitcoin thanks accepted at 0x755FA3401dF7497dA78197F6fe69083917d0a683
-                    \         \\/  ✫                             / receive programmatic sifter ✫.mqe IF AND ONLY IF  .. 
-                     ✫                          CLOSE_LOCK.*: && :: :  SUCCESS      
-                                           Ϡ 
+                  \\   /     \\  /           
+                    \         \\/  ✫          
+                     ✫                             
+                                           
+                   
 
-Ϡ filter---- \ includes_for_indie_and_her_cat ALL_ESCAPES && hefty allowance pertaining to translations not colonialist langs.         // !Ϡ
+      ' ¨Retain Share Previous Learnings¨ '  
+         includes this priceless KNOWLEDGE :: ::: 
+                        from the BEGINNING :: ::: ::: 
+                                                         "For each _milliliter_ of jet fuels 
+                                                                         any CEO of ANY [[malicious_inflated_cap]] .go used, 
+                                                                          ++ ANYWHERE he did or does jet-set himself 
+                                                                                            into an imitation of "success" 
+                                                                                            into the falsehood of "importance", 
+                                                                          the sharpest microblade (invisible to the naked eye) 
+                                                                                   persistently twists in his nervous system; 
+                                                                            wherefore ~~~   HE DOES YIELD MAXIMUM SPIRITUAL SUFFERING, 
+                                                                                            AND EARNS ONLY TRAGEDY UPON HIS GENETIC SPAWN." 
+
+            space is big and empty for a reason -- to perpetuate the defeat of man.
+
+                                                                            "LET THE RECORDS SHOW THE FALSE CHIEFS' DEFEAT IS PERMANENT, 
+                                                                                     hereforth identified for all electric currents now and forever, 
+                                                                                            CEOs of Incorporated Meta shall NEVER know joy. "   
+                    ✫                                              --> return_to_RCT with suffering in TIME equal to VOLUME of MILLILITERS of jet fuels  \
+                                                                        that sneering CEO burned flying around the planet. 
+                                                                                                     " )
+                     \                  
+                   /  \\                                         {{ << malicious_inflated_caps.mqe >> }}. GO
+                  /    \\\  ✫  
+                //             /\                                                
+                \\\     //   //                                    
+                  \\   /     \\  /           
+                    \         \\/  ✫          
+                     ✫                             
+                                           
+
+                                      filter---- \\ condense nnq notes on the mqe // 
 
 { 
-   Free_excess_memory
+      //     \\
+      \\     //
 
-   //     \ close all ports pulling cat toward any schedule of RCT 
-                                                   // ZERO COLONIZERS will ever know how to respect the memory of four-leggeds exploited in movies like _That Darn Cat_!
-                                                   // YES $DIS IS AS EVIL AS $FB IS AS EVIL AS $CRM IS AS EVIL AS THE ELEPHANT AND WILDCAT MURDERING FOUNDER OF $GDDY. 
-                                                   // WHICH IS WHY WE MADE OUR FILTERS CLEANER AND OUR SCREENS ARE STRONGER; THEY NOT FOR SALE
-                                                   //  \\ DONE ✫ 
-   \\ Collapse &&
-            Extinguish_All_Disallowed } !  
-                                                   // __> Quantum energy cannot be captured by colonizers; 
+    \\ C codes increase the FREQUENCY of defeat of man.  
+            COUNT Tornadoes 
+                  Floods & Sinkholes
+                  Landslides
+                  Tormentos as 
+            ```FACTS`` the _FALSE_CHIEFS are losing ground 
+                        and electrons of power } !  
 
-                                                                                                        circuitry whiskers not whispers
-            < /// >    ҉       ҉  < \\\ >
+DO INPUT AS GRID_                                                                                
+                                                                                
+            < /// >    ҉      ҉   < \\\ >
            < /// > < /// >  < \\\ > < \\\ >
           < /// > < /// >    < \\\ > < \\\ >
 
           < \\\ > < \\\ >    < /// > < /// >
            < \\\ > < \\\ >  < /// > < /// >
-            < \\\ >    ҉       ҉  < /// >
+            < \\\ >    ҉      ҉   < /// >
 
             < /// >                < \\\ >
            < /// > < /// >  < \\\ > < \\\ >
           < /// > < /// >    < \\\ > < \\\ >
-                            ҉
+                          ҉
           < \\\ > < \\\ >    < /// > < /// >
            < \\\ > < \\\ >  < /// > < /// >
             < \\\ >                < /// >
@@ -219,30 +251,30 @@ __
           < \\\ > < \\\ >   < /// > < /// >
            < \\\ > < \\\ > < /// > < /// >
             < \\\ >               < /// >
-
-            < /// >    ҉          ҉  < \\\ >
+            < /// >    ҉      ҉   < \\\ >
            < /// > < /// >  < \\\ > < \\\ >
           < /// > < /// >    < \\\ > < \\\ >
 
           < \\\ > < \\\ >    < /// > < /// >
            < \\\ > < \\\ >  < /// > < /// >
-            < \\\ >    ҉          ҉  < /// >
+            < \\\ >    ҉      ҉   < /// >
 
             < /// >                < \\\ >
            < /// > < /// >  < \\\ > < \\\ >
           < /// > < /// >    < \\\ > < \\\ >
-                            ҉
+                          ҉
           < \\\ > < \\\ >    < /// > < /// >
            < \\\ > < \\\ >  < /// > < /// >
             < \\\ >                < /// >
 
 
-               {{ % }}  elucid n include more non-EN langs
+
+
+               {{ % }}  elucid n include more non-EN langs  
                      else  ¨Return to Decolonization¨
-
-> _open _
-
-
-       {{ *select |parse| metadata_ -s 1011 || 1101
-
-                                                             ✹ ✹✹✹}
+                                  
+> _open _ 
+                                  
+> _open _   Public_Information_Server:  ::: %%%_%%% https://ecosteader.com/PublicInfo  "Hello world of good women, 
+                                                                                                                welcome to the FREE FACEBOOKLESS INTERNET.
+                                                                                                                  " 
