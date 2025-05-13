@@ -88,11 +88,12 @@ FAQ:[FAQ]
 
 ### want to save polar ice caps?
 
-![Genocideberg](Genociderberg.png)
+It's very simple: Destroy the Dark Tetrad Narcissist's Biz Plan 
 
 
+![Genocideberg](Genociderberg.png
 
-SHORT THESE ONES AND THE FEWEST INNOCENT PEOPLE DIE. 
+![image](https://github.com/user-attachments/assets/2c86fe97-7403-4fd2-a88b-d8f0d005b0dd)
 
 
 [malicious_inflated_caps.mqe]
