@@ -86,19 +86,17 @@ hop_to:[decolonize]
 FAQ:[FAQ]
 
 
-### want to save polar ice caps?
+### Whose greed, narcissism, and idiocy has done the most harm to people on the planet?
 
-It's very simple: Destroy the Dark Tetrad Narcissist's Biz Plan 
+The Dark Tetrad Narcissist is who 
 
 
-![Genocideberg](Genociderberg.png
+![Genocideberg](Genociderberg.png)
 
 ![image](https://github.com/user-attachments/assets/2c86fe97-7403-4fd2-a88b-d8f0d005b0dd)
 
 
-[malicious_inflated_caps.mqe]
-
-
+Which companies let him VAMPIRE them to make his personal wealth atrociously and artificially inflated?  [malicious_inflated_caps.mqe]
 
 
 [decolonize]:https://github.com/indie/ecosteader/tree/master/START-Decolonize.pdf
