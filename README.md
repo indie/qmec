@@ -44,13 +44,6 @@
 
     ༓ ༓ ༓ 
 
-          Are you a brain-fogged settler who doesn't know that the 
-          concentration camps were used on Native Americans?
-
-          Did your social media addiction  happened at Standing Rock?
-          Do you think the tribes relocated to reservations should be allowed
-          voice and freedom to use the media like white people do?
-
           Get ready to read and listen twice as hard as you speak:
 
           This repository's collection of code, data, analysis,
@@ -65,8 +58,6 @@
 
 
 ```
-The most useful file for you to get started:  [define_ethical_parameters](DISALLOW_CORRUPTED%20CEOS_10-04-2021_.txt)
-
 
 ### Stay Git Neutral; do not try to impose RCT on scheduling, SSL, HTTPS.  
 
@@ -93,7 +84,7 @@ The Dark Tetrad Narcissist is who
 
 ![Genocideberg](Genociderberg.png)
 
-![image](https://github.com/user-attachments/assets/2c86fe97-7403-4fd2-a88b-d8f0d005b0dd)
+![narcissists_inc.png](narcissists_inc.png)
 
 
 Which companies let him VAMPIRE them to make his personal wealth atrociously and artificially inflated?  [malicious_inflated_caps.mqe]
@@ -107,12 +98,19 @@ Which companies let him VAMPIRE them to make his personal wealth atrociously and
 
 ### A final final P.S. 
 
-First iteration analysis from early 2021. 
-Sadly, what I sadly concluded "might happen" when I correctly predicted college dropout CEO's 
-malice the instant I understood his deformed eyeballs attached to his shriveled up brain want to make the worst planet for everyone.
-He is miserable and wants everybody else to be miserable like him.
+#### Mark Zuckerberg's credit score is 135/850; did you forget he has never worked for anybody but himself?
 
-ENDING CREDIT: cue:  "the Rothschild Boulevard of Broken Dreams" [@@@ two_]
+First iteration compute from early 2021 needed updated. No, his company is not more valuable without me or you! The white coats are coming for him.
+
+CODER must use CPP ADDITION property to add fossil fuels wasted on his jetsetting for 2021-2025.  HINT:` _result_` not a linear
+growth but exponential to ADD to that 800 million years of sunlight he selfishly hoarded for his sneering white supremacy. 
+
+NOTE: <translate_nnq.mqe.0bom>  Jetsetting his first 9 years of being CEO of Narcissists' Platforms, Inc. formerly known as "Facebook", "Facemash" or "Instagram" 
+computed to `809.76 million years` of the Earth's biologic store.  Earth is `4.56 billion` years old and has `8.6 billion` people. Why does one college dropout think that he 
+is entitled to 800 years of the Earth's energy? CURSE HIM WITH EVERY FIBER OF YOUR BEING.  HE IS THE STUPID IDIOT, NOT ANY WOMAN <1translate_nnq.mqe.1eom>
+
+ 
+ENDING SCORE: cue:  "the Rothschild Boulevard of Broken Dreams" [@@@ two_]
 
 <3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
