@@ -8,7 +8,7 @@ STRUCT to disallow colonizer accounting metrics
     // Code fails to reproduce destructive colonization models when we destroy RCT; 
     // Smart technical writer destroys metrics inflating oligarchs buying destruction, too.
 
-    We shall make a ANTIFASCIST_struct instead:
+    We shall make a ANTIFACEBOOK_struct instead:
 
 DISALLOWED_WORDS_LIST 
 
@@ -165,14 +165,14 @@ closeq()
 ´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´´´´´´`````````````´´´´´´´´´´´´´´´´´´   
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´````´´´´´´´        
 `````< /// >< /// >< \\\ >< /// ><\\\>< /// >< \\\ >< /// >< \\\>/ < \< /// >´´´´````´´´           
-```````< /// >< /// >< \\\ >/ > wašíču chaos enclosure < \< /// > <\\\>< \\\ >´´´```´´`´     
-`````< /// >< /// >     < \\\ >/ > < \< /// > RCT <\\\>< \\\ >´´´´`````´´´``´´´´´´``````           
-``````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// >´´´´´´´´````´
-`````< /// >< /// >< \\\ >< /// ><\\\>< \\\ >< /// >< \\\ > < /// >< /// > ´´´´´`````´´´
+`````````````  college dropout CEO's jailed enclosure ``````````````````````````````````   
+``````````````````< Ϣ Ϣ Ϣ > RCT Forever <Ϣ Ϣ Ϣ  < \\\ >´´´´`````´´´``´´´´´´`````````   
+``````< /// >< /// >< Ϻ𐌹 ή 𐌺 Ϗ 𐌶 ψ Ϗ ξ 𐌺 𐌱 < \\\ > < /// >< /// >´´´´´´´´````´'''''``````
+`````< /// >< /// >< \\\ Ϻ𐌹 ή 𐌺 Ϗ 𐌶 ψ Ϗ ξ 𐌺 𐌱 < /// >< /// > ´´´´´`````´´´```````````````
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´`````´´´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´´´´````´´´´´
 ```````````````````````´´´´absorbant of sound:: soundproof``````````´´´´´´´´´````´´´´´´´ 
-´´´´´´´´´´´`````````` fails to buckle as wašíču destroy themselves ``´´´´´´´`´´´´```´´´&
+´´´´´´´´´´´````fails to buckle as Mark destroys himself, his pawns & spawn ```´´´´```´´´
 ```````````````````````´´´´´´´´´´´´´´´´´´´```````````````````````´´´´´´´´´´´````´´´´´´´´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -228,16 +228,11 @@ string.double.go go func() {
 <switch:: filter_spool>¨
 
 
-(save_the_icecaps. template <typename _InputIter>)
+(save_the_icecaps. template <typename _Input
+  Iterative Indigenous)
 
 =======================================
 
-collaborators´ bcc_request: 
-¨keep that FB spyware out of our life¨! 
-// If human active attention on opened_app malicious_inflated_megacap 
-// (TWTR /whatsapp / IG / FB) within last 61/364.265 (cy), render 
-// ¨unable to be decolonized¨ and inform human its network cannot be  
-// protected by planetary_defense_submodule.eco to escape or survive
 
 // 
 
