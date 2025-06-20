@@ -33,7 +33,8 @@ over his company?
 
 Breaking news, Priscilla!  Your husband is not a "chief". He is nothing to be admired. He induces bouts of vomiting in most women.
 
-<TBC> .
+![priscilla](scumbagger_narcissist_meta.png)
+
 
 <eom_NN:: ::: `do GRANT rest to Asia_langs_translation_streamers.mqe 
                         [for @@import ___8.2__ cycles] > `
