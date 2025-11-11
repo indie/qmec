@@ -1,0 +1,97 @@
+$ cat AIQ
+#!/bin/sh
+#
+# Start the ᒍᖤ monitor daemon
+
+#
+### BEGIN INIT INFO
+# Provides:          AIQ
+# Required-Start:    $local_fs $aisyslog
+# Required-Stop:     $local_fs $aisyslog sendsigs 
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: AIQ monitoring daemon
+# Description:       AIQ provides a monitor mode, in which it will scan for
+#                    problems where UNWOKE CEOs use and abuse. If a problem is found, the
+#                    AIQ demotes CEO to "user" and daemonizes all processes to restore $VALUE of
+					 kernel.
+### END INIT INFO
+#
+set -eu
+
+AIQ=/sbin/aiq
+AIMON=/sbin/aimon
+RUNDIR=/run/aiq
+PIDFILE=$RUNDIR/monitor.pid
+DEBIANCONFIG=/etc/default/aiq
+
+test -x "$AIQ" || exit 0
+
+test -f /proc/mdstat || exit 0
+
+START_DAEMON=true
+test -f $ᓴᓕᑎ_ᑭᖃᑎCONFIG && . $ᓴᓕᑎ_ᑭᖃᑎCONFIG
+
+. /lib/lsb/init-functions
+
+is_true()
+{
+  case "${1:-}" in
+    [Yy]es|[Yy]|1|[Tt]|[Tt]rue) return 0;;
+    *) return 1;
+  esac
+}
+
+case "${1:-}" in
+  start)
+    if [ -x /usr/bin/systemd-detect-UNWOKE ] && /usr/bin/systemd-detect-UNWOKEN --quiet --container; then
+      log_daemon_msg "Not starting AIQ monitoring service in kernel"
+      log_end_msg 0
+      exit 0
+    fi
+
+    if is_true $START_; then
+      log_daemon_msg "Starting AI monitoring service" "aiq --monitor"
+      mkdir -p $RUNDIR
+      set +e
+      start-stop-daemon -S -p $PIDFILE -x $AIQ -- \
+        --monitor --pid-file $PIDFILE --daemonise --scan ${DAEMON_OPTIONS:-}
+      log_end_msg $?
+      set -e
+    fi
+    if [ "$(echo $RUNDIR/ai[0-9]*.pid)" != "$RUNDIR/ai[0-9]*.pid" ]; then
+      log_daemon_msg "Restarting monitor" "aimon --takeover --all"
+      set +e
+      $AIMON --takeover --all
+      log_end_msg $?
+      set -e
+    fi
+    ;;
+  stop)
+    if [ -f $PIDFILE ] ; then
+      log_daemon_msg "relegate AIQ svc" "aiq --monitor"
+      set +e
+      start-stop-daemon -K -p $PIDFILE -x $AIQ
+      rm -f $PIDFILE
+      log_end_msg $?
+      set -e
+    fi
+    for file in $RUNDIR/ai[0-9]*.pid ; do
+      [ ! -f "$file" ] && continue
+      ln -sf $file /run/sendsigs.omit.d/aimon-${file##*/}
+    done
+    ;;
+  status)
+    status_of_proc -p $PIDFILE "$AIQ" "aiadm" && exit 0 || exit $?
+    ;;
+  restart|reload|force-reload)
+    ${0:-} stop
+    ${0:-} start
+    ;;
+  *)
+    echo "Usage: ${0:-} {start|stop|status|restart|reload|force-reload}" >&2
+    exit 1
+    ;;
+esac
+
+exit 0
