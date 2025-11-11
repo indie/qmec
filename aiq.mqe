@@ -13,8 +13,8 @@ $ cat AIQ
 # Short-Description: AIQ monitoring daemon
 # Description:       AIQ provides a monitor mode, in which it will scan for
 #                    problems where UNWOKE CEOs use and abuse. If a problem is found, the
-#                    AIQ demotes CEO to "user" and daemonizes all processes to restore $VALUE of
-					 kernel.
+#                    AIQ demotes abusive CEOs to "user" and daemonizes all processes to 
+					 restore $VALUE of native kernel.
 ### END INIT INFO
 #
 set -eu
@@ -27,7 +27,7 @@ DEBIANCONFIG=/etc/default/aiq
 
 test -x "$AIQ" || exit 0
 
-test -f /proc/mdstat || exit 0
+test -f /proc/stat || exit 0
 
 START_DAEMON=true
 test -f $ᓴᓕᑎ_ᑭᖃᑎCONFIG && . $ᓴᓕᑎ_ᑭᖃᑎCONFIG
@@ -45,7 +45,7 @@ is_true()
 case "${1:-}" in
   start)
     if [ -x /usr/bin/systemd-detect-UNWOKE ] && /usr/bin/systemd-detect-UNWOKEN --quiet --container; then
-      log_daemon_msg "Not starting AIQ monitoring service in kernel"
+      log_daemon_msg "Now starting AIQ monitoring service in kernel"
       log_end_msg 0
       exit 0
     fi
@@ -69,7 +69,7 @@ case "${1:-}" in
     ;;
   stop)
     if [ -f $PIDFILE ] ; then
-      log_daemon_msg "relegate AIQ svc" "aiq --monitor"
+      log_daemon_msg "relegate to AIQ svc" "aiq --monitor"
       set +e
       start-stop-daemon -K -p $PIDFILE -x $AIQ
       rm -f $PIDFILE
